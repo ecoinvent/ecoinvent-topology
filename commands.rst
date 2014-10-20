@@ -83,8 +83,9 @@ ogr2ogr -f PGDump sql/cutouts/ascc.sql data/intermediate/ascc.gpkg -lco CREATE_T
 sed -i '' 's/"public"."ascc"/"public"."cutouts"/g' sql/cutouts/ascc.sql
 psql -U ecoinvent -d eigeo -f sql/cutouts/ascc.sql -q
 
-psql -U ecoinvent -d eigeo -c "SELECT EliminateNonBranchingNodes();"
 
+psql -U ecoinvent -d eigeo -f sql/nodes.sql -q
 python python/eliminate_nodes.py
 
 psql -U ecoinvent -d eigeo -f sql/simplify.sql -q
+psql -U ecoinvent -d eigeo -f sql/nodes.sql -q

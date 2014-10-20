@@ -5,7 +5,8 @@ num = 0
 
 while True:
     p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
-    if "(1 row)" not in p.communicate()[0]:
+    result = p.communicate()[0]
+    if not result.split("\n")[2].strip():
         break
     else:
         num += 1
