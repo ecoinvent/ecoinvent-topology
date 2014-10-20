@@ -1,0 +1,7 @@
+syntax:glob
+qgis
+data/countries
+data/provinces
+data/states
+sql/cutouts/*.sql
+sql/ne_*.sql
