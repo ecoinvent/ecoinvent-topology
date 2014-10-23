@@ -23,22 +23,6 @@ insert into geometries (name, tname, topogeom)
             'ei_topo', 1, 0.000001
     ));
 insert into geometries (name, tname, topogeom)
-    select 'serc-west', 'cutouts',
-        toTopoGeom(
-            ST_Union(
-                ST_GetFaceGeometry(
-                    'ei_topo',
-                    GetFaceByPoint('ei_topo', t1.str, 0)
-                    )
-            ), 'ei_topo', 1, 0.000001)
-from (select
-    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.41 38.08)') as str) union
-    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.82 34.91)') as str) union
-    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.82 32.45)') as str) union
-    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.11 30.19)') as str) union
-    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.883 29.573)') as str)
-) as t1;
-insert into geometries (name, tname, topogeom)
     values ('spp-east', 'cutouts',
         toTopoGeom(ST_Intersection(
             (select ST_Union(geometry(topogeom)) from geometries where tname = 'ne_provinces' and name in ('Missouri', 'Arkansas', 'Louisiana')),
@@ -60,6 +44,22 @@ insert into geometries (name, tname, topogeom)
             'ei_topo', 1, 0.000001
     ));
 insert into geometries (name, tname, topogeom)
+    select 'serc-west', 'cutouts',
+        toTopoGeom(
+            ST_Union(
+                ST_GetFaceGeometry(
+                    'ei_topo',
+                    GetFaceByPoint('ei_topo', t1.str, 0)
+                    )
+            ), 'ei_topo', 1, 0.000001)
+from (select
+    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.41 38.08)') as str) union
+    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.82 34.91)') as str) union
+    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.82 32.45)') as str) union
+    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.11 30.19)') as str) union
+    (select ST_GeomFromEWKT('SRID=4326;POINT(-91.883 29.573)') as str)
+) as t1;
+insert into geometries (name, tname, topogeom)
     select 'wecc-east', 'cutouts',
         toTopoGeom(
             ST_Union(
@@ -75,7 +75,7 @@ from (select
     (select ST_GeomFromEWKT('SRID=4326;POINT(-103.52 41.49)') as str)
 ) as t1;
 insert into geometries (name, tname, topogeom)
-    values ('wecc-east', 'cutouts',
+    values ('rfc-ill', 'cutouts',
         toTopoGeom(
             ST_GetFaceGeometry('ei_topo', GetFaceByPoint(
                 'ei_topo', ST_GeomFromEWKT('SRID=4326;POINT(-88.50 42.06)'), 0

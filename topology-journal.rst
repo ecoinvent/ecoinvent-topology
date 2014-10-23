@@ -1,11 +1,10 @@
 TODO
 ====
 
-- Finish recipes
-
-I have what I hope is a simple requests. A few years ago, I had asked you to create aluminium-producing regions, something you didn't like then. Could you please merge two areas (IAI Area 6A and IAI Area 6B). The new area name would be:
-Short name: IAI Area 6A/6B
-Long name: IAI Producing Area 6A/6B, Europe
+* Add metadata from ne_countries
+* Parse recipes and write SQL
+* Export to geopackage
+* Finish recipes
 
 Changes
 =======
@@ -43,26 +42,38 @@ Procedure
 #. Import country geometries from natural earth into table "ne_countries"
 #. Import province geometries from natural earth into table "ne_provinces"
 #. Import sovereign state geometries from natural earth into table "ne_states"
-#. Create topology
+#. Create "ei_topo" topology
 #. Import cutout shapes from geopackage into table "cutouts"
 #. Edit cutout shapes to fit into existing borders
-#. Create topologies from all three tables
-#. Write ecoinvent geographies into new table "ecoinvent" (translate topology to geometry, edit field names)
-#. Export geopackage in qgis
+#. Create topologies from all four tables in new table "geometries"
+#. Write ecoinvent geographies into new table "final" (translate topology to geometry, edit field names)
+#. Add metadata from JSON config scripts and Natural Earth tables
+#. Export geopackage using ogr2ogr
 
-Ecoinvent-required fields
-=========================
+Ecoinvent-required fields - mapping with ne_countries
+=====================================================
 
 * ISOTwoLetterCode
 * UNCode
 * longitude
-* ISOThreeLetterCode
+* ISOThreeLetterCode: su_a3
 * UNSubregionCode
 * latitude
 * UNRegionCode
 * uuid
-* shortname
-* name (multiple languages)
+* shortname:
+* name (multiple languages): name
+
+Shell script
+============
+
+Shell script is ``create-db.sh``.
+
+It assumes the following:
+
+1. You have python installed on your machine
+2. You have Postgresql and PostGIS installed on your machine
+3. You have a Postgresql user named "ecoinvent" who can create tables
 
 Setup
 =====

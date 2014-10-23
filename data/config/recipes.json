@@ -1,41 +1,827 @@
 [
-      ["Russian Federation (Europe)", ["Kaliningrad", "Rostov", "Tula", "Volgograd", "Belgorod", "Krasnodar", "Mordovia", "Penza", "Ryazan\'", "Tambov", "Vladimir", "Voronezh", "Bashkortostan", "Nenets", "Komi", "Kirov", "Mariy-El", "Udmurt", "Astrakhan\'", "Chuvash", "Kalmyk", "Orenburg", "Samara", "Saratov", "Tatarstan", "Perm\'", "Ul\'yanovsk", "Ingush", "Adygey", "Karelia", "Arkhangel\'sk", "Ivanovo", "Kostroma", "Karachay-Cherkess", "Nizhegorod", "Tver\'", "Vologda", "Kabardin-Balkar", "Yaroslavl\'", "Kaluga", "Kursk", "Lipetsk", "Moskovsskaya", "North Ossetia", "Stavropol\'", "Moskva", "Orel", "Murmansk", "Novgorod", "Pskov", "Leningrad", "City of St. Petersburg", "Bryansk", "Smolensk", "Chechnya", "Dagestan"]]
-      ["Russian Federation (Asia)", ["Chelyabinsk", "Kurgan", "Yamal-Nenets", "Sverdlovsk", "Khanty-Mansiy", "Omsk", "Tyumen\'", "Altay", "Gorno-Altay", "Kemerovo", "Khakass", "Novosibirsk", "Tuva", "Buryat", "Amur", "Chita", "Primor\'ye", "Sakha (Yakutia)", "Yevrey", "Khabarovsk", "Maga Buryatdan", "Sakhalin", "Kamchatka", "Tomsk", "Chukchi Autonomous Okrug", "Irkutsk", "Krasnoyarsk"]],
-      ["Al producing Area 2, North America"["United States of America", "Canada"]],
-      ["Al producing Area 1, Africa", ["Cameroon", "Egypt", "Ghana", "Mozambique", "Nigeria", "South Africa"]],
-      ["Al producing Area 2, North America, without Quebec", ["United States of America", "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Northwest Territories", "Nunavut", "Ontario", "Prince Edward Island", "Yukon Territory"]],
-      ["Al producing Area 3, South America", ["Argentina", "Brazil", "Venezuela"]],
-      ["Al producing Area 4 and 5, South and East Asia, without China", ["Japan", "North Korea", "Tajikistan", "Azerbaijan", "India", "Indonesia", "Iran", "Kazakhstan", "Turkey"]],
-      ["Al producing Area 6A&B, West, East, and Central Europe", ["France", "Germany", "Greece", "Iceland", "Italy", "Netherlands", "Norway", "Spain", "Sweden", "United Kingdom", "Bosnia and Herzegovina", "Croatia", "Montenegro", "Poland", "Romania", "Russian Federation", "Slovakia", "Slovenia", "Ukraine"]],
-      ["Al producing Area 8, Gulf Region", ["Bahrain", "Oman", "Qatar", "United Arab Emirates"]],
-      ["Union for the Co-ordination of Transmission of Electricity", ["Nordjylland", "Midtjylland", "Syddanmark", "Austria", "Belgium", "France", "Germany", "Liechtenstein", "Luxembourg", "Monaco", "Netherlands", "Switzerland", "Andorra", "Bosnia and Herzegovina", "Croatia", "Gibraltar", "Greece", "Holy See", "Italy", "Montenegro", "Portugal", "San Marino", "Serbia", "Slovenia", "Spain", "The former Yugoslav Republic of Macedonia", "Bulgaria", "Czech Republic", "Hungary", "Poland", "Romania", "Slovakia"]],
-      ["Caribbean", ["Anguilla", "Antigua and Barbuda", "Aruba", "Bahamas", "Barbados", "Bonaire, Saint Eustatius and Saba", "British Virgin Islands", "Cayman Islands", "Cuba", "Curaçao", "Dominica", "Dominican Republic", "Grenada", "Guadeloupe", "Haiti", "Jamaica", "Martinique", "Montserrat", "Puerto Rico", "Saint Barthelemy", "Saint Kitts and Nevis", "Saint Lucia", "Saint Martin", "Saint Vincent and the Grenadines", "Sint Maarten", "Trinidad and Tobago", "Turks and Caicos Islands", "United States Virgin Islands"],
-      ["Central America", ["Belize", "Costa Rica", "El Salvador", "Guatemala", "Honduras", "Mexico", "Nicaragua", "Panama"]],
-      ["South America", ["Argentina", "Bolivia, Plurinational State of", "Brazil", "Chile", "Colombia", "Ecuador", "Falkland Islands (Malvinas)", "French Guiana", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela"]],
-      ["Northern America", ["Bermuda", "Canada", "Greenland", "Saint Pierre and Miquelon", "United States of America"]],
-      ["Central Asia", ["Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Uzbekistan"]],
-      ["Eastern Asia", ["China", "Hong Kong", "Macau", "Korea, Democratic People's Republic of", "Japan", "Mongolia", "Republic of Korea"]],
-      ["Southern Asia", ["Afghanistan", "Bangladesh", "Bhutan", "India", "Iran (Islamic Republic of)", "Maldives", "Nepal", "Pakistan", "Sri Lanka"]],
-      ["South-Eastern Asia", ["Brunei Darussalam", "Cambodia", "Indonesia", "Lao People's Democratic Republic", "Malaysia", "Myanmar", "Philippines", "Singapore", "Thailand", "Timor-Leste", "Viet Nam"]],
-      ["Western Asia", ["Armenia", "Azerbaijan", "Bahrain", "Cyprus", "Georgia", "Iraq", "Israel", "Jordan", "Kuwait", "Lebanon", "Oman", "Qatar", "Saudi Arabia", "Palestinian Territory, Occupied", "Syrian Arab Republic", "Turkey", "United Arab Emirates", "Yemen"]],
-      ["Eastern Europe", ["Belarus", "Bulgaria", "Czech Republic", "Hungary", "Poland", "Republic of Moldova", "Romania", "Russian Federation", "Slovakia", "Ukraine"]],
-      ["Northern Europe", ["Åland Islands", "Denmark", "Estonia", "Faeroe Islands", "Finland", "Guernsey", "Iceland", "Ireland", "Isle of Man", "Jersey", "Latvia", "Lithuania", "Norway", "Svalbard and Jan Mayen", "Sweden", "United Kingdom"]],
-      ["Southern Europe", ["Albania", "Andorra", "Bosnia and Herzegovina", "Croatia", "Gibraltar", "Greece", "Holy See", "Italy", "Malta", "Montenegro", "Portugal", "San Marino", "Serbia", "Slovenia", "Spain", "The former Yugoslav Republic of Macedonia"]],
-      ["Western Europe", ["Austria", "Belgium", "France", "Germany", "Liechtenstein", "Luxembourg", "Monaco", "Netherlands", "Switzerland"]],
-      ["Australia and New Zealand", ["Australia", "New Zealand", "Norfolk Island"]],
-      ["Melanesia", ["Fiji", "New Caledonia", "Papua New Guinea", "Solomon Islands", "Vanuatu"]],
-      ["Micronesia", ["Guam", "Kiribati", "Marshall Islands", "Micronesia (Federated States of)", "Nauru", "Northern Mariana Islands", "Palau"]],
-      ["Polynesia", ["American Samoa", "Cook Islands", "French Polynesia", "Niue", "Pitcairn", "Samoa", "Tokelau", "Tonga", "Tuvalu", "Wallis and Futuna Islands"]],
-      ["Eastern Africa", ["Burundi", "Comoros", "Djibouti", "Eritrea", "Ethiopia", "Kenya", "Madagascar", "Malawi", "Mauritius", "Mayotte", "Mozambique", "Réunion", "Rwanda", "Seychelles", "Somalia", "South Sudan", "Uganda", "United Republic of Tanzania", "Zambia", "Zimbabwe"]],
-      ["Middle Africa", ["Angola", "Cameroon", "Central African Republic", "Chad", "Congo", "Democratic Republic of the Congo", "Equatorial , [Guinea", "Gabon", "Sao Tome and Principe"]],
-      ["Northern Africa", ["Algeria", "Egypt", "Libya", "Morocco", "Sudan", "Tunisia", "Western Sahara"]],
-      ["Southern Africa", ["Botswana", "Lesotho", "Namibia", "South Africa", "Swaziland"]],
-      ["Western Africa", ["Benin", "Burkina Faso", "Cabo Verde", "Cote d'Ivoire", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Liberia", "Mali", "Mauritania", "Niger", "Nigeria", "Saint Helena", "Senegal", "Sierra Leone", "Togo"]],
-      ["Africa", ["Eastern Africa", "Middle Africa", "Northern Africa", "Southern Africa", "Western Africa"]],
-      ["Latin America and the Caribbean", ["Caribbean", "Central America", "South America"]],
-      ["Asia, UN Region", ["Central Asia", "Eastern Asia", "Southern Asia", "South-Eastern Asia", "Western Asia"]],
-      ["Europe, UN Region", ["Eastern Europe", "Northern Europe", "Southern Europe", "Western Europe"]],
-      ["Oceania", ["Australia and New Zealand", "Melanesia", "Micronesia", "Polynesia"]],
-      ["Americas", ["Latin America and the Caribbean", "Northern America"]],
-      ["Québec, Hydro-Québec distribution network", ["Québec"]],
+  [
+    "Russian Federation (Europe)",
+    {
+      "ne_provinces": [
+        "Kaliningrad",
+        "Rostov",
+        "Tula",
+        "Volgograd",
+        "Belgorod",
+        "Krasnodar",
+        "Mordovia",
+        "Penza",
+        "Ryazan'",
+        "Tambov",
+        "Vladimir",
+        "Voronezh",
+        "Bashkortostan",
+        "Nenets",
+        "Komi",
+        "Kirov",
+        "Mariy-El",
+        "Udmurt",
+        "Astrakhan'",
+        "Chuvash",
+        "Kalmyk",
+        "Orenburg",
+        "Samara",
+        "Saratov",
+        "Tatarstan",
+        "Perm'",
+        "Ul'yanovsk",
+        "Ingush",
+        "Adygey",
+        "Karelia",
+        "Arkhangel'sk",
+        "Ivanovo",
+        "Kostroma",
+        "Karachay-Cherkess",
+        "Nizhegorod",
+        "Tver'",
+        "Vologda",
+        "Kabardin-Balkar",
+        "Yaroslavl'",
+        "Kaluga",
+        "Kursk",
+        "Lipetsk",
+        "Moskovsskaya",
+        "North Ossetia",
+        "Stavropol'",
+        "Moskva",
+        "Orel",
+        "Murmansk",
+        "Novgorod",
+        "Pskov",
+        "Leningrad",
+        "City of St. Petersburg",
+        "Bryansk",
+        "Smolensk",
+        "Chechnya",
+        "Dagestan"
+      ]
+    }
+  ],
+  [
+    "Russian Federation (Asia)",
+    {
+      "ne_provinces": [
+        "Chelyabinsk",
+        "Kurgan",
+        "Yamal-Nenets",
+        "Sverdlovsk",
+        "Khanty-Mansiy",
+        "Omsk",
+        "Tyumen'",
+        "Altay",
+        "Gorno-Altay",
+        "Kemerovo",
+        "Khakass",
+        "Novosibirsk",
+        "Tuva",
+        "Buryat",
+        "Amur",
+        "Chita",
+        "Primor'ye",
+        "Sakha (Yakutia)",
+        "Yevrey",
+        "Khabarovsk",
+        "Maga Buryatdan",
+        "Sakhalin",
+        "Kamchatka",
+        "Tomsk",
+        "Chukchi Autonomous Okrug",
+        "Irkutsk",
+        "Krasnoyarsk"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 2, North America",
+    {
+      "ne_countries": [
+        "United States of America",
+        "Canada"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 1, Africa",
+    {
+      "ne_countries": [
+        "Cameroon",
+        "Egypt",
+        "Ghana",
+        "Mozambique",
+        "Nigeria",
+        "South Africa"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 2, North America, without Quebec",
+    {
+      "ne_countries": [
+        "United States of America",
+        "Alberta",
+        "British Columbia",
+        "Manitoba",
+        "New Brunswick",
+        "Newfoundland and Labrador",
+        "Nova Scotia",
+        "Northwest Territories",
+        "Nunavut",
+        "Ontario",
+        "Prince Edward Island",
+        "Yukon Territory"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 3, South America",
+    {
+      "ne_countries": [
+        "Argentina",
+        "Brazil",
+        "Venezuela"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 4 and 5, South and East Asia, without China",
+    {
+      "ne_countries": [
+        "Japan",
+        "North Korea",
+        "Tajikistan",
+        "Azerbaijan",
+        "India",
+        "Indonesia",
+        "Iran",
+        "Kazakhstan",
+        "Turkey"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 6A&B, West, East, and Central Europe",
+    {
+      "ne_countries": [
+        "France",
+        "Germany",
+        "Greece",
+        "Iceland",
+        "Italy",
+        "Netherlands",
+        "Norway",
+        "Spain",
+        "Sweden",
+        "United Kingdom",
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Montenegro",
+        "Poland",
+        "Romania",
+        "Russian Federation",
+        "Slovakia",
+        "Slovenia",
+        "Ukraine"
+      ]
+    }
+  ],
+  [
+    "Al producing Area 8, Gulf Region",
+    {
+      "ne_countries": [
+        "Bahrain",
+        "Oman",
+        "Qatar",
+        "United Arab Emirates"
+      ]
+    }
+  ],
+  [
+    "Union for the Co-ordination of Transmission of Electricity",
+    {
+      "ne_countries": [
+        "Austria",
+        "Belgium",
+        "France",
+        "Germany",
+        "Liechtenstein",
+        "Luxembourg",
+        "Monaco",
+        "Netherlands",
+        "Switzerland",
+        "Andorra",
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Gibraltar",
+        "Greece",
+        "Holy See",
+        "Italy",
+        "Montenegro",
+        "Portugal",
+        "San Marino",
+        "Serbia",
+        "Slovenia",
+        "Spain",
+        "The former Yugoslav Republic of Macedonia",
+        "Bulgaria",
+        "Czech Republic",
+        "Hungary",
+        "Poland",
+        "Romania",
+        "Slovakia"
+      ],
+      "ne_provinces": [
+        "Nordjylland",
+        "Midtjylland",
+        "Syddanmark"
+      ]
+    }
+  ],
+  [
+    "Caribbean",
+    {
+      "ne_countries": [
+        "Anguilla",
+        "Antigua and Barbuda",
+        "Aruba",
+        "Bahamas",
+        "Barbados",
+        "Bonaire, Saint Eustatius and Saba",
+        "British Virgin Islands",
+        "Cayman Islands",
+        "Cuba",
+        "Curaçao",
+        "Dominica",
+        "Dominican Republic",
+        "Grenada",
+        "Guadeloupe",
+        "Haiti",
+        "Jamaica",
+        "Martinique",
+        "Montserrat",
+        "Puerto Rico",
+        "Saint Barthelemy",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Martin",
+        "Saint Vincent and the Grenadines",
+        "Sint Maarten",
+        "Trinidad and Tobago",
+        "Turks and Caicos Islands",
+        "United States Virgin Islands"
+      ]
+    }
+  ],
+  [
+    "Central America",
+    {
+      "ne_countries": [
+        "Belize",
+        "Costa Rica",
+        "El Salvador",
+        "Guatemala",
+        "Honduras",
+        "Mexico",
+        "Nicaragua",
+        "Panama"
+      ]
+    }
+  ],
+  [
+    "South America",
+    {
+      "ne_countries": [
+        "Argentina",
+        "Bolivia, Plurinational State of",
+        "Brazil",
+        "Chile",
+        "Colombia",
+        "Ecuador",
+        "Falkland Islands (Malvinas)",
+        "French Guiana",
+        "Guyana",
+        "Paraguay",
+        "Peru",
+        "Suriname",
+        "Uruguay",
+        "Venezuela"
+      ]
+    }
+  ],
+  [
+    "Northern America",
+    {
+      "ne_countries": [
+        "Bermuda",
+        "Canada",
+        "Greenland",
+        "Saint Pierre and Miquelon",
+        "United States of America"
+      ]
+    }
+  ],
+  [
+    "Central Asia",
+    {
+      "ne_countries": [
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Turkmenistan",
+        "Uzbekistan"
+      ]
+    }
+  ],
+  [
+    "Eastern Asia",
+    {
+      "ne_countries": [
+        "China",
+        "Hong Kong",
+        "Macau",
+        "Korea, Democratic People's Republic of",
+        "Japan",
+        "Mongolia",
+        "Republic of Korea"
+      ]
+    }
+  ],
+  [
+    "Southern Asia",
+    {
+      "ne_countries": [
+        "Afghanistan",
+        "Bangladesh",
+        "Bhutan",
+        "India",
+        "Iran (Islamic Republic of)",
+        "Maldives",
+        "Nepal",
+        "Pakistan",
+        "Sri Lanka"
+      ]
+    }
+  ],
+  [
+    "South-Eastern Asia",
+    {
+      "ne_countries": [
+        "Brunei Darussalam",
+        "Cambodia",
+        "Indonesia",
+        "Lao People's Democratic Republic",
+        "Malaysia",
+        "Myanmar",
+        "Philippines",
+        "Singapore",
+        "Thailand",
+        "Timor-Leste",
+        "Viet Nam"
+      ]
+    }
+  ],
+  [
+    "Western Asia",
+    {
+      "ne_countries": [
+        "Armenia",
+        "Azerbaijan",
+        "Bahrain",
+        "Cyprus",
+        "Georgia",
+        "Iraq",
+        "Israel",
+        "Jordan",
+        "Kuwait",
+        "Lebanon",
+        "Oman",
+        "Qatar",
+        "Saudi Arabia",
+        "Palestinian Territory, Occupied",
+        "Syrian Arab Republic",
+        "Turkey",
+        "United Arab Emirates",
+        "Yemen"
+      ]
+    }
+  ],
+  [
+    "Eastern Europe",
+    {
+      "ne_countries": [
+        "Belarus",
+        "Bulgaria",
+        "Czech Republic",
+        "Hungary",
+        "Poland",
+        "Republic of Moldova",
+        "Romania",
+        "Russian Federation",
+        "Slovakia",
+        "Ukraine"
+      ]
+    }
+  ],
+  [
+    "Northern Europe",
+    {
+      "ne_countries": [
+        "Åland Islands",
+        "Denmark",
+        "Estonia",
+        "Faeroe Islands",
+        "Finland",
+        "Guernsey",
+        "Iceland",
+        "Ireland",
+        "Isle of Man",
+        "Jersey",
+        "Latvia",
+        "Lithuania",
+        "Norway",
+        "Svalbard and Jan Mayen",
+        "Sweden",
+        "United Kingdom"
+      ]
+    }
+  ],
+  [
+    "Southern Europe",
+    {
+      "ne_countries": [
+        "Albania",
+        "Andorra",
+        "Bosnia and Herzegovina",
+        "Croatia",
+        "Gibraltar",
+        "Greece",
+        "Holy See",
+        "Italy",
+        "Malta",
+        "Montenegro",
+        "Portugal",
+        "San Marino",
+        "Serbia",
+        "Slovenia",
+        "Spain",
+        "The former Yugoslav Republic of Macedonia"
+      ]
+    }
+  ],
+  [
+    "Western Europe",
+    {
+      "ne_countries": [
+        "Austria",
+        "Belgium",
+        "France",
+        "Germany",
+        "Liechtenstein",
+        "Luxembourg",
+        "Monaco",
+        "Netherlands",
+        "Switzerland"
+      ]
+    }
+  ],
+  [
+    "Australia and New Zealand",
+    {
+      "ne_countries": [
+        "Australia",
+        "New Zealand",
+        "Norfolk Island"
+      ]
+    }
+  ],
+  [
+    "Melanesia",
+    {
+      "ne_countries": [
+        "Fiji",
+        "New Caledonia",
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Vanuatu"
+      ]
+    }
+  ],
+  [
+    "Micronesia",
+    {
+      "ne_countries": [
+        "Guam",
+        "Kiribati",
+        "Marshall Islands",
+        "Micronesia (Federated States of)",
+        "Nauru",
+        "Northern Mariana Islands",
+        "Palau"
+      ]
+    }
+  ],
+  [
+    "Polynesia",
+    {
+      "ne_countries": [
+        "American Samoa",
+        "Cook Islands",
+        "French Polynesia",
+        "Niue",
+        "Pitcairn",
+        "Samoa",
+        "Tokelau",
+        "Tonga",
+        "Tuvalu",
+        "Wallis and Futuna Islands"
+      ]
+    }
+  ],
+  [
+    "Eastern Africa",
+    {
+      "ne_countries": [
+        "Burundi",
+        "Comoros",
+        "Djibouti",
+        "Eritrea",
+        "Ethiopia",
+        "Kenya",
+        "Madagascar",
+        "Malawi",
+        "Mauritius",
+        "Mayotte",
+        "Mozambique",
+        "Réunion",
+        "Rwanda",
+        "Seychelles",
+        "Somalia",
+        "South Sudan",
+        "Uganda",
+        "United Republic of Tanzania",
+        "Zambia",
+        "Zimbabwe"
+      ]
+    }
+  ],
+  [
+    "Middle Africa",
+    {
+      "ne_countries": [
+        "Angola",
+        "Cameroon",
+        "Central African Republic",
+        "Chad",
+        "Congo",
+        "Democratic Republic of the Congo",
+        "Equatorial , [Guinea",
+        "Gabon",
+        "Sao Tome and Principe"
+      ]
+    }
+  ],
+  [
+    "Northern Africa",
+    {
+      "ne_countries": [
+        "Algeria",
+        "Egypt",
+        "Libya",
+        "Morocco",
+        "Sudan",
+        "Tunisia",
+        "Western Sahara"
+      ]
+    }
+  ],
+  [
+    "Southern Africa",
+    {
+      "ne_countries": [
+        "Botswana",
+        "Lesotho",
+        "Namibia",
+        "South Africa",
+        "Swaziland"
+      ]
+    }
+  ],
+  [
+    "Western Africa",
+    {
+      "ne_countries": [
+        "Benin",
+        "Burkina Faso",
+        "Cabo Verde",
+        "Cote d'Ivoire",
+        "Gambia",
+        "Ghana",
+        "Guinea",
+        "Guinea-Bissau",
+        "Liberia",
+        "Mali",
+        "Mauritania",
+        "Niger",
+        "Nigeria",
+        "Saint Helena",
+        "Senegal",
+        "Sierra Leone",
+        "Togo"
+      ]
+    }
+  ],
+  [
+    "Africa",
+    {
+      "ne_countries": [
+        "Eastern Africa",
+        "Middle Africa",
+        "Northern Africa",
+        "Southern Africa",
+        "Western Africa"
+      ]
+    }
+  ],
+  [
+    "Latin America and the Caribbean",
+    {
+      "ne_countries": [
+        "Caribbean",
+        "Central America",
+        "South America"
+      ]
+    }
+  ],
+  [
+    "Asia, UN Region",
+    {
+      "ne_countries": [
+        "Central Asia",
+        "Eastern Asia",
+        "Southern Asia",
+        "South-Eastern Asia",
+        "Western Asia"
+      ]
+    }
+  ],
+  [
+    "Europe, UN Region",
+    {
+      "ne_countries": [
+        "Eastern Europe",
+        "Northern Europe",
+        "Southern Europe",
+        "Western Europe"
+      ]
+    }
+  ],
+  [
+    "Oceania",
+    {
+      "ne_countries": [
+        "Australia and New Zealand",
+        "Melanesia",
+        "Micronesia",
+        "Polynesia"
+      ]
+    }
+  ],
+  [
+    "Americas",
+    {
+      "ne_countries": [
+        "Latin America and the Caribbean",
+        "Northern America"
+      ]
+    }
+  ],
+  [
+    "Québec, Hydro-Québec distribution network",
+    {
+      "ne_provinces": ["Québec"]
+    }
+  ],
+  [
+    "Western Electricity Coordinating Council",
+    {
+      "ne_provinces": [
+        "British Columbia",
+        "Alberta",
+        "Washington",
+        "Oregon",
+        "California",
+        "Nevada",
+        "Utah",
+        "Utah",
+        "Colorado",
+        "Wyoming"
+      ],
+      "cutouts": [
+        "wecc-texas",
+        "wecc-nm",
+        "wecc-east"
+      ]
+    }
+  ],
+  [
+    "Southwest Power Pool",
+    {
+      "cutouts": [
+        "spp-nm",
+        "spp-texas",
+        "spp-east"
+      ],
+      "ne_provinces": [
+        "Oklahoma",
+        "Kansas"
+      ]
+    }
+  ],
+  [
+    "Midwest Reliability Organization",
+    {
+      "cutouts": [
+        "mro",
+        "mro-ill"
+      ],
+      "ne_provinces": [
+        "Iowa",
+        "Minnesota",
+        "North Dakota",
+        "Saskatchewan",
+        "Manitoba",
+      ]
+    }
+  ],
+  [
+    "Texas Regional Entity",
+    {
+      "cutouts": ["tre"]
+    }
+  ],
+  [
+    "Florida Reliability Coordinating Council",
+    {
+      "cutouts": ["frcc"]
+    }
+  ],
+  [
+    "SERC Reliability Corporation",
+    {
+      "cutouts": [
+        "serc",
+        "serc-west"
+      ],
+      "ne_provinces": [
+        "Alabama",
+        "Mississippi",
+        "Georgia",
+        "South Carolina",
+        "North Carolina",
+        "Tennessee"
+      ]
+    }
+  ],
+  [
+    "ReliabilityFirst Corporation",
+    {
+      "cutouts": [
+        "rfc",
+        "rfc-va",
+        "rfc-ill"
+      ],
+      "ne_provinces": [
+        "Indiana",
+        "Ohio",
+        "Pennsylvania",
+        "Maryland",
+        "New Jersey",
+        "Delaware",
+        "West Virginia"
+      ]
+    }
+  ],
+  [
+    "Northeast Power Coordinating Council",
+    {
+      "ne_provinces": [
+        "Québec",
+        "New York",
+        "Connecticut",
+        "Rhode Island",
+        "Massachusetts",
+        "Vermont",
+        "Ontario",
+        "New Hampshire",
+        "Maine",
+        "Nova Scotia",
+        "Prince Edward Island",
+        "New Brunswick",
+      ]
+    }
+  ],
 ]
