@@ -10,5 +10,5 @@ while True:
         break
     else:
         num += 1
-    if num and not num % 100:
-        print "%s nodes eliminated" % num
+
+print "%s nodes eliminated" % num

@@ -2,12 +2,19 @@ SET CLIENT_ENCODING TO UTF8;
 SET STANDARD_CONFORMING_STRINGS TO ON;
 BEGIN;
 
+
 CREATE OR REPLACE FUNCTION AddTopoGeometry(name varchar, tname varchar, gid int)
 RETURNS varchar AS $$
 DECLARE
   sql varchar;
 BEGIN
-    sql := 'INSERT INTO "geometries" ("name", "tname", "topogeom") VALUES (' || quote_literal(name) || ', ' || quote_literal(tname) || ', toTopoGeom((SELECT geom from ' || quote_ident(tname) || ' where gid = ' || quote_literal(gid) || E'), \'ei_topo\' , 1, 0.000001))';
+    sql := 'INSERT INTO "geometries" ("gid", "name", "tname", "topogeom")
+      VALUES (
+          ' || quote_literal(gid) || ',
+          ' || quote_literal(name) || ',
+          ' || quote_literal(tname) || ',
+          toTopoGeom((SELECT geom from ' || quote_ident(tname) || ' where gid = ' || quote_literal(gid) || E'), \'ei_topo\' , 1, 0.000001)
+          )';
     BEGIN
       EXECUTE sql;
       RETURN name;
@@ -18,6 +25,7 @@ BEGIN
     END;
 END
 $$ LANGUAGE 'plpgsql' VOLATILE STRICT;
+
 
 CREATE OR REPLACE FUNCTION EliminateNonBranchingNodes()
 RETURNS int AS $$
@@ -42,16 +50,12 @@ RETURNS int AS $$
     limit 1;
 $$ language 'sql';
 
-CREATE OR REPLACE FUNCTION TopoContains(inside varchar, outside varchar)
+
+CREATE OR REPLACE FUNCTION _TopoContains(inside topogeometry, outside topogeometry)
 RETURNS boolean AS $$
-    IF (select count(*) > 0 from (
-    (select GetTopoGeomElements(topogeom) from geometries where name = inside) except
-    (select GetTopoGeomElements(topogeom) from geometries where name = outside)
-) as t1) THEN RAISE WARNING 'Not contained: ' || quote_literal(inside) || ' is not contained by ' || quote_literal(outside) END IF;
-    select count(*) = 0 from (
-    (select GetTopoGeomElements(topogeom) from geometries where name = inside) except
-    (select GetTopoGeomElements(topogeom) from geometries where name = outside)
-) as t1;
+  select count(*) = 0 from (
+    (select GetTopoGeomElements(inside)) except (select GetTopoGeomElements(outside))
+  ) as t1;
 $$ language 'sql' stable;
 
 

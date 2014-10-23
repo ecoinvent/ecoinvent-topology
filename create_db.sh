@@ -7,6 +7,7 @@ psql -U ecoinvent -d eigeo -c "CREATE EXTENSION postgis;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "CREATE EXTENSION postgis_topology;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SELECT CreateTopology('ei_topo', 4326);" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -f sql/create-tables.sql -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -f sql/create-functions.sql -q -n -o create_db.log
 
 echo "Importing raw GIS country/province/state data"
 psql -U ecoinvent -d eigeo -f sql/ne_countries.sql -q -n -o create_db.log
@@ -14,15 +15,19 @@ psql -U ecoinvent -d eigeo -f sql/ne_states.sql -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -f sql/ne_provinces.sql -q -n -o create_db.log
 
 echo "Fix problem with one province self-intersecting ring"
-psql -U ecoinvent -d eigeo -c "update ne_provinces set geom = ST_MakeValid(geom) where ST_IsValid(geom) = False;"
+psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
+ update ne_provinces set geom = ST_MakeValid(geom) where ST_IsValid(geom) = False;"
 
 echo "Creating province topos"
 echo "This will take some time; An error will be raised for Paphos - it can be ignored"
-psql -U ecoinvent -d eigeo c "SELECT AddTopoGeometry(name, 'ne_provinces', gid) FROM ne_provinces ORDER BY name;" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
+ SELECT AddTopoGeometry(name, 'ne_provinces', gid) FROM ne_provinces ORDER BY name;" -q -n -o create_db.log
 echo "Creating country topos"
-psql -U ecoinvent -d eigeo -c "SELECT AddTopoGeometry(name, 'ne_countries', gid) FROM ne_countries ORDER BY name;" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
+ SELECT AddTopoGeometry(name, 'ne_countries', gid) FROM ne_countries ORDER BY name;" -q -n -o create_db.log
 echo "Creating sovereign state topos"
-psql -U ecoinvent -d eigeo -c "SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
+ SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
 
 echo "Getting and processing cutout geometries"
 echo "SPP"

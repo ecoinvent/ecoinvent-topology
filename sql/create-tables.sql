@@ -3,6 +3,7 @@ SET STANDARD_CONFORMING_STRINGS TO ON;
 BEGIN;
 CREATE TABLE public.geometries (
   id SERIAL PRIMARY KEY,
+  gid int,
   name text,
   parent text,
   tname text
@@ -23,6 +24,7 @@ ALTER TABLE public.cutouts
 
 CREATE TABLE public.final (
   id SERIAL PRIMARY KEY,
+  gid int,
   collection text,
   name text,
   ISOTwoLetterCode text,
