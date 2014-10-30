@@ -330,13 +330,18 @@ with open("country-uuid.json", "w") as f:
 Add small polygons from provinces to their countries
 ====================================================
 
-The ideal would be to use topology primitives, i.e. some combination of:
+Function to create union of two polygon topologies:
 
-    * http://postgis.net/docs/TopoElementArray_Agg.html
-    * http://postgis.net/docs/GetTopoGeomElements.html
-    * http://postgis.net/docs/topoelementarray.html
-
-However, this is rather difficult, at least for me. Strong typing, weird SQL set logic, etc.
+    CREATE OR REPLACE FUNCTION PolygonTopoUnion(topo varchar, layer int, topo1 topogeometry, topo2 topogeometry)
+    RETURNS topogeometry as $$
+      SELECT CreateTopoGeom(topo, 3, layer, TopoElementArray_Agg(t2.element)) as geom from (
+          select distinct element from (
+              (select GetTopoGeomElements(topo1) as element) union
+              (select GetTopoGeomElements(topo2) as element)
+          ) as t1
+          order by t1.element
+      ) as t2
+    $$ language 'sql' volatile;
 
 Identify missing faces:
 
@@ -349,46 +354,20 @@ Identify missing faces:
 
 Add missing faces to country:
 
-update geometries gg set topogeom = ToTopoGeom(ST_Union(geometry(f.p), geometry(f.c)), 'ei_topo', 1, 0) from (
-    select g2.id as id, g.topogeom as p, g2.topogeom as c
-        from geometries g
-        left join ne_provinces p on g.gid = p.gid
-        left join ne_countries c on c.admin = p.admin
-        left join geometries g2 on g2.gid = c.gid
-        where g.tname = 'ne_provinces'
-        and g2.tname = 'ne_countries'
-        and st_intersects(g.topogeom, g2.topogeom)
-        and not topocontains(g2.topogeom, g.topogeom)
-        order by g.id, g.name
-        limit 1
-) as f
-where gg.id = f.id;
+    update geometries gg set topogeom = PolygonTopoUnion('ei_topo', 1, f.p, f.c) from (
+        select p.name as province_name, p.admin as province_admin, c.name as country_name, c.admin as country_admin, g.id as province_id, g2.id as country_id, g.topogeom as p, g2.topogeom as c
+            from geometries g
+            left join ne_provinces p on g.gid = p.gid
+            left join ne_countries c on c.admin = p.admin
+            left join geometries g2 on g2.gid = c.gid
+            where g.tname = 'ne_provinces'
+            and g2.tname = 'ne_countries'
+            and not topocontains(g2.topogeom, g.topogeom)
+            order by g.name, g2.name
+    ) as f
+    where gg.id = f.country_id;
 
-
-
-    select g2.id as id, g.topogeom as p, g2.topogeom as c
-        from geometries g
-        left join ne_provinces p on g.gid = p.gid
-        left join ne_countries c on c.admin = p.admin
-        left join geometries g2 on g2.gid = c.gid
-        where g.tname = 'ne_provinces'
-        and g2.tname = 'ne_countries'
-        and st_intersects(g.topogeom, g2.topogeom)
-        and not topocontains(g2.topogeom, g.topogeom)
-        order by g.id, g.name
-        limit 1
-
-
-
-CreateTopoGeom('ei_topo', 3, 1, TopoElementArray_Agg(t2.element))) as geom from (
-    select distinct element from (
-        (select GetTopoGeomElements(topogeom) as element from geometries where name = 'Nunavut' and tname = 'ne_provinces') union
-        (select GetTopoGeomElements(topogeom) as element from geometries where name = 'Canada'  and tname = 'ne_countries')
-    ) as t1
-    order by t1.element
-) as t2
-
-
+However, because of some weird race condition (maybe c.topogeom is not being updated automatically), we use the python script iterative_add_process, which does one at a time until there are no problems left.
 
 Backup SQL data
 ===============
