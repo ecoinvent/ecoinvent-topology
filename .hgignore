@@ -6,3 +6,4 @@ data/states
 sql/cutouts/*.sql
 sql/ne_*.sql
 create_db.log
+output
