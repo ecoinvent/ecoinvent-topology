@@ -51,7 +51,7 @@ RETURNS int AS $$
 $$ language 'sql';
 
 
-CREATE OR REPLACE FUNCTION TopoContains(inside topogeometry, outside topogeometry)
+CREATE OR REPLACE FUNCTION TopoContains(outside topogeometry, inside topogeometry)
 RETURNS boolean AS $$
   select count(*) = 0 from (
     (select GetTopoGeomElements(inside)) except (select GetTopoGeomElements(outside))
