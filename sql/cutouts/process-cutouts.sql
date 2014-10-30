@@ -5,7 +5,7 @@ BEGIN;
 insert into geometries (name, tname, topogeom)
     values ('mro', 'cutouts',
         toTopoGeom(ST_Intersection(
-            (select ST_Union(geometry(topogeom)) from geometries where tname = 'ne_provinces' and name in ('Montana', 'South Dakota', 'Nebraska', 'Michigan', 'Wisconsin')),
+            (select ST_Union(geometry(topogeom)) from geometries where tname = 'ne_provinces' and name in ('Montana', 'South Dakota', 'Nebraska')),
             (select geom from cutouts where name = 'Midwest Reliability Organization')),
             'ei_topo', 1, 0.000001
     ));
@@ -128,13 +128,13 @@ from (select
     (select ST_GeomFromEWKT('SRID=4326;POINT(-80.86 37.0)') as str) union
     (select ST_GeomFromEWKT('SRID=4326;POINT(-78.23 38.8)') as str)
 ) as t1;
-insert into geometries (name, tname, topogeom)
-    values ('rfc', 'cutouts',
-        toTopoGeom(ST_Intersection(
-            (select ST_Union(geometry(topogeom)) from geometries where tname = 'ne_provinces' and name in ('Michigan', 'Wisconsin')),
-            (select geom from cutouts where name = 'ReliabilityFirst Corporation')),
-            'ei_topo', 1, 0.000001
-    ));
+-- insert into geometries (name, tname, topogeom)
+--     values ('rfc', 'cutouts',
+--         toTopoGeom(ST_Intersection(
+--             (select ST_Union(geometry(topogeom)) from geometries where tname = 'ne_provinces' and name in ('Michigan', 'Wisconsin')),
+--             (select geom from cutouts where name = 'ReliabilityFirst Corporation')),
+--             'ei_topo', 1, 0.000001
+--     ));
 insert into geometries (name, tname, topogeom)
     values ('ascc', 'cutouts',
         toTopoGeom(ST_Intersection(
