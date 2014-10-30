@@ -1,5 +1,11 @@
 [
   [
+    "France",
+    {
+      "ne_provinces": ["Ardèche", "Ain", "Creuse", "Aisne", "Allier", "Alpes-de-Haute-Provence", "Alpes-Maritimes", "Ardennes", "Ariège", "Aube", "Aude", "Aveyron", "Doubs", "Bas-Rhin", "Gers", "Bouches-du-Rhône", "Calvados", "Cantal", "Charente", "Charente-Maritime", "Cher", "Haute-Corse", "Corrèze", "Corse-du-Sud", "Côte-d'Or", "Côtes-d'Armor", "Deux-Sèvres", "Haute-Loire", "Dordogne", "Drôme", "Essonne", "Eure", "Hérault", "Eure-et-Loir", "Indre", "Finistère", "Gard", "Gironde", "Haute-Rhin", "Haute-Garonne", "Haute-Marne", "Haute-Saône", "Haute-Savoie", "Haute-Vienne", "Indre-et-Loire", "Hautes-Alpes", "Hautes-Pyrénées", "Hauts-de-Seine", "Ille-et-Vilaine", "Isère", "Jura", "Landes", "Loir-et-Cher", "Loire", "Loire-Atlantique", "Loiret", "Lot", "Maine-et-Loire", "Manche", "Marne", "Mayenne", "Meurhe-et-Moselle", "Meuse", "Puy-de-Dôme", "Morbihan", "Moselle", "Rhône", "Nièvre", "Tarn-et-Garonne", "Nord", "Territoire de Belfort", "Oise", "Val-d'Oise", "Val-de-Marne", "Orne", "Paris", "Pas-de-Calais", "Pyrénées-Atlantiques", "Pyrénées-Orientales", "Saône-et-Loire", "Sarthe", "Savoie", "Seien-et-Marne", "Seine-Maritime", "Seine-Saint-Denis", "Somme", "Tarn", "Var", "Vaucluse", "Vendée", "Vienne", "Vosges", "Yonne", "Yvelines"]
+    }
+  ],
+  [
     "Russian Federation (Europe)",
     {
       "ne_provinces": [
@@ -822,8 +828,8 @@
         "Maine",
         "Nova Scotia",
         "Prince Edward Island",
-        "New Brunswick",
+        "New Brunswick"
       ]
     }
-  ],
+  ]
 ]

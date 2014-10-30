@@ -1,7 +1,6 @@
 TODO
 ====
 
-* Add metadata from ne_countries
 * Parse recipes and write SQL
 * Export to geopackage
 * Finish recipes
@@ -208,7 +207,7 @@ Usage:
 Turn topographies back into normal geographies
 ----------------------------------------------
 
-update public.ne_geometry set geom = geometry(topogeom);
+geometry(topogeom)
 
 Eliminate non-branching nodes
 -----------------------------
