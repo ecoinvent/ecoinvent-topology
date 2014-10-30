@@ -157,6 +157,11 @@ Load the following tables:
     * ne_topo.edge_data
     * ne_topo.node
 
+Simplification
+==============
+
+**Note**: We don't use simplification for now.
+
 Find optimum simplifcation tolerance
 ------------------------------------
 
@@ -207,7 +212,7 @@ update public.ne_geometry set geom = geometry(topogeom);
 Eliminate non-branching nodes
 -----------------------------
 
-Should be run several times:
+Defined in sql/create-functions.sql, and run in python/eliminate_nodes.py:
 
 CREATE OR REPLACE FUNCTION EliminateNonBranchingNodes()
 RETURNS int AS $$
@@ -232,9 +237,10 @@ RETURNS int AS $$
     limit 1;
 $$ language 'sql';
 
-
 Utility functions
 -----------------
+
+Defined in sql/create-functions.sql:
 
 CREATE OR REPLACE FUNCTION ExtractOnlyPolygons(geom geometry)
 RETURNS geometry AS $$
@@ -320,3 +326,116 @@ for row in sheet.rows[1:]:
 
 with open("country-uuid.json", "w") as f:
     f.write(json.dumps(data, ensure_ascii=False, indent=2).encode('utf8'))
+
+Add small polygons from provinces to their countries
+====================================================
+
+The ideal would be to use topology primitives, i.e. some combination of:
+
+    * http://postgis.net/docs/TopoElementArray_Agg.html
+    * http://postgis.net/docs/GetTopoGeomElements.html
+    * http://postgis.net/docs/topoelementarray.html
+
+However, this is rather difficult, at least for me. Strong typing, weird SQL set logic, etc.
+
+Identify missing faces:
+
+    select ST_GetFaceGeometry('ei_topo', t1.faces[1]),
+        row_number() OVER () as rnum -- Need unique id for Qgis
+        from (
+            (select GetTopoGeomElements(topogeom) as faces from geometries where tname = 'ne_provinces') except
+            (select GetTopoGeomElements(topogeom) as faces from geometries where tname = 'ne_countries')
+        ) as t1
+
+Add missing faces to country:
+
+update geometries gg set topogeom = ToTopoGeom(ST_Union(geometry(f.p), geometry(f.c)), 'ei_topo', 1, 0) from (
+    select g2.id as id, g.topogeom as p, g2.topogeom as c
+        from geometries g
+        left join ne_provinces p on g.gid = p.gid
+        left join ne_countries c on c.admin = p.admin
+        left join geometries g2 on g2.gid = c.gid
+        where g.tname = 'ne_provinces'
+        and g2.tname = 'ne_countries'
+        and st_intersects(g.topogeom, g2.topogeom)
+        and not topocontains(g2.topogeom, g.topogeom)
+        order by g.id, g.name
+        limit 1
+) as f
+where gg.id = f.id;
+
+
+
+    select g2.id as id, g.topogeom as p, g2.topogeom as c
+        from geometries g
+        left join ne_provinces p on g.gid = p.gid
+        left join ne_countries c on c.admin = p.admin
+        left join geometries g2 on g2.gid = c.gid
+        where g.tname = 'ne_provinces'
+        and g2.tname = 'ne_countries'
+        and st_intersects(g.topogeom, g2.topogeom)
+        and not topocontains(g2.topogeom, g.topogeom)
+        order by g.id, g.name
+        limit 1
+
+
+
+CreateTopoGeom('ei_topo', 3, 1, TopoElementArray_Agg(t2.element))) as geom from (
+    select distinct element from (
+        (select GetTopoGeomElements(topogeom) as element from geometries where name = 'Nunavut' and tname = 'ne_provinces') union
+        (select GetTopoGeomElements(topogeom) as element from geometries where name = 'Canada'  and tname = 'ne_countries')
+    ) as t1
+    order by t1.element
+) as t2
+
+
+
+Backup SQL data
+===============
+
+See: http://mattmakesmaps.com/blog/2014/01/15/using-pg-dump-with-postgis-topology/#.VCNBTQBjre0.twitter
+
+pg_dump --schema=topology --schema=public --schema=ei_topo --file=output/ei_topo.sql -U ecoinvent eigeo
+
+Changed:
+
+    SET search_path = topology, pg_catalog;
+
+    --
+    -- Data for Name: layer; Type: TABLE DATA; Schema: topology; Owner: ecoinvent
+    --
+
+    COPY layer (topology_id, layer_id, schema_name, table_name, feature_column, feature_type, level, child_id) FROM stdin;
+    1   1   public  geometries  topogeom    3   0   \N
+    \.
+
+
+    --
+    -- Data for Name: topology; Type: TABLE DATA; Schema: topology; Owner: ecoinvent
+    --
+
+    COPY topology (id, name, srid, "precision", hasz) FROM stdin;
+    1   ei_topo 4326    0   f
+    \.
+
+To:
+
+    SET search_path = topology, pg_catalog;
+
+    --
+    -- Data for Name: topology; Type: TABLE DATA; Schema: topology; Owner: ecoinvent
+    --
+
+    COPY topology (id, name, srid, "precision", hasz) FROM stdin;
+    1   ei_topo 4326    0   f
+    \.
+
+    --
+    -- Data for Name: layer; Type: TABLE DATA; Schema: topology; Owner: ecoinvent
+    --
+
+    COPY layer (topology_id, layer_id, schema_name, table_name, feature_column, feature_type, level, child_id) FROM stdin;
+    1   1   public  geometries  topogeom    3   0   \N
+    \.
+
+
