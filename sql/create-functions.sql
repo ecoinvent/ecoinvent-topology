@@ -51,12 +51,24 @@ RETURNS int AS $$
 $$ language 'sql';
 
 
-CREATE OR REPLACE FUNCTION _TopoContains(inside topogeometry, outside topogeometry)
+CREATE OR REPLACE FUNCTION TopoContains(inside topogeometry, outside topogeometry)
 RETURNS boolean AS $$
   select count(*) = 0 from (
     (select GetTopoGeomElements(inside)) except (select GetTopoGeomElements(outside))
   ) as t1;
 $$ language 'sql' stable;
+
+
+CREATE OR REPLACE FUNCTION PolygonTopoUnion(topo varchar, layer int, topo1 topogeometry, topo2 topogeometry)
+RETURNS topogeometry as $$
+  SELECT CreateTopoGeom(topo, 3, layer, TopoElementArray_Agg(t2.element)) as geom from (
+      select distinct element from (
+          (select GetTopoGeomElements(topo1) as element) union
+          (select GetTopoGeomElements(topo2) as element)
+      ) as t1
+      order by t1.element
+  ) as t2
+$$ language 'sql' volatile;
 
 
 CREATE OR REPLACE FUNCTION TopoContainsWarning(inside varchar, outside varchar)
@@ -73,5 +85,12 @@ BEGIN
 END;
 $$
 LANGUAGE 'plpgsql' stable strict;
+
+
+CREATE OR REPLACE FUNCTION ExtractOnlyPolygons(geom geometry)
+RETURNS geometry AS $$
+    SELECT ST_MakeValid(ST_CollectionExtract(geom, 3))
+$$ language 'sql';
+
 
 COMMIT;
