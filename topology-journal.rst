@@ -21,6 +21,7 @@ Problem geometries
 
 France, including overseas territories
 Spain, including overseas territories
+Netherlands, including overseas territories
 
 Southwest Power Pool
 Florida Reliability Coordinating Council
@@ -368,6 +369,8 @@ Add missing faces to country:
     where gg.id = f.country_id;
 
 However, because of some weird race condition (maybe c.topogeom is not being updated automatically), we use the python script iterative_add_process, which does one at a time until there are no problems left.
+
+.. warning:: This is not perfect - there are still missing parts in the Spratley islands and South Georgia islands, but they don't really matter for now. Hopefully...
 
 Backup SQL data
 ===============

@@ -83,8 +83,11 @@ if [[ $rc != 0 ]] ; then
     exit $rc
 fi
 
+echo "Adding missing province faces to countries"
+python python/iterative_add_provinces.py
+
 # echo "Adding missing province parts (mostly islands) to their countries"
 # psql -U ecoinvent -d eigeo -f sql/union_province_countries.sql -q -n -o create_db.log
 
-# echo "Building country geometries"
-# psql -U ecoinvent -d eigeo -f sql/build_countries.sql -q -n -o create_db.log
+echo "Building country geometries"
+psql -U ecoinvent -d eigeo -f sql/build_countries.sql -q -n -o create_db.log
