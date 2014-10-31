@@ -95,3 +95,11 @@ python python/parse_recipes.py
 
 echo "Building final geometries"
 psql -U ecoinvent -d eigeo -f sql/recipes.sql -q -n -o create_db.log
+
+echo "Adding lat/long to final geometries"
+psql -U ecoinvent -d eigeo -c "UPDATE final SET longitude = st_x(st_centroid(geom));" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "UPDATE final SET latitude = st_y(st_centroid(geom));" -q -n -o create_db.log
+
+echo "Cleaning up missing attributes"
+psql -U ecoinvent -d eigeo -c "UPDATE final SET unregioncode = 0 WHERE unregioncode <= 0;" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "UPDATE final SET uncode = 0 WHERE uncode <= 0;" -q -n -o create_db.log
