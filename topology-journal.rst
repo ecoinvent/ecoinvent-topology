@@ -2,8 +2,11 @@ TODO
 ====
 
 * Spain and Netherlands (only Europe)
-* Export to geopackage
+* Use admin instead fo name? e.g. Bosnia and Herz -> Herz., Russia/Russian Federation
+* Finish recipes for US electricity regions
+* How to define France? Do we need to add to geometries table?
 * Finish recipes
+* "Al producing Area 2, North America, without Quebec" and "Al producing Area 2, North America" overlap
 
 Changes
 =======
@@ -13,7 +16,6 @@ Changes
 * Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
-* The UN subregion Micronesia is now "Micronesia, UN subregion"
 
 Problem geometries
 ==================

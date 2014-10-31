@@ -16,7 +16,7 @@ psql -U ecoinvent -d eigeo -f sql/ne_provinces.sql -q -n -o create_db.log
 
 echo "Fix problem with one province self-intersecting ring"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
- update ne_provinces set geom = ST_MakeValid(geom) where ST_IsValid(geom) = False;"
+ update ne_provinces set geom = ST_MakeValid(geom) where ST_IsValid(geom) = False;" -q -n -o create_db.log
 
 echo "Creating province topos"
 echo "This will take some time; An error will be raised for Paphos - it can be ignored"
@@ -25,7 +25,7 @@ psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
 psql -U ecoinvent -d eigeo -c "UPDATE geometries g SET parent = s.admin FROM (SELECT gid, admin from ne_provinces) AS s WHERE g.gid = s.gid AND g.tname = 'ne_provinces'" -q -n -o create_db.log
  echo "Creating country topos"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
- SELECT AddTopoGeometry(name, 'ne_countries', gid) FROM ne_countries ORDER BY name;" -q -n -o create_db.log
+ SELECT AddTopoGeometry(admin, 'ne_countries', gid) FROM ne_countries ORDER BY name;" -q -n -o create_db.log
 echo "Creating sovereign state topos"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
@@ -103,3 +103,6 @@ psql -U ecoinvent -d eigeo -c "UPDATE final SET latitude = st_y(st_centroid(geom
 echo "Cleaning up missing attributes"
 psql -U ecoinvent -d eigeo -c "UPDATE final SET unregioncode = 0 WHERE unregioncode <= 0;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE final SET uncode = 0 WHERE uncode <= 0;" -q -n -o create_db.log
+
+echo "Exporting"
+python python/export_all.py

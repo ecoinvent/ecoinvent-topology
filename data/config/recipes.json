@@ -63,6 +63,8 @@
           "Loire-Atlantique",
           "Loiret",
           "Lot",
+          "Lot-et-Garonne",
+          "Lozère",
           "Maine-et-Loire",
           "Manche",
           "Marne",
@@ -655,7 +657,7 @@
     }
   ],
   [
-    "Micronesia, UN subregion",
+    "Micronesia",
     "un-subregions",
     {
       "ne_countries": [
