@@ -2,12 +2,11 @@ TODO
 ====
 
 * Spain and Netherlands (only Europe)
-* Use admin instead fo name? e.g. Bosnia and Herz -> Herz., Russia/Russian Federation
-* Finish recipes for US electricity regions
-* How to define France? Do we need to add to geometries table?
-* Finish recipes
-* "Al producing Area 2, North America, without Quebec" and "Al producing Area 2, North America" overlap
+* How to define France? Do we need to add to geometries table? (Problem is that we define France from geometries table, but better france is in other table and is not topo - need real france in geometries table)
 * Fix Paphos
+* Fix UN regions
+* Fix UN subregions
+* Finish recipes (Europe without, European elect - systematic comparison needed)
 
 Changes
 =======
@@ -17,6 +16,7 @@ Changes
 * Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
+* HICC no longer included, as its area was identical to Hawaii
 
 Problem geometries
 ==================
@@ -160,6 +160,8 @@ It assumes the following:
 1. You have python installed on your machine
 2. You have Postgresql and PostGIS installed on your machine
 3. You have a Postgresql user named "ecoinvent" who can create tables
+
+Shell script takes a few hours to run.
 
 Setup
 =====

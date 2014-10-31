@@ -12,7 +12,7 @@ SET client_min_messages TO WARNING;
 BEGIN;\n"""
 FOOTER = u"""\nCOMMIT;\n"""
 
-BEGINNING = u"""INSERT INTO final (name, collection, geom) SELECT {name}, {collection}, ST_Union(geometry(t1.topogeom)) FROM ("""
+BEGINNING = u"""INSERT INTO final (name, collection, geom) SELECT {name}, {collection}, ST_Multi(ST_Union(geometry(t1.topogeom))) FROM ("""
 TEMPLATE = u"""SELECT topogeom FROM geometries g where g.tname = {tablename} {parent}and g.name {name_filter} """
 
 

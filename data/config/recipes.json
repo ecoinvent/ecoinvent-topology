@@ -107,11 +107,11 @@
     }
   ],
   [
-    "Russian Federation (Europe)",
+    "Russia (Europe)",
     "russia",
     {
       "ne_provinces": [
-        "Russian Federation",
+        "Russia",
         [
           "Kaliningrad",
           "Rostov",
@@ -174,11 +174,11 @@
     }
   ],
   [
-    "Russian Federation (Asia)",
+    "Russia (Asia)",
     "russia",
     {
       "ne_provinces": [
-        "Russian Federation",
+        "Russia",
         [
           "Chelyabinsk",
           "Kurgan",
@@ -255,7 +255,8 @@
           "Nunavut",
           "Ontario",
           "Prince Edward Island",
-          "Yukon Territory"
+          "Saskatchewan",
+          "Yukon"
         ]
       ]
     }
@@ -276,6 +277,7 @@
     "aluminium",
     {
       "ne_countries": [
+        "Baykonur Cosmodrome",
         "Japan",
         "North Korea",
         "Tajikistan",
@@ -308,7 +310,7 @@
         "Montenegro",
         "Poland",
         "Romania",
-        "Russian Federation",
+        "Russia",
         "Slovakia",
         "Slovenia",
         "Ukraine"
@@ -464,6 +466,7 @@
     "un-subregions",
     {
       "ne_countries": [
+        "Baykonur Cosmodrome",
         "Kazakhstan",
         "Kyrgyzstan",
         "Tajikistan",
@@ -561,7 +564,7 @@
         "Poland",
         "Republic of Moldova",
         "Romania",
-        "Russian Federation",
+        "Russia",
         "Slovakia",
         "Ukraine"
       ]
@@ -726,9 +729,9 @@
         "Cameroon",
         "Central African Republic",
         "Chad",
-        "Congo",
+        "Republic of Congo",
         "Democratic Republic of the Congo",
-        "Equatorial , [Guinea",
+        "Equatorial Guinea",
         "Gabon",
         "Sao Tome and Principe"
       ]
@@ -769,12 +772,12 @@
       "ne_countries": [
         "Benin",
         "Burkina Faso",
-        "Cabo Verde",
-        "Cote d'Ivoire",
+        "Cape Verde",
+        "Ivory Coast",
         "Gambia",
         "Ghana",
         "Guinea",
-        "Guinea-Bissau",
+        "Guinea Bissau",
         "Liberia",
         "Mali",
         "Mauritania",
@@ -798,24 +801,24 @@
         "Botswana",
         "Burkina Faso",
         "Burundi",
-        "Cabo Verde",
+        "Cape Verde",
         "Cameroon",
         "Central African Republic",
         "Chad",
         "Comoros",
-        "Congo",
-        "Cote d'Ivoire",
+        "Republic of Congo",
+        "Ivory Coast",
         "Democratic Republic of the Congo",
         "Djibouti",
         "Egypt",
-        "Equatorial , [Guinea",
+        "Equatorial Guinea",
         "Eritrea",
         "Ethiopia",
         "Gabon",
         "Gambia",
         "Ghana",
         "Guinea",
-        "Guinea-Bissau",
+        "Guinea Bissau",
         "Kenya",
         "Lesotho",
         "Liberia",
@@ -839,6 +842,7 @@
         "Seychelles",
         "Sierra Leone",
         "Somalia",
+        "Somaliland",
         "South Africa",
         "South Sudan",
         "Sudan",
@@ -915,12 +919,13 @@
     "Asia, UN Region",
     "un-regions",
     {
-      "final": [
+      "ne_countries": [
         "Afghanistan",
         "Armenia",
         "Azerbaijan",
         "Bahrain",
         "Bangladesh",
+        "Baykonur Cosmodrome",
         "Bhutan",
         "Brunei Darussalam",
         "Cambodia",
@@ -999,11 +1004,14 @@
         "Isle of Man",
         "Italy",
         "Jersey",
+        "Kosovo",
         "Latvia",
         "Liechtenstein",
         "Lithuania",
         "Luxembourg",
         "Malta",
+        "Macedonia",
+        "Moldova",
         "Monaco",
         "Montenegro",
         "Netherlands",
@@ -1011,8 +1019,9 @@
         "Poland",
         "Portugal",
         "Republic of Moldova",
+        "Republic of Serbia",
         "Romania",
-        "Russian Federation",
+        "Russia",
         "San Marino",
         "Serbia",
         "Slovakia",
@@ -1153,13 +1162,16 @@
         ],
         "United States of America",
         [
-          "Washington",
-          "Oregon",
+          "Arizona",
           "California",
-          "Nevada",
-          "Utah",
-          "Utah",
           "Colorado",
+          "Idaho",
+          "Nevada",
+          "New Mexico",
+          "Oregon",
+          "Utah",
+          "Utah",
+          "Washington",
           "Wyoming"
         ]
       ]
@@ -1200,6 +1212,11 @@
           "Saskatchewan",
           "Manitoba",
           "Wisconsin"
+        ],
+        "Canada",
+        [
+          "Manitoba",
+          "Saskatchewan"
         ]
       ]
     }
@@ -1240,6 +1257,15 @@
           "North Carolina",
           "Tennessee"
         ]
+      ]
+    }
+  ],
+  [
+    "Alaska Systems Coordinating Council",
+    "americas-electricity",
+    {
+      "cutouts": [
+        "ascc"
       ]
     }
   ],
