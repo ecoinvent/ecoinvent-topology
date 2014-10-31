@@ -4,6 +4,7 @@ data/countries
 data/provinces
 data/states
 sql/cutouts/*.sql
+sql/recipes.sql
 sql/ne_*.sql
 create_db.log
 output

@@ -1,7 +1,7 @@
 TODO
 ====
 
-* Parse recipes and write SQL
+* Spain and Netherlands (only Europe)
 * Export to geopackage
 * Finish recipes
 
@@ -9,11 +9,11 @@ Changes
 =======
 
 * Removed Churchill Falls generating station (shouldn't have been included in the first place)
-* Simplified
 * Merged IAI regions 6A & B at request of Pascal Lesage (location 957d3a44-9ec2-4829-b5fe-17ba975a45da is therefore deleted)
-* Made IAI regions names and shortnames more consistent
+* Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
+* The UN subregion Micronesia is now "Micronesia, UN subregion"
 
 Problem geometries
 ==================
@@ -63,6 +63,89 @@ Ecoinvent-required fields - mapping with ne_countries
 * uuid
 * shortname:
 * name (multiple languages): name
+
+Recipes file format
+===================
+
+Each recipe has the following format:
+
+
+  [
+    name,
+    collection,
+    {
+      geometry tablename: [list of constituent names]
+    }
+  ]
+
+This generic recipe would generate the following SQL:
+
+    INSERT INTO final (name, collection, geom)
+        select name, collection, ST_Union(geometry(t1.topogeom))
+        FROM (
+            SELECT topogeom FROM geometries g
+            where g.tname = geometry tablename
+            and g.name in (list of constituent names)
+        ) as t1;
+
+If there are two tablenames, the recipe would be:
+
+  [
+    name,
+    collection,
+    {
+      tablename one: [list one],
+      tablename two: [list two]
+    }
+  ]
+
+And the SQL:
+
+    INSERT INTO final (name, collection, geom)
+        select name, collection, ST_Union(geometry(t1.topogeom))
+        FROM (
+            SELECT topogeom FROM geometries g
+            where g.tname = tablename one
+            and g.name in (list one)
+            UNION
+            select topogeom
+            FROM geometries g
+            where g.tname = tablename two
+            and g.name in (list two)
+        ) as t1;
+
+One special case is for provinces, where we need to also include the country:
+
+  [
+    "Northeast Power Coordinating Council",
+    "americas-electricity",
+    {
+      "ne_provinces": [
+        "Canada", ["Québec", ...]],
+        "United States", ["New York", ...]]
+      ]
+    }
+  ]
+
+Note the syntax change: ``ne_provinces`` is now a list, with steps of ``country, [list of provinces]``.
+
+In this case, the SQL would also include filtering by parent:
+
+    INSERT INTO final (name, collection, geom)
+        SELECT 'Northeast Power Coordinating Council', 'americas-electricity', ST_Union(geometry(t1.topogeom))
+        FROM (
+            SELECT topogeom
+            FROM geometries g
+            where g.tname = 'ne_provinces'
+            AND g.parent = 'Canada'
+            and g.name IN ('Québec', ...)
+            UNION
+            SELECT topogeom
+            FROM geometries g
+            where g.tname = 'ne_provinces'
+            AND g.parent = 'United States'
+            and g.name IN ('New York', ...)
+        ) as t1;
 
 Shell script
 ============

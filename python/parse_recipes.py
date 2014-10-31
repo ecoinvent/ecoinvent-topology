@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*
 import codecs
+import itertools
 import json
 import os
 
@@ -11,29 +12,49 @@ SET client_min_messages TO WARNING;
 BEGIN;\n"""
 FOOTER = u"""\nCOMMIT;\n"""
 
-TEMPLATE_SIMPLE = u"""INSERT INTO final (name, collection, geom) select %s, 'recipes', ST_Union(geometry(g.topogeom)) FROM geometries g where g.tname = %s and g.name = %s;"""
-TEMPLATE_SINGLE = u"""INSERT INTO final (name, collection, geom) select %s, 'recipes', ST_Union(geometry(g.topogeom)) FROM geometries g where g.tname = %s and g.name in (%s);"""
-# TEMPLATE_MULTI = u""""""
+BEGINNING = u"""INSERT INTO final (name, collection, geom) SELECT {name}, {collection}, ST_Union(geometry(t1.topogeom)) FROM ("""
+TEMPLATE = u"""SELECT topogeom FROM geometries g where g.tname = {tablename} {parent}and g.name {name_filter} """
+
 
 data = json.load(open(os.path.join(os.getcwd(), "data", "config", "recipes.json")))
-
 sql = []
 
-def _(s):
-    return u"'%s'" % s.replace("'", "''")
-
-for name, components in data:
-    if len(components) == 1 and len(components.values()[0]) == 1:
-        sql.append(TEMPLATE_SIMPLE % (_(name), _(components.keys()[0]), _(components.values()[0][0])))
-    elif len(components) == 1:
-        sql.append(TEMPLATE_SINGLE % (_(name), _(components.keys()[0]), ", ".join([_(x) for x in components.values()[0]])))
-
-    # s = u", ".join([u"('%s', '%s')" % (tname, name) for tname, values in components.items() for name in values])
-    # print (template_multi % s).encode('utf8')
+_ = lambda s: u"'%s'" % s.replace("'", "''")
+together = lambda values: "UNION ".join(list(values))
 
 
+def list_or_not(values):
+    if isinstance(values, basestring):
+        return u"= " + _(values)
+    elif len(values) == 1:
+        return u"= " + _(values[0])
+    else:
+        return u"IN (" + u", ".join([_(x) for x in values]) + u")"
+
+
+def format_query(tablename, objects):
+    if tablename == "ne_provinces":
+        return handle_provinces(tablename, objects)
+    else:
+        return [TEMPLATE.format(parent=u"", name_filter=list_or_not(objects), tablename=_(tablename))]
+
+
+def handle_provinces(tablename, objects):
+    return [TEMPLATE.format(
+        parent=u"AND g.parent = {p} ".format(p=_(country)),
+        name_filter=list_or_not(provinces),
+        tablename=_(tablename)
+        ) for country, provinces in zip(objects[::2], objects[1::2])
+    ]
+
+
+def consolidate(components):
+    return together(itertools.chain(*[format_query(x, y) for x, y in components.iteritems()]))
+
+
+sql = "\n".join([BEGINNING.format(name=_(x), collection=_(y)) + consolidate(z).strip() + u") as t1;" for x, y, z in data])
 
 with codecs.open(os.path.join(os.getcwd(), "sql", "recipes.sql"), "w", encoding='utf8') as f:
     f.write(HEADER)
-    f.write("\n".join(sql))
+    f.write(sql)
     f.write(FOOTER)
