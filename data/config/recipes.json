@@ -216,7 +216,7 @@
     "aluminium",
     {
       "ne_countries": [
-        "United States",
+        "United States of America",
         "Canada"
       ]
     }
@@ -240,7 +240,7 @@
     "aluminium",
     {
       "ne_countries": [
-        "United States"
+        "United States of America"
       ],
       "ne_provinces": [
         "Canada",
@@ -455,7 +455,7 @@
         "Canada",
         "Greenland",
         "Saint Pierre and Miquelon",
-        "United States"
+        "United States of America"
       ]
     }
   ],
@@ -1118,7 +1118,7 @@
         "Trinidad and Tobago",
         "Turks and Caicos Islands",
         "United States Virgin Islands",
-        "United States",
+        "United States of America",
         "Uruguay",
         "Venezuela"
       ]
@@ -1151,7 +1151,7 @@
           "British Columbia",
           "Alberta"
         ],
-        "United States",
+        "United States of America",
         [
           "Washington",
           "Oregon",
@@ -1175,7 +1175,7 @@
         "spp-east"
       ],
       "ne_provinces": [
-        "United States",
+        "United States of America",
         [
           "Oklahoma",
           "Kansas"
@@ -1192,7 +1192,7 @@
         "mro-ill"
       ],
       "ne_provinces": [
-        "United States",
+        "United States of America",
         [
           "Iowa",
           "Minnesota",
@@ -1231,7 +1231,7 @@
         "serc-west"
       ],
       "ne_provinces": [
-        "United States",
+        "United States of America",
         [
           "Alabama",
           "Mississippi",
@@ -1253,7 +1253,7 @@
         "rfc-ill"
       ],
       "ne_provinces": [
-        "United States",
+        "United States of America",
         [
           "Indiana",
           "Ohio",
@@ -1280,7 +1280,7 @@
           "Prince Edward Island",
           "New Brunswick"
         ],
-        "United States",
+        "United States of America",
         [
           "New York",
           "Connecticut",
