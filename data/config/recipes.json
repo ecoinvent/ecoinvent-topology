@@ -1,109 +1,217 @@
 [
   [
     "France",
+    "only-europe",
     {
-      "ne_provinces": ["Ardèche", "Ain", "Creuse", "Aisne", "Allier", "Alpes-de-Haute-Provence", "Alpes-Maritimes", "Ardennes", "Ariège", "Aube", "Aude", "Aveyron", "Doubs", "Bas-Rhin", "Gers", "Bouches-du-Rhône", "Calvados", "Cantal", "Charente", "Charente-Maritime", "Cher", "Haute-Corse", "Corrèze", "Corse-du-Sud", "Côte-d'Or", "Côtes-d'Armor", "Deux-Sèvres", "Haute-Loire", "Dordogne", "Drôme", "Essonne", "Eure", "Hérault", "Eure-et-Loir", "Indre", "Finistère", "Gard", "Gironde", "Haute-Rhin", "Haute-Garonne", "Haute-Marne", "Haute-Saône", "Haute-Savoie", "Haute-Vienne", "Indre-et-Loire", "Hautes-Alpes", "Hautes-Pyrénées", "Hauts-de-Seine", "Ille-et-Vilaine", "Isère", "Jura", "Landes", "Loir-et-Cher", "Loire", "Loire-Atlantique", "Loiret", "Lot", "Maine-et-Loire", "Manche", "Marne", "Mayenne", "Meurhe-et-Moselle", "Meuse", "Puy-de-Dôme", "Morbihan", "Moselle", "Rhône", "Nièvre", "Tarn-et-Garonne", "Nord", "Territoire de Belfort", "Oise", "Val-d'Oise", "Val-de-Marne", "Orne", "Paris", "Pas-de-Calais", "Pyrénées-Atlantiques", "Pyrénées-Orientales", "Saône-et-Loire", "Sarthe", "Savoie", "Seien-et-Marne", "Seine-Maritime", "Seine-Saint-Denis", "Somme", "Tarn", "Var", "Vaucluse", "Vendée", "Vienne", "Vosges", "Yonne", "Yvelines"]
+      "ne_provinces": [
+        "France",
+        [
+          "Ardèche",
+          "Ain",
+          "Creuse",
+          "Aisne",
+          "Allier",
+          "Alpes-de-Haute-Provence",
+          "Alpes-Maritimes",
+          "Ardennes",
+          "Ariège",
+          "Aube",
+          "Aude",
+          "Aveyron",
+          "Doubs",
+          "Bas-Rhin",
+          "Gers",
+          "Bouches-du-Rhône",
+          "Calvados",
+          "Cantal",
+          "Charente",
+          "Charente-Maritime",
+          "Cher",
+          "Haute-Corse",
+          "Corrèze",
+          "Corse-du-Sud",
+          "Côte-d'Or",
+          "Côtes-d'Armor",
+          "Deux-Sèvres",
+          "Haute-Loire",
+          "Dordogne",
+          "Drôme",
+          "Essonne",
+          "Eure",
+          "Hérault",
+          "Eure-et-Loir",
+          "Indre",
+          "Finistère",
+          "Gard",
+          "Gironde",
+          "Haute-Rhin",
+          "Haute-Garonne",
+          "Haute-Marne",
+          "Haute-Saône",
+          "Haute-Savoie",
+          "Haute-Vienne",
+          "Indre-et-Loire",
+          "Hautes-Alpes",
+          "Hautes-Pyrénées",
+          "Hauts-de-Seine",
+          "Ille-et-Vilaine",
+          "Isère",
+          "Jura",
+          "Landes",
+          "Loir-et-Cher",
+          "Loire",
+          "Loire-Atlantique",
+          "Loiret",
+          "Lot",
+          "Maine-et-Loire",
+          "Manche",
+          "Marne",
+          "Mayenne",
+          "Meurhe-et-Moselle",
+          "Meuse",
+          "Puy-de-Dôme",
+          "Morbihan",
+          "Moselle",
+          "Rhône",
+          "Nièvre",
+          "Tarn-et-Garonne",
+          "Nord",
+          "Territoire de Belfort",
+          "Oise",
+          "Val-d'Oise",
+          "Val-de-Marne",
+          "Orne",
+          "Paris",
+          "Pas-de-Calais",
+          "Pyrénées-Atlantiques",
+          "Pyrénées-Orientales",
+          "Saône-et-Loire",
+          "Sarthe",
+          "Savoie",
+          "Seien-et-Marne",
+          "Seine-Maritime",
+          "Seine-Saint-Denis",
+          "Somme",
+          "Tarn",
+          "Var",
+          "Vaucluse",
+          "Vendée",
+          "Vienne",
+          "Vosges",
+          "Yonne",
+          "Yvelines"
+        ]
+      ]
     }
   ],
   [
     "Russian Federation (Europe)",
+    "russia",
     {
       "ne_provinces": [
-        "Kaliningrad",
-        "Rostov",
-        "Tula",
-        "Volgograd",
-        "Belgorod",
-        "Krasnodar",
-        "Mordovia",
-        "Penza",
-        "Ryazan'",
-        "Tambov",
-        "Vladimir",
-        "Voronezh",
-        "Bashkortostan",
-        "Nenets",
-        "Komi",
-        "Kirov",
-        "Mariy-El",
-        "Udmurt",
-        "Astrakhan'",
-        "Chuvash",
-        "Kalmyk",
-        "Orenburg",
-        "Samara",
-        "Saratov",
-        "Tatarstan",
-        "Perm'",
-        "Ul'yanovsk",
-        "Ingush",
-        "Adygey",
-        "Karelia",
-        "Arkhangel'sk",
-        "Ivanovo",
-        "Kostroma",
-        "Karachay-Cherkess",
-        "Nizhegorod",
-        "Tver'",
-        "Vologda",
-        "Kabardin-Balkar",
-        "Yaroslavl'",
-        "Kaluga",
-        "Kursk",
-        "Lipetsk",
-        "Moskovsskaya",
-        "North Ossetia",
-        "Stavropol'",
-        "Moskva",
-        "Orel",
-        "Murmansk",
-        "Novgorod",
-        "Pskov",
-        "Leningrad",
-        "City of St. Petersburg",
-        "Bryansk",
-        "Smolensk",
-        "Chechnya",
-        "Dagestan"
+        "Russian Federation",
+        [
+          "Kaliningrad",
+          "Rostov",
+          "Tula",
+          "Volgograd",
+          "Belgorod",
+          "Krasnodar",
+          "Mordovia",
+          "Penza",
+          "Ryazan'",
+          "Tambov",
+          "Vladimir",
+          "Voronezh",
+          "Bashkortostan",
+          "Nenets",
+          "Komi",
+          "Kirov",
+          "Mariy-El",
+          "Udmurt",
+          "Astrakhan'",
+          "Chuvash",
+          "Kalmyk",
+          "Orenburg",
+          "Samara",
+          "Saratov",
+          "Tatarstan",
+          "Perm'",
+          "Ul'yanovsk",
+          "Ingush",
+          "Adygey",
+          "Karelia",
+          "Arkhangel'sk",
+          "Ivanovo",
+          "Kostroma",
+          "Karachay-Cherkess",
+          "Nizhegorod",
+          "Tver'",
+          "Vologda",
+          "Kabardin-Balkar",
+          "Yaroslavl'",
+          "Kaluga",
+          "Kursk",
+          "Lipetsk",
+          "Moskovsskaya",
+          "North Ossetia",
+          "Stavropol'",
+          "Moskva",
+          "Orel",
+          "Murmansk",
+          "Novgorod",
+          "Pskov",
+          "Leningrad",
+          "City of St. Petersburg",
+          "Bryansk",
+          "Smolensk",
+          "Chechnya",
+          "Dagestan"
+        ]
       ]
     }
   ],
   [
     "Russian Federation (Asia)",
+    "russia",
     {
       "ne_provinces": [
-        "Chelyabinsk",
-        "Kurgan",
-        "Yamal-Nenets",
-        "Sverdlovsk",
-        "Khanty-Mansiy",
-        "Omsk",
-        "Tyumen'",
-        "Altay",
-        "Gorno-Altay",
-        "Kemerovo",
-        "Khakass",
-        "Novosibirsk",
-        "Tuva",
-        "Buryat",
-        "Amur",
-        "Chita",
-        "Primor'ye",
-        "Sakha (Yakutia)",
-        "Yevrey",
-        "Khabarovsk",
-        "Maga Buryatdan",
-        "Sakhalin",
-        "Kamchatka",
-        "Tomsk",
-        "Chukchi Autonomous Okrug",
-        "Irkutsk",
-        "Krasnoyarsk"
+        "Russian Federation",
+        [
+          "Chelyabinsk",
+          "Kurgan",
+          "Yamal-Nenets",
+          "Sverdlovsk",
+          "Khanty-Mansiy",
+          "Omsk",
+          "Tyumen'",
+          "Altay",
+          "Gorno-Altay",
+          "Kemerovo",
+          "Khakass",
+          "Novosibirsk",
+          "Tuva",
+          "Buryat",
+          "Amur",
+          "Chita",
+          "Primor'ye",
+          "Sakha (Yakutia)",
+          "Yevrey",
+          "Khabarovsk",
+          "Maga Buryatdan",
+          "Sakhalin",
+          "Kamchatka",
+          "Tomsk",
+          "Chukchi Autonomous Okrug",
+          "Irkutsk",
+          "Krasnoyarsk"
+        ]
       ]
     }
   ],
   [
     "Al producing Area 2, North America",
+    "aluminium",
     {
       "ne_countries": [
         "United States of America",
@@ -113,6 +221,7 @@
   ],
   [
     "Al producing Area 1, Africa",
+    "aluminium",
     {
       "ne_countries": [
         "Cameroon",
@@ -126,25 +235,32 @@
   ],
   [
     "Al producing Area 2, North America, without Quebec",
+    "aluminium",
     {
       "ne_countries": [
-        "United States of America",
-        "Alberta",
-        "British Columbia",
-        "Manitoba",
-        "New Brunswick",
-        "Newfoundland and Labrador",
-        "Nova Scotia",
-        "Northwest Territories",
-        "Nunavut",
-        "Ontario",
-        "Prince Edward Island",
-        "Yukon Territory"
+        "United States of America"
+      ],
+      "ne_provinces": [
+        "Canada",
+        [
+          "Alberta",
+          "British Columbia",
+          "Manitoba",
+          "New Brunswick",
+          "Newfoundland and Labrador",
+          "Nova Scotia",
+          "Northwest Territories",
+          "Nunavut",
+          "Ontario",
+          "Prince Edward Island",
+          "Yukon Territory"
+        ]
       ]
     }
   ],
   [
     "Al producing Area 3, South America",
+    "aluminium",
     {
       "ne_countries": [
         "Argentina",
@@ -155,6 +271,7 @@
   ],
   [
     "Al producing Area 4 and 5, South and East Asia, without China",
+    "aluminium",
     {
       "ne_countries": [
         "Japan",
@@ -171,6 +288,7 @@
   ],
   [
     "Al producing Area 6A&B, West, East, and Central Europe",
+    "aluminium",
     {
       "ne_countries": [
         "France",
@@ -197,6 +315,7 @@
   ],
   [
     "Al producing Area 8, Gulf Region",
+    "aluminium",
     {
       "ne_countries": [
         "Bahrain",
@@ -208,6 +327,7 @@
   ],
   [
     "Union for the Co-ordination of Transmission of Electricity",
+    "legacy",
     {
       "ne_countries": [
         "Austria",
@@ -241,14 +361,18 @@
         "Slovakia"
       ],
       "ne_provinces": [
-        "Nordjylland",
-        "Midtjylland",
-        "Syddanmark"
+        "Denmark",
+        [
+          "Nordjylland",
+          "Midtjylland",
+          "Syddanmark"
+        ]
       ]
     }
   ],
   [
     "Caribbean",
+    "un-subregions",
     {
       "ne_countries": [
         "Anguilla",
@@ -284,6 +408,7 @@
   ],
   [
     "Central America",
+    "un-subregions",
     {
       "ne_countries": [
         "Belize",
@@ -320,6 +445,7 @@
   ],
   [
     "Northern America",
+    "un-subregions",
     {
       "ne_countries": [
         "Bermuda",
@@ -332,6 +458,7 @@
   ],
   [
     "Central Asia",
+    "un-subregions",
     {
       "ne_countries": [
         "Kazakhstan",
@@ -344,6 +471,7 @@
   ],
   [
     "Eastern Asia",
+    "un-subregions",
     {
       "ne_countries": [
         "China",
@@ -358,6 +486,7 @@
   ],
   [
     "Southern Asia",
+    "un-subregions",
     {
       "ne_countries": [
         "Afghanistan",
@@ -374,6 +503,7 @@
   ],
   [
     "South-Eastern Asia",
+    "un-subregions",
     {
       "ne_countries": [
         "Brunei Darussalam",
@@ -392,6 +522,7 @@
   ],
   [
     "Western Asia",
+    "un-subregions",
     {
       "ne_countries": [
         "Armenia",
@@ -417,6 +548,7 @@
   ],
   [
     "Eastern Europe",
+    "un-subregions",
     {
       "ne_countries": [
         "Belarus",
@@ -434,6 +566,7 @@
   ],
   [
     "Northern Europe",
+    "un-subregions",
     {
       "ne_countries": [
         "Åland Islands",
@@ -457,6 +590,7 @@
   ],
   [
     "Southern Europe",
+    "un-subregions",
     {
       "ne_countries": [
         "Albania",
@@ -480,6 +614,7 @@
   ],
   [
     "Western Europe",
+    "un-subregions",
     {
       "ne_countries": [
         "Austria",
@@ -496,6 +631,7 @@
   ],
   [
     "Australia and New Zealand",
+    "un-subregions",
     {
       "ne_countries": [
         "Australia",
@@ -506,6 +642,7 @@
   ],
   [
     "Melanesia",
+    "un-subregions",
     {
       "ne_countries": [
         "Fiji",
@@ -518,6 +655,7 @@
   ],
   [
     "Micronesia",
+    "un-subregions",
     {
       "ne_countries": [
         "Guam",
@@ -532,6 +670,7 @@
   ],
   [
     "Polynesia",
+    "un-subregions",
     {
       "ne_countries": [
         "American Samoa",
@@ -549,6 +688,7 @@
   ],
   [
     "Eastern Africa",
+    "un-subregions",
     {
       "ne_countries": [
         "Burundi",
@@ -576,6 +716,7 @@
   ],
   [
     "Middle Africa",
+    "un-subregions",
     {
       "ne_countries": [
         "Angola",
@@ -592,6 +733,7 @@
   ],
   [
     "Northern Africa",
+    "un-subregions",
     {
       "ne_countries": [
         "Algeria",
@@ -606,6 +748,7 @@
   ],
   [
     "Southern Africa",
+    "un-subregions",
     {
       "ne_countries": [
         "Botswana",
@@ -618,6 +761,7 @@
   ],
   [
     "Western Africa",
+    "un-subregions",
     {
       "ne_countries": [
         "Benin",
@@ -642,6 +786,7 @@
   ],
   [
     "Africa",
+    "un-regions",
     {
       "ne_countries": [
         "Eastern Africa",
@@ -654,87 +799,121 @@
   ],
   [
     "Latin America and the Caribbean",
+    "un-subregions",
     {
-      "ne_countries": [
-        "Caribbean",
-        "Central America",
-        "South America"
+      "final": [
+        "un-subregions",
+        [
+          "Caribbean",
+          "Central America",
+          "South America"
+        ]
       ]
     }
   ],
   [
     "Asia, UN Region",
+    "un-regions",
     {
-      "ne_countries": [
-        "Central Asia",
-        "Eastern Asia",
-        "Southern Asia",
-        "South-Eastern Asia",
-        "Western Asia"
+      "final": [
+        "un-subregions",
+        [
+          "Central Asia",
+          "Eastern Asia",
+          "Southern Asia",
+          "South-Eastern Asia",
+          "Western Asia"
+        ]
       ]
     }
   ],
   [
     "Europe, UN Region",
+    "un-regions",
     {
-      "ne_countries": [
-        "Eastern Europe",
-        "Northern Europe",
-        "Southern Europe",
-        "Western Europe"
+      "final": [
+        "un-subregions",
+        [
+          "Eastern Europe",
+          "Northern Europe",
+          "Southern Europe",
+          "Western Europe"
+        ]
       ]
     }
   ],
   [
     "Oceania",
+    "un-regions",
     {
-      "ne_countries": [
-        "Australia and New Zealand",
-        "Melanesia",
-        "Micronesia",
-        "Polynesia"
+      "final": [
+        "un-subregions",
+        [
+          "Australia and New Zealand",
+          "Melanesia",
+          "Micronesia",
+          "Polynesia"
+        ]
       ]
     }
   ],
   [
     "Americas",
+    "un-regions",
     {
-      "ne_countries": [
-        "Latin America and the Caribbean",
-        "Northern America"
+      "final": [
+        "un-subregions",
+        [
+          "Latin America and the Caribbean",
+          "Northern America"
+        ]
       ]
     }
   ],
   [
     "Québec, Hydro-Québec distribution network",
+    "special",
     {
-      "ne_provinces": ["Québec"]
+      "ne_provinces": [
+        "Canada",
+        [
+          "Québec"
+        ]
+      ]
     }
   ],
   [
     "Western Electricity Coordinating Council",
+    "americas-electricity",
     {
-      "ne_provinces": [
-        "British Columbia",
-        "Alberta",
-        "Washington",
-        "Oregon",
-        "California",
-        "Nevada",
-        "Utah",
-        "Utah",
-        "Colorado",
-        "Wyoming"
-      ],
       "cutouts": [
         "wecc-texas",
         "wecc-nm",
         "wecc-east"
+      ],
+      "ne_provinces": [
+        "Canada",
+        [
+          "British Columbia",
+          "Alberta"
+        ],
+        "United States",
+        [
+          "Washington",
+          "Oregon",
+          "California",
+          "Nevada",
+          "Utah",
+          "Utah",
+          "Colorado",
+          "Wyoming"
+        ]
       ]
     }
   ],
   [
     "Southwest Power Pool",
+    "americas-electricity",
     {
       "cutouts": [
         "spp-nm",
@@ -742,59 +921,77 @@
         "spp-east"
       ],
       "ne_provinces": [
-        "Oklahoma",
-        "Kansas"
+        "United States",
+        [
+          "Oklahoma",
+          "Kansas"
+        ]
       ]
     }
   ],
   [
     "Midwest Reliability Organization",
+    "americas-electricity",
     {
       "cutouts": [
         "mro",
         "mro-ill"
       ],
       "ne_provinces": [
-        "Iowa",
-        "Minnesota",
-        "North Dakota",
-        "Saskatchewan",
-        "Manitoba",
-        "Wisconsin"
+        "United States",
+        [
+          "Iowa",
+          "Minnesota",
+          "North Dakota",
+          "Saskatchewan",
+          "Manitoba",
+          "Wisconsin"
+        ]
       ]
     }
   ],
   [
     "Texas Regional Entity",
+    "americas-electricity",
     {
-      "cutouts": ["tre"]
+      "cutouts": [
+        "tre"
+      ]
     }
   ],
   [
     "Florida Reliability Coordinating Council",
+    "americas-electricity",
     {
-      "cutouts": ["frcc"]
+      "cutouts": [
+        "frcc"
+      ]
     }
   ],
   [
     "SERC Reliability Corporation",
+    "americas-electricity",
     {
       "cutouts": [
         "serc",
         "serc-west"
       ],
       "ne_provinces": [
-        "Alabama",
-        "Mississippi",
-        "Georgia",
-        "South Carolina",
-        "North Carolina",
-        "Tennessee"
+        "United States",
+        [
+          "Alabama",
+          "Mississippi",
+          "Georgia",
+          "South Carolina",
+          "North Carolina",
+          "Tennessee"
+        ]
       ]
     }
   ],
   [
     "ReliabilityFirst Corporation",
+    "americas-electricity",
     {
       "cutouts": [
         "rfc",
@@ -802,33 +999,43 @@
         "rfc-ill"
       ],
       "ne_provinces": [
-        "Indiana",
-        "Ohio",
-        "Pennsylvania",
-        "Maryland",
-        "New Jersey",
-        "Delaware",
-        "West Virginia",
-        "Michigan"
+        "United States",
+        [
+          "Indiana",
+          "Ohio",
+          "Pennsylvania",
+          "Maryland",
+          "New Jersey",
+          "Delaware",
+          "West Virginia",
+          "Michigan"
+        ]
       ]
     }
   ],
   [
     "Northeast Power Coordinating Council",
+    "americas-electricity",
     {
       "ne_provinces": [
-        "Québec",
-        "New York",
-        "Connecticut",
-        "Rhode Island",
-        "Massachusetts",
-        "Vermont",
-        "Ontario",
-        "New Hampshire",
-        "Maine",
-        "Nova Scotia",
-        "Prince Edward Island",
-        "New Brunswick"
+        "Canada",
+        [
+          "Québec",
+          "Ontario",
+          "Nova Scotia",
+          "Prince Edward Island",
+          "New Brunswick"
+        ],
+        "United States",
+        [
+          "New York",
+          "Connecticut",
+          "Rhode Island",
+          "Massachusetts",
+          "Vermont",
+          "New Hampshire",
+          "Maine"
+        ]
       ]
     }
   ]

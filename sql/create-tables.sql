@@ -42,4 +42,6 @@ ALTER TABLE public.cutouts
   OWNER TO ecoinvent;
 
 CREATE INDEX ON public.final (collection, name);
+CREATE UNIQUE INDEX unique_names_final_idx ON public.final (name);
+
 COMMIT;
