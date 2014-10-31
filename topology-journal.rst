@@ -7,6 +7,7 @@ TODO
 * How to define France? Do we need to add to geometries table?
 * Finish recipes
 * "Al producing Area 2, North America, without Quebec" and "Al producing Area 2, North America" overlap
+* Fix Paphos
 
 Changes
 =======

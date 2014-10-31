@@ -27,14 +27,17 @@ command_one = """psql -U ecoinvent -d eigeo -c "update geometries gg set topogeo
 ) as f
 where gg.id = f.country_id;" """.replace("\n", " ").replace("    ", " ").replace("  ", " ")
 
+print "Starting mass changes"
+
 for x in range(5):
     p = subprocess.Popen(command_all, shell=True, stdout=subprocess.PIPE)
+
+print "Finishing up one by one"
 
 while True:
     p = subprocess.Popen(command_one, shell=True, stdout=subprocess.PIPE)
     result = p.communicate()[0]
     if result.strip() == "UPDATE 1":
-        print "tick", result
         pass
     else:
         break
