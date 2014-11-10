@@ -2,6 +2,7 @@ TODO
 ====
 
 * Spain and Netherlands (only Europe)
+* Province elements with null names are not included.
 * How to define France? Do we need to add to geometries table? (Problem is that we define France from geometries table, but better france is in other table and is not topo - need real france in geometries table)
 * Fix Paphos
 * Fix UN regions
@@ -22,7 +23,6 @@ Problem geometries
 ==================
 
 France, including overseas territories
-Spain, including overseas territories
 Netherlands, including overseas territories
 
 Southwest Power Pool
@@ -38,6 +38,8 @@ Alaska Systems Coordinating Council
 Midwest Reliability Organization, US part only
 Northeast Power Coordinating Council, US part only
 Western Electricity Coordinating Council, US part only
+
+.. note: Ignore spain for now - not worth dealing with African exclaves.
 
 Procedure
 =========

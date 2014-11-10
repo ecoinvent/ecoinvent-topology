@@ -90,6 +90,9 @@ python python/iterative_add_provinces.py
 echo "Building country geometries"
 psql -U ecoinvent -d eigeo -f sql/build_countries.sql -q -n -o create_db.log
 
+echo "Dealing with colonial legacies"
+psql -U ecoinvent -d eigeo -f sql/colonials.sql -q -n -o create_db.log
+
 echo "Compiling recipes"
 python python/parse_recipes.py
 
