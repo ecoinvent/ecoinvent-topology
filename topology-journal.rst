@@ -1,13 +1,12 @@
 TODO
 ====
 
-* Spain and Netherlands (only Europe)
 * Province elements with null names are not included.
-* How to define France? Do we need to add to geometries table? (Problem is that we define France from geometries table, but better france is in other table and is not topo - need real france in geometries table)
 * Fix Paphos
-* Fix UN regions
-* Fix UN subregions
-* Finish recipes (Europe without, European elect - systematic comparison needed)
+* Add Autralian states
+* Add Canadian provinces
+* NORDEL
+
 
 Changes
 =======
