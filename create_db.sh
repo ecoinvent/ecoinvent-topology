@@ -18,7 +18,7 @@ echo "Fix problem with one province self-intersecting ring"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  update ne_provinces set geom = ST_MakeValid(geom) where ST_IsValid(geom) = False;" -q -n -o create_db.log
 echo "Add Baikonur Cosmodrome to Kazakhstan"
-pasl -U ecoinvent -d eigeo -c "UPDATE ne_countries SET geom = (SELECT ST_Union(t.g) FROM (SELECT geom AS g FROM ne_countries WHERE name = 'Kazakhstan' UNION SELECT ST_Buffer(geom, 0.5) as g FROM ne_countries WHERE name = 'Baikonur') AS t) WHERE name = 'Kazakhstan'" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "UPDATE ne_countries SET geom = (SELECT ST_Union(t.g) FROM (SELECT geom AS g FROM ne_countries WHERE name = 'Kazakhstan' UNION SELECT ST_Buffer(geom, 0.5) as g FROM ne_countries WHERE name = 'Baikonur') AS t) WHERE name = 'Kazakhstan'" -q -n -o create_db.log
 
 echo "Creating province topos"
 echo "This will take some time; An error will be raised for Paphos - it can be ignored"

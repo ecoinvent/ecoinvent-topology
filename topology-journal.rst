@@ -1,7 +1,6 @@
 TODO
 ====
 
-* Province elements with null names are not included.
 * Fix Paphos
 
 Changes
