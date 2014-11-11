@@ -1,12 +1,7 @@
 TODO
 ====
 
-* Spain and Netherlands (only Europe)
-* How to define France? Do we need to add to geometries table? (Problem is that we define France from geometries table, but better france is in other table and is not topo - need real france in geometries table)
 * Fix Paphos
-* Fix UN regions
-* Fix UN subregions
-* Finish recipes (Europe without, European elect - systematic comparison needed)
 
 Changes
 =======
@@ -16,13 +11,11 @@ Changes
 * Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
-* HICC no longer included, as its area was identical to Hawaii
 
 Problem geometries
 ==================
 
 France, including overseas territories
-Spain, including overseas territories
 Netherlands, including overseas territories
 
 Southwest Power Pool
@@ -38,6 +31,8 @@ Alaska Systems Coordinating Council
 Midwest Reliability Organization, US part only
 Northeast Power Coordinating Council, US part only
 Western Electricity Coordinating Council, US part only
+
+.. note: Ignore spain for now - not worth dealing with African exclaves.
 
 Procedure
 =========

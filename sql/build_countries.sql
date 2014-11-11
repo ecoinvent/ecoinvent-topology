@@ -8,8 +8,4 @@ insert into final (gid, collection, name, shortname, isotwolettercode, isothreel
     from geometries g
     left join ne_countries c on g.gid = c.gid
     where g.tname = 'ne_countries';
-
-update final set name = 'France, including overseas territories', shortname = 'FR (political)' where name = 'France' and collection = 'countries';
-update final set name = 'Spain, including overseas territories', shortname = 'ES (political)' where name = 'Spain' and collection = 'countries';
-update final set name = 'Netherlands, including overseas territories', shortname = 'NL (political)' where name = 'Netherlands' and collection = 'countries';
 COMMIT;
