@@ -3,8 +3,6 @@ TODO
 
 * Province elements with null names are not included.
 * Fix Paphos
-* Add Autralian states
-* Add Canadian provinces
 
 Changes
 =======

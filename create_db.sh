@@ -25,9 +25,15 @@ echo "This will take some time; An error will be raised for Paphos - it can be i
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_provinces', gid) FROM ne_provinces ORDER BY name;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE geometries g SET parent = s.admin FROM (SELECT gid, admin from ne_provinces) AS s WHERE g.gid = s.gid AND g.tname = 'ne_provinces'" -q -n -o create_db.log
- echo "Creating country topos"
+
+echo "Add minor islands"
+psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
+ INSERT INTO geometries (topogeom, parent, tname, gid) (SELECT toTopoGeom(geom, 'ei_topo', 1, 0.000001), admin, 'ne_provinces', gid FROM ne_provinces WHERE name is NULL);" -q -n -o create_db.log
+
+echo "Creating country topos"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(admin, 'ne_countries', gid) FROM ne_countries ORDER BY name;" -q -n -o create_db.log
+
 echo "Creating sovereign state topos"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
