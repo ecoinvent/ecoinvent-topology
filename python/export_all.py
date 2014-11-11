@@ -2,7 +2,19 @@ import subprocess
 import shutil
 import os
 
-collections = ["aluminium", "electricity", "usa-electricity", "countries", "legacy", "only-europe", "russia", "special", "un-regions", "un-subregions"]
+collections = [
+    "aluminium",
+    "countries",
+    "electricity",
+    "legacy",
+    "only-europe",
+    "russia",
+    "special",
+    "states",
+    "un-regions",
+    "un-subregions",
+    "usa-electricity",
+]
 
 command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
 

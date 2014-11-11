@@ -5,8 +5,6 @@ TODO
 * Fix Paphos
 * Add Autralian states
 * Add Canadian provinces
-* NORDEL
-
 
 Changes
 =======
@@ -16,7 +14,6 @@ Changes
 * Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
-* HICC no longer included, as its area was identical to Hawaii
 
 Problem geometries
 ==================
