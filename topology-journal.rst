@@ -15,9 +15,6 @@ Changes
 Problem geometries
 ==================
 
-France, including overseas territories
-Netherlands, including overseas territories
-
 Southwest Power Pool
 Florida Reliability Coordinating Council
 Texas Regional Entity

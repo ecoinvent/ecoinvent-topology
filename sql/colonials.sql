@@ -26,7 +26,7 @@ update geometries set topogeom = ToTopoGeom((
 insert into geometries (name, tname, topogeom) values ('Bonaire, Saint Eustatius and Saba', 'ne_countries',  ToTopoGeom((
     select ST_Union(geometry(topogeom))
         from geometries
-        where parent = 'Netherlands'
+        where parent in ('Netherlands', 'Caribbean Netherlands')
         and tname = 'ne_provinces'
         and name in ('Saba', 'St. Eustatius', 'Bonaire')
     ), 'ei_topo', 1, 0.0)
@@ -39,7 +39,7 @@ insert into geometries (name, tname, topogeom) values ('French Guiana', 'ne_coun
         and name = 'Guyane française'
     ), 'ei_topo', 1, 0.0)
 );
-insert into geometries (name, tname, topogeom) values ('Guadeloupe', 'Guadeloupe', ToTopoGeom((
+insert into geometries (name, tname, topogeom) values ('Guadeloupe', 'ne_countries', ToTopoGeom((
     select geometry(topogeom)
         from geometries
         where parent = 'France'
