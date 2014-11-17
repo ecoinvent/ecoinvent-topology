@@ -123,5 +123,15 @@ echo "Cleaning up missing attributes"
 psql -U ecoinvent -d eigeo -c "UPDATE final SET unregioncode = 0 WHERE unregioncode <= 0;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE final SET uncode = 0 WHERE uncode <= 0;" -q -n -o create_db.log
 
+echo "Testing final database integrity"
+python python/db_checks_final.py
+rc=$?
+if [[ $rc != 0 ]] ; then
+    exit $rc
+fi
+
 echo "Exporting"
 python python/export_all.py
+psql -U ecoinvent -d eigeo -c "COPY (SELECT uuid, name, shortname, ST_AsKML(geom) as geom, isotwolettercode, longitude, isothreelettercode, latitude FROM final) TO STDOUT WITH CSV;" > output/all.csv
+
+echo "Formatting to Ecospold XML"
