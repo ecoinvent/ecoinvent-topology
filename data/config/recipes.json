@@ -2551,5 +2551,41 @@
         "Uzbekistan"
       ]
     }
+  ],
+  [
+    "Canary Islands",
+    "special",
+    {
+      "ne_provinces": [
+        "Spain",
+        [
+          "Santa Cruz de Tenerife",
+          "Las Palmas"
+        ]
+      ]
+    }
+  ],
+  [
+    "Middle East",
+    "special",
+    {
+      "ne_countries": [
+        "Iran",
+        "Iraq",
+        "Kuwait",
+        "Saudi Arabia",
+        "United Arab Emirates"
+      ]
+    }
+  ],
+  [
+    "Serbia and Montenegro",
+    "special",
+    {
+      "ne_countries": [
+        "Montenegro",
+        "Republic of Serbia"
+      ]
+    }
   ]
 ]

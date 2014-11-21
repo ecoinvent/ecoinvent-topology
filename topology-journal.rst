@@ -2,6 +2,7 @@ TODO
 ====
 
 * Fix Paphos
+* Add uuids
 
 Changes
 =======
@@ -11,6 +12,7 @@ Changes
 * Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
+* The location "Central and Eastern Europe", which was marked as obsolete in 2009 and is not used by any datasets in 3.1, is now removed.
 
 Problem geometries
 ==================

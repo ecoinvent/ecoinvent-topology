@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-valid_geom_final = "select name from final where not st_isvalid(geom)"
+valid_geom_final = 'psql -U ecoinvent -d eigeo -c "select name from final where not st_isvalid(geom)";'
 
 def check_command(command, error, ok, expected="(0 rows)"):
     p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
