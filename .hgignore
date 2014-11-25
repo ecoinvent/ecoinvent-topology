@@ -11,3 +11,4 @@ create_db.log
 output
 docs/_build
 ~*
+sync.sh

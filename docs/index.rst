@@ -6,25 +6,214 @@ Ecoinvent geography definitions
 Details of geographic locations in Ecospold2
 Outline for geography report
 
+Introduction
+------------
+
+The ecoinvent centre provide consistent and comprehensive geodata for the locations used in the ecoinvent database. This document describes how these location geometries are created and processed, and gives details on particular locations that may be confusing.
+
 Purpose of location descriptions in ecoinvent
+---------------------------------------------
 
-- Not a political statement
-- Statement on geographical controversies
+Statement on geographical controversies
+---------------------------------------
 
-Methodology
+Neither the EcoSpold 2 data format, nor its authors, take any position on geographical areas of controversy. The geographical shapes presented in the EcoSpold 2 data files should not be taken as absolute definitions of country or region borders. Rather, they are approximations consistent with common understanding of these countries and regions, for use in a life cycle inventory database. If subjective judgments have to be made, we have made choices based on our understanding of what would be best for clear and understandable life cycle inventories. If you find a error or discrepancy in the base data file, please let us know by `filing a bug <https://bitbucket.org/cmutel/constructive-geometries/issues/new>`_.
 
-Input data sources
+Data formats
+------------
 
-- NE
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Description                              | `GeoJSON <http://geojson.org/>`__                                                     | `Geopackage <http://www.geopackage.org/>`__                                       | `KMZ <http://en.wikipedia.org/wiki/Keyhole_Markup_Language>`__            | `ESRI Shapefile <http://en.wikipedia.org/wiki/Shapefile>`__                                |
++==========================================+=======================================================================================+===================================================================================+===========================================================================+============================================================================================+
+| All locations                            | `GeoJSON <http://geography.ecoinvent.org/report/files/all.geojson.bz2>`__             | `Geopackage <http://geography.ecoinvent.org/report/files/all.gpkg>`__             | `KMZ <http://geography.ecoinvent.org/report/files/all.kmz>`__             | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/all.zip>`__                   |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Countries                                | `GeoJSON <http://geography.ecoinvent.org/report/files/countries.geojson.bz2>`__       | `Geopackage <http://geography.ecoinvent.org/report/files/countries.gpkg>`__       | `KMZ <http://geography.ecoinvent.org/report/files/countries.kmz>`__       | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/countries.zip>`__             |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| UN regions                               | `GeoJSON <http://geography.ecoinvent.org/report/files/un-regions.geojson.bz2>`__      | `Geopackage <http://geography.ecoinvent.org/report/files/un-regions.gpkg>`__      | `KMZ <http://geography.ecoinvent.org/report/files/un-regions.kmz>`__      | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/un-subregions.geojson.bz2>`__ |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| UN subregions                            | `GeoJSON <http://geography.ecoinvent.org/report/files/un-subregions.gpkg>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/un-subregions.kmz>`__    | `KMZ <http://geography.ecoinvent.org/report/files/un_regions.zip>`__      | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/un_subregions.zip>`__         |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Electricity networks                     | `GeoJSON <http://geography.ecoinvent.org/report/files/electricity.geojson.bz2>`__     | `Geopackage <http://geography.ecoinvent.org/report/files/electricity.gpkg>`__     | `KMZ <http://geography.ecoinvent.org/report/files/electricity.kmz>`__     | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/electricity.zip>`__           |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Legacy Electricity networks              | `GeoJSON <http://geography.ecoinvent.org/report/files/legacy.geojson.bz2>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/legacy.gpkg>`__          | `KMZ <http://geography.ecoinvent.org/report/files/legacy.kmz>`__          | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/legacy.zip>`__                |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Electricity networks (USA only)          | `GeoJSON <http://geography.ecoinvent.org/report/files/usa-electricity.geojson.bz2>`__ | `Geopackage <http://geography.ecoinvent.org/report/files/usa-electricity.gpkg>`__ | `KMZ <http://geography.ecoinvent.org/report/files/usa-electricity.kmz>`__ | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/usa_electricity.zip>`__       |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Aluminium-producing regions              | `GeoJSON <http://geography.ecoinvent.org/report/files/aluminium.geojson.bz2>`__       | `Geopackage <http://geography.ecoinvent.org/report/files/aluminium.gpkg>`__       | `KMZ <http://geography.ecoinvent.org/report/files/aluminium.kmz>`__       | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/aluminium.zip>`__             |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Europe/Asia                              | `GeoJSON <http://geography.ecoinvent.org/report/files/only-europe.geojson.bz2>`__     | `Geopackage <http://geography.ecoinvent.org/report/files/only-europe.gpkg>`__     | `KMZ <http://geography.ecoinvent.org/report/files/only-europe.kmz>`__     | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/only_europe.zip>`__           |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Russia                                   | `GeoJSON <http://geography.ecoinvent.org/report/files/russia.geojson.bz2>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/russia.gpkg>`__          | `KMZ <http://geography.ecoinvent.org/report/files/russia.kmz>`__          | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/russia.zip>`__                |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Ecoinvent special                        | `GeoJSON <http://geography.ecoinvent.org/report/files/special.geojson.bz2>`__         | `Geopackage <http://geography.ecoinvent.org/report/files/special.gpkg>`__         | `KMZ <http://geography.ecoinvent.org/report/files/special.kmz>`__         | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/special.zip>`__               |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| Canadian provinces and Australian states | `GeoJSON <http://geography.ecoinvent.org/report/files/states.geojson.bz2>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/states.gpkg>`__          | `KMZ <http://geography.ecoinvent.org/report/files/states.kmz>`__          | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/states.zip>`__                |
++------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+
+Methdology
+----------
+
+The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_.
+
 - Custom drawn geometries
 
 List of locations in ecoinvent
+------------------------------
 
-    Separate by type
+Changelog
+---------
 
-Changes from previous versions
+Version 2.0 (ecoinvent 3.2)
++++++++++++++++++++++++++++
+
+The following locations were added:
+
+
+
+Version 1.0 (ecoinvent 3.01 & 3.1)
+++++++++++++++++++++++++++++++++++
+
+Initial development. Removal of locations no longer used in the ecoinvent database.
 
 Notes on specific geometries
+----------------------------
+
+UN Regions
+++++++++++
+
+.. image:: images/UN-regions.png
+    :align: center
+
+.. image:: images/UN-subregions.png
+    :align: center
+
+Europe and Asia
++++++++++++++++
+
+The following locations are given:
+
+* ``Europe`` (short name ``RER``)
+* ``Asia`` (short name ``RAS``)
+* ``Europe, UN Region`` (short name ``UN-EUROPE``)
+* ``Asia, UN Region`` (short name ``UN-ASIA``)
+
+We differentiate between the UN definitions of Europe and Asia (which are constrained to including or excluding entire countries), and the common understanding of the border between Europe and Asia. There is no clear line dividing Europe and Asia. The UN regions are defined following the `UN macro geographical regions`_. Russia is split by federal subjects, with the following federal subjects in Europe:
+
++------------------------+--------------+------------+---------------+
+| Adygey                 | Arkhangel'sk | Astrakhan' | Bashkortostan |
++------------------------+--------------+------------+---------------+
+| Belgorod               | Bryansk      | Chechnya   | Chuvash       |
++------------------------+--------------+------------+---------------+
+| City of St. Petersburg | Dagestan     | Ingush     | Ivanovo       |
++------------------------+--------------+------------+---------------+
+| Kabardin-Balkar        | Kaliningrad  | Kalmyk     | Kaluga        |
++------------------------+--------------+------------+---------------+
+| Karachay-Cherkess      | Karelia      | Kirov      | Komi          |
++------------------------+--------------+------------+---------------+
+| Kostroma               | Krasnodar    | Kursk      | Leningrad     |
++------------------------+--------------+------------+---------------+
+| Lipetsk                | Mariy-El     | Mordovia   | Moskovsskaya  |
++------------------------+--------------+------------+---------------+
+| Moskva                 | Murmansk     | Nenets     | Nizhegorod    |
++------------------------+--------------+------------+---------------+
+| North Ossetia          | Novgorod     | Orel       | Orenburg      |
++------------------------+--------------+------------+---------------+
+| Penza                  | Perm'        | Pskov      | Rostov        |
++------------------------+--------------+------------+---------------+
+| Ryazan'                | Samara       | Saratov    | Smolensk      |
++------------------------+--------------+------------+---------------+
+| Stavropol'             | Tambov       | Tatarstan  | Tula          |
++------------------------+--------------+------------+---------------+
+| Tver'                  | Udmurt       | Ul'yanovsk | Vladimir      |
++------------------------+--------------+------------+---------------+
+| Volgograd              | Vologda      | Voronezh   | Yaroslavl'    |
++------------------------+--------------+------------+---------------+
+
+The following Russian federal subjects are in Asia:
+
++---------------+--------------------------+-------------+-----------------+
+| Altay         | Amur                     | Buryat      | Chelyabinsk     |
++---------------+--------------------------+-------------+-----------------+
+| Chita         | Chukchi Autonomous Okrug | Gorno-Altay | Irkutsk         |
++---------------+--------------------------+-------------+-----------------+
+| Kamchatka     | Kemerovo                 | Khabarovsk  | Khakass         |
++---------------+--------------------------+-------------+-----------------+
+| Khanty-Mansiy | Krasnoyarsk              | Kurgan      | Maga Buryatdan  |
++---------------+--------------------------+-------------+-----------------+
+| Novosibirsk   | Omsk                     | Primor'ye   | Sakha (Yakutia) |
++---------------+--------------------------+-------------+-----------------+
+| Sakhalin      | Sverdlovsk               | Tomsk       | Tuva            |
++---------------+--------------------------+-------------+-----------------+
+| Tyumen'       | Yamal-Nenets             | Yevrey      |                 |
++---------------+--------------------------+-------------+-----------------+
+
+.. note:: The definition of ``Europe`` and ``Asia`` have changed in version 2.0, to match Russian federal subject borders. In version 1.0, ``Europe`` also included parts of Kazakhstan, Azerbaijan, Georgia, and Turkey - these countries are now completely inside ``Asia``.
+
+.. note:: Both ``Europe`` and ``Europe, UN Region`` include all of Spain, including the Canary Islands and a few small exclaves in Africa.
+
+.. image:: images/Asia-Europe.png
+    :align: center
+
+In addition to the country ``Russia``, the regions ``Russia (Asia)`` and ``Russia (Europe)`` are given, following the federal subject boundaries given above.
+
+.. image:: images/Russia.png
+    :align: center
+
+Aluminium-producing regions
++++++++++++++++++++++++++++
+
+Aluminium is not produced in every country in the world, and the following producing regions are given:
+
+* Al producing Area 1, Africa
+* Al producing Area 2, North America
+* Al producing Area 2, North America, without Quebec
+* Al producing Area 3, South America
+* Al producing Area 4 and 5, South and East Asia, without China
+* Al producing Area 6A&B, West, East, and Central Europe
+* Al producing Area 8, Gulf Region
+
+Note that there an overlap between ``North America`` and ``North America, without Quebec``.
+
+.. image:: images/Aluminium.png
+    :align: center
+
+Electricity networks
+++++++++++++++++++++
+
+The following networks are in Europe and North America are provided:
+
+* European Network of Transmission Systems Operators for Electricity
+* Florida Reliability Coordinating Council
+* HICC
+* Midwest Reliability Organization
+* Northeast Power Coordinating Council
+* ReliabilityFirst Corporation
+* SERC Reliability Corporation
+* Southwest Power Pool
+* Texas Regional Entity
+* Western Electricity Coordinating Council
+* Alaska Systems Coordinating Council
+
+In Europe, ENTSO-E is made up of countries. In the United States and Canada, the boundaries between NERC regions is made up of state/province boundaries and hand-drawn boundaries traced from NERC maps.
+
+.. image:: images/NA.png
+    :align: center
+
+NERC regions which cross the Canadian border
+
+.. image:: images/USA.png
+    :align: center
+
+
+In addition to these current networks, the following legacy European networks are provided:
+
+*
+
+.. image:: images/UCTE.png
+    :align: center
+
+.. image:: images/Central-European.png
+    :align: center
 
 - Rest of world dataset
 
@@ -54,14 +243,12 @@ Military bases present in the natural earth dataset were not included in the Eco
 Kosovo is included as a separate country, though it is not yet officially recognized by the UN or the ISO.
 The distinction between country and oversea territory follows the guidance in ISO. Note that France considers its overseas territories an integral part of France, while the ISO has assigned them country codes.
 Taiwan is included in the UN region Asia and the UN subregion Eastern Asia, even though it is not officially listed in the UN definitions.
-Statement on geographical controversies
-Neither the EcoSpold 2 data format, nor its authors, take any position on geographical areas of controversy. The geographical shapes presented in the EcoSpold 2 base data file should not be taken as absolute definitions of country or region borders. Rather, they are approximations consistent with common understanding of these countries and regions. If subjective judgments have to be made, we have made choices based on our understanding of what would be best for clear and understandable life cycle inventories. If you find a error or discrepancy in the base data file, please let us know by filing a bug.
+
 Rest of world dataset
 The “rest of world” dataset is a dynamic concept that exists in the situation when both a global dataset and one or more non-global datasets are available for the same activity, time period, and macro-economic scenario. The definitions is specific to each activity and depends on what defined geographies are available for the specific activity name. It is defined as the difference between the global reference dataset and the datasets with defined geographies. The “rest of world” dataset does not have a set KML description.
-Difference between Europe, Asia, and the UN regions Europe and Asia
-EcoSpold 2 differentiates between the UN definitions of Europe and Asia (which are constrained to including or excluding entire countries), and the common understanding of the border between Europe and Asia. There is no consensus where Europe ends and Asia begins (or vice-versa), but it is commonly understood that the Russian Federation, Kazakhstan, Azerbaijan, Georgia, and Turkey straddle this border.
 
-Figure 1: “Europe” (left) includes parts of the Russian Federation, Kazakhstan, Azerbaijan, Georgia, and Turkey. “Europe, UN region” (right) includes the Russian Federation, but excludes the other countries.
 
 Adaptation of existing EcoSpold regions
 The first version of EcoSpold defined a number of non-country regions. All of these regions which were used in a previous version of the Ecoinvent database will be included in the new base file. The following table has specifics on the disposition of these geographies:
+
+.. _`UN macro geographical regions`: http://unstats.un.org/unsd/methods/m49/m49regin.htm
