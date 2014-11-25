@@ -9,3 +9,5 @@ sql/ne_*.sql
 output/*.csv
 create_db.log
 output
+docs/_build
+~*
