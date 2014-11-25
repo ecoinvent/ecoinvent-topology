@@ -502,3 +502,15 @@ To:
     \.
 
 
+Processing for intersected areas
+--------------------------------
+
+.. code-block:: python
+
+    import json
+    data = json.load(open("all2.json"))
+    as_sets = {k:v for k, v in {frozenset(o[:2]): o[2] / 1e6 for o in data}.iteritems()}
+    len(as_sets), len(data)
+    as_list = sorted([[sorted(k), v] for k, v in {frozenset(o[:2]): o[2] / 1e6 for o in data}.iteritems()])
+    with open("intersections.json", "w") as f:
+        f.write(json.dumps(as_list, ensure_ascii=False, indent=2).encode('utf8'))
