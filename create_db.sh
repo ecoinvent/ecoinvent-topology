@@ -138,3 +138,4 @@ python python/export_all.py
 psql -U ecoinvent -d eigeo -c "COPY (SELECT uuid, name, shortname, ST_AsKML(geom) as geom, isotwolettercode, longitude, isothreelettercode, latitude FROM final) TO STDOUT WITH CSV;" > output/all.csv
 
 echo "Formatting to Ecospold XML"
+python python/write_xml.py
