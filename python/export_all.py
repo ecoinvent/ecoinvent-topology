@@ -37,6 +37,7 @@ os.mkdir("output")
 formats = [
     ("GeoJSON", "geojson"),
     ("GPKG", "gpkg"),
+    ("KML", "kmz"),
 ]
 
 
