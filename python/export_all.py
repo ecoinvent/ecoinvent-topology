@@ -18,11 +18,16 @@ collections = [
     "un-regions",
     "un-subregions",
     "usa-electricity",
+    "all",
 ]
 
 command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
 
+all_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final'" -nln {layername} """
+
 shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
+
+all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final'" -nln {layername} """
 
 bz2_command = "bzip2 {path}"
 
@@ -37,7 +42,11 @@ formats = [
 
 for format, extension in formats:
     for collection in collections:
-        subprocess.check_call(command.format(
+        if collection == "all":
+            cmnd = all_command
+        else:
+            cmnd = command
+        subprocess.check_call(cmnd.format(
                 format=format,
                 collection=collection,
                 extension=extension,
@@ -51,7 +60,11 @@ for format, extension in formats:
 for collection in collections:
     layername = collection.replace("-", "_").replace(" ", "_")
     os.mkdir("output/" + layername)
-    subprocess.check_call(shp_command.format(
+    if collection == "all":
+        cmnd = all_shp_command
+    else:
+        cmnd = shp_command
+    subprocess.check_call(cmnd.format(
             format=format,
             collection=collection,
             layername=layername,
