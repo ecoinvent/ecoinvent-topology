@@ -23,11 +23,11 @@ collections = [
 
 command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
 
-all_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final'" -nln {layername} """
+all_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final" -nln allgeos """
 
 shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
 
-all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final'" -nln {layername} """
+all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final" -nln allgeos """
 
 bz2_command = "bzip2 {path}"
 
