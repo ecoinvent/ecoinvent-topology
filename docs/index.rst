@@ -53,7 +53,29 @@ Data formats
 Methdology
 ----------
 
-The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_.
+The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_. In addition to Natural Earth, custom geometries were drawn for NERC regions in the United States of America which split individual states.
+
+Processing begins by entering all state/province level regions into a `PostGIS topological database <http://postgis.net/docs/Topology.html>`__. A topology is different from a normal geometry because it tries to store only one copy of each face edge and node, and a state or province would be defined by which common edges it bordered. For example, the boundary between France and Germany would be stored only once, and the topology of both France and Germany would reference that border. Topology is a rahter complex subject which is not explained in detail here; interested readers should go through `this presentation by Sandro Santilli <http://strk.keybit.net/projects/postgis/Paris2011_TopologyWithPostGIS_2_0.pdf>`__. The use of topologies give several nice advantages:
+
+* Consistency: Each border is only defined once. Modifications to border edges apply to all affected regions automatically.
+* Integrity: All regions are automatically valid.
+* Explicit relationships: It is fast and simple to determine spatial relationships among regions by comparing their topological faces. There is no potential for floating-point errors, as no geometry math is needed.
+
+After state/province-level data is imported, country data is imported. Country borders are automatically snapped to province borders by the database. A series of data cleaning steps is then applied.
+
+The basic topological units in the database are usually state/province-level regions, as in this visualization of Madagascar:
+
+.. image:: images/Madagascar.png
+    :align: center
+
+However, in some regions states are broken up, as in this visualization of the combination of NERC regions and state boundaries in the United States of America:
+
+.. image:: images/NERC.png
+    :align: center
+
+Ecoinvent regions are defined constructively, i.e. they are built up by adding different topological faces together.
+
+The input data and scripts to process, combine, and export all location data, as well as this manual, are open source and `freely available for download <https://bitbucket.org/cmutel/constructive-geometries>`__.
 
 - Custom drawn geometries
 
