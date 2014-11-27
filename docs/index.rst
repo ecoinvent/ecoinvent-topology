@@ -294,8 +294,78 @@ UN subregions
 * Western Asia
 * Western Europe
 
+Electricity networks
+++++++++++++++++++++
+
+North America
+^^^^^^^^^^^^^
+
+.. note:: See also specific comments on :ref:`elecna` and :ref:`elecusa`.
+
+* Alaska Systems Coordinating Council
+* Florida Reliability Coordinating Council
+* HICC (Hawaii)
+* Midwest Reliability Organization
+* Midwest Reliability Organization, US part only
+* Northeast Power Coordinating Council
+* Northeast Power Coordinating Council, US part only
+* ReliabilityFirst Corporation
+* SERC Reliability Corporation
+* Southwest Power Pool
+* Texas Regional Entity
+* Western Electricity Coordinating Council
+* Western Electricity Coordinating Council, US part only
+
+Europe
+^^^^^^
+
+.. note:: See also specific comments on European :ref:`eleceu`.
+
+* Baltic System Operator
+* Central European Power Association
+* European Network of Transmission Systems Operators for Electricity
+* Nordic Countries Power Association
+* Union for the Co-ordination of Transmission of Electricity
+
+Ecoinvent special locations
++++++++++++++++++++++++++++
+
+"Cut-out" locations
+^^^^^^^^^^^^^^^^^^^
+
+Due to the way markets are linked, it is sometimes necessary to create regions without specific states or countries. The following are current included:
+
+* Asia without China
+* Canada without Alberta
+* Canada without Alberta and Quebec
+* Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican
+* Europe without Germany and Switzerland
+* Europe without Germany, the Netherlands, and Norway
+* Europe without NORDEL (NCPA)
+* Europe without Switzerland
+* Europe, without Russia and Turkey
+* UCTE without France
+* UCTE without Germany
+* UCTE without Germany and France
+
+Trading blocks
+^^^^^^^^^^^^^^
+
+* Commonwealth of Independent States
+* North American Free Trade Agreement
+
+Miscellaneous
+^^^^^^^^^^^^^
+
+* Canary Islands
+* Middle East (Iran, Iraq, Kuwait, Saudi Arabia, and the United Arab Emirates)
+* Québec, Hydro-Québec distribution network
+* Serbia and Montenegro (Both ``Serbia`` and ``Montenegro`` are also included separately)
+
 Australian states and territories
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++
+
+In addition to the country ``Australia``, the Australian states are also provided. As a consequence, the territories *Christmas Island* and *Cocos (Keeling) Islands*, which do possess `ISO 3166-1`_ codes, are included in the location ``Indian Ocean Territories``.
 
 * Australian Capital Territory
 * `Coral Sea Islands <http://en.wikipedia.org/wiki/Coral_Sea_Islands>`__
@@ -309,7 +379,9 @@ Australian states and territories
 * Western Australia
 
 Canadian provinces
-^^^^^^^^^^^^^^^^^^
+++++++++++++++++++
+
+In addition to the country ``Canada``, the Canadian provinces are also provided.
 
 * Alberta
 * British Columbia
@@ -588,6 +660,8 @@ The following networks are in Europe and North America are provided:
 * Western Electricity Coordinating Council
 * Alaska Systems Coordinating Council
 
+.. _elecna:
+
 North American networks
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -596,6 +670,8 @@ In Europe, ENTSO-E is made up of countries. In the United States and Canada, the
 .. image:: images/NA.png
     :align: center
 
+.. _elecusa:
+
 USA-only subnetworks
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -603,6 +679,8 @@ NERC regions which cross the Canadian border have also been split into USA-only 
 
 .. image:: images/USA.png
     :align: center
+
+.. _eleceu:
 
 Legacy networks
 ^^^^^^^^^^^^^^^
@@ -620,11 +698,6 @@ In addition to these current networks, the following legacy European networks ar
 
 .. image:: images/Central-European.png
     :align: center
-
-Australia
-^^^^^^^^^
-
-In addition to the country ``Australia``, the Australian states are also provided. As a consequence, the territories *Christmas Island* and *Cocos (Keeling) Islands*, which do possess `ISO 3166-1`_ codes, are included in the location ``Indian Ocean Territories``.
 
 Norway
 ^^^^^^
