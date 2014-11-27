@@ -3,6 +3,7 @@ TODO
 
 * Fix Paphos
 * Add uuids
+* Separate out Bouvet and Svalbard and Jan Mayen (have ISO codes) and Tokelau
 
 Changes
 =======

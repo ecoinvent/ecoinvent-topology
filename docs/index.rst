@@ -3,9 +3,6 @@ Ecoinvent geography definitions
 
 .. note:: This is a draft report.
 
-Details of geographic locations in Ecospold2
-Outline for geography report
-
 Introduction
 ------------
 
@@ -50,8 +47,8 @@ Data formats
 | Canadian provinces and Australian states | `GeoJSON <http://geography.ecoinvent.org/report/files/states.geojson.bz2>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/states.gpkg>`__          | `KMZ <http://geography.ecoinvent.org/report/files/states.kmz>`__          | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/states.zip>`__                |
 +------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
 
-Methdology
-----------
+Methodology
+-----------
 
 The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_. In addition to Natural Earth, custom geometries were drawn for NERC regions in the United States of America which split individual states.
 
@@ -82,6 +79,252 @@ The input data and scripts to process, combine, and export all location data, as
 List of locations in ecoinvent
 ------------------------------
 
+Countries
++++++++++
+
+259 entities listed in `ISO 3166-1`_:
+
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Afghanistan                       | Akrotiri Sovereign Base Area             | Aland                               | Albania                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Algeria                           | American Samoa                           | Andorra                             | Angola                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Anguilla                          | Antarctica                               | Antigua and Barbuda                 | Argentina                    |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Armenia                           | Aruba                                    | Ashmore and Cartier Islands         | Australia                    |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Austria                           | Azerbaijan                               | Bahrain                             | Bajo Nuevo Bank (Petrel Is.) |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Bangladesh                        | Barbados                                 | Belarus                             | Belgium                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Belize                            | Benin                                    | Bermuda                             | Bhutan                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Bolivia                           | Bonaire, Saint Eustatius and Saba        | Bosnia and Herzegovina              | Botswana                     |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Bouvet Island                     | Brazil                                   | British Indian Ocean Territory      | British Virgin Islands       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Brunei                            | Bulgaria                                 | Burkina Faso                        | Burundi                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Cambodia                          | Cameroon                                 | Canada                              | Cape Verde                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Cayman Islands                    | Central African Republic                 | Chad                                | Chile                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| China                             | Clipperton Island                        | Colombia                            | Comoros                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Congo                             | Congo, Democratic Republic of the        | Cook Islands                        | Costa Rica                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Croatia                           | Cuba                                     | Curaçao                             | Cyprus                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Cyprus No Mans Area               | Czech Republic                           | Denmark                             | Dhekelia Sovereign Base Area |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Djibouti                          | Dominica                                 | Dominican Republic                  | East Timor                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Ecuador                           | Egypt                                    | El Salvador                         | Equatorial Guinea            |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Eritrea                           | Estonia                                  | Ethiopia                            | Falkland Islands             |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Faroe Islands                     | Fiji                                     | Finland                             | France                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| French Guiana                     | French Polynesia                         | French Southern and Antarctic Lands | Gabon                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Gambia                            | Georgia                                  | Germany                             | Ghana                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Gibraltar                         | Greece                                   | Greenland                           | Grenada                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Guadeloupe                        | Guam                                     | Guatemala                           | Guernsey                     |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Guinea                            | Guinea Bissau                            | Guyana                              | Haiti                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Heard Island and McDonald Islands | Honduras                                 | Hong Kong S.A.R.                    | Hungary                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Iceland                           | India                                    | Indonesia                           | Iran                         |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Iraq                              | Ireland                                  | Isle of Man                         | Israel                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Italy                             | Ivory Coast                              | Jamaica                             | Japan                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Jersey                            | Jordan                                   | Kazakhstan                          | Kenya                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Kiribati                          | Kuwait                                   | Kyrgyzstan                          | Laos                         |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Latvia                            | Lebanon                                  | Lesotho                             | Liberia                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Libya                             | Liechtenstein                            | Lithuania                           | Luxembourg                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Macao S.A.R                       | Macedonia                                | Madagascar                          | Malawi                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Malaysia                          | Maldives                                 | Mali                                | Malta                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Marshall Islands                  | Martinique                               | Mauritania                          | Mauritius                    |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Mayotte                           | Mexico                                   | Micronesia, Federated States of     | Moldova                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Monaco                            | Mongolia                                 | Montenegro                          | Montserrat                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Morocco                           | Mozambique                               | Myanmar                             | Namibia                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Nauru                             | Nepal                                    | Netherlands                         | New Caledonia                |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| New Zealand                       | Nicaragua                                | Niger                               | Nigeria                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Niue                              | Norfolk Island                           | North Korea                         | Northern Cyprus              |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Northern Mariana Islands          | Norway                                   | Oman                                | Pakistan                     |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Palau                             | Palestine                                | Panama                              | Papua New Guinea             |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Paraguay                          | Peru                                     | Philippines                         | Pitcairn Islands             |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Poland                            | Portugal                                 | Puerto Rico                         | Qatar                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Romania                           | Russia                                   | Rwanda                              | Réunion                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Saint Barthelemy                  | Saint Helena                             | Saint Kitts and Nevis               | Saint Lucia                  |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Saint Martin                      | Saint Pierre and Miquelon                | Saint Vincent and the Grenadines    | Samoa                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| San Marino                        | Sao Tome and Principe                    | Saudi Arabia                        | Scarborough Reef             |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Senegal                           | Serbia                                   | Serranilla Bank                     | Seychelles                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Siachen Glacier                   | Sierra Leone                             | Singapore                           | Sint Maarten                 |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Slovakia                          | Slovenia                                 | Solomon Islands                     | Somalia                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| South Africa                      | South Georgia and South Sandwich Islands | South Korea                         | South Sudan                  |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Spain                             | Spratly Islands                          | Sri Lanka                           | Sudan                        |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Suriname                          | Svalbard and Jan Mayen                   | Swaziland                           | Sweden                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Switzerland                       | Syria                                    | Taiwan                              | Tajikistan                   |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Tanzania                          | Thailand                                 | The Bahamas                         | Togo                         |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Tokelau                           | Tonga                                    | Trinidad and Tobago                 | Tunisia                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Turkey                            | Turkmenistan                             | Turks and Caicos Islands            | Tuvalu                       |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| US Naval Base Guantanamo Bay      | Uganda                                   | Ukraine                             | United Arab Emirates         |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| United Kingdom                    | United States Minor Outlying Islands     | United States Virgin Islands        | United States of America     |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Uruguay                           | Uzbekistan                               | Vanuatu                             | Vatican                      |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Venezuela                         | Vietnam                                  | Wallis and Futuna                   | Western Sahara               |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+| Yemen                             | Zambia                                   | Zimbabwe                            |                              |
++-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
+
+De facto independent countries
+++++++++++++++++++++++++++++++
+
+The country of ``Kosovo`` is included, although it is not yet `completely internationally recognized <en.wikipedia.org/wiki/International_recognition_of_Kosovo>`__.
+
+``Somaliland`` (`Wikipedia <http://en.wikipedia.org/wiki/Somaliland>`__) is included as a separate location. ``Somalia`` does not include ``Somaliland``.
+
+Disputed areas and indepedent military bases
+++++++++++++++++++++++++++++++++++++++++++++
+
+* `Akrotiri Sovereign Base Area <http://en.wikipedia.org/wiki/Akrotiri_and_Dhekelia>`__
+* `Bajo Nuevo Bank (Petrel Is.) <http://en.wikipedia.org/wiki/Bajo_Nuevo_Bank>`__
+* `Cyprus No Mans Area <http://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus>`__
+* `Dhekelia Sovereign Base Area <http://en.wikipedia.org/wiki/Akrotiri_and_Dhekelia>`__
+* `Scarborough Reef <http://en.wikipedia.org/wiki/Scarborough_Shoal>`__
+* `Serranilla Bank <http://en.wikipedia.org/wiki/Serranilla_Bank>`__
+* `Siachen Glacier <http://en.wikipedia.org/wiki/Siachen_Glacier>`__
+* `Spratly Islands <http://en.wikipedia.org/wiki/Spratly_Islands>`__
+* `US Naval Base Guantanamo Bay <http://en.wikipedia.org/wiki/Guantanamo_Bay_Naval_Base>`__
+
+International Aluminium Institute regions
++++++++++++++++++++++++++++++++++++++++++
+
+The `International Aluminium Institute <http://www.world-aluminium.org/statistics/>`__ regions are roughly followed, although wiht some ecoinvent-specific modifications.
+
+.. note:: See the :ref:`detailed notes on aluminium-producting regions <aluminium>`.
+
+* Al producing Area 1, Africa
+* Al producing Area 2, North America
+* Al producing Area 2, North America, without Quebec
+* Al producing Area 3, South America
+* Al producing Area 4 and 5, South and East Asia, without China
+* Al producing Area 6A&B, West, East, and Central Europe
+* Al producing Area 8, Gulf Region
+
+UN regions and subregions
++++++++++++++++++++++++++
+
+All `UN macro geographical regions`_ and subregions are included.
+
+.. note:: See also geographic descriptions of :ref:`regions` and :ref:`subregions`.
+
+UN regions
+^^^^^^^^^^
+
+* Africa
+* Americas
+* Asia, UN Region
+* Europe, UN Region
+* Oceania
+
+UN subregions
+^^^^^^^^^^^^^
+
+* Australia and New Zealand
+* Caribbean
+* Central America
+* Central Asia
+* Eastern Africa
+* Eastern Asia
+* Eastern Europe
+* Latin America and the Caribbean
+* Melanesia
+* Micronesia
+* Middle Africa
+* Northern Africa
+* Northern America
+* Northern Europe
+* Polynesia
+* South America
+* South-Eastern Asia
+* Southern Africa
+* Southern Asia
+* Southern Europe
+* Western Africa
+* Western Asia
+* Western Europe
+
+Australian states and territories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Australian Capital Territory
+* `Coral Sea Islands <http://en.wikipedia.org/wiki/Coral_Sea_Islands>`__
+* `Indian Ocean Territories <http://en.wikipedia.org/wiki/Australian_Indian_Ocean_Territories>`__
+* New South Wales
+* Northern Territory
+* Queensland
+* South Australia
+* Tasmania
+* Victoria
+* Western Australia
+
+Canadian provinces
+^^^^^^^^^^^^^^^^^^
+
+* Alberta
+* British Columbia
+* Manitoba
+* New Brunswick
+* Newfoundland and Labrador
+* Northwest Territories
+* Nova Scotia
+* Nunavut
+* Ontario
+* Prince Edward Island
+* Québec
+* Saskatchewan
+* Yukon
+
 Changelog
 ---------
 
@@ -95,10 +338,10 @@ The following locations were added:
 * `Bajo Nuevo Bank (Petrel Is.) <http://en.wikipedia.org/wiki/Bajo_Nuevo_Bank>`__
 * Caribbean (UN subregion)
 * `Clipperton Island <http://en.wikipedia.org/wiki/Clipperton_Island>`__
-* `Coral Sea Islands <http://en.wikipedia.org/wiki/Coral_Sea_Islands>`__
+* `Coral Sea Islands <http://en.wikipedia.org/wiki/Coral_Sea_Islands>`__ (administrative unit of Australia)
 * `Cyprus No Mans Area <http://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus>`__
 * `Dhekelia Sovereign Base Area <http://en.wikipedia.org/wiki/Akrotiri_and_Dhekelia>`__
-* `Indian Ocean Territories <http://en.wikipedia.org/wiki/Australian_Indian_Ocean_Territories>`__
+* `Indian Ocean Territories <http://en.wikipedia.org/wiki/Australian_Indian_Ocean_Territories>`__ (administrative unit of Australia)
 * `Kosovo <http://en.wikipedia.org/wiki/Kosovo>`__
 * `Northern Cyprus <http://en.wikipedia.org/wiki/Northern_Cyprus>`__
 * Russia (Asia)
@@ -188,8 +431,6 @@ The following locations have been removed:
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
 | Location                               | Comment                                                                                            |
 +========================================+====================================================================================================+
-| Bouvet Island                          | Now included in Norway                                                                             |
-+----------------------------------------+----------------------------------------------------------------------------------------------------+
 | Central and Eastern Europe             | Not used                                                                                           |
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
 | Christmas Island                       | Now included in Indian Ocean Territories                                                           |
@@ -200,13 +441,6 @@ The following locations have been removed:
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
 | Spain, including overseas territories  | Should not have been included. It is easier to always include Spain's exclaves in Africa in Spain. |
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
-| Svalbard and Jan Mayen                 | Now included in Norway                                                                             |
-+----------------------------------------+----------------------------------------------------------------------------------------------------+
-| Tokelau                                | Now included in New Zealand                                                                        |
-+----------------------------------------+----------------------------------------------------------------------------------------------------+
-
-
-.. note:: Kosovo is not yet `completely internationally recognized <en.wikipedia.org/wiki/International_recognition_of_Kosovo>`__
 
 .. note:: Version 1 did not include sovereign military bases, but they are necessary in version 2 for a consistent topology.
 
@@ -220,18 +454,22 @@ Notes on specific geometries
 
 Some images are large, and can be opened in a separate tab to be seen in full detail.
 
-UN Regions
-++++++++++
+UN Regions and subregions
++++++++++++++++++++++++++
 
 UN regions and subregions follow the `UN macro geographical regions`_ definitions.
+
+.. _regions:
 
 UN regions
 ^^^^^^^^^^
 
-.. note:: Taiwan is included in the UN region Asia and the UN subregion Eastern Asia, even though it is not officially listed in the UN definitions.
+.. note:: ``Taiwan`` is included in the UN region Asia and the UN subregion Eastern Asia, even though it is not officially listed in the UN definitions.
 
 .. image:: images/UN-regions.png
     :align: center
+
+.. _subregions:
 
 UN subregions
 ^^^^^^^^^^^^^
@@ -313,6 +551,8 @@ In addition to the country ``Russia``, the regions ``Russia (Asia)`` and ``Russi
 .. image:: images/Russia.png
     :align: center
 
+.. _aluminium:
+
 Aluminium-producing regions
 +++++++++++++++++++++++++++
 
@@ -381,6 +621,63 @@ In addition to these current networks, the following legacy European networks ar
 .. image:: images/Central-European.png
     :align: center
 
+Australia
+^^^^^^^^^
+
+In addition to the country ``Australia``, the Australian states are also provided. As a consequence, the territories *Christmas Island* and *Cocos (Keeling) Islands*, which do possess `ISO 3166-1`_ codes, are included in the location ``Indian Ocean Territories``.
+
+Norway
+^^^^^^
+
+``Bouvet Island`` and ``Svalbard and Jan Mayen`` are distinct locations with `ISO 3166-1`_ codes and are not included in ``Norway``.
+
+France
+^^^^^^
+
+``France`` is what is commonly called metropolitan France. It does not include the following locations which all have `ISO 3166-1`_ codes:
+
+* French Guiana
+* French Polynesia
+* French Southern and Antarctic Lands
+* Guadeloupe
+* Martinique
+* Mayotte
+* New Caledonia
+* Réunion
+* Saint Barthélemy
+* Saint Martin
+* Saint Pierre and Miquelon
+* Wallis and Futuna
+
+In addition, ``France`` does not include the uninhabited ``Clipperton Island``, which is given as a separate location.
+
+Serbia and Montenegro
+^^^^^^^^^^^^^^^^^^^^^
+
+In addition to the countries ``Serbia`` and ``Montenegro``, a legacy region ``Serbia and Montenegro`` is also provided.
+
+Spain
+^^^^^
+
+``Spain`` includes the `Canary Islands <http://en.wikipedia.org/wiki/Canary_Islands>`__, `Ceuta <http://en.wikipedia.org/wiki/Ceuta>`__, `Melilla <http://en.wikipedia.org/wiki/Melilla>`__, and the `Plazas de soberanía <http://en.wikipedia.org/wiki/Plazas_de_soberanía>`__.
+
+Micronesia
+^^^^^^^^^^
+
+The country is called ``Micronesia, Federated States of``. The UN subregion is called ``Micronesia``.
+
+United States of America
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The location ``United States of America`` includes the 50 states and Washington D.C. The following are given as separate locations:
+
+* American Samoa
+* Guam
+* Northern Mariana Islands
+* Puerto Rico
+* United States Minor Outlying Islands
+* United States Virgin Islands
+
 
 
 - Rest of world dataset
@@ -420,3 +717,5 @@ Adaptation of existing EcoSpold regions
 The first version of EcoSpold defined a number of non-country regions. All of these regions which were used in a previous version of the Ecoinvent database will be included in the new base file. The following table has specifics on the disposition of these geographies:
 
 .. _`UN macro geographical regions`: http://unstats.un.org/unsd/methods/m49/m49regin.htm
+
+.. _`ISO 3166-1`: http://en.wikipedia.org/wiki/ISO_3166-1
