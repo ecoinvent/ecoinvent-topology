@@ -161,6 +161,16 @@ Shell script takes a few hours to run.
 Setup
 =====
 
+Python packages
+---------------
+
+* argparse
+* babel
+* fastkml
+* lxml
+* sphinx
+* unicodecsv
+
 General reading
 ---------------
 
