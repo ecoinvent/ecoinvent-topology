@@ -31,7 +31,8 @@ all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}
 
 bz2_command = "bzip2 {path}"
 
-shutil.rmtree("output")
+if "output" in os.listdir("."):
+    shutil.rmtree("output")
 os.mkdir("output")
 
 formats = [
