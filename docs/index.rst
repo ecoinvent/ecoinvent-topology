@@ -397,6 +397,43 @@ In addition to the country ``Canada``, the Canadian provinces are also provided.
 * Saskatchewan
 * Yukon
 
+Chinese provinces
++++++++++++++++++
+
+In addition to the country ``China``, the Chinese provinces are also provided.
+
+* Anhui (安徽)
+* Beijing (北京)
+* Chongqing (重慶)
+* Fujian (福建)
+* Gansu (甘肅)
+* Guangdong (廣東)
+* Guangxi (廣西壯族自治區)
+* Guizhou (貴州)
+* Hainan (海南)
+* Hebei (河北)
+* Heilongjiang (黑龙江省)
+* Henan (河南)
+* Hubei (湖北)
+* Hunan (湖南)
+* Inner Mongol (內蒙古自治區)
+* Jiangsu (江蘇)
+* Jiangxi (江西)
+* Jilin (吉林)
+* Liaoning (遼寧)
+* Ningxia (寧夏回族自治區)
+* Qinghai (青海)
+* Shaanxi (陝西)
+* Shandong (山東)
+* Shanghai (上海)
+* Shanxi (山西)
+* Sichuan (四川)
+* Tianjin (天津)
+* Xinjiang (新疆維吾爾自治區)
+* Xizang (西藏自治區)
+* Yunnan (雲南)
+* Zhejiang (浙江)
+
 Changelog
 ---------
 

@@ -117,7 +117,7 @@ psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, g
 psql -U ecoinvent -d eigeo -c "UPDATE final SET name = 'Qinghai (青海)' WHERE shortname = 'CN-QH';" -q -n -o create_db.log
 
 echo "Add Chinese provinces"
-psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'china', g.name || ' (' || split_part(n.name_local, '|', 1) || ')', 'CN-' || n.postal, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'China' AND g.name != 'Paracel Islands');" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', g.name || ' (' || split_part(n.name_local, '|', 1) || ')', 'CN-' || n.postal, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'China' AND g.name != 'Paracel Islands');" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE final SET name = 'Qinghai (青海)' WHERE shortname = 'CN-QH';" -q -n -o create_db.log
 
 echo "Adding lat/long to final geometries"
