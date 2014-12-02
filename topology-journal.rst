@@ -420,6 +420,16 @@ for row in sheet.rows[1:]:
 with open("country-uuid.json", "w") as f:
     f.write(json.dumps(data, ensure_ascii=False, indent=2).encode('utf8'))
 
+Show face ids (in QGIS)
+=======================
+
+    select g.id, st_getfacegeometry('ei_topo', g.id) as geom
+    from (
+       select face_id as id
+       from ei_topo.face
+       where mbr && st_geomfromtext('POLYGON((-16 63, 21 63, 21 33, -16 33, -16 63))')
+    ) as g
+
 Add small polygons from provinces to their countries
 ====================================================
 
