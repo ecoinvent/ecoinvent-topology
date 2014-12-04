@@ -412,7 +412,7 @@ In addition to the country ``China``, the Chinese provinces are also provided.
 * Guizhou (贵州)
 * Hainan (海南)
 * Hebei (河北)
-* Heilongjiang (黑龍江省)
+* Heilongjiang (黑龙江省)
 * Henan (河南)
 * Hubei (湖北)
 * Hunan (湖南)
