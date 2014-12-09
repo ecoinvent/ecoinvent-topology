@@ -22,8 +22,8 @@ echo "Add Baikonur Cosmodrome to Kazakhstan"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_countries SET geom = (SELECT ST_Union(t.g) FROM (SELECT geom AS g FROM ne_countries WHERE name = 'Kazakhstan' UNION SELECT ST_Buffer(geom, 0.5) as g FROM ne_countries WHERE name = 'Baikonur') AS t) WHERE name = 'Kazakhstan';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "DELETE FROM ne_countries WHERE name = 'Baikonur';" -q -n -o create_db.log
 
-echo "Creating province topos"
-echo "This will take some time; An error will be raised for Paphos - it can be ignored"
+echo "Creating province topos; This will take some time"
+psql -U ecoinvent -d eigeo -c "update ne_provinces set geom = st_multi(st_buffer(geom, 0)) where name = 'Paphos';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_provinces', gid) FROM ne_provinces ORDER BY name;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE geometries g SET parent = s.admin FROM (SELECT gid, admin from ne_provinces) AS s WHERE g.gid = s.gid AND g.tname = 'ne_provinces';" -q -n -o create_db.log
