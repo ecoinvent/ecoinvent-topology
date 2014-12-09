@@ -243,13 +243,13 @@ The `International Aluminium Institute <http://www.world-aluminium.org/statistic
 
 .. note:: See the :ref:`detailed notes on aluminium-producting regions <aluminium>`.
 
-* Al producing Area 1, Africa
-* Al producing Area 2, North America
-* Al producing Area 2, North America, without Quebec
-* Al producing Area 3, South America
-* Al producing Area 4 and 5, South and East Asia, without China
-* Al producing Area 6A&B, West, East, and Central Europe
-* Al producing Area 8, Gulf Region
+* IAI producing Area 1, Africa
+* IAI producing Area 2, North America
+* IAI producing Area 2, North America, without Quebec
+* IAI producing Area 3, South America
+* IAI producing Area 4 and 5, South and East Asia, without China
+* IAI producing Area 6A&B, West, East, and Central Europe
+* IAI producing Area 8, Gulf Region
 
 UN regions and subregions
 +++++++++++++++++++++++++
@@ -466,7 +466,7 @@ The following names were changed, mostly due to changes in the source data, or t
 +------------------------------------------+---------------------------------------------------------+
 | New name                                 | Old name                                                |
 +==========================================+=========================================================+
-| Al producing Area 8, Gulf Region         | Al producing Area 8, Gulf-Aluminium Council/Gulf Region |
+| IAI producing Area 8, Gulf Region         | IAI producing Area 8, Gulf-Aluminium Council/Gulf Region |
 +------------------------------------------+---------------------------------------------------------+
 | Aland                                    | Åland Islands                                           |
 +------------------------------------------+---------------------------------------------------------+
@@ -667,13 +667,13 @@ Aluminium-producing regions
 
 Aluminium is not produced in every country in the world, and the following producing regions are given:
 
-* Al producing Area 1, Africa
-* Al producing Area 2, North America
-* Al producing Area 2, North America, without Quebec
-* Al producing Area 3, South America
-* Al producing Area 4 and 5, South and East Asia, without China
-* Al producing Area 6A&B, West, East, and Central Europe
-* Al producing Area 8, Gulf Region
+* IAI producing Area 1, Africa
+* IAI producing Area 2, North America
+* IAI producing Area 2, North America, without Quebec
+* IAI producing Area 3, South America
+* IAI producing Area 4 and 5, South and East Asia, without China
+* IAI producing Area 6A&B, West, East, and Central Europe
+* IAI producing Area 8, Gulf Region
 
 Note that there an overlap between ``North America`` and ``North America, without Quebec``.
 

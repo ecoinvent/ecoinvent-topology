@@ -1385,37 +1385,37 @@
   "Aluminium regions": [
     {
       "shortname": "IAI Area 2, North America",
-      "name": "Al producing Area 2, North America",
+      "name": "IAI producing Area 2, North America",
       "uuid": "446707ca-ceb0-4e24-b794-73e95e6154c0"
     },
     {
       "shortname": "IAI Area 1, Africa",
-      "name": "Al producing Area 1, Africa",
+      "name": "IAI producing Area 1, Africa",
       "uuid": "4484cb2d-50e8-43a0-a79f-80313021306a"
     },
     {
       "shortname": "IAI Area 2, without Quebec",
-      "name": "Al producing Area 2, North America, without Quebec",
+      "name": "IAI producing Area 2, North America, without Quebec",
       "uuid": "4a81aea7-bf37-4c83-ac1e-9a2050f88920"
     },
     {
       "shortname": "IAI Area 3, South America",
-      "name": "Al producing Area 3, South America",
+      "name": "IAI producing Area 3, South America",
       "uuid": "f3b8b2cb-5fd9-4cfc-b947-783a102c739e"
     },
     {
       "shortname": "IAI Area 4&5, without China",
-      "name": "Al producing Area 4 and 5, South and East Asia, without China",
+      "name": "IAI producing Area 4 and 5, South and East Asia, without China",
       "uuid": "77b2f7ee-3f79-4946-a2d7-50c46d1756d2"
     },
     {
       "shortname": "IAI Area 6, Europe",
-      "name": "Al producing Area 6A&B, West, East, and Central Europe",
+      "name": "IAI producing Area 6A&B, West, East, and Central Europe",
       "uuid": "dc8d48a0-e8ab-494f-a2a2-270ef43cef95"
     },
     {
       "shortname": "IAI Area 8, Gulf",
-      "name": "Al producing Area 8, Gulf-Aluminium Council/Gulf Region",
+      "name": "IAI producing Area 8, Gulf-Aluminium Council/Gulf Region",
       "uuid": "058885d6-d0a9-48ff-8d95-4baacf75ce97"
     }
   ],

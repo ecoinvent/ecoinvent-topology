@@ -105,7 +105,7 @@
     }
   ],
   [
-    "Al producing Area 2, North America",
+    "IAI producing Area 2, North America",
     "aluminium",
     {
       "ne_countries": [
@@ -115,7 +115,7 @@
     }
   ],
   [
-    "Al producing Area 1, Africa",
+    "IAI producing Area 1, Africa",
     "aluminium",
     {
       "ne_countries": [
@@ -129,7 +129,7 @@
     }
   ],
   [
-    "Al producing Area 2, North America, without Quebec",
+    "IAI producing Area 2, North America, without Quebec",
     "aluminium",
     {
       "ne_countries": [
@@ -155,7 +155,7 @@
     }
   ],
   [
-    "Al producing Area 3, South America",
+    "IAI producing Area 3, South America",
     "aluminium",
     {
       "ne_countries": [
@@ -166,7 +166,7 @@
     }
   ],
   [
-    "Al producing Area 4 and 5, South and East Asia, without China",
+    "IAI producing Area 4 and 5, South and East Asia, without China",
     "aluminium",
     {
       "ne_countries": [
@@ -185,7 +185,7 @@
     }
   ],
   [
-    "Al producing Area 6A&B, West, East, and Central Europe",
+    "IAI producing Area 6A&B, West, East, and Central Europe",
     "aluminium",
     {
       "ne_countries": [
@@ -212,7 +212,7 @@
     }
   ],
   [
-    "Al producing Area 8, Gulf Region",
+    "IAI producing Area 8, Gulf Region",
     "aluminium",
     {
       "ne_countries": [
