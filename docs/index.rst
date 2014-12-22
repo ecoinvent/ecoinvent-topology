@@ -776,6 +776,20 @@ Micronesia
 
 The country is called ``Micronesia, Federated States of``. The UN subregion is called ``Micronesia``.
 
+Cyprus
+^^^^^^
+
+.. image:: images/Cyprus.png
+    :align: center
+
+Due to `ongoing territorial disputes <http://en.wikipedia.org/wiki/Cyprus_dispute>`__, the island of Cyprus is split into the following:
+
+* `Akrotiri Sovereign Base Area <http://en.wikipedia.org/wiki/Akrotiri_and_Dhekelia>`__
+* `Cyprus <http://en.wikipedia.org/wiki/Cyprus>`__
+* `Cyprus No Mans Area <http://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus>`__
+* `Dhekelia Sovereign Base Area <http://en.wikipedia.org/wiki/Akrotiri_and_Dhekelia>`__
+* `Northern Cyprus <http://en.wikipedia.org/wiki/Northern_Cyprus>`__
+
 United States of America
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
