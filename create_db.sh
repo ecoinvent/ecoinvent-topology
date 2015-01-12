@@ -100,6 +100,9 @@ python python/iterative_add_provinces.py
 echo "Dealing with colonial legacies"
 psql -U ecoinvent -d eigeo -f sql/colonials.sql -q -n -o create_db.log
 
+echo "Add missing ISO codes & substitutes"
+psql -U ecoinvent -d eigeo -f sql/missing-codes.sql -q -n -o create_db.log
+
 echo "Fixing Chinese province names"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '黑龙江省' WHERE name = 'Heilongjiang';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '青海' WHERE name = 'Qinghai';" -q -n -o create_db.log
