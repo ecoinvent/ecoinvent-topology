@@ -2455,6 +2455,52 @@
     }
   ],
   [
+    "China Southern Power Grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "Anhui",
+        "Beijing",
+        "Chongqing",
+        "Fujian",
+        "Gansu",
+        "Hebei",
+        "Heilongjiang",
+        "Henan",
+        "Hubei",
+        "Hunan",
+        "Inner Mongol",
+        "Jiangsu",
+        "Jiangxi",
+        "Jilin",
+        "Liaoning",
+        "Ningxia",
+        "Qinghai",
+        "Shaanxi",
+        "Shandong",
+        "Shanghai",
+        "Shanxi",
+        "Sichuan",
+        "Tianjin",
+        "Xinjiang",
+        "Xizang",
+        "Zhejiang"      ]
+    }
+  ],
+  [
+    "State Grid Corporation of China",
+    "electricity",
+    {
+      "ne_provinces": [
+        "Guangdong",
+        "Guangxi",
+        "Guizhou",
+        "Hainan",
+        "Yunnan"
+      ]
+    }
+  ],
+  [
     "European Network of Transmission Systems Operators for Electricity",
     "electricity",
     {
