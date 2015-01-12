@@ -3,7 +3,7 @@
 # then exports everything.
 
 echo "Resetting 'final' database table"
-psql -U ecoinvent -d eigeo -f sql/reset-final.sql -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -f sql/reset_final.sql -q -n -o create_db.log
 
 echo "Compiling recipes"
 python python/parse_recipes.py
