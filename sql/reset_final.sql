@@ -24,5 +24,6 @@ ALTER TABLE public.cutouts
 
 CREATE INDEX ON public.final (collection, name);
 CREATE UNIQUE INDEX unique_names_final_idx ON public.final (name);
+CREATE UNIQUE INDEX unique_shortnames_final_idx ON public.final (shortname);
 
 COMMIT;
