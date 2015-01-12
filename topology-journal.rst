@@ -170,6 +170,7 @@ Python packages
 * lxml
 * sphinx
 * unicodecsv
+* progressbar33
 
 General reading
 ---------------
