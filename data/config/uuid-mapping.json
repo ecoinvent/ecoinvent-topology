@@ -1713,6 +1713,16 @@
       "uuid": "f87aa98c-d820-11de-a736-0019e336be3a"
     },
     {
+      "shortname": "China Southern Power Grid",
+      "name": "CSG",
+      "uuid": "5b64ff1c-3c47-4adf-b89c-9e18078b9bf7"
+    },
+    {
+      "shortname": "State Grid Corporation of China",
+      "name": "SGCC",
+      "uuid": "4c9baec2-f9fc-4f36-84f7-a3ed2eab82a1"
+    },
+    {
       "shortname": "Europe without Switzerland",
       "name": "Europe without Switzerland",
       "uuid": "f9221622-cc45-11de-98ed-0019e336be3a"
