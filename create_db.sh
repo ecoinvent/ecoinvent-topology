@@ -104,7 +104,5 @@ echo "Fixing Chinese province names"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '黑龙江省' WHERE name = 'Heilongjiang';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '青海' WHERE name = 'Qinghai';" -q -n -o create_db.log
 
-echo "Building country geometries"
-psql -U ecoinvent -d eigeo -f sql/build_countries.sql -q -n -o create_db.log
-
+echo "Building countries and recipes"
 source build_recipes.sh
