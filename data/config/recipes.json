@@ -2459,32 +2459,35 @@
     "electricity",
     {
       "ne_provinces": [
-        "Anhui",
-        "Beijing",
-        "Chongqing",
-        "Fujian",
-        "Gansu",
-        "Hebei",
-        "Heilongjiang",
-        "Henan",
-        "Hubei",
-        "Hunan",
-        "Inner Mongol",
-        "Jiangsu",
-        "Jiangxi",
-        "Jilin",
-        "Liaoning",
-        "Ningxia",
-        "Qinghai",
-        "Shaanxi",
-        "Shandong",
-        "Shanghai",
-        "Shanxi",
-        "Sichuan",
-        "Tianjin",
-        "Xinjiang",
-        "Xizang",
-        "Zhejiang"
+        "China",
+        [
+          "Anhui",
+          "Beijing",
+          "Chongqing",
+          "Fujian",
+          "Gansu",
+          "Hebei",
+          "Heilongjiang",
+          "Henan",
+          "Hubei",
+          "Hunan",
+          "Inner Mongol",
+          "Jiangsu",
+          "Jiangxi",
+          "Jilin",
+          "Liaoning",
+          "Ningxia",
+          "Qinghai",
+          "Shaanxi",
+          "Shandong",
+          "Shanghai",
+          "Shanxi",
+          "Sichuan",
+          "Tianjin",
+          "Xinjiang",
+          "Xizang",
+          "Zhejiang"
+        ]
       ]
     }
   ],
@@ -2493,11 +2496,14 @@
     "electricity",
     {
       "ne_provinces": [
-        "Guangdong",
-        "Guangxi",
-        "Guizhou",
-        "Hainan",
-        "Yunnan"
+        "China",
+        [
+          "Guangdong",
+          "Guangxi",
+          "Guizhou",
+          "Hainan",
+          "Yunnan"
+        ]
       ]
     }
   ],
