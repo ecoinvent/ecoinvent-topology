@@ -1384,6 +1384,16 @@
   ],
   "Aluminium regions": [
     {
+      "shortname": "Aluminium producing area, Europe outside EU27 and EFTA",
+      "name": "IAI Area, Europe outside EU & EFTA",
+      "uuid": "0fc981f0-eb14-436c-834f-c6ce005a4dc4"
+    },
+    {
+      "shortname": "Aluminium producing area, EU27 and EFTA countries",
+      "name": "IAI Area, EU27 & EFTA",
+      "uuid": "b7fcfda9-0add-49aa-87d4-d60f3bda4283"
+    },
+    {
       "shortname": "IAI Area 2, North America",
       "name": "IAI producing Area 2, North America",
       "uuid": "446707ca-ceb0-4e24-b794-73e95e6154c0"

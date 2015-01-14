@@ -105,6 +105,37 @@
     }
   ],
   [
+    "Aluminium producing area, EU27 and EFTA countries",
+    "aluminium-new",
+    {
+      "ne_countries": [
+        "France",
+        "Germany",
+        "Greece",
+        "Iceland",
+        "Italy",
+        "Netherlands",
+        "Norway",
+        "Spain",
+        "Sweden",
+        "United Kingdom",
+        "Romania",
+        "Slovakia",
+        "Slovenia"
+      ]
+    }
+  ],
+  [
+    "Aluminium producing area, Europe outside EU27 and EFTA",
+    "aluminium-new",
+    {
+      "ne_countries": [
+        "Bosnia and Herzegovina",
+        "Montenegro",
+        "Russia"      ]
+    }
+  ],
+  [
     "IAI producing Area 2, North America",
     "aluminium",
     {
@@ -181,41 +212,6 @@
         "Iran",
         "Kazakhstan",
         "Turkey"
-      ]
-    }
-  ],
-  [
-    "IAI producing Area 6A, West and Central Europe",
-    "aluminium",
-    {
-      "ne_countries": [
-        "France",
-        "Germany",
-        "Greece",
-        "Iceland",
-        "Italy",
-        "Netherlands",
-        "Norway",
-        "Spain",
-        "Sweden",
-        "United Kingdom",
-        "Croatia",
-        "Poland",
-        "Romania",
-        "Slovakia",
-        "Slovenia",
-        "Ukraine"
-      ]
-    }
-  ],
-  [
-    "IAI producing Area 6B, East Europe",
-    "aluminium",
-    {
-      "ne_countries": [
-        "Bosnia and Herzegovina",
-        "Montenegro",
-        "Russia"
       ]
     }
   ],
