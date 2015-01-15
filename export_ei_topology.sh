@@ -1,7 +1,7 @@
 #!/bin/bash
-import subprocess
-
 echo "Creating new topology and topology column"
+psql -U ecoinvent -d eigeo -c "SELECT topology.DropTopology('ei_final');" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "VACUUM FULL;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SELECT CreateTopology('ei_final', 4326);" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SELECT AddTopoGeometryColumn('ei_final', 'public', 'final', 'topogeom', 'MULTIPOLYGON');" -q -n -o create_db.log
 
