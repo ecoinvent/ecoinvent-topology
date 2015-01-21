@@ -72,6 +72,11 @@ However, in some regions states are broken up, as in this visualization of the c
 
 Ecoinvent regions are defined constructively, i.e. they are built up by adding different topological faces together.
 
+After a consistent topology is constructed, only the regions necessary for ecoinvent are extracted, and the final ecoinvent topology of the world looks like this:
+
+.. image:: images/ecoinvent-world.png
+    :align: center
+
 The input data and scripts to process, combine, and export all location data, as well as this manual, are open source and `freely available for download <https://bitbucket.org/cmutel/constructive-geometries>`__.
 
 - Custom drawn geometries
