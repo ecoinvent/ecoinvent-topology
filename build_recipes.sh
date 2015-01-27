@@ -23,6 +23,11 @@ psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, g
 echo "Add Chinese provinces"
 psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', g.name || ' (' || CASE WHEN name_local LIKE '%|%' THEN split_part(name_local, '|', 2) ELSE name_local END || ')', 'CN-' || n.postal, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'China' AND g.name != 'Paracel Islands');" -q -n -o create_db.log
 
+echo "Add Svalbard and Bouvet Island"
+psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'countries', 'Svalbard and Jan Mayen', 'SJ', geometry(g.topogeom) FROM geometries g WHERE g.tname = 'ne_provinces' AND g.name = 'Svalbard');" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'countries', g.name, 'BV', geometry(g.topogeom) FROM geometries g WHERE g.tname = 'ne_provinces' AND g.name = 'Bouvet Island');" -q -n -o create_db.log
+
+
 echo "Adding lat/long to final geometries"
 psql -U ecoinvent -d eigeo -c "UPDATE final SET longitude = st_x(st_centroid(geom));" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE final SET latitude = st_y(st_centroid(geom));" -q -n -o create_db.log
@@ -41,6 +46,7 @@ rc=$?
 if [[ $rc != 0 ]] ; then
     exit $rc
 fi
+rm output/faces-check.csv
 
 echo "Exporting"
 python python/export_all.py

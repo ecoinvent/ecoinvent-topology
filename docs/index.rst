@@ -551,8 +551,6 @@ The following locations have been removed:
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
 | Cocos (Keeling) Islands                | Now included in `Indian Ocean Territories`                                                         |
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
-| France, including overseas territories | Should not have been included. France is given separately from French Guiana, Reunion, etc.        |
-+----------------------------------------+----------------------------------------------------------------------------------------------------+
 | Spain, including overseas territories  | Should not have been included. It is easier to always include Spain's exclaves in Africa in Spain. |
 +----------------------------------------+----------------------------------------------------------------------------------------------------+
 
@@ -749,7 +747,7 @@ Norway
 France
 ^^^^^^
 
-``France`` is what is commonly called metropolitan France. It does not include the following locations which all have `ISO 3166-1`_ codes:
+``France`` is what is commonly called `metropolitan France <http://en.wikipedia.org/wiki/Metropolitan_France>`__. It does not include the following locations which all have `ISO 3166-1`_ codes:
 
 * French Guiana
 * French Polynesia
