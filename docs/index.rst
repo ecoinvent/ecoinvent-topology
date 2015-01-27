@@ -764,6 +764,8 @@ France
 
 In addition, ``France`` does not include the uninhabited ``Clipperton Island``, which is given as a separate location.
 
+The location ``France, including overseas territories`` includes metropolitan France, as well as ``French Guiana``, ``Guadeloupe``, ``Martinique``, ``Mayotte``, and ``Réunion``.
+
 Serbia and Montenegro
 ^^^^^^^^^^^^^^^^^^^^^
 
