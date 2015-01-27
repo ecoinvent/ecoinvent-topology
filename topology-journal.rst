@@ -3,7 +3,7 @@ TODO
 
 * Add uuids
 * Separate out Bouvet and Svalbard and Jan Mayen (have ISO codes) and Tokelau
-* Serbia or republic of serbia?
+* Separate out Cyprus No Mans Area and Cyprus
 
 Changes
 =======

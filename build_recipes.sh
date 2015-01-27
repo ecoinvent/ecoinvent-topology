@@ -35,6 +35,7 @@ echo "Fixing some names"
 psql -U ecoinvent -d eigeo -f sql/fix-names.sql -q -n -o create_db.log
 
 echo "Testing final database integrity"
+psql -U ecoinvent -d eigeo -c "COPY (SELECT name, GetTopoGeomElementArray(topogeom) as faces FROM geometries WHERE tname = 'ne_countries') TO STDOUT WITH CSV;" > output/faces-check.csv
 python python/db_checks_final.py
 rc=$?
 if [[ $rc != 0 ]] ; then
