@@ -40,6 +40,9 @@ echo "Creating sovereign state topos"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
 
+echo "Change Republic of Serbia to Serbia"
+psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Serbia' WHERE name = 'Republic of Serbia';" -q -n -o create_db.log
+
 echo "Getting and processing cutout geometries"
 echo "SPP"
 ogr2ogr -f PGDump sql/cutouts/spp.sql data/intermediate/spp.gpkg -lco CREATE_TABLE=OFF -lco SRID=4326 -lco GEOMETRY_NAME=geom -lco DIM=2
