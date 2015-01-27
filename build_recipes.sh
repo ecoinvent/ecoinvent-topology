@@ -27,6 +27,8 @@ echo "Add Svalbard and Bouvet Island"
 psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'countries', 'Svalbard and Jan Mayen', 'SJ', geometry(g.topogeom) FROM geometries g WHERE g.tname = 'ne_provinces' AND g.name = 'Svalbard');" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'countries', g.name, 'BV', geometry(g.topogeom) FROM geometries g WHERE g.tname = 'ne_provinces' AND g.name = 'Bouvet Island');" -q -n -o create_db.log
 
+echo "Add Tokelau"
+psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'countries', g.name, 'TK', geometry(g.topogeom) FROM geometries g WHERE g.tname = 'ne_provinces' AND g.name = 'Tokelau');" -q -n -o create_db.log
 
 echo "Adding lat/long to final geometries"
 psql -U ecoinvent -d eigeo -c "UPDATE final SET longitude = st_x(st_centroid(geom));" -q -n -o create_db.log
