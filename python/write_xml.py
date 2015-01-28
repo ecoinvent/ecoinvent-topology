@@ -65,7 +65,7 @@ class Ecospold2GeoExporter(object):
         self.doc = G.validGeographies(
             G.contextName("ecoinvent",
                 {"{%s}lang" % XML_NS: "en"}),
-            *[self.get_element(line, G) for line in list(self.input_reader)[:20]],
+            *[self.get_element(line, G) for line in list(self.input_reader)],
             **ROOT_ATTRS)
 
     def get_element(self, geo, G):

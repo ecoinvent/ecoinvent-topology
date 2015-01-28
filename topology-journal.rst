@@ -2,6 +2,7 @@ TODO
 ====
 
 * Add changes to aluminium regions to docs
+* Add RoW and Global to final
 
 Changes
 =======
