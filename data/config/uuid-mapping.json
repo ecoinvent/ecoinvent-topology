@@ -57,7 +57,7 @@
     },
     {
       "shortname": "CA-YK",
-      "name": "Yukon Territory",
+      "name": "Yukon",
       "uuid": "29dca13b-9d4b-4714-9c80-1808b9127dda"
     }
   ],
@@ -193,7 +193,7 @@
     },
     {
       "shortname": "AX",
-      "name": "Åland Islands",
+      "name": "Aland",
       "uuid": "1023d322-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -258,17 +258,17 @@
     },
     {
       "shortname": "BN",
-      "name": "Brunei Darussalam",
+      "name": "Brunei",
       "uuid": "0a4bff9c-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "BO",
-      "name": "Bolivia, Plurinational State of",
+      "name": "Bolivia",
       "uuid": "09fd4f82-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "BQ",
-      "name": "Bonaire, Sint Eustatius, and Saba",
+      "name": "Bonaire, Saint Eustatius and Saba",
       "uuid": "cef71bbd-ab04-4959-ac3b-89a0c55e2e8c"
     },
     {
@@ -278,7 +278,7 @@
     },
     {
       "shortname": "BS",
-      "name": "Bahamas",
+      "name": "The Bahamas",
       "uuid": "09da334e-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -343,7 +343,7 @@
     },
     {
       "shortname": "CI",
-      "name": "Cote d'Ivoire",
+      "name": "Ivory Coast",
       "uuid": "0ec6dff6-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -493,7 +493,7 @@
     },
     {
       "shortname": "FK",
-      "name": "Falkland Islands (Malvinas)",
+      "name": "Falkland Islands",
       "uuid": "0d627bf2-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -583,7 +583,7 @@
     },
     {
       "shortname": "GS",
-      "name": "South Georgia and the South Sandwich Islands",
+      "name": "South Georgia and South Sandwich Islands",
       "uuid": "154830be-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -598,7 +598,7 @@
     },
     {
       "shortname": "GW",
-      "name": "Guinea-Bissau",
+      "name": "Guinea Bissau",
       "uuid": "11738740-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -608,7 +608,7 @@
     },
     {
       "shortname": "HK",
-      "name": "Hong Kong",
+      "name": "Hong Kong S.A.R.",
       "uuid": "0ff7be54-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -673,7 +673,7 @@
     },
     {
       "shortname": "IR",
-      "name": "Iran (Islamic Republic of)",
+      "name": "Iran",
       "uuid": "0ea9e766-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -738,12 +738,12 @@
     },
     {
       "shortname": "KP",
-      "name": "Korea, Democratic People's Republic of",
+      "name": "North Korea",
       "uuid": "0f0215a8-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "KR",
-      "name": "Korea, Republic of",
+      "name": "South Korea",
       "uuid": "0f0f980e-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -763,7 +763,7 @@
     },
     {
       "shortname": "LA",
-      "name": "Lao People's Democratic Republic",
+      "name": "Laos",
       "uuid": "0f2f07ac-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -828,7 +828,7 @@
     },
     {
       "shortname": "MD",
-      "name": "Moldova, Republic of",
+      "name": "Moldova",
       "uuid": "1188faee-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -853,7 +853,7 @@
     },
     {
       "shortname": "MK",
-      "name": "Macedonia, the Former Yugoslav Republic of",
+      "name": "Macedonia",
       "uuid": "0f78e944-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -873,7 +873,7 @@
     },
     {
       "shortname": "MO",
-      "name": "Macau",
+      "name": "Macao S.A.R",
       "uuid": "10105c52-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1038,7 +1038,7 @@
     },
     {
       "shortname": "PN",
-      "name": "Pitcairn",
+      "name": "Pitcairn Islands",
       "uuid": "150266d8-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1048,7 +1048,7 @@
     },
     {
       "shortname": "PS",
-      "name": "Palestinian Territory, Occupied",
+      "name": "Palestine",
       "uuid": "1019325a-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1073,7 +1073,7 @@
     },
     {
       "shortname": "RE",
-      "name": "Reunion",
+      "name": "Réunion",
       "uuid": "117d1850-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1088,7 +1088,7 @@
     },
     {
       "shortname": "RU",
-      "name": "Russian Federation",
+      "name": "Russia",
       "uuid": "12143bfe-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1193,7 +1193,7 @@
     },
     {
       "shortname": "SY",
-      "name": "Syrian Arab Republic",
+      "name": "Syria",
       "uuid": "130d4f28-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1213,7 +1213,7 @@
     },
     {
       "shortname": "TF",
-      "name": "French Southern Territories",
+      "name": "French Southern and Antarctic Lands",
       "uuid": "10bb74b6-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1238,7 +1238,7 @@
     },
     {
       "shortname": "TL",
-      "name": "Timor-Leste",
+      "name": "East Timor",
       "uuid": "14fec0f0-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1273,12 +1273,12 @@
     },
     {
       "shortname": "TW",
-      "name": "Taiwan, Province of China",
+      "name": "Taiwan",
       "uuid": "154d2934-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "TZ",
-      "name": "Tanzania, United Republic Of",
+      "name": "Tanzania",
       "uuid": "13615776-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1298,7 +1298,7 @@
     },
     {
       "shortname": "US",
-      "name": "United States",
+      "name": "United States of America",
       "uuid": "13d387f6-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1313,7 +1313,7 @@
     },
     {
       "shortname": "VA",
-      "name": "Holy See (Vatican City State)",
+      "name": "Vatican",
       "uuid": "15265aa2-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1328,17 +1328,17 @@
     },
     {
       "shortname": "VG",
-      "name": "Virgin Islands, British",
+      "name": "British Virgin Islands",
       "uuid": "14480004-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "VI",
-      "name": "Virgin Islands, U.S.",
+      "name": "United States Virgin Islands",
       "uuid": "14599396-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "VN",
-      "name": "Viet Nam",
+      "name": "Vietnam",
       "uuid": "144e6f5c-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -1425,7 +1425,7 @@
     },
     {
       "shortname": "IAI Area 8, Gulf",
-      "name": "IAI producing Area 8, Gulf-Aluminium Council/Gulf Region",
+      "name": "IAI producing Area 8, Gulf Region",
       "uuid": "058885d6-d0a9-48ff-8d95-4baacf75ce97"
     }
   ],
@@ -1474,7 +1474,7 @@
     },
     {
       "shortname": "SAS",
-      "name": "South Asia",
+      "name": "Southern Asia",
       "uuid": "30e68c9c-7e2a-11de-9820-0019e336be3a"
     },
     {
