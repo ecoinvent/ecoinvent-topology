@@ -66,7 +66,7 @@
       "shortname": "France, including overseas territories",
       "name": "France, including overseas territories",
       "uuid": "28d52c97-56c5-4bcd-9504-ccc5b4797c67"
-    },
+    }
   ],
   "Australia": [
     {
@@ -113,6 +113,16 @@
       "shortname": "AUS-VCT",
       "name": "Victoria",
       "uuid": "7441e29d-0a88-49fa-8ce4-eeb7f1949f2f"
+    },
+    {
+      "shortname": "AUS-AC",
+      "name": "Ashmore and Cartier Islands",
+      "uuid": "4a271c88-5c3c-42de-9bee-1e950cc9d9f5"
+    },
+    {
+      "shortname": "AUS-IOT",
+      "name": "Indian Ocean Territories",
+      "uuid": "946938ce-9c81-4a3c-a6ce-ce60a931c602"
     },
     {
       "shortname": "AUS-WAS",
@@ -447,6 +457,11 @@
       "uuid": "0d0e72a0-7d7e-11de-9ae2-0019e336be3a"
     },
     {
+      "shortname": "Somaliland",
+      "name": "Somaliland",
+      "uuid": "6d7964cb-db0a-4b40-b975-b5d4d6bdb331"
+    },
+    {
       "shortname": "EE",
       "name": "Estonia",
       "uuid": "0d28a62a-7d7e-11de-9ae2-0019e336be3a"
@@ -635,6 +650,11 @@
       "shortname": "ID",
       "name": "Indonesia",
       "uuid": "14ba15f4-7d7e-11de-9ae2-0019e336be3a"
+    },
+    {
+      "shortname": "XK",
+      "name": "Kosovo",
+      "uuid": "ca32e3be-5acc-4486-88cf-731cdff3b9c5"
     },
     {
       "shortname": "IE",
@@ -1473,6 +1493,11 @@
       "uuid": "30e68c9c-7e2a-11de-9820-0019e336be3a"
     },
     {
+      "shortname": "UN-CARIBBEAN",
+      "name": "Caribbean",
+      "uuid": "87b165cf-8b3c-4289-807e-4512b4fb2b2f"
+    },
+    {
       "shortname": "UN-AUSTRALIANZ",
       "name": "Australia and New Zealand",
       "uuid": "fb4bde60-e62b-11de-ba56-0019e336be3a"
@@ -1600,6 +1625,16 @@
       "shortname": "RER",
       "name": "Europe",
       "uuid": "0723d252-7e2a-11de-9820-0019e336be3a"
+    },
+    {
+      "shortname": "Russia (Asia)",
+      "name": "Russia (Asia)",
+      "uuid": "6d696e3b-ac91-486c-8f04-349c496915ae"
+    },
+    {
+      "shortname": "Russia (Europe)",
+      "name": "Russia (Europe)",
+      "uuid": "1cfaa6a1-259a-442f-80ca-1070cfbbf6da"
     }
   ],
   "UN regions": [
@@ -1781,6 +1816,229 @@
       "shortname": "WECC",
       "name": "Western Electricity Coordinating Council",
       "uuid": "3af78f04-f008-43fd-8e29-dccfba3075c7"
+    }
+  ],
+  "Military bases": [
+    {
+      "shortname": "Akrotiri",
+      "name": "Akrotiri Sovereign Base Area",
+      "uuid": "7abf336a-09c3-487b-bdc3-989bbe50ee05"
+    },
+    {
+      "shortname": "Dhekelia Base",
+      "name": "Dhekelia Sovereign Base Area",
+      "uuid": "0fe2ebfb-0eb4-4f42-8ec4-628d26f61f77"
+    },
+    {
+      "shortname": "Guantanamo Bay",
+      "name": "US Naval Base Guantanamo Bay",
+      "uuid": "f557e57c-b331-4ed4-b103-cb9a167c71b0"
+    }
+  ],
+  "Small islands": [
+    {
+      "shortname": "Clipperton Island",
+      "name": "Clipperton Island",
+      "uuid": "e9f525be-34b8-45b6-9c33-5daf8b97fe7c"
+    }
+  ],
+  "Chinese provinces": [
+    {
+      "shortname": "CN-AH",
+      "name": "Anhui (安徽)",
+      "uuid": "2f82cf2a-d2e0-4be3-b60c-399bfe93d403"
+    },
+    {
+      "shortname": "CN-BJ",
+      "name": "Beijing (北京)",
+      "uuid": "a7cf4239-43f5-4256-ae84-e94595cbaac6"
+    },
+    {
+      "shortname": "CN-CQ",
+      "name": "Chongqing (重庆)",
+      "uuid": "8bc809e8-f246-46f7-bf1f-93e34e06befd"
+    },
+    {
+      "shortname": "CN-FJ",
+      "name": "Fujian (福建)",
+      "uuid": "7ac3c1e7-0b7d-4ff9-9aa5-0d67d7da37fa"
+    },
+    {
+      "shortname": "CN-GS",
+      "name": "Gansu (甘肃)",
+      "uuid": "d5231e2f-479b-4f21-9173-35beeaf2406a"
+    },
+    {
+      "shortname": "CN-GD",
+      "name": "Guangdong (广东)",
+      "uuid": "fbfd6cb0-56b1-4d0b-a13f-7f9f213f9afa"
+    },
+    {
+      "shortname": "CN-GX",
+      "name": "Guangxi (广西壮族自治区)",
+      "uuid": "c6b0afc2-8321-49aa-81f3-a793417eed91"
+    },
+    {
+      "shortname": "CN-GZ",
+      "name": "Guizhou (贵州)",
+      "uuid": "4a743c1d-f819-4398-b389-784b84de386e"
+    },
+    {
+      "shortname": "CN-HA",
+      "name": "Hainan (海南)",
+      "uuid": "dd10b4f5-3c51-4c62-9b32-a111e15e3e52"
+    },
+    {
+      "shortname": "CN-HB",
+      "name": "Hebei (河北)",
+      "uuid": "06bbed25-6ebe-48aa-9b92-300bddaeb2b7"
+    },
+    {
+      "shortname": "CN-HL",
+      "name": "Heilongjiang (黑龙江省)",
+      "uuid": "0f7b1e31-0d0b-404a-994b-e3cd1b7586f0"
+    },
+    {
+      "shortname": "CN-HE",
+      "name": "Henan (河南)",
+      "uuid": "bf7827a3-16a7-4a38-ad02-527898a12a7f"
+    },
+    {
+      "shortname": "CN-HU",
+      "name": "Hubei (湖北)",
+      "uuid": "2a19941e-dd11-44b4-919f-fb33c9150b71"
+    },
+    {
+      "shortname": "CN-HN",
+      "name": "Hunan (湖南)",
+      "uuid": "9923dac7-3164-4e2f-8723-f343d998072d"
+    },
+    {
+      "shortname": "CN-NM",
+      "name": "Inner Mongol (内蒙古自治区)",
+      "uuid": "da5d7825-8e05-4bad-b026-4204389cdef3"
+    },
+    {
+      "shortname": "CN-JS",
+      "name": "Jiangsu (江苏)",
+      "uuid": "dc5987d0-7a19-4843-82f1-15708e106edb"
+    },
+    {
+      "shortname": "CN-JX",
+      "name": "Jiangxi (江西)",
+      "uuid": "f5c62675-f6ae-4bc4-8c9b-3b737ef2ea53"
+    },
+    {
+      "shortname": "CN-JL",
+      "name": "Jilin (吉林)",
+      "uuid": "e58a4a8a-ca18-48d8-9023-3628de160e8e"
+    },
+    {
+      "shortname": "CN-LN",
+      "name": "Liaoning (辽宁)",
+      "uuid": "13b215dc-598a-480e-98e6-13675076ac78"
+    },
+    {
+      "shortname": "CN-NX",
+      "name": "Ningxia (宁夏回族自治区)",
+      "uuid": "9e2f10b3-138f-4320-95a3-ea3853c5fbdd"
+    },
+    {
+      "shortname": "CN-QH",
+      "name": "Qinghai (青海)",
+      "uuid": "06422af3-6431-4f6f-a555-7c0e008bce8b"
+    },
+    {
+      "shortname": "CN-SA",
+      "name": "Shaanxi (陕西)",
+      "uuid": "232efb31-1dd5-4d00-87a8-5fa631021c17"
+    },
+    {
+      "shortname": "CN-SD",
+      "name": "Shandong (山东)",
+      "uuid": "2b2ddda2-bb8e-42f7-82e5-013cc04f7bc5"
+    },
+    {
+      "shortname": "CN-SH",
+      "name": "Shanghai (上海)",
+      "uuid": "4a15b2ab-5593-48d7-a7b9-b1c07c5ca99b"
+    },
+    {
+      "shortname": "CN-SX",
+      "name": "Shanxi (山西)",
+      "uuid": "79abbd47-8e8b-4932-94c8-f3518ff110e9"
+    },
+    {
+      "shortname": "CN-SC",
+      "name": "Sichuan (四川)",
+      "uuid": "1238ec0d-4167-453a-9ec5-50cfef0782a1"
+    },
+    {
+      "shortname": "CN-TJ",
+      "name": "Tianjin (天津)",
+      "uuid": "24c6336b-e160-4d2a-8d25-ac207a66f6c1"
+    },
+    {
+      "shortname": "CN-XJ",
+      "name": "Xinjiang (新疆维吾尔自治区)",
+      "uuid": "e8a978ab-a183-4ce7-b791-760190d8a63c"
+    },
+    {
+      "shortname": "CN-XZ",
+      "name": "Xizang (西藏自治区)",
+      "uuid": "c079ba9b-dc27-45f0-96b5-a3dd168de8ed"
+    },
+    {
+      "shortname": "CN-YN",
+      "name": "Yunnan (云南)",
+      "uuid": "f41e84aa-2c80-451e-a7ab-594acc1b096d"
+    },
+    {
+      "shortname": "CN-ZJ",
+      "name": "Zhejiang (浙江)",
+      "uuid": "a959ec4b-3db6-4b9f-9ea6-897fbcfdc610"
+    }
+  ],
+  "Disputed regions": [
+    {
+      "shortname": "Scarborough Reef",
+      "name": "Scarborough Reef",
+      "uuid": "aa97629e-e94b-4270-a042-979d38785ecd"
+    },
+    {
+      "shortname": "Serranilla Bank",
+      "name": "Serranilla Bank",
+      "uuid": "c692fbb4-53d5-4e63-920d-361e98c90dab"
+    },
+    {
+      "shortname": "Bajo Nuevo",
+      "name": "Bajo Nuevo Bank (Petrel Is.)",
+      "uuid": "43c4f591-2b61-4145-a9f6-e10b4349c2cd"
+    },
+    {
+      "shortname": "Coral Sea Islands",
+      "name": "Coral Sea Islands",
+      "uuid": "2267ada9-09f7-4fc9-a93f-5b1e0086107e"
+    },
+    {
+      "shortname": "Cyprus No Mans Area",
+      "name": "Cyprus No Mans Area",
+      "uuid": "4aa2a59b-aed0-4438-9db4-960357820659"
+    },
+    {
+      "shortname": "Northern Cyprus",
+      "name": "Northern Cyprus",
+      "uuid": "92f428e3-0631-408a-bb78-7cc010f272ca"
+    },
+    {
+      "shortname": "Spratly Islands",
+      "name": "Spratly Islands",
+      "uuid": "6ba95ea2-6963-4dad-aa26-a5b45785e7f0"
+    },
+    {
+      "shortname": "Siachen Glacier",
+      "name": "Siachen Glacier",
+      "uuid": "3dc3c9af-74a3-472e-8af9-070146a3eec9"
     }
   ]
 }
