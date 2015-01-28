@@ -41,6 +41,10 @@ psql -U ecoinvent -d eigeo -c "UPDATE final SET uncode = 0 WHERE uncode <= 0;" -
 echo "Fixing some names"
 psql -U ecoinvent -d eigeo -f sql/fix-names.sql -q -n -o create_db.log
 
+echo "Adding shortnames and UUIDS"
+python python/parse_uuids.py
+psql -U ecoinvent -d eigeo -f sql/uuids.sql -q -n -o create_db.log
+
 echo "Testing final database integrity"
 psql -U ecoinvent -d eigeo -c "COPY (SELECT name, GetTopoGeomElementArray(topogeom) as faces FROM geometries WHERE tname = 'ne_countries') TO STDOUT WITH CSV;" > output/faces-check.csv
 python python/db_checks_final.py
