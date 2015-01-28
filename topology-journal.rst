@@ -14,25 +14,6 @@ Changes
 * Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
 * The location "Central and Eastern Europe", which was marked as obsolete in 2009 and is not used by any datasets in 3.1, is now removed.
 
-Problem geometries
-==================
-
-Southwest Power Pool
-Florida Reliability Coordinating Council
-Texas Regional Entity
-ReliabilityFirst Corporation
-SERC Reliability Corporation
-Western Electricity Coordinating Council
-Northeast Power Coordinating Council
-Midwest Reliability Organization
-Alaska Systems Coordinating Council
-
-Midwest Reliability Organization, US part only
-Northeast Power Coordinating Council, US part only
-Western Electricity Coordinating Council, US part only
-
-.. note: Ignore spain for now - not worth dealing with African exclaves.
-
 Procedure
 =========
 

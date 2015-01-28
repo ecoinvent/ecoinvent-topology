@@ -367,7 +367,7 @@ Trading blocks
 Miscellaneous
 ^^^^^^^^^^^^^
 
-* Canary Islands (``Spain`` also includes the Canary Islands)
+* Canary Islands (:ref:`Spain` also includes the Canary Islands)
 * France, including overseas territories (See :ref:`france`)
 * Middle East (Iran, Iraq, Kuwait, Saudi Arabia, and the United Arab Emirates)
 * Québec, Hydro-Québec distribution network
@@ -450,6 +450,8 @@ Changelog
 
 Version 2.0 (ecoinvent 3.2)
 +++++++++++++++++++++++++++
+
+No locations used in ecoinvent 3.01 or 3.1 have been removed, and no location shortnames or UUIDs have been changed. Ecoinvent geography definitions version 2.0 should therefore be backwards-compatible with version 1.0.
 
 The following locations were added:
 
@@ -571,6 +573,13 @@ Notes on specific geometries
 ----------------------------
 
 Some images are large, and can be opened in a separate tab to be seen in full detail.
+
+Global and Rest of the World
+++++++++++++++++++++++++++++
+
+The ``Global`` dataset does not have a KML description.
+
+The ``Rest of the world`` dataset is a dynamic concept that exists in the situation when both a global dataset and one or more non-global datasets are available for the same activity, time period, and macro-economic scenario. The definitions is specific to each activity and depends on what defined geographies are available for the specific activity name. It is defined as the difference between the global reference dataset and the datasets with defined geographies. The “rest of world” dataset does not have a set KML description.
 
 UN Regions and subregions
 +++++++++++++++++++++++++
@@ -746,14 +755,14 @@ In addition to these current networks, the following legacy European networks ar
     :align: center
 
 Norway
-^^^^^^
+++++++
 
 ``Bouvet Island`` and ``Svalbard and Jan Mayen`` are distinct locations with `ISO 3166-1`_ codes and are not included in ``Norway``.
 
 .. _france:
 
 France
-^^^^^^
+++++++
 
 ``France`` is what is commonly called `metropolitan France <http://en.wikipedia.org/wiki/Metropolitan_France>`__. It does not include the following locations which all have `ISO 3166-1`_ codes:
 
@@ -774,23 +783,20 @@ In addition, ``France`` does not include the uninhabited ``Clipperton Island``, 
 
 The location ``France, including overseas territories`` includes metropolitan France, as well as ``French Guiana``, ``Guadeloupe``, ``Martinique``, ``Mayotte``, and ``Réunion``.
 
-Serbia and Montenegro
-^^^^^^^^^^^^^^^^^^^^^
-
-In addition to the countries ``Serbia`` and ``Montenegro``, a legacy region ``Serbia and Montenegro`` is also provided.
+.. _spain:
 
 Spain
-^^^^^
++++++
 
 ``Spain`` includes the `Canary Islands <http://en.wikipedia.org/wiki/Canary_Islands>`__, `Ceuta <http://en.wikipedia.org/wiki/Ceuta>`__, `Melilla <http://en.wikipedia.org/wiki/Melilla>`__, and the `Plazas de soberanía <http://en.wikipedia.org/wiki/Plazas_de_soberanía>`__.
 
 Micronesia
-^^^^^^^^^^
+++++++++++
 
 The country is called ``Micronesia, Federated States of``. The UN subregion is called ``Micronesia``.
 
 Cyprus
-^^^^^^
+++++++
 
 .. image:: images/Cyprus.png
     :align: center
@@ -804,7 +810,7 @@ Due to `ongoing territorial disputes <http://en.wikipedia.org/wiki/Cyprus_disput
 * `Northern Cyprus <http://en.wikipedia.org/wiki/Northern_Cyprus>`__
 
 United States of America
-^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++
 
 The location ``United States of America`` includes the 50 states and Washington D.C. The following are given as separate locations:
 
@@ -814,13 +820,6 @@ The location ``United States of America`` includes the 50 states and Washington 
 * Puerto Rico
 * United States Minor Outlying Islands
 * United States Virgin Islands
-
-The “global” dataset does not have a KML description.
-
-The distinction between country and oversea territory follows the guidance in ISO. Note that France considers its overseas territories an integral part of France, while the ISO has assigned them country codes.
-
-Rest of world dataset
-The “rest of world” dataset is a dynamic concept that exists in the situation when both a global dataset and one or more non-global datasets are available for the same activity, time period, and macro-economic scenario. The definitions is specific to each activity and depends on what defined geographies are available for the specific activity name. It is defined as the difference between the global reference dataset and the datasets with defined geographies. The “rest of world” dataset does not have a set KML description.
 
 .. _`UN macro geographical regions`: http://unstats.un.org/unsd/methods/m49/m49regin.htm
 
