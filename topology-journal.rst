@@ -524,3 +524,25 @@ Processing for intersected areas
     as_list = sorted([[sorted(k), v] for k, v in {frozenset(o[:2]): o[2] / 1e6 for o in data}.iteritems()])
     with open("intersections.json", "w") as f:
         f.write(json.dumps(as_list, ensure_ascii=False, indent=2).encode('utf8'))
+
+Get all used geometries
+-----------------------
+
+..code-block:: python
+
+    from brightway2 import *
+    config.p['use_cache'] = False
+
+    locations = set()
+
+    dbs = [
+        u'ecoinvent 3.1 default',
+        u'ecoinvent 3.1 cutoff',
+        u'ecoinvent 3.1 consequential'
+    ]
+
+    for name in dbs:
+        for ds in Database(name).load().values():
+            locations.add(ds['location'])
+
+    locations
