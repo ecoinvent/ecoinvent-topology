@@ -2,6 +2,7 @@ TODO
 ====
 
 * Add uuids
+* Add changes to aluminium regions to docs
 
 Changes
 =======

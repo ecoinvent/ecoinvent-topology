@@ -1,7 +1,12 @@
 Ecoinvent geography definitions
 ===============================
 
-.. note:: This is a draft report.
+.. warning:: This is a draft report.
+
+Table of Contents
+-----------------
+
+.. contents::
 
 Introduction
 ------------
@@ -362,10 +367,11 @@ Trading blocks
 Miscellaneous
 ^^^^^^^^^^^^^
 
-* Canary Islands
+* Canary Islands (``Spain`` also includes the Canary Islands)
+* France, including overseas territories (See :ref:`france`)
 * Middle East (Iran, Iraq, Kuwait, Saudi Arabia, and the United Arab Emirates)
 * Québec, Hydro-Québec distribution network
-* Serbia and Montenegro (Both ``Serbia`` and ``Montenegro`` are also included separately)
+* Serbia and Montenegro (Legacy location; Both ``Serbia`` and ``Montenegro`` are included as countries)
 
 Australian states and territories
 +++++++++++++++++++++++++++++++++
@@ -543,7 +549,7 @@ The following names were changed, mostly due to changes in the source data, or t
 The following unused locations have been removed:
 
 +----------------------------------------+--------------------------------------------+
-| Location                               | Comment                                                                                            |
+| Location                               | Comment                                    |
 +========================================+============================================+
 | Central and Eastern Europe             |                                            |
 +----------------------------------------+--------------------------------------------+
@@ -743,6 +749,8 @@ Norway
 ^^^^^^
 
 ``Bouvet Island`` and ``Svalbard and Jan Mayen`` are distinct locations with `ISO 3166-1`_ codes and are not included in ``Norway``.
+
+.. _france:
 
 France
 ^^^^^^
