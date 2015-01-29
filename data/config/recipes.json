@@ -106,7 +106,7 @@
   ],
   [
     "Aluminium producing area, EU27 and EFTA countries",
-    "aluminium-new",
+    "aluminium",
     {
       "ne_countries": [
         "France",
@@ -127,7 +127,7 @@
   ],
   [
     "Aluminium producing area, Europe outside EU27 and EFTA",
-    "aluminium-new",
+    "aluminium",
     {
       "ne_countries": [
         "Bosnia and Herzegovina",

@@ -456,6 +456,8 @@ No locations used in ecoinvent 3.01 or 3.1 have been removed, and no location sh
 The following locations were added:
 
 * `Akrotiri Sovereign Base Area <http://en.wikipedia.org/wiki/Akrotiri_and_Dhekelia>`__
+* `Aluminium producing area, EU27 and EFTA countries`
+* `Aluminium producing area, Europe outside EU27 and EFTA`
 * `Ashmore and Cartier Islands <http://en.wikipedia.org/wiki/Ashmore_and_Cartier_Islands>`__
 * `Bajo Nuevo Bank (Petrel Is.) <http://en.wikipedia.org/wiki/Bajo_Nuevo_Bank>`__
 * Caribbean (UN subregion)
@@ -473,6 +475,10 @@ The following locations were added:
 * `Siachen Glacier <http://en.wikipedia.org/wiki/Siachen_Glacier>`__
 * `Somaliland <http://en.wikipedia.org/wiki/Somaliland>`__
 * `US Naval Base Guantanamo Bay <http://en.wikipedia.org/wiki/Guantanamo_Bay_Naval_Base>`__
+
+The location ``Al producing Area 6A&B, West, East, and Central Europe``, which was not used in ecoinvent 3.01 or 3.1, has been split into ``Aluminium producing area, EU27 and EFTA countries`` and ``Aluminium producing area, Europe outside EU27 and EFTA``.
+
+.. note:: Sovereign military bases are necessary in version 2 for a consistent world topology.
 
 The following names were changed, mostly due to changes in the source data, or to choose the common instead of formal names:
 
@@ -561,8 +567,6 @@ The following unused locations have been removed:
 +----------------------------------------+--------------------------------------------+
 | Spain, including overseas territories  |                                            |
 +----------------------------------------+--------------------------------------------+
-
-.. note:: Version 1 did not include sovereign military bases, but they are necessary in version 2 for a consistent topology.
 
 Version 1.0 (ecoinvent 3.01 & 3.1)
 ++++++++++++++++++++++++++++++++++
@@ -690,10 +694,11 @@ Aluminium is not produced in every country in the world, and the following produ
 * IAI producing Area 2, North America, without Quebec
 * IAI producing Area 3, South America
 * IAI producing Area 4 and 5, South and East Asia, without China
-* IAI producing Area 6A&B, West, East, and Central Europe
+* Aluminium producing area, EU27 and EFTA countries
+* Aluminium producing area, Europe outside EU27 and EFTA
 * IAI producing Area 8, Gulf Region
 
-Note that there an overlap between ``North America`` and ``North America, without Quebec``.
+Note that there is an overlap between ``IAI producing Area 2, North America`` and ``IAI producing Area 2, North America, without Quebec``.
 
 .. image:: images/Aluminium.png
     :align: center
