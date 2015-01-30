@@ -60,3 +60,4 @@ python python/export_all.py
 echo "Formatting to Ecospold XML"
 psql -U ecoinvent -d eigeo -c "COPY (SELECT uuid, name, shortname, ST_AsKML(geom) as geom, isotwolettercode, longitude, isothreelettercode, latitude FROM final) TO STDOUT WITH CSV;" > output/all.csv
 python python/write_xml.py
+bzip2 -f output/Geographies.xml
