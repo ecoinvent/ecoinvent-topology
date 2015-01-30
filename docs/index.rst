@@ -13,8 +13,10 @@ Introduction
 
 The ecoinvent centre provide consistent and comprehensive geodata for the locations used in the ecoinvent database. This document describes how these location geometries are created and processed, and gives details on particular locations that may be confusing.
 
-Purpose of location descriptions in ecoinvent
----------------------------------------------
+Purpose of location data in ecoinvent
+-------------------------------------
+
+Location data in ecoinvent is used to locate inventory processes in space, define and construct market and market inputs, and for various forms of regionalized life cycle inventory analysis and impact assessment.
 
 Statement on geographical controversies
 ---------------------------------------
@@ -23,6 +25,12 @@ Neither the EcoSpold 2 data format, nor its authors, take any position on geogra
 
 Data formats
 ------------
+
+The official ecospold2 format for specifying geographies is a single XML file, with location geodata included in the `KML <http://en.wikipedia.org/wiki/Keyhole_Markup_Language>`__ format *inside* the XML file. The official geographies file is here:
+
+* `Geographies.xml (bzip2 compressed) <http://geography.ecoinvent.org/report/files/Geographies.xml.bz2>`__
+
+However, this format is not easy to work with for most programming languages or GIS programs. The location data and metadata are also available in a number of GIS formats. Selections of the location data are also provided, as a single file containing all regions can be a bit unwieldy.
 
 +------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
 | Description                              | `GeoJSON <http://geojson.org/>`__                                                     | `Geopackage <http://www.geopackage.org/>`__                                       | `KMZ <http://en.wikipedia.org/wiki/Keyhole_Markup_Language>`__            | `ESRI Shapefile <http://en.wikipedia.org/wiki/Shapefile>`__                                |
@@ -49,21 +57,39 @@ Data formats
 +------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
 | Ecoinvent special                        | `GeoJSON <http://geography.ecoinvent.org/report/files/special.geojson.bz2>`__         | `Geopackage <http://geography.ecoinvent.org/report/files/special.gpkg>`__         | `KMZ <http://geography.ecoinvent.org/report/files/special.kmz>`__         | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/special.zip>`__               |
 +------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
-| Canadian provinces and Australian states | `GeoJSON <http://geography.ecoinvent.org/report/files/states.geojson.bz2>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/states.gpkg>`__          | `KMZ <http://geography.ecoinvent.org/report/files/states.kmz>`__          | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/states.zip>`__                |
+| Provinces and states                     | `GeoJSON <http://geography.ecoinvent.org/report/files/states.geojson.bz2>`__          | `Geopackage <http://geography.ecoinvent.org/report/files/states.gpkg>`__          | `KMZ <http://geography.ecoinvent.org/report/files/states.kmz>`__          | `ESRI Shapefile <http://geography.ecoinvent.org/report/files/states.zip>`__                |
 +------------------------------------------+---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
 
 Methodology
 -----------
 
-The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_. In addition to Natural Earth, custom geometries were drawn for NERC regions in the United States of America which split individual states.
+The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_, both *Admin 0 – Countries* and *Admin 1 – States, Provinces*. In addition to Natural Earth, custom geometries were drawn for NERC regions in the United States of America which split individual states.
 
-Processing begins by entering all state/province level regions into a `PostGIS topological database <http://postgis.net/docs/Topology.html>`__. A topology is different from a normal geometry because it tries to store only one copy of each face edge and node, and a state or province would be defined by which common edges it bordered. For example, the boundary between France and Germany would be stored only once, and the topology of both France and Germany would reference that border. Topology is a rahter complex subject which is not explained in detail here; interested readers should go through `this presentation by Sandro Santilli <http://strk.keybit.net/projects/postgis/Paris2011_TopologyWithPostGIS_2_0.pdf>`__. The use of topologies give several nice advantages:
+Processing begins by entering all state/province level regions into a `PostGIS topological database <http://postgis.net/docs/Topology.html>`__. A topology is different from a normal geometry because it tries to store only one copy of each face edge and node, and a state or province would be defined by which common edges it bordered. For example, the boundary between France and Germany would be stored only once, and the topology of both France and Germany would reference that border. Topology is a rather complex subject which is not explained in detail here; interested readers should go through `this presentation by Sandro Santilli <http://strk.keybit.net/projects/postgis/Paris2011_TopologyWithPostGIS_2_0.pdf>`__. The use of topologies give several nice advantages:
 
 * Consistency: Each border is only defined once. Modifications to border edges apply to all affected regions automatically.
 * Integrity: All regions are automatically valid.
 * Explicit relationships: It is fast and simple to determine spatial relationships among regions by comparing their topological faces. There is no potential for floating-point errors, as no geometry math is needed.
 
-After state/province-level data is imported, country data is imported. Country borders are automatically snapped to province borders by the database. A series of data cleaning steps is then applied.
+After state/province-level data is imported, country data is imported. Country borders are automatically snapped to province borders by the database. A series of data cleaning steps is then applied. Specifically, the following is done:
+
+* Provinces with self-intersecting borders are fiexed using `ST_MakeValid <http://postgis.org/documentation/manual-svn/ST_MakeValid.html>`__
+* Minor islands which are included in province-level data but not included in country-level data are added to the country geometries
+* ``Republic of Serbia`` is changed to ``Serbia``
+* ``Svalbard and Jan Mayen`` and ``Bouvet Island`` geometries are removed from ``Norway``; they have separate ISO codes
+* ``Cyprus No Mans Area`` geometry is removed from ``Cyprus``; ``Cyprus No Mans Area`` is a separate location
+* ``Tokelau`` geometry is removed from ``New Zealand``; ``Tokelau`` has a separate ISO code
+* ``Baikonur cosmodrone`` is reassigned from ``Russia`` to ``Kazakhstan``
+* ``Netherlands`` is redefined to not include its Caribbean islands, which have their own ISO code
+* ``France`` is redefined to not include territories which have their own ISO codes (See :ref:`france`)
+* ``Kosovo`` is given the provisional ISO code ``XK``.
+* The Mandarin names of the Chinese provinces ``Heilongjiang`` and ``Qinghai`` are corrected.
+* ``Democratic Republic of the Congo`` is changed to ``Congo, Democratic Republic of the``
+* ``Republic of Congo`` is changed to ``Congo``
+* ``Federated States of Micronesia`` is changed to ``Micronesia, Federated States of``
+* ``United Republic of Tanzania`` is changed to ``Tanzania``
+
+In addition, the ``United States of America`` is split into the regional transmission grids, whose borders do not follow state borders.
 
 The basic topological units in the database are usually state/province-level regions, as in this visualization of Madagascar:
 
@@ -75,16 +101,14 @@ However, in some regions states are broken up, as in this visualization of the c
 .. image:: images/NERC.png
     :align: center
 
-Ecoinvent regions are defined constructively, i.e. they are built up by adding different topological faces together.
+Ecoinvent regions are defined constructively, i.e. they are built up by adding together their smallest constituent units. Intersection or difference functions are not used, as they can lead to floating-point errors and small geometrical artifacts.
 
-After a consistent topology is constructed, only the regions necessary for ecoinvent are extracted, and the final ecoinvent topology of the world looks like this:
+After a consistent topology is constructed, the regions used in ecoinvent are extracted. For example, ecoinvent provides Australian states, so these are added individually; however, state-level data in most other countries are not used, so only the country borders are extracted. The final ecoinvent topology of the world looks like this:
 
 .. image:: images/ecoinvent-world.png
     :align: center
 
 The input data and scripts to process, combine, and export all location data, as well as this manual, are open source and `freely available for download <https://bitbucket.org/cmutel/constructive-geometries>`__.
-
-- Custom drawn geometries
 
 List of locations in ecoinvent
 ------------------------------
@@ -266,7 +290,7 @@ UN regions and subregions
 
 All `UN macro geographical regions`_ and subregions are included.
 
-.. note:: See also geographic descriptions of :ref:`regions` and :ref:`subregions`.
+.. note:: See also graphical descriptions of :ref:`regions` and :ref:`subregions`.
 
 UN regions
 ^^^^^^^^^^
