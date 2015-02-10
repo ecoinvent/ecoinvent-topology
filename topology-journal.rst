@@ -497,6 +497,14 @@ To:
 Processing for intersected areas
 --------------------------------
 
+Needed for ecoinvent file that is processed by Guillaume
+
+.. code-block:: bash
+
+    pandarus output/all.gpkg --field1=name output/all.gpkg --field2=name all.json json
+    cp all.json.bz2 all2.json.bz2
+    bunzip2 all2.json.bz2
+
 .. code-block:: python
 
     import json
