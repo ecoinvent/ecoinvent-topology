@@ -380,6 +380,7 @@ UPDATE final SET shortname='ASCC', uuid='a9c3be27-affe-464c-8ebf-996d8ab6a958' W
 UPDATE final SET shortname='Asia without China', uuid='b7ac8bd0-a9d4-4caf-a832-48a0f3660da7' WHERE name = 'Asia without China';
 UPDATE final SET shortname='Canada without Alberta', uuid='39c8f992-22b7-4d59-9be0-eb461b36df2f' WHERE name = 'Canada without Alberta';
 UPDATE final SET shortname='Canada without Alberta and Quebec', uuid='ae9d0b20-e4e3-4cd3-9699-63eca5319c9b' WHERE name = 'Canada without Alberta and Quebec';
+UPDATE final SET shortname='ROC', uuid='a4d7d7fd-94ae-4f44-91ba-53cd7f79bac4' WHERE name = 'Canada without Quebec';
 UPDATE final SET shortname='Europe without NORDEL (NCPA)', uuid='a2d4e588-e0d1-11de-823b-0019e336be3a' WHERE name = 'Europe without NORDEL (NCPA)';
 UPDATE final SET shortname='Europe, without Russia and Turkey', uuid='c670b4a0-6051-4935-bafe-866736a010a9' WHERE name = 'Europe, without Russia and Turkey';
 UPDATE final SET shortname='MRO, US only', uuid='6432879f-dc31-4e80-bc55-573f72dafee8' WHERE name = 'Midwest Reliability Organization, US part only';
