@@ -2492,6 +2492,22 @@
       "ne_provinces": [
         "China",
         [
+          "Guangdong",
+          "Guangxi",
+          "Guizhou",
+          "Hainan",
+          "Yunnan"
+        ]
+      ]
+    }
+  ],
+  [
+    "State Grid Corporation of China",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
           "Anhui",
           "Beijing",
           "Chongqing",
@@ -2518,22 +2534,6 @@
           "Xinjiang",
           "Xizang",
           "Zhejiang"
-        ]
-      ]
-    }
-  ],
-  [
-    "State Grid Corporation of China",
-    "electricity",
-    {
-      "ne_provinces": [
-        "China",
-        [
-          "Guangdong",
-          "Guangxi",
-          "Guizhou",
-          "Hainan",
-          "Yunnan"
         ]
       ]
     }
