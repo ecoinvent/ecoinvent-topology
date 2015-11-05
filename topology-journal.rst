@@ -134,9 +134,13 @@ It assumes the following:
 
 1. You have python installed on your machine
 2. You have Postgresql and PostGIS installed on your machine
-3. You have a Postgresql user named "ecoinvent" who can create tables
+3. You have a Postgresql user named "ecoinvent" who can create tables. You can create users with the following command in the shell:
+
+   sudo -u postgres createuser -s ecoinvent
 
 Shell script takes a few hours to run.
+
+
 
 Setup
 =====

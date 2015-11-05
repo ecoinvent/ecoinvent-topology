@@ -4,6 +4,18 @@ This repository contains the scripts and data needed to build a consistent topol
 
 The repository is a mix of SQL, bash scripts, and Python. See the file "topology-journal.rst" for instructions and journal of what was done and why.
 
+## Python requirements
+
+The Python code is compatible with Python 2.7. It requires the following libraries:
+
+lxml
+fastkml
+fiona
+shapely
+progressbar
+unicodecsv
+babel
+
 ## Exporting selected geometries
 
 Modify this command to get the names you want:
