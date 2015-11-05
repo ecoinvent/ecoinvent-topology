@@ -3,17 +3,17 @@ import os
 import re
 import subprocess
 import sys
-import unicodecsv
+import csv
 
 valid_geom_final = 'psql -U ecoinvent -d eigeo -c "select name from final where not st_isvalid(geom)";'
 
 def check_command(command, error, ok, expected="(0 rows)"):
     p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
-    result = p.communicate()[0]
+    result = p.communicate()[0].decode('utf8')
     if expected not in result:
         raise sys.exit(error)
     else:
-        print ok
+        print(ok)
 
 numbers = re.compile('{(?P<face_id>\d+),3}')
 
@@ -24,8 +24,8 @@ def check_country_faces():
     def get_face_ids(row):
         return (row[0], {int(x) for x in numbers.findall(row[1])})
 
-    with open(fp) as f:
-        data = [get_face_ids(row) for row in unicodecsv.reader(f, encoding='utf-8')]
+    with open(fp, "r", encoding='utf8') as f:
+        data = [get_face_ids(row) for row in csv.reader(f)]
 
     for index, first in enumerate(data):
         for second in data[index + 1:]:
@@ -33,12 +33,12 @@ def check_country_faces():
                 errors.append((first[0], second[0]))
 
     if errors:
-        print "Error: Overlapping countries found:"
+        print("Error: Overlapping countries found:")
         for row in errors:
-            print unicode(row).encode("utf-8")
+            print(row)
         sys.exit(1)
     else:
-        print "No overlapping countries"
+        print("No overlapping countries")
 
 
 if __name__ == "__main__":

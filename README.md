@@ -6,14 +6,13 @@ The repository is a mix of SQL, bash scripts, and Python. See the file "topology
 
 ## Python requirements
 
-The Python code is compatible with Python 2.7. It requires the following libraries:
+The Python code is compatible with Python >= 3.4. It requires the following libraries:
 
 lxml
 fastkml
 fiona
 shapely
-progressbar
-unicodecsv
+pyprind
 babel
 
 ## Exporting selected geometries

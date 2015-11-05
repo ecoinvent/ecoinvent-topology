@@ -7,9 +7,6 @@ import sys
 
 csv.field_size_limit(sys.maxsize)
 
-import unicodecsv
-
-
 
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 
@@ -50,7 +47,7 @@ class Ecospold2GeoExporter(object):
             u'latitude'
         ]
 
-        self.input_reader = unicodecsv.reader(open(self.input_fp), encoding='utf-8')
+        self.input_reader = csv.reader(open(self.input_fp, encoding='utf-8'))
         self.create_document()  # Creates self.doc
         self.write_document()
 
@@ -79,7 +76,7 @@ class Ecospold2GeoExporter(object):
             u'ISOThreeLetterCode',
             u'latitude'
         }
-        GEO_ATTRS = {key: value for key, value in data.iteritems() if key in NON_LANGUAGE_KEYS}
+        GEO_ATTRS = {key: value for key, value in data.items() if key in NON_LANGUAGE_KEYS}
 
         ELEMS = []
 
@@ -115,7 +112,7 @@ class Ecospold2GeoExporter(object):
     # TODO: Add RoW and Global
 
     def write_document(self):
-        with open(self.output_fp, "w") as f:
+        with open(self.output_fp, "wb") as f:
             f.write(tostring(self.doc, encoding='utf8'))
 
 

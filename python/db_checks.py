@@ -8,11 +8,11 @@ no_duplicate_admin = 'psql -U ecoinvent -d eigeo -c "select * from (select count
 
 def check_command(command, error, ok, expected="(0 rows)"):
     p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
-    result = p.communicate()[0]
+    result = p.communicate()[0].decode('utf8')
     if expected not in result:
         raise sys.exit(error)
     else:
-        print ok
+        print(ok)
 
 check_command(no_duplicate_a3_codes, "Duplicate A3 codes", "A3 codes are all unique")
 check_command(no_duplicate_admin, "Duplicate admin codes", "Admin codes are all unique")

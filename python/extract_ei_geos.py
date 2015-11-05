@@ -39,7 +39,7 @@ def xml_to_geopackage(in_fp, out_fp):
                     parsed = fastkml.kml.KML()
                     parsed.from_string(etree.tostring(getattr(el, "{http://www.opengis.net/kml/2.2}kml"), encoding="utf8"))
                 except AttributeError:
-                    print "Skipping %s" % el.name
+                    print("Skipping %s" % el.name)
                     continue
 
                 geom = parsed.features().next().features().next().geometry
