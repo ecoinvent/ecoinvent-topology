@@ -15,13 +15,13 @@ echo "Building final geometries"
 psql -U ecoinvent -d eigeo -f sql/recipes.sql -q -n -o create_db.log
 
 echo "Add Canadian provinces"
-psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', g.name, n.iso_3166_2, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'Canada' AND g.name IS NOT NULL);" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', 'Canada, ' || g.name, n.iso_3166_2, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'Canada' AND g.name IS NOT NULL);" -q -n -o create_db.log
 
 echo "Add Australian states"
 psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', g.name, REPLACE(n.code_hasc, '.', '-'), geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'Australia' AND g.name IS NOT NULL AND g.name in ('Northern Territory', 'Western Australia', 'Australian Capital Territory', 'New South Wales', 'South Australia', 'Victoria', 'Queensland', 'Tasmania'));" -q -n -o create_db.log
 
 echo "Add Chinese provinces"
-psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', g.name || ' (' || CASE WHEN name_local LIKE '%|%' THEN split_part(name_local, '|', 2) ELSE name_local END || ')', 'CN-' || n.postal, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'China' AND g.name != 'Paracel Islands');" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'states', 'China, ' || g.name || ' (' || CASE WHEN name_local LIKE '%|%' THEN split_part(name_local, '|', 2) ELSE name_local END || ')', 'CN-' || n.postal, geometry(g.topogeom) FROM geometries g LEFT JOIN ne_provinces n ON g.gid = n.gid WHERE g.tname = 'ne_provinces' AND g.parent = 'China' AND g.name != 'Paracel Islands');" -q -n -o create_db.log
 
 echo "Add Svalbard and Bouvet Island"
 psql -U ecoinvent -d eigeo -c "INSERT INTO final (collection, name, shortname, geom) (SELECT 'countries', 'Svalbard and Jan Mayen', 'SJ', geometry(g.topogeom) FROM geometries g WHERE g.tname = 'ne_provinces' AND g.name = 'Svalbard');" -q -n -o create_db.log

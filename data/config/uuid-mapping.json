@@ -2,62 +2,62 @@
   "Canada": [
     {
       "shortname": "CA-AB",
-      "name": "Alberta",
+      "name": "Canada, Alberta",
       "uuid": "6bf93cce-7c23-463e-9962-898efa030fa2"
     },
     {
       "shortname": "CA-BC",
-      "name": "British Columbia",
+      "name": "Canada, British Columbia",
       "uuid": "533c318c-a189-4fc6-84a8-e9d48eab987c"
     },
     {
       "shortname": "CA-MB",
-      "name": "Manitoba",
+      "name": "Canada, Manitoba",
       "uuid": "aae610ca-cdef-4c81-9631-ded55d455444"
     },
     {
       "shortname": "CA-NB",
-      "name": "New Brunswick",
+      "name": "Canada, New Brunswick",
       "uuid": "b8ce14f4-e09b-4117-b4dd-d74af99da744"
     },
     {
       "shortname": "CA-NF",
-      "name": "Newfoundland and Labrador",
+      "name": "Canada, Newfoundland and Labrador",
       "uuid": "92618f91-5370-41d9-b5d4-6a9d60b3239f"
     },
     {
       "shortname": "CA-NS",
-      "name": "Nova Scotia",
+      "name": "Canada, Nova Scotia",
       "uuid": "8cd8dbae-aa08-44b0-be67-6ed7e876cedd"
     },
     {
       "shortname": "CA-NT",
-      "name": "Northwest Territories",
+      "name": "Canada, Northwest Territories",
       "uuid": "5fb3ee97-3981-4918-b09a-4de1b1fdb517"
     },
     {
       "shortname": "CA-NU",
-      "name": "Nunavut",
+      "name": "Canada, Nunavut",
       "uuid": "1325cfa3-2b0d-487e-8d46-3e66b4b00f85"
     },
     {
       "shortname": "CA-ON",
-      "name": "Ontario",
+      "name": "Canada, Ontario",
       "uuid": "1d87302d-fd96-4acb-9f9f-d3389ba929b7"
     },
     {
       "shortname": "CA-PE",
-      "name": "Prince Edward Island",
+      "name": "Canada, Prince Edward Island",
       "uuid": "b5b34218-bee7-4196-b70c-1b5ad433801a"
     },
     {
       "shortname": "CA-QC",
-      "name": "Québec",
+      "name": "Canada, Québec",
       "uuid": "868a66d1-7428-4ba2-9125-253b07afc119"
     },
     {
       "shortname": "CA-YK",
-      "name": "Yukon",
+      "name": "Canada, Yukon",
       "uuid": "29dca13b-9d4b-4714-9c80-1808b9127dda"
     }
   ],
@@ -1850,157 +1850,157 @@
   "Chinese provinces": [
     {
       "shortname": "CN-AH",
-      "name": "Anhui (安徽)",
+      "name": "China, Anhui (安徽)",
       "uuid": "2f82cf2a-d2e0-4be3-b60c-399bfe93d403"
     },
     {
       "shortname": "CN-BJ",
-      "name": "Beijing (北京)",
+      "name": "China, Beijing (北京)",
       "uuid": "a7cf4239-43f5-4256-ae84-e94595cbaac6"
     },
     {
       "shortname": "CN-CQ",
-      "name": "Chongqing (重庆)",
+      "name": "China, Chongqing (重庆)",
       "uuid": "8bc809e8-f246-46f7-bf1f-93e34e06befd"
     },
     {
       "shortname": "CN-FJ",
-      "name": "Fujian (福建)",
+      "name": "China, Fujian (福建)",
       "uuid": "7ac3c1e7-0b7d-4ff9-9aa5-0d67d7da37fa"
     },
     {
       "shortname": "CN-GS",
-      "name": "Gansu (甘肃)",
+      "name": "China, Gansu (甘肃)",
       "uuid": "d5231e2f-479b-4f21-9173-35beeaf2406a"
     },
     {
       "shortname": "CN-GD",
-      "name": "Guangdong (广东)",
+      "name": "China, Guangdong (广东)",
       "uuid": "fbfd6cb0-56b1-4d0b-a13f-7f9f213f9afa"
     },
     {
       "shortname": "CN-GX",
-      "name": "Guangxi (广西壮族自治区)",
+      "name": "China, Guangxi (广西壮族自治区)",
       "uuid": "c6b0afc2-8321-49aa-81f3-a793417eed91"
     },
     {
       "shortname": "CN-GZ",
-      "name": "Guizhou (贵州)",
+      "name": "China, Guizhou (贵州)",
       "uuid": "4a743c1d-f819-4398-b389-784b84de386e"
     },
     {
       "shortname": "CN-HA",
-      "name": "Hainan (海南)",
+      "name": "China, Hainan (海南)",
       "uuid": "dd10b4f5-3c51-4c62-9b32-a111e15e3e52"
     },
     {
       "shortname": "CN-HB",
-      "name": "Hebei (河北)",
+      "name": "China, Hebei (河北)",
       "uuid": "06bbed25-6ebe-48aa-9b92-300bddaeb2b7"
     },
     {
       "shortname": "CN-HL",
-      "name": "Heilongjiang (黑龙江省)",
+      "name": "China, Heilongjiang (黑龙江省)",
       "uuid": "0f7b1e31-0d0b-404a-994b-e3cd1b7586f0"
     },
     {
       "shortname": "CN-HE",
-      "name": "Henan (河南)",
+      "name": "China, Henan (河南)",
       "uuid": "bf7827a3-16a7-4a38-ad02-527898a12a7f"
     },
     {
       "shortname": "CN-HU",
-      "name": "Hubei (湖北)",
+      "name": "China, Hubei (湖北)",
       "uuid": "2a19941e-dd11-44b4-919f-fb33c9150b71"
     },
     {
       "shortname": "CN-HN",
-      "name": "Hunan (湖南)",
+      "name": "China, Hunan (湖南)",
       "uuid": "9923dac7-3164-4e2f-8723-f343d998072d"
     },
     {
       "shortname": "CN-NM",
-      "name": "Inner Mongol (内蒙古自治区)",
+      "name": "China, Inner Mongol (内蒙古自治区)",
       "uuid": "da5d7825-8e05-4bad-b026-4204389cdef3"
     },
     {
       "shortname": "CN-JS",
-      "name": "Jiangsu (江苏)",
+      "name": "China, Jiangsu (江苏)",
       "uuid": "dc5987d0-7a19-4843-82f1-15708e106edb"
     },
     {
       "shortname": "CN-JX",
-      "name": "Jiangxi (江西)",
+      "name": "China, Jiangxi (江西)",
       "uuid": "f5c62675-f6ae-4bc4-8c9b-3b737ef2ea53"
     },
     {
       "shortname": "CN-JL",
-      "name": "Jilin (吉林)",
+      "name": "China, Jilin (吉林)",
       "uuid": "e58a4a8a-ca18-48d8-9023-3628de160e8e"
     },
     {
       "shortname": "CN-LN",
-      "name": "Liaoning (辽宁)",
+      "name": "China, Liaoning (辽宁)",
       "uuid": "13b215dc-598a-480e-98e6-13675076ac78"
     },
     {
       "shortname": "CN-NX",
-      "name": "Ningxia (宁夏回族自治区)",
+      "name": "China, Ningxia (宁夏回族自治区)",
       "uuid": "9e2f10b3-138f-4320-95a3-ea3853c5fbdd"
     },
     {
       "shortname": "CN-QH",
-      "name": "Qinghai (青海)",
+      "name": "China, Qinghai (青海)",
       "uuid": "06422af3-6431-4f6f-a555-7c0e008bce8b"
     },
     {
       "shortname": "CN-SA",
-      "name": "Shaanxi (陕西)",
+      "name": "China, Shaanxi (陕西)",
       "uuid": "232efb31-1dd5-4d00-87a8-5fa631021c17"
     },
     {
       "shortname": "CN-SD",
-      "name": "Shandong (山东)",
+      "name": "China, Shandong (山东)",
       "uuid": "2b2ddda2-bb8e-42f7-82e5-013cc04f7bc5"
     },
     {
       "shortname": "CN-SH",
-      "name": "Shanghai (上海)",
+      "name": "China, Shanghai (上海)",
       "uuid": "4a15b2ab-5593-48d7-a7b9-b1c07c5ca99b"
     },
     {
       "shortname": "CN-SX",
-      "name": "Shanxi (山西)",
+      "name": "China, Shanxi (山西)",
       "uuid": "79abbd47-8e8b-4932-94c8-f3518ff110e9"
     },
     {
       "shortname": "CN-SC",
-      "name": "Sichuan (四川)",
+      "name": "China, Sichuan (四川)",
       "uuid": "1238ec0d-4167-453a-9ec5-50cfef0782a1"
     },
     {
       "shortname": "CN-TJ",
-      "name": "Tianjin (天津)",
+      "name": "China, Tianjin (天津)",
       "uuid": "24c6336b-e160-4d2a-8d25-ac207a66f6c1"
     },
     {
       "shortname": "CN-XJ",
-      "name": "Xinjiang (新疆维吾尔自治区)",
+      "name": "China, Xinjiang (新疆维吾尔自治区)",
       "uuid": "e8a978ab-a183-4ce7-b791-760190d8a63c"
     },
     {
       "shortname": "CN-XZ",
-      "name": "Xizang (西藏自治区)",
+      "name": "China, Xizang (西藏自治区)",
       "uuid": "c079ba9b-dc27-45f0-96b5-a3dd168de8ed"
     },
     {
       "shortname": "CN-YN",
-      "name": "Yunnan (云南)",
+      "name": "China, Yunnan (云南)",
       "uuid": "f41e84aa-2c80-451e-a7ab-594acc1b096d"
     },
     {
       "shortname": "CN-ZJ",
-      "name": "Zhejiang (浙江)",
+      "name": "China, Zhejiang (浙江)",
       "uuid": "a959ec4b-3db6-4b9f-9ea6-897fbcfdc610"
     }
   ],
