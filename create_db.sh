@@ -22,6 +22,9 @@ echo "Add Baikonur Cosmodrome to Kazakhstan"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_countries SET geom = (SELECT ST_Union(t.g) FROM (SELECT geom AS g FROM ne_countries WHERE name = 'Kazakhstan' UNION SELECT ST_Buffer(geom, 0.5) as g FROM ne_countries WHERE name = 'Baikonur') AS t) WHERE name = 'Kazakhstan';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "DELETE FROM ne_countries WHERE name = 'Baikonur';" -q -n -o create_db.log
 
+echo "Fixing Uttarakhand"
+psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name = 'Uttarakhand' WHERE name = 'Uttaranchal';" -q
+
 echo "Creating province topos; This will take some time"
 psql -U ecoinvent -d eigeo -c "update ne_provinces set geom = st_multi(st_buffer(geom, 0)) where name = 'Paphos';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;

@@ -1768,6 +1768,56 @@
       "uuid": "4c9baec2-f9fc-4f36-84f7-a3ed2eab82a1"
     },
     {
+      "name": "India, Northern grid",
+      "shortname": "IN-Northern grid",
+      "uuid": "59003ab7-b40a-43ac-b7c9-3e3e8907803e"
+    },
+    {
+      "name": "India, Western grid",
+      "shortname": "IN-Western grid",
+      "uuid": "25457a88-a525-4fd8-b73d-72fd3f37fc74"
+    },
+    {
+      "name": "India, Southern grid",
+      "shortname": "IN-Southern grid",
+      "uuid": "8a80d1d2-de76-44e0-a3d3-46b98c053ca1"
+    },
+    {
+      "name": "India, Eastern grid",
+      "shortname": "IN-Eastern grid",
+      "uuid": "1eb1f8b3-8c35-425e-94ca-cf502eb004c3"
+    },
+    {
+      "name": "India, North-eastern grid",
+      "shortname": "IN-North-eastern grid",
+      "uuid": "26e353a9-dac6-4123-833d-75cd720d9e19"
+    },
+    {
+      "name": "India, Islands",
+      "shortname": "IN-Islands",
+      "uuid": "4a07e727-a1e5-4079-8433-b1d2b5ed544c"
+    },
+    {
+      "name": "Brazil, Northern grid",
+      "shortname": "BR-Northern grid",
+      "uuid": "572aa631-8a25-4c16-b437-2ee0672c450d"
+    },
+    {
+      "name": "Brazil, North-eastern grid",
+      "shortname": "BR-North-eastern grid",
+      "uuid": "3ece4ff8-55ae-40b2-baea-0d2bf2034fbf"
+    },
+    {
+      "name": "Brazil, South-eastern and Mid-western grid",
+      "shortname": "BR-South-eastern and Mid-western grid",
+      "uuid": "a455d5bd-0e4f-4247-a4db-7cf88759f35f"
+    },
+    {
+      "name": "Brazil, Southern grid",
+      "shortname": "BR-Southern grid",
+      "uuid": "dd2330a8-30dc-4af9-bb3a-d2d2bf404dde"
+    },
+    {
       "shortname": "Europe without Switzerland",
       "name": "Europe without Switzerland",
       "uuid": "f9221622-cc45-11de-98ed-0019e336be3a"
