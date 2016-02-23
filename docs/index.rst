@@ -88,6 +88,8 @@ After state/province-level data is imported, country data is imported. Country b
 * ``Republic of Congo`` is changed to ``Congo``
 * ``Federated States of Micronesia`` is changed to ``Micronesia, Federated States of``
 * ``United Republic of Tanzania`` is changed to ``Tanzania``
+* The Indian state named ``Uttaranchal`` is corrected from ``Uttarakhand``.
+
 
 In addition, the ``United States of America`` is split into the regional transmission grids, whose borders do not follow state borders.
 
@@ -473,6 +475,21 @@ In addition to the country ``China``, the Chinese provinces are also provided.
 Changelog
 ---------
 
+Version 2.1 (ecoinvent 3.3)
++++++++++++++++++++++++++++
+
+The following locations were added:
+
+* `Brazil, North-eastern grid`
+* `Brazil, Northern grid`
+* `Brazil, South-eastern and Mid-western grid`
+* `Brazil, Southern grid`
+* `India, Islands`
+* `India, North-eastern grid`
+* `India, Northern grid`
+* `India, Southern grid`
+* `India, Western grid`
+
 Version 2.0 (ecoinvent 3.2)
 +++++++++++++++++++++++++++
 
@@ -486,6 +503,7 @@ The following locations were added:
 * `Ashmore and Cartier Islands <http://en.wikipedia.org/wiki/Ashmore_and_Cartier_Islands>`__
 * `Bajo Nuevo Bank (Petrel Is.) <http://en.wikipedia.org/wiki/Bajo_Nuevo_Bank>`__
 * Caribbean (UN subregion)
+* `China Southern Power Grid <https://en.wikipedia.org/wiki/China_Southern_Power_Grid_Company>`__
 * `Clipperton Island <http://en.wikipedia.org/wiki/Clipperton_Island>`__
 * `Coral Sea Islands <http://en.wikipedia.org/wiki/Coral_Sea_Islands>`__ (administrative unit of Australia)
 * `Cyprus No Mans Area <http://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus>`__
@@ -499,7 +517,9 @@ The following locations were added:
 * `Serranilla Bank <http://en.wikipedia.org/wiki/Serranilla_Bank>`__
 * `Siachen Glacier <http://en.wikipedia.org/wiki/Siachen_Glacier>`__
 * `Somaliland <http://en.wikipedia.org/wiki/Somaliland>`__
+* `State Grid Corporation of China <https://en.wikipedia.org/wiki/State_Grid_Corporation_of_China>`__
 * `US Naval Base Guantanamo Bay <http://en.wikipedia.org/wiki/Guantanamo_Bay_Naval_Base>`__
+
 
 The location ``Al producing Area 6A&B, West, East, and Central Europe``, which was not used in ecoinvent 3.01 or 3.1, has been split into ``Aluminium producing area, EU27 and EFTA countries`` and ``Aluminium producing area, Europe outside EU27 and EFTA``.
 
@@ -763,6 +783,22 @@ USA-only subnetworks
 NERC regions which cross the Canadian border have also been split into USA-only networks for market reasons.
 
 .. image:: images/USA.png
+    :align: center
+
+India
+^^^^^
+
+India has been split into five electricity grids. The location `India, Islands` contains both Andaman and Nicobar, and Lakshadweep.
+
+.. image:: images/India.png
+    :align: center
+
+Brazil
+^^^^^^
+
+Brazil has been split into four electricity grids.
+
+.. image:: images/Brazil.png
     :align: center
 
 .. _eleceu:

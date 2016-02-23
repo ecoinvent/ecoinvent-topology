@@ -4,7 +4,7 @@ Technical guide to working with the ``Constructive Geometries`` package
 Operating systems
 -----------------
 
-OS X and *nix should be fine; bash shell scripts are used extensively, so considerable work would be needed to get everything running on Windows.
+OS X and Any-nix should be fine; bash shell scripts are used extensively, so considerable work would be needed to get everything running on Windows.
 
 Installation requirements
 -------------------------
