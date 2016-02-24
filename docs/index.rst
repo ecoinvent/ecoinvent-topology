@@ -416,6 +416,39 @@ In addition to the country ``Australia``, the Australian states are also provide
 * Victoria
 * Western Australia
 
+Brazilian states
+++++++++++++++++
+
+In addition to the country ``Brazil``, the Brazilian states are also provided.
+
+* Acre
+* Alagoas
+* Amapá
+* Amazonas
+* Bahia
+* Ceará
+* Distrito Federal
+* Espírito Santo
+* Goiás
+* Maranhão
+* Mato Grosso
+* Mato Grosso do Sul
+* Minas Gerais
+* Paraná
+* Paraíba
+* Pará
+* Pernambuco
+* Piauí
+* Rio de Janeiro
+* Rio Grande do Norte
+* Rio Grande do Sul
+* Rondônia
+* Roraima
+* Santa Catarina
+* Sergipe
+* São Paulo
+* Tocantins
+
 Canadian provinces
 ++++++++++++++++++
 
@@ -471,6 +504,47 @@ In addition to the country ``China``, the Chinese provinces are also provided.
 * Xizang (西藏自治区)
 * Yunnan (云南)
 * Zhejiang (浙江)
+
+Indian states and territories
++++++++++++++++++++++++++++++
+
+In addition to the country ``India``, the Indian states and union territories are also provided.
+
+* Andaman and Nicobar
+* Andhra Pradesh
+* Arunachal Pradesh
+* Assam
+* Bihar
+* Chandigarh
+* Chhattisgarh
+* Dadra and Nagar Haveli
+* Daman and Diu
+* Delhi
+* Goa
+* Gujarat
+* Haryana
+* Himachal Pradesh
+* Jammu and Kashmir
+* Jharkhand
+* Karnataka
+* Kerala
+* Lakshadweep
+* Madhya Pradesh
+* Maharashtra
+* Manipur
+* Meghalaya
+* Mizoram
+* Nagaland
+* Orissa
+* Puducherry
+* Punjab
+* Rajasthan
+* Sikkim
+* Tamil Nadu
+* Tripura
+* Uttar Pradesh
+* Uttarakhan
+* West Bengal
 
 Changelog
 ---------
