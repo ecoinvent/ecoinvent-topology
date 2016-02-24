@@ -25,6 +25,15 @@ psql -U ecoinvent -d eigeo -c "DELETE FROM ne_countries WHERE name = 'Baikonur';
 echo "Fixing Uttarakhand"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name = 'Uttarakhand' WHERE name = 'Uttaranchal';" -q
 
+echo "Adding 3166-2 codes for India"
+psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-TN' WHERE name = 'Tamil Nadu';" -q
+psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-DD' WHERE name = 'Daman and Diu';" -q
+psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-GJ' WHERE name = 'Gujarat';" -q
+
+echo "Adding 3166-2 codes for Brazil"
+psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'BR-AC' WHERE name = 'Acre';" -q
+psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'BR-RO' WHERE name = 'Rondônia';" -q
+
 echo "Creating province topos; This will take some time"
 psql -U ecoinvent -d eigeo -c "update ne_provinces set geom = st_multi(st_buffer(geom, 0)) where name = 'Paphos';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
