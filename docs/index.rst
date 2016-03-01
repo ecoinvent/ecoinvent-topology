@@ -378,6 +378,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican
 * Europe without Germany and Switzerland
 * Europe without Germany, the Netherlands, and Norway
+* Europe without Germany, the Netherlands, Norway, and Russia
 * Europe without NORDEL (NCPA)
 * Europe without Switzerland
 * Europe, without Russia and Turkey

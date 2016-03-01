@@ -2020,6 +2020,11 @@
       "uuid": "50f826e7-ab13-444e-987b-180701b691c9"
     },
     {
+      "shortname": "RER w/o DE+NL+NO+RU",
+      "name": "Europe without Germany, Netherlands, Norway and Russia",
+      "uuid": "8bd484ff-ec4e-45c6-9f61-e211a872a4ff"
+    },
+    {
       "shortname": "RER w/o AT+BE+CH+DE+FR+IT",
       "name": "Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican",
       "uuid": "c428af56-39c0-4dca-a617-8716b52a6640"
@@ -2031,7 +2036,7 @@
     },
     {
       "shortname": "RER w/o DE+NL+NO",
-      "name": "Europe without Germany, the Netherlands, and Norway",
+      "name": "Europe without Germany, the Netherlands, Norway, and Russia",
       "uuid": "ae85cec6-cc61-4a0d-a322-5fb10b6b4ece"
     },
     {
