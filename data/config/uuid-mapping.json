@@ -63,316 +63,316 @@
   ],
   "Brazil": [
     {
-      "name": "Brazil, Tocantins",
-      "shortname": "BR-Tocantins",
-      "uuid": "54e71d4b-1d1f-473d-91db-15d40c496a6d"
+      "name": "Brazil, Acre",
+      "shortname": "BR-AC",
+      "uuid": "251a2d08-d031-4589-9318-029ba543abde"
+    },
+    {
+      "name": "Brazil, Alagoas",
+      "shortname": "BR-AL",
+      "uuid": "4c05bd06-d401-45cd-b594-c1eafa0ef95b"
+    },
+    {
+      "name": "Brazil, Amapá",
+      "shortname": "BR-AP",
+      "uuid": "744e0bff-1149-4c95-bea7-74792bc71a21"
+    },
+    {
+      "name": "Brazil, Amazonas",
+      "shortname": "BR-AM",
+      "uuid": "12e2f855-d67d-492c-b59d-12205eeb79ea"
+    },
+    {
+      "name": "Brazil, Bahia",
+      "shortname": "BR-BA",
+      "uuid": "929f1a52-bb4d-4a86-8439-6b01d8813196"
+    },
+    {
+      "name": "Brazil, Ceará",
+      "shortname": "BR-CE",
+      "uuid": "dc8836a3-1d91-49ed-b4b7-0482f7ec3eaf"
     },
     {
       "name": "Brazil, Distrito Federal",
-      "shortname": "BR-Distrito Federal",
+      "shortname": "BR-DF",
       "uuid": "c65371a5-fd9a-4ca9-ae24-c4fde6615445"
     },
     {
+      "name": "Brazil, Espírito Santo",
+      "shortname": "BR-ES",
+      "uuid": "5d8ac1db-f842-4688-aba1-673c4f07b1dd"
+    },
+    {
+      "name": "Brazil, Goiás",
+      "shortname": "BR-GO",
+      "uuid": "1a3d1ef6-b2f8-44b8-b51a-c82dec5f769b"
+    },
+    {
+      "name": "Brazil, Maranhão",
+      "shortname": "BR-MA",
+      "uuid": "6eaa35ce-47d2-4c3d-9079-12adc7ffb375"
+    },
+    {
+      "name": "Brazil, Mato Grosso",
+      "shortname": "BR-MT",
+      "uuid": "64441fa1-0151-47ac-b97a-1fd886b90cae"
+    },
+    {
       "name": "Brazil, Mato Grosso do Sul",
-      "shortname": "BR-Mato Grosso do Sul",
+      "shortname": "BR-MS",
       "uuid": "23baa40a-53e2-4d6c-a61e-a412c2b7aaae"
     },
     {
       "name": "Brazil, Minas Gerais",
-      "shortname": "BR-Minas Gerais",
+      "shortname": "BR-MG",
       "uuid": "00e9e1a4-0cf8-4f07-8bad-fd782ed54382"
     },
     {
-      "name": "Brazil, Mato Grosso",
-      "shortname": "BR-Mato Grosso",
-      "uuid": "64441fa1-0151-47ac-b97a-1fd886b90cae"
-    },
-    {
-      "name": "Brazil, Rio Grande do Sul",
-      "shortname": "BR-Rio Grande do Sul",
-      "uuid": "2248c6cf-f68d-4dac-85bb-fac7e80064f6"
-    },
-    {
       "name": "Brazil, Paraná",
-      "shortname": "BR-Paraná",
+      "shortname": "BR-PR",
       "uuid": "3b2c2140-c25c-47c5-876d-78e5dc82f066"
     },
     {
-      "name": "Brazil, Santa Catarina",
-      "shortname": "BR-Santa Catarina",
-      "uuid": "4645f771-3596-4c42-ba0f-822d1ce2fb72"
-    },
-    {
-      "name": "Brazil, Ceará",
-      "shortname": "BR-Ceará",
-      "uuid": "dc8836a3-1d91-49ed-b4b7-0482f7ec3eaf"
-    },
-    {
-      "name": "Brazil, Piauí",
-      "shortname": "BR-Piauí",
-      "uuid": "70c9eee0-7dc4-4e2f-8dcc-f6bc4358ead9"
-    },
-    {
-      "name": "Brazil, São Paulo",
-      "shortname": "BR-São Paulo",
-      "uuid": "a7ba1868-375a-4d62-9048-bdf2136447c4"
-    },
-    {
-      "name": "Brazil, Pernambuco",
-      "shortname": "BR-Pernambuco",
-      "uuid": "a64ba70d-b110-4f81-b415-299c0c193faa"
-    },
-    {
-      "name": "Brazil, Acre",
-      "shortname": "BR-Acre",
-      "uuid": "251a2d08-d031-4589-9318-029ba543abde"
-    },
-    {
-      "name": "Brazil, Amazonas",
-      "shortname": "BR-Amazonas",
-      "uuid": "12e2f855-d67d-492c-b59d-12205eeb79ea"
-    },
-    {
-      "name": "Brazil, Maranhão",
-      "shortname": "BR-Maranhão",
-      "uuid": "6eaa35ce-47d2-4c3d-9079-12adc7ffb375"
-    },
-    {
-      "name": "Brazil, Pará",
-      "shortname": "BR-Pará",
-      "uuid": "9a205fd8-72f3-423f-b3a7-6b805aaee30b"
-    },
-    {
-      "name": "Brazil, Rondônia",
-      "shortname": "BR-Rondônia",
-      "uuid": "d9497730-f613-4d31-aab2-1d82add2d1bc"
-    },
-    {
-      "name": "Brazil, Alagoas",
-      "shortname": "BR-Alagoas",
-      "uuid": "4c05bd06-d401-45cd-b594-c1eafa0ef95b"
-    },
-    {
-      "name": "Brazil, Bahia",
-      "shortname": "BR-Bahia",
-      "uuid": "929f1a52-bb4d-4a86-8439-6b01d8813196"
-    },
-    {
-      "name": "Brazil, Espírito Santo",
-      "shortname": "BR-Espírito Santo",
-      "uuid": "5d8ac1db-f842-4688-aba1-673c4f07b1dd"
-    },
-    {
       "name": "Brazil, Paraíba",
-      "shortname": "BR-Paraíba",
+      "shortname": "BR-PB",
       "uuid": "717c6f47-2eda-4d1b-8277-83f634ea7c23"
     },
     {
-      "name": "Brazil, Rio de Janeiro",
-      "shortname": "BR-Rio de Janeiro",
-      "uuid": "862723a2-2563-490a-9b7a-7206cb46fcb1"
+      "name": "Brazil, Pará",
+      "shortname": "BR-PA",
+      "uuid": "9a205fd8-72f3-423f-b3a7-6b805aaee30b"
+    },
+    {
+      "name": "Brazil, Pernambuco",
+      "shortname": "BR-PE",
+      "uuid": "a64ba70d-b110-4f81-b415-299c0c193faa"
+    },
+    {
+      "name": "Brazil, Piauí",
+      "shortname": "BR-PI",
+      "uuid": "70c9eee0-7dc4-4e2f-8dcc-f6bc4358ead9"
     },
     {
       "name": "Brazil, Rio Grande do Norte",
-      "shortname": "BR-Rio Grande do Norte",
+      "shortname": "BR-RN",
       "uuid": "8cd18b82-fdd2-4cf9-87c8-33e125b675f4"
     },
     {
-      "name": "Brazil, Sergipe",
-      "shortname": "BR-Sergipe",
-      "uuid": "17a40e27-7f28-48c3-892d-6121e748ed01"
+      "name": "Brazil, Rio Grande do Sul",
+      "shortname": "BR-RS",
+      "uuid": "2248c6cf-f68d-4dac-85bb-fac7e80064f6"
+    },
+    {
+      "name": "Brazil, Rio de Janeiro",
+      "shortname": "BR-RJ",
+      "uuid": "862723a2-2563-490a-9b7a-7206cb46fcb1"
+    },
+    {
+      "name": "Brazil, Rondônia",
+      "shortname": "BR-RO",
+      "uuid": "d9497730-f613-4d31-aab2-1d82add2d1bc"
     },
     {
       "name": "Brazil, Roraima",
-      "shortname": "BR-Roraima",
+      "shortname": "BR-RR",
       "uuid": "2a7e9ed2-4de5-4b28-9b4e-b12c50a1ed53"
     },
     {
-      "name": "Brazil, Amapá",
-      "shortname": "BR-Amapá",
-      "uuid": "744e0bff-1149-4c95-bea7-74792bc71a21"
+      "name": "Brazil, Santa Catarina",
+      "shortname": "BR-SC",
+      "uuid": "4645f771-3596-4c42-ba0f-822d1ce2fb72"
     },
     {
-      "name": "Brazil, Goiás",
-      "shortname": "BR-Goiás",
-      "uuid": "1a3d1ef6-b2f8-44b8-b51a-c82dec5f769b"
+      "name": "Brazil, Sergipe",
+      "shortname": "BR-SE",
+      "uuid": "17a40e27-7f28-48c3-892d-6121e748ed01"
+    },
+    {
+      "name": "Brazil, São Paulo",
+      "shortname": "BR-SP",
+      "uuid": "a7ba1868-375a-4d62-9048-bdf2136447c4"
+    },
+    {
+      "name": "Brazil, Tocantins",
+      "shortname": "BR-TO",
+      "uuid": "54e71d4b-1d1f-473d-91db-15d40c496a6d"
     }
   ],
   "India": [
     {
-      "name": "India, Chandigarh",
-      "shortname": "IN-Chandigarh",
-      "uuid": "1b5afe13-e071-4c8a-81b5-68eb8982053f"
-    },
-    {
-      "name": "India, Delhi",
-      "shortname": "IN-Delhi",
-      "uuid": "de26c625-ae68-4c9e-8fde-a6c33b3dfe14"
-    },
-    {
-      "name": "India, Himachal Pradesh",
-      "shortname": "IN-Himachal Pradesh",
-      "uuid": "763ca99d-f561-45ef-8d36-84cb877f9c08"
-    },
-    {
-      "name": "India, Haryana",
-      "shortname": "IN-Haryana",
-      "uuid": "3f1442fa-0808-438c-a355-2a1e96f9adeb"
-    },
-    {
-      "name": "India, Jammu and Kashmir",
-      "shortname": "IN-Jammu and Kashmir",
-      "uuid": "d8cc1385-8b61-4509-8db0-d9cb5fa95725"
+      "name": "India, Andaman and Nicobar",
+      "shortname": "IN-AN",
+      "uuid": "7661383e-998b-4738-b8dc-9e1e60070c8a"
     },
     {
       "name": "India, Andhra Pradesh",
-      "shortname": "IN-Andhra Pradesh",
+      "shortname": "IN-AP",
       "uuid": "888f6bc1-22f6-486b-b2f3-814672df6930"
     },
     {
+      "name": "India, Arunachal Pradesh",
+      "shortname": "IN-AR",
+      "uuid": "28388907-7605-469a-b28d-cdc8f963b28b"
+    },
+    {
+      "name": "India, Assam",
+      "shortname": "IN-AS",
+      "uuid": "d0145549-5ad2-4cc6-8e5b-c6ed6223d2db"
+    },
+    {
+      "name": "India, Bihar",
+      "shortname": "IN-BR",
+      "uuid": "5ba6d534-2083-4167-975d-84579c9e5202"
+    },
+    {
+      "name": "India, Chandigarh",
+      "shortname": "IN-CH",
+      "uuid": "1b5afe13-e071-4c8a-81b5-68eb8982053f"
+    },
+    {
+      "name": "India, Chhattisgarh",
+      "shortname": "IN-CT",
+      "uuid": "89f88c37-befd-49fa-92ad-35875a6709eb"
+    },
+    {
+      "name": "India, Dadra and Nagar Haveli",
+      "shortname": "IN-DN",
+      "uuid": "d766dc54-3e8f-4ac4-8a0f-69707a338b33"
+    },
+    {
+      "name": "India, Daman and Diu",
+      "shortname": "IN-DD",
+      "uuid": "653869da-6e3f-476e-9380-19d23040f2b9"
+    },
+    {
+      "name": "India, Delhi",
+      "shortname": "IN-DL",
+      "uuid": "de26c625-ae68-4c9e-8fde-a6c33b3dfe14"
+    },
+    {
+      "name": "India, Goa",
+      "shortname": "IN-GA",
+      "uuid": "567cc8ea-05d0-4d27-a509-89f10e1a280e"
+    },
+    {
+      "name": "India, Gujarat",
+      "shortname": "IN-GJ",
+      "uuid": "0d325613-94aa-4a65-8014-d3f6ead19eb3"
+    },
+    {
+      "name": "India, Haryana",
+      "shortname": "IN-HR",
+      "uuid": "3f1442fa-0808-438c-a355-2a1e96f9adeb"
+    },
+    {
+      "name": "India, Himachal Pradesh",
+      "shortname": "IN-HP",
+      "uuid": "763ca99d-f561-45ef-8d36-84cb877f9c08"
+    },
+    {
+      "name": "India, Jammu and Kashmir",
+      "shortname": "IN-JK",
+      "uuid": "d8cc1385-8b61-4509-8db0-d9cb5fa95725"
+    },
+    {
+      "name": "India, Jharkhand",
+      "shortname": "IN-JH",
+      "uuid": "2221b78c-5a1c-454c-a637-744d54a0bbe9"
+    },
+    {
+      "name": "India, Karnataka",
+      "shortname": "IN-KA",
+      "uuid": "c23d9dc6-d794-4775-8e92-ee830a084a7f"
+    },
+    {
       "name": "India, Kerala",
-      "shortname": "IN-Kerala",
+      "shortname": "IN-KL",
       "uuid": "518f1827-fe70-400e-b521-48f2f72fd777"
     },
     {
       "name": "India, Lakshadweep",
-      "shortname": "IN-Lakshadweep",
+      "shortname": "IN-LD",
       "uuid": "dee052a0-3714-41b6-86c0-79d062704c25"
     },
     {
-      "name": "India, Orissa",
-      "shortname": "IN-Orissa",
-      "uuid": "bf61f94b-cbd6-4a41-9c8b-0ef2b4e06c3c"
-    },
-    {
-      "name": "India, Dadra and Nagar Haveli",
-      "shortname": "IN-Dadra and Nagar Haveli",
-      "uuid": "d766dc54-3e8f-4ac4-8a0f-69707a338b33"
-    },
-    {
-      "name": "India, Karnataka",
-      "shortname": "IN-Karnataka",
-      "uuid": "c23d9dc6-d794-4775-8e92-ee830a084a7f"
+      "name": "India, Madhya Pradesh",
+      "shortname": "IN-MP",
+      "uuid": "b3d19998-fe81-4783-a19e-408d7424d876"
     },
     {
       "name": "India, Maharashtra",
-      "shortname": "IN-Maharashtra",
+      "shortname": "IN-MH",
       "uuid": "14bfff77-d5a0-4ad5-9936-58636c295e99"
     },
     {
-      "name": "India, Andaman and Nicobar",
-      "shortname": "IN-Andaman and Nicobar",
-      "uuid": "7661383e-998b-4738-b8dc-9e1e60070c8a"
-    },
-    {
-      "name": "India, Assam",
-      "shortname": "IN-Assam",
-      "uuid": "d0145549-5ad2-4cc6-8e5b-c6ed6223d2db"
-    },
-    {
       "name": "India, Manipur",
-      "shortname": "IN-Manipur",
+      "shortname": "IN-MN",
       "uuid": "d6bf166c-b5aa-45a6-b0e9-7c169d2c7cbc"
     },
     {
-      "name": "India, Jharkhand",
-      "shortname": "IN-Jharkhand",
-      "uuid": "2221b78c-5a1c-454c-a637-744d54a0bbe9"
-    },
-    {
-      "name": "India, West Bengal",
-      "shortname": "IN-West Bengal",
-      "uuid": "77849b53-31ea-4b25-93e5-451909753ad3"
-    },
-    {
-      "name": "India, Bihar",
-      "shortname": "IN-Bihar",
-      "uuid": "5ba6d534-2083-4167-975d-84579c9e5202"
-    },
-    {
-      "name": "India, Nagaland",
-      "shortname": "IN-Nagaland",
-      "uuid": "df16b2b2-c49e-4560-9b74-cbcbe0a8d281"
-    },
-    {
       "name": "India, Meghalaya",
-      "shortname": "IN-Meghalaya",
+      "shortname": "IN-ML",
       "uuid": "10988ebe-8be4-43c6-8451-3273ca12cd47"
     },
     {
+      "name": "India, Mizoram",
+      "shortname": "IN-MZ",
+      "uuid": "cab4fbd7-e8ae-4ea6-9e74-0e41df667c61"
+    },
+    {
+      "name": "India, Nagaland",
+      "shortname": "IN-NL",
+      "uuid": "df16b2b2-c49e-4560-9b74-cbcbe0a8d281"
+    },
+    {
+      "name": "India, Orissa",
+      "shortname": "IN-OR",
+      "uuid": "bf61f94b-cbd6-4a41-9c8b-0ef2b4e06c3c"
+    },
+    {
+      "name": "India, Puducherry",
+      "shortname": "IN-PY",
+      "uuid": "f7228566-0785-45da-b946-01f82d277dda"
+    },
+    {
       "name": "India, Punjab",
-      "shortname": "IN-Punjab",
+      "shortname": "IN-PB",
       "uuid": "83cdc953-e485-453b-a8f9-749f92aca417"
     },
     {
       "name": "India, Rajasthan",
-      "shortname": "IN-Rajasthan",
+      "shortname": "IN-RJ",
       "uuid": "4024933b-d7a2-4ebb-87dc-80460ff13c50"
     },
     {
-      "name": "India, Uttar Pradesh",
-      "shortname": "IN-Uttar Pradesh",
-      "uuid": "ae2be714-8cbe-4abd-afac-a5e7ca2b0d55"
-    },
-    {
       "name": "India, Sikkim",
-      "shortname": "IN-Sikkim",
+      "shortname": "IN-SK",
       "uuid": "01c44dfa-113d-427b-81b9-1d4fde230f93"
     },
     {
-      "name": "India, Chhattisgarh",
-      "shortname": "IN-Chhattisgarh",
-      "uuid": "89f88c37-befd-49fa-92ad-35875a6709eb"
-    },
-    {
-      "name": "India, Madhya Pradesh",
-      "shortname": "IN-Madhya Pradesh",
-      "uuid": "b3d19998-fe81-4783-a19e-408d7424d876"
-    },
-    {
-      "name": "India, Puducherry",
-      "shortname": "IN-Puducherry",
-      "uuid": "f7228566-0785-45da-b946-01f82d277dda"
-    },
-    {
       "name": "India, Tamil Nadu",
-      "shortname": "IN-Tamil Nadu",
+      "shortname": "IN-TN",
       "uuid": "eb2442cf-93eb-4784-99f9-7a0c97c3576f"
     },
     {
-      "name": "India, Gujarat",
-      "shortname": "IN-Gujarat",
-      "uuid": "0d325613-94aa-4a65-8014-d3f6ead19eb3"
-    },
-    {
-      "name": "India, Goa",
-      "shortname": "IN-Goa",
-      "uuid": "567cc8ea-05d0-4d27-a509-89f10e1a280e"
-    },
-    {
-      "name": "India, Arunachal Pradesh",
-      "shortname": "IN-Arunachal Pradesh",
-      "uuid": "28388907-7605-469a-b28d-cdc8f963b28b"
-    },
-    {
-      "name": "India, Mizoram",
-      "shortname": "IN-Mizoram",
-      "uuid": "cab4fbd7-e8ae-4ea6-9e74-0e41df667c61"
-    },
-    {
       "name": "India, Tripura",
-      "shortname": "IN-Tripura",
+      "shortname": "IN-TR",
       "uuid": "001c936c-cf14-46dd-a99e-b1ef30f51c96"
     },
     {
-      "name": "India, Daman and Diu",
-      "shortname": "IN-Daman and Diu",
-      "uuid": "653869da-6e3f-476e-9380-19d23040f2b9"
+      "name": "India, Uttar Pradesh",
+      "shortname": "IN-UP",
+      "uuid": "ae2be714-8cbe-4abd-afac-a5e7ca2b0d55"
     },
     {
       "name": "India, Uttarakhand",
-      "shortname": "IN-Uttarakhand",
+      "shortname": "IN-UT",
       "uuid": "6859dfd7-168b-4a36-9429-e0e884bff83a"
+    },
+    {
+      "name": "India, West Bengal",
+      "shortname": "IN-WB",
+      "uuid": "77849b53-31ea-4b25-93e5-451909753ad3"
     }
   ],
   "Variants on normal countries": [

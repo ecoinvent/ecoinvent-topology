@@ -552,7 +552,7 @@ Changelog
 Version 2.1 (ecoinvent 3.3)
 +++++++++++++++++++++++++++
 
-The following locations were added:
+The following electricity grids were added:
 
 * `Brazil, North-eastern grid`
 * `Brazil, Northern grid`
@@ -563,6 +563,8 @@ The following locations were added:
 * `India, Northern grid`
 * `India, Southern grid`
 * `India, Western grid`
+
+Also, all states and union territories in India and Brazil were added.
 
 Version 2.0 (ecoinvent 3.2)
 +++++++++++++++++++++++++++
