@@ -8,12 +8,12 @@ The repository is a mix of SQL, bash scripts, and Python. See the file "topology
 
 The Python code is compatible with Python >= 3.4. It requires the following libraries:
 
-lxml
-fastkml
-fiona
-shapely
-pyprind
-babel
+* lxml
+* fastkml
+* fiona
+* shapely
+* pyprind
+* babel
 
 ## Exporting selected geometries
 
