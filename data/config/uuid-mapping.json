@@ -2021,7 +2021,7 @@
     },
     {
       "shortname": "RER w/o DE+NL+NO+RU",
-      "name": "Europe without Germany, Netherlands, Norway and Russia",
+      "name": "Europe without Germany, the Netherlands, Norway, and Russia",
       "uuid": "8bd484ff-ec4e-45c6-9f61-e211a872a4ff"
     },
     {
@@ -2036,7 +2036,7 @@
     },
     {
       "shortname": "RER w/o DE+NL+NO",
-      "name": "Europe without Germany, the Netherlands, Norway, and Russia",
+      "name": "Europe without Germany, the Netherlands, and Norway",
       "uuid": "ae85cec6-cc61-4a0d-a322-5fb10b6b4ece"
     },
     {
