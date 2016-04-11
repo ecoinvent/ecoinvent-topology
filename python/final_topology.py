@@ -26,6 +26,3 @@ num_chunks = num_features // chunk_size + 1
 
 for x in pyprind.prog_bar(range(num_chunks)):
     subprocess.check_call(command, shell=True)
-    pbar.update(x)
-
-pbar.finish()

@@ -14,7 +14,7 @@ def get_face_ids(row):
 with open(fp, encoding='utf-8') as f:
     data = [get_face_ids(row) for row in csv.reader(f)]
 
-ALL = reduce(set.union, [set(row[1]) for row in data])
+ALL = {obj for row in data for obj in row[1]}
 data.append(("__all__", list(ALL)))
 data.sort()
 
