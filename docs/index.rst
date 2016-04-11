@@ -565,7 +565,9 @@ The following electricity grids were added:
 * `India, Southern grid`
 * `India, Western grid`
 
-Also, all states and union territories in India and Brazil were added.
+Additionally, all states and union territories in both India and Brazil were added.
+
+The composite geometry `Europe without Germany, the Netherlands, Norway, and Russia` was also added.
 
 Version 2.0 (ecoinvent 3.2)
 +++++++++++++++++++++++++++
