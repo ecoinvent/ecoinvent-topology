@@ -1,8 +1,6 @@
 Ecoinvent geography definitions
 ===============================
 
-.. warning:: This is a draft report.
-
 Table of Contents
 -----------------
 
