@@ -71,6 +71,8 @@ Processing begins by entering all state/province level regions into a `PostGIS t
 * Integrity: All regions are automatically valid.
 * Explicit relationships: It is fast and simple to determine spatial relationships among regions by comparing their topological faces. There is no potential for floating-point errors, as no geometry math is needed.
 
+You can `download the current set of topological faces used in Ecoinvent here <http://geography.ecoinvent.org/report/files/faces.gpkg>`__.
+
 After state/province-level data is imported, country data is imported. Country borders are automatically snapped to province borders by the database. A series of data cleaning steps is then applied. Specifically, the following is done:
 
 * Provinces with self-intersecting borders are fiexed using `ST_MakeValid <http://postgis.org/documentation/manual-svn/ST_MakeValid.html>`__
