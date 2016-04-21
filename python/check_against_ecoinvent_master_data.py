@@ -43,13 +43,13 @@ class EcoinventChecker(object):
             logfile.write("\nChecking on name differences (config, ecoinvent)\n")
             for key in all_keys:
                 if ecoinvent[key]['name'] != config[key]['name']:
-                    logfile.write("{}: {}\n".format(ecoinvent[key]['name'], config[key]['name']))
+                    logfile.write("{}: {}\n".format(config[key]['name'], ecoinvent[key]['name']))
 
             print("Checking on shortname differences")
             logfile.write("\nChecking on shortname differences (config, ecoinvent)\n")
             for key in all_keys:
                 if ecoinvent[key]['shortname'] != config[key]['shortname']:
-                    logfile.write("{}: {}\n".format(ecoinvent[key]['shortname'], config[key]['shortname']))
+                    logfile.write("{}: {}\n".format(config[key]['shortname'], ecoinvent[key]['shortname']))
 
         print("Log written to {}".format(log_fp))
 
