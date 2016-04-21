@@ -19,15 +19,20 @@ collections = [
     "un-subregions",
     "usa-electricity",
     "all",
+    'all-ecoinvent',
 ]
 
 command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
 
 all_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final" -nln allgeos """
 
+all_ecoinvent_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection != 'countries'" -nln allgeos """
+
 shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
 
 all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final" -nln allgeos """
+
+all_ecoinvent_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection != 'countries'" -nln allgeos """
 
 bz2_command = "bzip2 {path}"
 
@@ -46,6 +51,8 @@ for format, extension in formats:
     for collection in collections:
         if collection == "all":
             cmnd = all_command
+        elif collection == 'all-ecoinvent':
+            cmnd = all_ecoinvent_command
         else:
             cmnd = command
         subprocess.check_call(cmnd.format(
@@ -64,6 +71,8 @@ for collection in collections:
     os.mkdir("output/" + layername)
     if collection == "all":
         cmnd = all_shp_command
+    elif collection == "all-ecoinvent":
+        cmnd = all_ecoinvent_shp_command
     else:
         cmnd = shp_command
     subprocess.check_call(cmnd.format(
