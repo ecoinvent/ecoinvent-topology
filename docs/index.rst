@@ -286,7 +286,8 @@ The `International Aluminium Institute <http://www.world-aluminium.org/statistic
 * IAI producing Area 2, North America, without Quebec
 * IAI producing Area 3, South America
 * IAI producing Area 4 and 5, South and East Asia, without China
-* IAI producing Area 6A&B, West, East, and Central Europe
+* Aluminium producing area, EU27 and EFTA countries
+* Aluminium producing area, Europe outside EU27 and EFTA
 * IAI producing Area 8, Gulf Region
 
 UN regions and subregions
