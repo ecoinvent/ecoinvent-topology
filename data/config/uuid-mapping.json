@@ -59,6 +59,11 @@
       "shortname": "CA-YK",
       "name": "Canada, Yukon",
       "uuid": "29dca13b-9d4b-4714-9c80-1808b9127dda"
+    },
+    {
+      "shortname": "CA-SK",
+      "name": "Canada, Saskatchewan",
+      "uuid": "e3aa6506-9887-4e27-9102-b3671e430090"
     }
   ],
   "Brazil": [
@@ -619,11 +624,6 @@
       "shortname": "CA",
       "name": "Canada",
       "uuid": "0b2a8a96-7d7e-11de-9ae2-0019e336be3a"
-    },
-    {
-      "shortname": "CA-SK",
-      "name": "Saskatchewan",
-      "uuid": "e3aa6506-9887-4e27-9102-b3671e430090"
     },
     {
       "shortname": "CC",
