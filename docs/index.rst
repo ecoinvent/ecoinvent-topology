@@ -384,6 +384,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Europe without Germany, the Netherlands, Norway, and Russia
 * Europe without NORDEL (NCPA)
 * Europe without Switzerland
+* Europe without Switzerland and France
 * Europe, without Russia and Turkey
 * UCTE without France
 * UCTE without Germany
@@ -570,7 +571,7 @@ The following electricity grids were added:
 
 Additionally, all states and union territories in both India and Brazil were added.
 
-The composite geometry `Europe without Germany, the Netherlands, Norway, and Russia` was also added.
+The composite geometries `Europe without Germany, the Netherlands, Norway, and Russia` and `Europe without Switzerland and France` were also added.
 
 Version 2.0 (ecoinvent 3.2)
 +++++++++++++++++++++++++++
