@@ -2010,6 +2010,11 @@
       "uuid": "c670b4a0-6051-4935-bafe-866736a010a9"
     },
     {
+      "shortname": "Europe without Switzerland and France",
+      "name": "Europe without Switzerland and France",
+      "uuid": "6a1e0054-4990-4d43-b7e4-e3d9a595a275"
+    },
+    {
       "shortname": "MRO, US only",
       "name": "Midwest Reliability Organization, US part only",
       "uuid": "6432879f-dc31-4e80-bc55-573f72dafee8"
