@@ -25,6 +25,9 @@ psql -U ecoinvent -d eigeo -c "DELETE FROM ne_countries WHERE name = 'Baikonur';
 echo "Fixing Uttarakhand"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name = 'Uttarakhand' WHERE name = 'Uttaranchal';" -q
 
+echo "Change Czech Republic to Czechia"
+psql -U ecoinvent -d eigeo -c "UPDATE ne_countries SET name = 'Czechia' WHERE name = 'Czech Republic';" -q
+
 echo "Adding 3166-2 codes for India"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-TN' WHERE name = 'Tamil Nadu';" -q
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-DD' WHERE name = 'Daman and Diu';" -q
