@@ -118,6 +118,9 @@ fi
 echo "Adding missing province faces to countries"
 python python/iterative_add_provinces.py
 
+echo "Remove Cyprus No Mans Land"
+psql -U ecoinvent -d eigeo -f sql/cyprus.sql -q -n -o create_db.log
+
 echo "Dealing with colonial legacies"
 psql -U ecoinvent -d eigeo -f sql/colonials.sql -q -n -o create_db.log
 
