@@ -15,6 +15,14 @@ The Python code is compatible with Python >= 3.4. It requires the following libr
 * pyprind
 * babel
 
+## Setting up the Postgresql database
+
+Make sure you have a recent version of Postgresql and the Postgis extension installed, and then create the `ecoinvent` user:
+
+    createuser --superuser ecoinvent -U postgres
+
+You are then ready to run the `create_db.sh` script, which create the postgis-enable database and build all recipes.
+
 ## Exporting selected geometries
 
 Modify this command to get the names you want:
