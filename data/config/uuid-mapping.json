@@ -2030,6 +2030,11 @@
       "uuid": "8bd484ff-ec4e-45c6-9f61-e211a872a4ff"
     },
     {
+      "shortname": "RER w/o DE+NL+RU",
+      "name": "Europe without Germany, the Netherlands, and Russia",
+      "uuid": "5c322a16-89ab-48d4-b1a2-fec5759774a3"
+    },
+    {
       "shortname": "RER w/o AT+BE+CH+DE+FR+IT",
       "name": "Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican",
       "uuid": "c428af56-39c0-4dca-a617-8716b52a6640"
