@@ -25,9 +25,6 @@ psql -U ecoinvent -d eigeo -c "DELETE FROM ne_countries WHERE name = 'Baikonur';
 echo "Fixing Uttarakhand"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name = 'Uttarakhand' WHERE name = 'Uttaranchal';" -q
 
-echo "Change Czech Republic to Czechia"
-psql -U ecoinvent -d eigeo -c "UPDATE ne_countries SET name = 'Czechia' WHERE name = 'Czech Republic';" -q
-
 echo "Adding 3166-2 codes for India"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-TN' WHERE name = 'Tamil Nadu';" -q
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = 'IN-DD' WHERE name = 'Daman and Diu';" -q
@@ -55,8 +52,15 @@ echo "Creating sovereign state topos"
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
 
-echo "Change Republic of Serbia to Serbia"
+echo "Change or update country names"
 psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Serbia' WHERE name = 'Republic of Serbia';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Czechia' WHERE name = 'Czech Republic';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Congo, Democratic Republic of the' where name = 'Democratic Republic of the Congo';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Congo' where name = 'Republic of Congo';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Micronesia, Federated States of' where name = 'Federated States of Micronesia';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Serbia' where name = 'Republic of Serbia';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Tanzania' where name = 'United Republic of Tanzania';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Aland' where name = 'Åland Islands';" -q -n -o create_db.log
 
 echo "Fixing independent islands"
 psql -U ecoinvent -d eigeo -f sql/fix_independent_islands.sql -q -n -o create_db.log
@@ -132,4 +136,4 @@ psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '黑龙江�
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '青海' WHERE name = 'Qinghai';" -q -n -o create_db.log
 
 echo "Building countries and recipes"
-source build_recipes.sh
+# source build_recipes.sh

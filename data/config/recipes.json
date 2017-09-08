@@ -470,7 +470,7 @@
         "Chile",
         "Colombia",
         "Ecuador",
-        "Falkland Islands (Malvinas)",
+        "Falkland Islands",
         "French Guiana",
         "Guyana",
         "Paraguay",
@@ -514,8 +514,8 @@
     {
       "ne_countries": [
         "China",
-        "Hong Kong",
-        "Macau",
+        "Hong Kong S.A.R.",
+        "Macao S.A.R",
         "Taiwan",
         "North Korea",
         "Japan",
@@ -547,7 +547,7 @@
     "un-subregions",
     {
       "ne_countries": [
-        "Brunei Darussalam",
+        "Brunei",
         "Cambodia",
         "Indonesia",
         "Laos",
@@ -615,7 +615,7 @@
     "un-subregions",
     {
       "ne_countries": [
-        "Åland Islands",
+        "Aland",
         "Denmark",
         "Estonia",
         "Faeroe Islands",
@@ -708,7 +708,7 @@
         "Guam",
         "Kiribati",
         "Marshall Islands",
-        "Micronesia (Federated States of)",
+        "Micronesia, Federated States of",
         "Nauru",
         "Northern Mariana Islands",
         "Palau"
@@ -724,7 +724,7 @@
         "Cook Islands",
         "French Polynesia",
         "Niue",
-        "Pitcairn",
+        "Pitcairn Islands",
         "Samoa",
         "Tokelau",
         "Tonga",
@@ -756,7 +756,7 @@
         "Somaliland",
         "South Sudan",
         "Uganda",
-        "United Republic of Tanzania",
+        "Tanzania",
         "Zambia",
         "Zimbabwe"
       ]
@@ -771,8 +771,8 @@
         "Cameroon",
         "Central African Republic",
         "Chad",
-        "Republic of Congo",
-        "Democratic Republic of the Congo",
+        "Congo",
+        "Congo, Democratic Republic of the",
         "Equatorial Guinea",
         "Gabon",
         "Sao Tome and Principe"
@@ -848,9 +848,9 @@
         "Central African Republic",
         "Chad",
         "Comoros",
-        "Republic of Congo",
+        "Congo",
         "Ivory Coast",
-        "Democratic Republic of the Congo",
+        "Congo, Democratic Republic of the",
         "Djibouti",
         "Egypt",
         "Equatorial Guinea",
@@ -892,7 +892,7 @@
         "Togo",
         "Tunisia",
         "Uganda",
-        "United Republic of Tanzania",
+        "Tanzania",
         "Western Sahara",
         "Zambia",
         "Zimbabwe"
@@ -926,7 +926,7 @@
         "Dominican Republic",
         "Ecuador",
         "El Salvador",
-        "Falkland Islands (Malvinas)",
+        "Falkland Islands",
         "Grenada",
         "Guadeloupe",
         "Guatemala",
@@ -969,7 +969,7 @@
         "Bangladesh",
         "Baykonur Cosmodrome",
         "Bhutan",
-        "Brunei Darussalam",
+        "Brunei",
         "Cambodia",
         "China",
         "Cyprus",
@@ -978,7 +978,7 @@
         "Akrotiri Sovereign Base Area",
         "Northern Cyprus",
         "Georgia",
-        "Hong Kong",
+        "Hong Kong S.A.R.",
         "India",
         "Siachen Glacier",
         "Indonesia",
@@ -993,7 +993,7 @@
         "Kyrgyzstan",
         "Laos",
         "Lebanon",
-        "Macau",
+        "Macao S.A.R",
         "Malaysia",
         "Maldives",
         "Mongolia",
@@ -1078,7 +1078,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ]
     }
   ],
@@ -1095,7 +1095,7 @@
         "Guam",
         "Kiribati",
         "Marshall Islands",
-        "Micronesia (Federated States of)",
+        "Micronesia, Federated States of",
         "Nauru",
         "New Caledonia",
         "New Zealand",
@@ -1104,7 +1104,7 @@
         "Northern Mariana Islands",
         "Palau",
         "Papua New Guinea",
-        "Pitcairn",
+        "Pitcairn Islands",
         "Samoa",
         "Solomon Islands",
         "Tokelau",
@@ -1143,7 +1143,7 @@
         "Dominican Republic",
         "Ecuador",
         "El Salvador",
-        "Falkland Islands (Malvinas)",
+        "Falkland Islands",
         "French Guiana",
         "Greenland",
         "Grenada",
@@ -1642,7 +1642,7 @@
         "Bangladesh",
         "Baykonur Cosmodrome",
         "Bhutan",
-        "Brunei Darussalam",
+        "Brunei",
         "Cambodia",
         "China",
         "Cyprus",
@@ -1651,7 +1651,7 @@
         "Akrotiri Sovereign Base Area",
         "Northern Cyprus",
         "Georgia",
-        "Hong Kong",
+        "Hong Kong S.A.R.",
         "India",
         "Siachen Glacier",
         "Indonesia",
@@ -1666,7 +1666,7 @@
         "Kyrgyzstan",
         "Laos",
         "Lebanon",
-        "Macau",
+        "Macao S.A.R",
         "Malaysia",
         "Maldives",
         "Mongolia",
@@ -1782,7 +1782,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -1901,7 +1901,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -2019,7 +2019,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -2137,7 +2137,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ]
     }
   ],
@@ -2193,7 +2193,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ]
     }
   ],
@@ -2250,7 +2250,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -2366,7 +2366,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -2486,7 +2486,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ]
     }
   ],
@@ -2570,7 +2570,7 @@
         "Bangladesh",
         "Baykonur Cosmodrome",
         "Bhutan",
-        "Brunei Darussalam",
+        "Brunei",
         "Cambodia",
         "Cyprus",
         "Cyprus No Mans Area",
@@ -2578,7 +2578,7 @@
         "Akrotiri Sovereign Base Area",
         "Northern Cyprus",
         "Georgia",
-        "Hong Kong",
+        "Hong Kong S.A.R.",
         "India",
         "Siachen Glacier",
         "Indonesia",
@@ -2593,7 +2593,7 @@
         "Kyrgyzstan",
         "Laos",
         "Lebanon",
-        "Macau",
+        "Macao S.A.R",
         "Malaysia",
         "Maldives",
         "Mongolia",
@@ -2705,7 +2705,7 @@
         "Ukraine",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -2821,7 +2821,7 @@
         "Sweden",
         "Ukraine",
         "United Kingdom",
-        "Åland Islands"
+        "Aland"
       ],
       "ne_provinces": [
         "Russia",
@@ -3004,7 +3004,7 @@
         "Switzerland",
         "United Kingdom",
         "Vatican",
-        "Åland Islands"
+        "Aland"
       ]
     }
   ],

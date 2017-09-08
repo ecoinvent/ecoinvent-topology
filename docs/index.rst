@@ -153,7 +153,7 @@ Countries
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
 | Croatia                           | Cuba                                     | Curaçao                             | Cyprus                       |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
-| Cyprus No Mans Area               | Czech Republic                           | Denmark                             | Dhekelia Sovereign Base Area |
+| Cyprus No Mans Area               | Czechia                                  | Denmark                             | Dhekelia Sovereign Base Area |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
 | Djibouti                          | Dominica                                 | Dominican Republic                  | East Timor                   |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
@@ -553,6 +553,38 @@ In addition to the country ``India``, the Indian states and union territories ar
 
 Changelog
 ---------
+
+Version 2.2 (ecoinvent 3.4)
++++++++++++++++++++++++++++
+
+The country formerly known as the Czech Republic is now `Czechia <https://www.iso.org/obp/ui/#iso:code:3166:CZ>`__.
+
+Added ``Europe without Germany, the Netherlands, and Russia`` and ``Europe without Switzerland and France``.
+
+Changed the code of Canada without Quebec from ``ROC`` to ``Canada without Quebec``.
+
+Improved consistency in codes and names of provinces to include their countries:
+
+* ``Ashmore and Cartier Islands`` is now ``Australia, Ashmore and Cartier Islands`` (code ``AUS-AC``)
+* ``Indian Ocean Territories`` is now ``Australia, Indian Ocean Territories`` (code ``AUS-IOT``)
+* ``China Southern Power Grid`` code is now ``CN-CSG``
+* ``State Grid Corporation of China`` code is now ``CN-SGCC``
+* ``Alaska Systems Coordinating Council`` code is now ``US-ASCC``
+* ``Florida Reliability Coordinating Council`` code is now ``US-FRCC``
+* ``HICC`` code is now ``US-HICC``
+* ``Midwest Reliability Organization, US part only`` code is now ``US-MRO``
+* ``Northeast Power Coordinating Council, US part only`` code is now ``US-NPCC``
+* ``ReliabilityFirst Corporation`` code is now ``US-RFC``
+* ``SERC Reliability Corporation`` code is now ``US-SERC``
+* ``Southwest Power Pool`` code is now ``US-SPP``
+* ``Texas Regional Entity`` code is now ``US-TRE``
+* ``Western Electricity Coordinating Council, US part only`` code is now ``US-WECC``
+
+Fixed several bugs:
+
+* The new names of some regions in version 2.0 were not properly updated
+* All areas of Cyprus are now included in Asia
+* Saskatchewan is now included in Canada
 
 Version 2.1 (ecoinvent 3.3)
 +++++++++++++++++++++++++++

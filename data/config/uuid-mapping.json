@@ -1975,7 +1975,7 @@
   ],
   "Composite geos": [
     {
-      "shortname": "ASCC",
+      "shortname": "US-ASCC",
       "name": "Alaska Systems Coordinating Council",
       "uuid": "a9c3be27-affe-464c-8ebf-996d8ab6a958"
     },
@@ -2015,12 +2015,12 @@
       "uuid": "6a1e0054-4990-4d43-b7e4-e3d9a595a275"
     },
     {
-      "shortname": "MRO, US only",
+      "shortname": "US-MRO",
       "name": "Midwest Reliability Organization, US part only",
       "uuid": "6432879f-dc31-4e80-bc55-573f72dafee8"
     },
     {
-      "shortname": "NPCC, US only",
+      "shortname": "US-NPCC",
       "name": "Northeast Power Coordinating Council, US part only",
       "uuid": "50f826e7-ab13-444e-987b-180701b691c9"
     },
@@ -2065,7 +2065,7 @@
       "uuid": "088a91da-e0cc-11de-823b-0019e336be3a"
     },
     {
-      "shortname": "WECC, US only",
+      "shortname": "US-WECC",
       "name": "Western Electricity Coordinating Council, US part only",
       "uuid": "f37ced82-5df8-48c2-a207-1e36dd11a112"
     }
@@ -2078,12 +2078,12 @@
     },
     {
       "name": "China Southern Power Grid",
-      "shortname": "CSG",
+      "shortname": "CN-CSG",
       "uuid": "5b64ff1c-3c47-4adf-b89c-9e18078b9bf7"
     },
     {
       "name": "State Grid Corporation of China",
-      "shortname": "SGCC",
+      "shortname": "CN-SGCC",
       "uuid": "4c9baec2-f9fc-4f36-84f7-a3ed2eab82a1"
     },
     {
@@ -2142,12 +2142,12 @@
       "uuid": "f9221622-cc45-11de-98ed-0019e336be3a"
     },
     {
-      "shortname": "FRCC",
+      "shortname": "US-FRCC",
       "name": "Florida Reliability Coordinating Council",
       "uuid": "dfd92cab-e7c7-4ca8-8abc-2fb6fd064dbc"
     },
     {
-      "shortname": "HICC",
+      "shortname": "US-HICC",
       "name": "HICC",
       "uuid": "598f9aa4-e409-11de-bce5-0019e336be3a"
     },
@@ -2167,22 +2167,22 @@
       "uuid": "d48cee40-0ff1-49d6-a80d-9e0be3e0c2f6"
     },
     {
-      "shortname": "RFC",
+      "shortname": "US-RFC",
       "name": "ReliabilityFirst Corporation",
       "uuid": "42e6cfaf-ffa3-4f42-85bb-55e1b1c40c56"
     },
     {
-      "shortname": "SERC",
+      "shortname": "US-SERC",
       "name": "SERC Reliability Corporation",
       "uuid": "a7b38401-afb6-4130-86f6-cd5184c6c40e"
     },
     {
-      "shortname": "SPP",
+      "shortname": "US-SPP",
       "name": "Southwest Power Pool",
       "uuid": "79565b15-098f-471f-aa28-d7dd611657db"
     },
     {
-      "shortname": "TRE",
+      "shortname": "US-TRE",
       "name": "Texas Regional Entity",
       "uuid": "854cdfab-82bf-4c25-8515-ba33589d3efe"
     },

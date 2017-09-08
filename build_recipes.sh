@@ -44,9 +44,6 @@ echo "Cleaning up missing attributes"
 psql -U ecoinvent -d eigeo -c "UPDATE final SET unregioncode = 0 WHERE unregioncode <= 0;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE final SET uncode = 0 WHERE uncode <= 0;" -q -n -o create_db.log
 
-echo "Fixing some names"
-psql -U ecoinvent -d eigeo -f sql/fix-names.sql -q -n -o create_db.log
-
 echo "Adding shortnames and UUIDS"
 python python/parse_uuids.py
 psql -U ecoinvent -d eigeo -f sql/uuids.sql -q -n -o create_db.log
