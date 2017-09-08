@@ -136,4 +136,4 @@ psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '黑龙江�
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET name_local = '青海' WHERE name = 'Qinghai';" -q -n -o create_db.log
 
 echo "Building countries and recipes"
-# source build_recipes.sh
+source build_recipes.sh
