@@ -2132,6 +2132,16 @@
       "uuid": "a455d5bd-0e4f-4247-a4db-7cf88759f35f"
     },
     {
+      "name": "Brazil, South-eastern grid",
+      "shortname": "BR-South-eastern grid",
+      "uuid": "df7d08ae-6f20-4095-96e6-3d9cc6f49263"
+    },
+    {
+      "name": "Brazil, Mid-western grid",
+      "shortname": "BR-Mid-western grid",
+      "uuid": "6e1c02cc-e7fc-4e63-a30e-59cfa5c4d9c1"
+    },
+    {
       "name": "Brazil, Southern grid",
       "shortname": "BR-Southern grid",
       "uuid": "dd2330a8-30dc-4af9-bb3a-d2d2bf404dde"

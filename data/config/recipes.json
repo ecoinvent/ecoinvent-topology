@@ -1330,20 +1330,31 @@
     }
   ],
   [
-    "Brazil, South-eastern and Mid-western grid",
+    "Brazil, South-eastern grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "Brazil",
+        [
+          "Espírito Santo",
+          "Minas Gerais",
+          "Rio de Janeiro",
+          "São Paulo"
+        ]
+      ]
+    }
+  ],
+  [
+    "Brazil, Mid-western grid",
     "electricity",
     {
       "ne_provinces": [
         "Brazil",
         [
           "Distrito Federal",
-          "Espírito Santo",
           "Goiás",
           "Mato Grosso do Sul",
-          "Mato Grosso",
-          "Minas Gerais",
-          "Rio de Janeiro",
-          "São Paulo"
+          "Mato Grosso"
         ]
       ]
     }
