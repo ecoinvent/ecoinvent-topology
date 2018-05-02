@@ -4,6 +4,8 @@ This repository contains the scripts and data needed to build a consistent topol
 
 The repository is a mix of SQL, bash scripts, and Python. See the file "topology-journal.rst" for instructions and journal of what was done and why.
 
+This repository is **not** the `constructive_geometries` Python library! That one [lives here](https://github.com/cmutel/constructive_geometries).
+
 ## Python requirements
 
 The Python code is compatible with Python >= 3.4. It requires the following libraries:
