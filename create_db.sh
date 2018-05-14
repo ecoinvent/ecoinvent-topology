@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Creating database and tables"
+echo "Ignore error about eigeo not existing if running for first time"
 psql -U ecoinvent -d template1 -c "DROP DATABASE eigeo;" -q -n -o create_db.log
 psql -U ecoinvent -d template1 -c "CREATE DATABASE eigeo WITH OWNER = ecoinvent ENCODING = 'UTF8';" -q -n -o create_db.log
 psql -U ecoinvent -d template1 -c "ALTER DATABASE eigeo SET search_path = public, topology;" -q -n -o create_db.log

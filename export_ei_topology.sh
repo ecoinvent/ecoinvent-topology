@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Creating new topology and topology column"
+echo "Ignore error about 'Topology 'ei_final' does not exist' if running for first time"
 psql -U ecoinvent -d eigeo -c "SELECT topology.DropTopology('ei_final');" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "VACUUM FULL;" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SELECT CreateTopology('ei_final', 4326);" -q -n -o create_db.log
