@@ -10,7 +10,7 @@ echo "Adding final topographies... this will take a long time"
 python python/final_topology.py
 
 echo "Dumping all topology faces"
-ogr2ogr -f GPKG output/faces.gpkg "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select face_id as id, ST_GetFaceGeometry('ei_final', face_id) as geom from ei_final.face where face_id > 0" -nln all_faces
+ogr2ogr -f GPKG output/faces.gpkg "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select face_id as id, ST_GetFaceGeometry('ei_final', face_id) as geom from ei_final.face where face_id > 0 order by face_id" -nln all_faces
 
 echo "Export face ids and processing"
 psql -U ecoinvent -d eigeo -c "COPY (SELECT shortname, GetTopoGeomElementArray(topogeom) as faces FROM final) TO STDOUT WITH CSV;" > output/faces.csv

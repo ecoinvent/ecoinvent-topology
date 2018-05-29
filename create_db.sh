@@ -62,6 +62,8 @@ psql -U ecoinvent -d eigeo -c "update geometries set name = 'Micronesia, Federat
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Serbia' where name = 'Republic of Serbia';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Tanzania' where name = 'United Republic of Tanzania';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Aland' where name = 'Åland Islands';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Australia, Indian Ocean Territories' where name = 'Indian Ocean Territories';" -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -c "update geometries set name = 'Australia, Ashmore and Cartier Islands' where name = 'Ashmore and Cartier Islands';" -q -n -o create_db.log
 
 echo "Fixing independent islands"
 psql -U ecoinvent -d eigeo -f sql/fix_independent_islands.sql -q -n -o create_db.log
