@@ -277,7 +277,7 @@ Disputed areas and indepedent military bases
 International Aluminium Institute regions
 +++++++++++++++++++++++++++++++++++++++++
 
-The `International Aluminium Institute <http://www.world-aluminium.org/statistics/>`__ regions are roughly followed, although wiht some ecoinvent-specific modifications.
+The `International Aluminium Institute <http://www.world-aluminium.org/statistics/>`__ regions are roughly followed, although with some ecoinvent-specific modifications.
 
 .. note:: See the :ref:`detailed notes on aluminium-producting regions <aluminium>`.
 
@@ -554,6 +554,22 @@ In addition to the country ``India``, the Indian states and union territories ar
 Changelog
 ---------
 
+Version 2.X
++++++++++++
+
+Split ``Brazil, South-eastern and Mid-western grid`` into ``Brazil, South-eastern grid`` and ``Brazil, Mid-western grid``.
+
+Fixed the short names of the IAI regions to make them consistent with ecoinvent master data:
+
+* ``IAI Area, Europe outside EU & EFTA`` is now ``IAI Area, Russia & RER w/o EU27 & EFTA``
+* ``IAI Area 1, Africa`` is now ``IAI Area, Africa``
+* ``IAI Area 2, North America`` is now ``IAI Area, North America``
+* ``IAI Area 2, without Quebec`` is now ``IAI Area, North America, without Quebec``
+* ``IAI Area 3, South America`` is now ``IAI Area, South America``
+* ``IAI Area 4&5, without China`` is now ``IAI Area, Asia, without China and GCC``
+* ``IAI Area 6, Europe`` is now ``IAI Area, West Europe``
+* ``IAI Area 8, Gulf`` is now ``IAI Area, Gulf Cooperation Council``
+
 Version 2.2 (ecoinvent 3.4)
 +++++++++++++++++++++++++++
 
@@ -579,6 +595,19 @@ Improved consistency in codes and names of provinces to include their countries:
 * ``Southwest Power Pool`` code is now ``US-SPP``
 * ``Texas Regional Entity`` code is now ``US-TRE``
 * ``Western Electricity Coordinating Council, US part only`` code is now ``US-WECC``
+
+Changed several country names for consistency with ecoinvent:
+
+* ``Brunei Darussalam`` is now ``Brunei``
+* ``Democratic Republic of the Congo`` is now ``Congo, Democratic Republic of the``
+* ``Falkland Islands (Malvinas)`` is now ``Falkland Islands``
+* ``Hong Kong`` is now ``Hong Kong S.A.R.``
+* ``Macau`` is now ``Macao S.A.R``
+* ``Micronesia (Federated States of)`` is now ``Micronesia, Federated States of``
+* ``Pitcairn`` is now ``Pitcairn Islands``
+* ``Republic of Congo`` is now ``Congo``
+* ``United Republic of Tanzania`` is now ``Tanzania``
+* ``Åland Islands`` is now ``Aland``
 
 Fixed several bugs:
 
