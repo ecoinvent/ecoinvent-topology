@@ -385,6 +385,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Europe without NORDEL (NCPA)
 * Europe without Switzerland
 * Europe without Switzerland and France
+* Europe, without Russia
 * Europe, without Russia and Turkey
 * UCTE without France
 * UCTE without Germany
@@ -554,8 +555,8 @@ In addition to the country ``India``, the Indian states and union territories ar
 Changelog
 ---------
 
-Version 2.X
-+++++++++++
+Version 2.3 (ecoinvent development)
++++++++++++++++++++++++++++++++++++
 
 Split ``Brazil, South-eastern and Mid-western grid`` into ``Brazil, South-eastern grid`` and ``Brazil, Mid-western grid``.
 
@@ -569,6 +570,8 @@ Fixed the short names of the IAI regions to make them consistent with ecoinvent 
 * ``IAI Area 4&5, without China`` is now ``IAI Area, Asia, without China and GCC``
 * ``IAI Area 6, Europe`` is now ``IAI Area, West Europe``
 * ``IAI Area 8, Gulf`` is now ``IAI Area, Gulf Cooperation Council``
+
+Added ``Europe without Russia``.
 
 Version 2.2 (ecoinvent 3.4)
 +++++++++++++++++++++++++++
