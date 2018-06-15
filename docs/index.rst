@@ -385,6 +385,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Europe without NORDEL (NCPA)
 * Europe without Switzerland
 * Europe without Switzerland and France
+* Europe, without Russia
 * Europe, without Russia and Turkey
 * UCTE without France
 * UCTE without Germany
@@ -553,6 +554,11 @@ In addition to the country ``India``, the Indian states and union territories ar
 
 Changelog
 ---------
+
+Version 2.3 (ecoinvent development)
++++++++++++++++++++++++++++++++++++
+
+Added ``Europe without Russia``.
 
 Version 2.2 (ecoinvent 3.4)
 +++++++++++++++++++++++++++

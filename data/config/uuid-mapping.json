@@ -2040,6 +2040,11 @@
       "uuid": "c428af56-39c0-4dca-a617-8716b52a6640"
     },
     {
+      "shortname": "RER w/o RU",
+      "name": "Europe without Russia",
+      "uuid": "e6a1bb9b-c1f3-49ed-a64b-87d488244ef9"
+    },
+    {
       "shortname": "RER w/o CH+DE",
       "name": "Europe without Germany and Switzerland",
       "uuid": "5d5718f2-ee74-462a-888c-be4d534ef542"
