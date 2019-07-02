@@ -233,7 +233,7 @@ Countries
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
 | Spain                             | Spratly Islands                          | Sri Lanka                           | Sudan                        |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
-| Suriname                          | Svalbard and Jan Mayen                   | Swaziland                           | Sweden                       |
+| Suriname                          | Svalbard and Jan Mayen                   | Eswatini                            | Sweden                       |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
 | Switzerland                       | Syria                                    | Taiwan                              | Tajikistan                   |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
@@ -572,6 +572,8 @@ Fixed the short names of the IAI regions to make them consistent with ecoinvent 
 * ``IAI Area 8, Gulf`` is now ``IAI Area, Gulf Cooperation Council``
 
 Added ``Europe without Russia``.
+
+Updated country name of `Eswatini <https://www.iso.org/obp/ui/#iso:code:3166:SZ>`__
 
 Version 2.2 (ecoinvent 3.4)
 +++++++++++++++++++++++++++
