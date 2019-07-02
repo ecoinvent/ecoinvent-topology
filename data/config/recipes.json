@@ -2585,6 +2585,32 @@
     }
   ],
   [
+    "North America without Quebec",
+    "special",
+    {
+      "ne_countries": [
+        "United States of America"
+      ],
+      "ne_provinces": [
+        "Canada",
+        [
+          "Alberta",
+          "British Columbia",
+          "Manitoba",
+          "New Brunswick",
+          "Newfoundland and Labrador",
+          "Nova Scotia",
+          "Northwest Territories",
+          "Nunavut",
+          "Ontario",
+          "Prince Edward Island",
+          "Saskatchewan",
+          "Yukon"
+        ]
+      ]
+    }
+  ],
+  [
     "Canada without Alberta",
     "special",
     {

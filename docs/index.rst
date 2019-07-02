@@ -555,7 +555,7 @@ In addition to the country ``India``, the Indian states and union territories ar
 Changelog
 ---------
 
-Version 2.3 (ecoinvent development)
+Version 2.3 (ecoinvent 3.6 development)
 +++++++++++++++++++++++++++++++++++
 
 Split ``Brazil, South-eastern and Mid-western grid`` into ``Brazil, South-eastern grid`` and ``Brazil, Mid-western grid``.
@@ -571,9 +571,9 @@ Fixed the short names of the IAI regions to make them consistent with ecoinvent 
 * ``IAI Area 6, Europe`` is now ``IAI Area, West Europe``
 * ``IAI Area 8, Gulf`` is now ``IAI Area, Gulf Cooperation Council``
 
-Added ``Europe without Russia``.
+Added ``Europe without Russia`` and ``North America without Quebec``.
 
-Updated country name of `Eswatini <https://www.iso.org/obp/ui/#iso:code:3166:SZ>`__
+Updated country name of `Eswatini <https://www.iso.org/obp/ui/#iso:code:3166:SZ>`__ and `North Macedonia <https://en.wikipedia.org/wiki/North_Macedonia>`__.
 
 Version 2.2 (ecoinvent 3.4)
 +++++++++++++++++++++++++++

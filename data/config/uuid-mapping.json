@@ -2000,6 +2000,11 @@
       "uuid": "a4d7d7fd-94ae-4f44-91ba-53cd7f79bac4"
     },
     {
+      "shortname": "North America without Quebec",
+      "name": "North America without Quebec",
+      "uuid": "aab06382-a476-4bec-a78b-d2fc0b849980"
+    },
+    {
       "shortname": "Europe without NORDEL (NCPA)",
       "name": "Europe without NORDEL (NCPA)",
       "uuid": "a2d4e588-e0d1-11de-823b-0019e336be3a"
