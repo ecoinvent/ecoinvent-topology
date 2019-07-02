@@ -54,6 +54,7 @@ psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
 
 echo "Change or update country names"
+psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'North Macedonia' WHERE name = 'Macedonia';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Serbia' WHERE name = 'Republic of Serbia';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Czechia' WHERE name = 'Czech Republic';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Congo, Democratic Republic of the' where name = 'Democratic Republic of the Congo';" -q -n -o create_db.log
