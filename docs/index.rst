@@ -384,6 +384,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Europe without Germany, the Netherlands, Norway, and Russia
 * Europe without NORDEL (NCPA)
 * Europe without Switzerland
+* Europe without Switzerland and Austria
 * Europe without Switzerland and France
 * Europe, without Russia
 * Europe, without Russia and Turkey
@@ -555,8 +556,13 @@ In addition to the country ``India``, the Indian states and union territories ar
 Changelog
 ---------
 
-Version 2.3 (ecoinvent 3.6 development)
-+++++++++++++++++++++++++++++++++++
+Version 2.4 (ecoinvent 3.7 development)
++++++++++++++++++++++++++++++++++++++++
+
+Added ``Europe without Switzerland and Austria``.
+
+Version 2.3 (ecoinvent 3.6)
++++++++++++++++++++++++++++
 
 Split ``Brazil, South-eastern and Mid-western grid`` into ``Brazil, South-eastern grid`` and ``Brazil, Mid-western grid``.
 
