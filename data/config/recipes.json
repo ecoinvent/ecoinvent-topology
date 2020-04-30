@@ -1741,6 +1741,47 @@
     }
   ],
   [
+    "China without Inner Mongol",
+    "special",
+    {
+      "ne_provinces": [
+        "China",
+        [
+          "Anhui",
+          "Beijing",
+          "Chongqing",
+          "Fujian",
+          "Gansu",
+          "Guangdong",
+          "Guangxi",
+          "Guizhou",
+          "Hainan",
+          "Hebei",
+          "Heilongjiang",
+          "Henan",
+          "Hubei",
+          "Hunan",
+          "Jiangsu",
+          "Jiangxi",
+          "Jilin",
+          "Liaoning",
+          "Ningxia",
+          "Qinghai",
+          "Shaanxi",
+          "Shandong",
+          "Shanghai",
+          "Shanxi",
+          "Sichuan",
+          "Tianjin",
+          "Xinjiang",
+          "Xizang",
+          "Yunnan",
+          "Zhejiang"
+        ]
+      ]
+    }
+  ],
+  [
     "Europe",
     "special",
     {

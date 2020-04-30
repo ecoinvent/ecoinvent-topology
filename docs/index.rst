@@ -378,6 +378,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Canada without Alberta
 * Canada without Alberta and Quebec
 * Canada without Quebec
+* China without Inner Mongol
 * Europe without Austria
 * Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican
 * Europe without Germany and Switzerland
@@ -560,7 +561,7 @@ Changelog
 Version 2.4 (ecoinvent 3.7 development)
 +++++++++++++++++++++++++++++++++++++++
 
-Added ``Europe without Switzerland and Austria``.
+Added ``Europe without Switzerland and Austria``, ``Europe without Austria``, ``China without Inner Mongol``.
 
 Version 2.3 (ecoinvent 3.6)
 +++++++++++++++++++++++++++

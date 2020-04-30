@@ -2040,6 +2040,11 @@
       "uuid": "50f826e7-ab13-444e-987b-180701b691c9"
     },
     {
+      "shortname": "China w/o Inner Mongol",
+      "name": "China without Inner Mongol",
+      "uuid": "5874165e-031e-4e85-ab69-8c2ae6a1a970"
+    },
+    {
       "shortname": "RER w/o DE+NL+NO+RU",
       "name": "Europe without Germany, the Netherlands, Norway, and Russia",
       "uuid": "8bd484ff-ec4e-45c6-9f61-e211a872a4ff"
