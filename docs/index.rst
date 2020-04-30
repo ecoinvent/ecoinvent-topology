@@ -378,6 +378,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Canada without Alberta
 * Canada without Alberta and Quebec
 * Canada without Quebec
+* Europe without Austria
 * Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican
 * Europe without Germany and Switzerland
 * Europe without Germany, the Netherlands, and Norway
