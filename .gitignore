@@ -1,0 +1,13 @@
+create_db.log
+data/countries
+data/provinces
+data/states
+sql/cutouts/*.sql
+sql/recipes.sql
+sql/uuids.sql
+sql/ne_*.sql
+output/*.csv
+output
+docs/_build
+~*
+sync.sh
