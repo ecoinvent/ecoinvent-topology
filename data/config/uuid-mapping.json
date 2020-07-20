@@ -380,6 +380,263 @@
       "uuid": "77849b53-31ea-4b25-93e5-451909753ad3"
     }
   ],
+  "United States of America": [
+    {
+      "name": "United States of America, Alabama",
+      "shortname": "US-AL",
+      "uuid": "7676497b-9db7-4ec9-9b0f-0eae9df88caf"
+    },
+    {
+      "name": "United States of America, Alaska",
+      "shortname": "US-AK",
+      "uuid": "053e6c3d-7a86-45f4-85af-be0f971998a0"
+    },
+    {
+      "name": "United States of America, Arizona",
+      "shortname": "US-AZ",
+      "uuid": "5cf02fb9-22f3-4f49-9745-9e5bb7756935"
+    },
+    {
+      "name": "United States of America, Arkansas",
+      "shortname": "US-AR",
+      "uuid": "3af9101d-692a-4f6c-87c5-e43f00714165"
+    },
+    {
+      "name": "United States of America, California",
+      "shortname": "US-CA",
+      "uuid": "5d7486b1-a50c-4c86-8dd3-ce9773bd2bab"
+    },
+    {
+      "name": "United States of America, Colorado",
+      "shortname": "US-CO",
+      "uuid": "a150972e-6242-4692-9e48-0a7e72b5c7f0"
+    },
+    {
+      "name": "United States of America, Connecticut",
+      "shortname": "US-CT",
+      "uuid": "a6ed7d3f-b1a1-4690-8278-852a75a0115e"
+    },
+    {
+      "name": "United States of America, Delaware",
+      "shortname": "US-DE",
+      "uuid": "ae2ca200-3008-48a6-b85b-00edb7bf9f34"
+    },
+    {
+      "name": "United States of America, District of Columbia",
+      "shortname": "US-DC",
+      "uuid": "909aae3b-d802-4626-a75e-f0d48dba9812"
+    },
+    {
+      "name": "United States of America, Florida",
+      "shortname": "US-FL",
+      "uuid": "8dbe7fbe-7375-4cb0-a1a2-6d55bc55e86e"
+    },
+    {
+      "name": "United States of America, Georgia",
+      "shortname": "US-GA",
+      "uuid": "c59de648-8f45-40a3-a479-191e3f558996"
+    },
+    {
+      "name": "United States of America, Hawaii",
+      "shortname": "US-HI",
+      "uuid": "44528d9e-bc8d-4c2f-a949-c2c956ddce9c"
+    },
+    {
+      "name": "United States of America, Idaho",
+      "shortname": "US-ID",
+      "uuid": "78a0e465-7d36-4e37-a266-79acaa4a681f"
+    },
+    {
+      "name": "United States of America, Illinois",
+      "shortname": "US-IL",
+      "uuid": "21b47bba-7f1b-4c4c-ac3e-75cc1ad33231"
+    },
+    {
+      "name": "United States of America, Indiana",
+      "shortname": "US-IN",
+      "uuid": "4ebadc58-485e-4742-86bb-11b324dfebf4"
+    },
+    {
+      "name": "United States of America, Iowa",
+      "shortname": "US-IA",
+      "uuid": "d38650a8-8c23-4941-9292-f9d7a4dce29b"
+    },
+    {
+      "name": "United States of America, Kansas",
+      "shortname": "US-KS",
+      "uuid": "235c5fdc-360e-42dc-9659-3e812977b3d1"
+    },
+    {
+      "name": "United States of America, Kentucky",
+      "shortname": "US-KY",
+      "uuid": "761f191a-af54-47b8-8e42-5bed90017b8d"
+    },
+    {
+      "name": "United States of America, Louisiana",
+      "shortname": "US-LA",
+      "uuid": "2ee2dbc5-0095-44a4-bb20-5faa60c17efe"
+    },
+    {
+      "name": "United States of America, Maine",
+      "shortname": "US-ME",
+      "uuid": "03374b13-9a75-45a0-a630-6f80fbbb0d79"
+    },
+    {
+      "name": "United States of America, Maryland",
+      "shortname": "US-MD",
+      "uuid": "d732da9a-2e3b-4a4e-8324-c0bbe6d42014"
+    },
+    {
+      "name": "United States of America, Massachusetts",
+      "shortname": "US-MA",
+      "uuid": "567d4ce8-81a3-4303-b6b1-7caa97a49680"
+    },
+    {
+      "name": "United States of America, Michigan",
+      "shortname": "US-MI",
+      "uuid": "00e67757-ad16-44e0-90fe-2bf10d4c2186"
+    },
+    {
+      "name": "United States of America, Minnesota",
+      "shortname": "US-MN",
+      "uuid": "8f365212-2317-4cce-bf8d-5898730bcd98"
+    },
+    {
+      "name": "United States of America, Mississippi",
+      "shortname": "US-MS",
+      "uuid": "224fd156-b734-4ac7-b7b8-a6ad56e8ccec"
+    },
+    {
+      "name": "United States of America, Missouri",
+      "shortname": "US-MO",
+      "uuid": "16e5b85a-c069-429c-b0e1-6032ca19c322"
+    },
+    {
+      "name": "United States of America, Montana",
+      "shortname": "US-MT",
+      "uuid": "a0c4cf31-7062-4c1a-ba55-582bc899f766"
+    },
+    {
+      "name": "United States of America, Nebraska",
+      "shortname": "US-NE",
+      "uuid": "53b04726-ffcb-4dc7-97ab-85e7fd150d17"
+    },
+    {
+      "name": "United States of America, Nevada",
+      "shortname": "US-NV",
+      "uuid": "7ae6d206-a642-4775-a362-6d941033ce51"
+    },
+    {
+      "name": "United States of America, New Hampshire",
+      "shortname": "US-NH",
+      "uuid": "32ed4dc7-920a-4fd1-9977-d2237c652bde"
+    },
+    {
+      "name": "United States of America, New Jersey",
+      "shortname": "US-NJ",
+      "uuid": "0a4f62db-9145-46d3-b4b0-7f6ad5dce81c"
+    },
+    {
+      "name": "United States of America, New Mexico",
+      "shortname": "US-NM",
+      "uuid": "8bf9c359-354b-4334-a329-633004c85d3c"
+    },
+    {
+      "name": "United States of America, New York",
+      "shortname": "US-NY",
+      "uuid": "1d8c3d96-7a65-4a30-8032-9e8e11f63e7c"
+    },
+    {
+      "name": "United States of America, North Carolina",
+      "shortname": "US-NC",
+      "uuid": "bf5150ab-4ff1-479e-91ae-b88a1c2519a7"
+    },
+    {
+      "name": "United States of America, North Dakota",
+      "shortname": "US-ND",
+      "uuid": "57777d57-f253-466e-b1fa-916a1caf586b"
+    },
+    {
+      "name": "United States of America, Ohio",
+      "shortname": "US-OH",
+      "uuid": "3c1511cf-4beb-4d40-b2a0-3929d41dad7a"
+    },
+    {
+      "name": "United States of America, Oklahoma",
+      "shortname": "US-OK",
+      "uuid": "382dddce-39d3-40f4-9c5a-775510ec29ef"
+    },
+    {
+      "name": "United States of America, Oregon",
+      "shortname": "US-OR",
+      "uuid": "4324911f-22e8-4e7f-ae3a-c7f95ecd13a2"
+    },
+    {
+      "name": "United States of America, Pennsylvania",
+      "shortname": "US-PA",
+      "uuid": "886e8d1a-613d-4086-ba9f-314a2bff2f40"
+    },
+    {
+      "name": "United States of America, Rhode Island",
+      "shortname": "US-RI",
+      "uuid": "7f9bc659-76be-4030-b000-742494310a5d"
+    },
+    {
+      "name": "United States of America, South Carolina",
+      "shortname": "US-SC",
+      "uuid": "2d9cae4c-ebc2-4f5f-8ba1-0070559cb32a"
+    },
+    {
+      "name": "United States of America, South Dakota",
+      "shortname": "US-SD",
+      "uuid": "18288eee-911f-4f54-8881-39c0c0b70779"
+    },
+    {
+      "name": "United States of America, Tennessee",
+      "shortname": "US-TN",
+      "uuid": "01fcfa20-03c3-4d3c-ba62-69a60afb5759"
+    },
+    {
+      "name": "United States of America, Texas",
+      "shortname": "US-TX",
+      "uuid": "cc63eb09-90af-4ab4-b81c-0c3c7dec25d0"
+    },
+    {
+      "name": "United States of America, Utah",
+      "shortname": "US-UT",
+      "uuid": "9a2c77cc-6736-4058-96d0-de5f041b22fc"
+    },
+    {
+      "name": "United States of America, Vermont",
+      "shortname": "US-VT",
+      "uuid": "bfa34abd-72eb-4b5f-aa6c-4a337891eff8"
+    },
+    {
+      "name": "United States of America, Virginia",
+      "shortname": "US-VA",
+      "uuid": "61afcbeb-199e-45b6-9431-a88d74cdc275"
+    },
+    {
+      "name": "United States of America, Washington",
+      "shortname": "US-WA",
+      "uuid": "152b7aad-0b95-4317-be14-c8513a2dff8c"
+    },
+    {
+      "name": "United States of America, West Virginia",
+      "shortname": "US-WV",
+      "uuid": "39f4e9cc-478c-4fc8-847e-d219f7f9f23e"
+    },
+    {
+      "name": "United States of America, Wisconsin",
+      "shortname": "US-WI",
+      "uuid": "60764ee9-9608-433e-a86d-96e993703bc7"
+    },
+    {
+      "name": "United States of America, Wyoming",
+      "shortname": "US-WY",
+      "uuid": "3ba5f7ad-9ae4-4af2-ba30-25bdfdc16295"
+    }
+  ],
   "Variants on normal countries": [
     {
       "shortname": "France, including overseas territories",

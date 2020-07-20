@@ -555,6 +555,63 @@ In addition to the country ``India``, the Indian states and union territories ar
 * Uttarakhan
 * West Bengal
 
+United States of America states
++++++++++++++++++++++++++++++++
+
+In addition to the country ``United States of America``, the American states and the District of Columbia are also provided.
+
+* Alabama
+* Alaska
+* Arizona
+* Arkansas
+* California
+* Colorado
+* Connecticut
+* Delaware
+* District of Columbia
+* Florida
+* Georgia
+* Hawaii
+* Idaho
+* Illinois
+* Indiana
+* Iowa
+* Kansas
+* Kentucky
+* Louisiana
+* Maine
+* Maryland
+* Massachusetts
+* Michigan
+* Minnesota
+* Mississippi
+* Missouri
+* Montana
+* Nebraska
+* Nevada
+* New Hampshire
+* New Jersey
+* New Mexico
+* New York
+* North Carolina
+* North Dakota
+* Ohio
+* Oklahoma
+* Oregon
+* Pennsylvania
+* Rhode Island
+* South Carolina
+* South Dakota
+* Tennessee
+* Texas
+* Utah
+* Vermont
+* Virginia
+* Washington
+* West Virginia
+* Wisconsin
+* Wyoming
+
 Changelog
 ---------
 
@@ -562,6 +619,8 @@ Version 2.4 (ecoinvent 3.7 development)
 +++++++++++++++++++++++++++++++++++++++
 
 Added ``Europe without Switzerland and Austria``, ``Europe without Austria``, ``China without Inner Mongol``.
+
+Added 50 states of the ``United States of America``, as well as the District of Columbia.
 
 Version 2.3 (ecoinvent 3.6)
 +++++++++++++++++++++++++++
