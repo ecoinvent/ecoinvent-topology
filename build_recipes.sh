@@ -48,6 +48,8 @@ echo "Adding shortnames and UUIDS"
 python python/parse_uuids.py
 psql -U ecoinvent -d eigeo -f sql/uuids.sql -q -n -o create_db.log
 
+mkdir -p output
+
 echo "Testing final database integrity"
 psql -U ecoinvent -d eigeo -c "COPY (SELECT name, GetTopoGeomElementArray(topogeom) as faces FROM geometries WHERE tname = 'ne_countries') TO STDOUT WITH CSV;" > output/faces-check.csv
 python python/db_checks_final.py
