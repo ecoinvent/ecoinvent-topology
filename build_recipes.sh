@@ -2,6 +2,13 @@
 # This script deletes the 'final' geometries table and rebuilds all recipes,
 # then exports everything.
 
+echo "Testing consistency between recipe and UUID config files"
+python python/recipe_mapping_consistency.py
+rc=$?
+if [[ $rc != 0 ]] ; then
+    exit $rc
+fi
+
 echo "Resetting 'final' database table"
 psql -U ecoinvent -d eigeo -f sql/reset_final.sql -q -n -o create_db.log
 
