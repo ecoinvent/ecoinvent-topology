@@ -1433,7 +1433,7 @@
   ],
   [
     "Southwest Power Pool",
-    "electricity",
+    "legacy",
     {
       "cutouts": [
         "spp-nm",

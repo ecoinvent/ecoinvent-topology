@@ -622,6 +622,8 @@ Added ``Europe without Switzerland and Austria``, ``Europe without Austria``, ``
 
 Added 50 states of the ``United States of America``, as well as the District of Columbia.
 
+The name of ``Al producing Area 6A&B, West, East, and Central Europe`` (which was in any case an outdated location, and not used in ecoinvent) was changed to ``IAI Area, West Europe``, for consistency with the ecoinvent master data.
+
 Version 2.3 (ecoinvent 3.6)
 +++++++++++++++++++++++++++
 

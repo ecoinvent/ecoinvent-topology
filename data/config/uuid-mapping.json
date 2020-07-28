@@ -883,11 +883,6 @@
       "uuid": "0b2a8a96-7d7e-11de-9ae2-0019e336be3a"
     },
     {
-      "shortname": "CC",
-      "name": "Cocos (Keeling) Islands",
-      "uuid": "102a1b92-7d7e-11de-9ae2-0019e336be3a"
-    },
-    {
       "shortname": "CD",
       "name": "Congo, Democratic Republic of the",
       "uuid": "0c29d73a-7d7e-11de-9ae2-0019e336be3a"
@@ -961,11 +956,6 @@
       "shortname": "CW",
       "name": "Curaçao",
       "uuid": "c08de0ce-64e7-4efb-a37f-8df754c262c8"
-    },
-    {
-      "shortname": "CX",
-      "name": "Christmas Island",
-      "uuid": "10c7c482-7d7e-11de-9ae2-0019e336be3a"
     },
     {
       "shortname": "CY",
@@ -1995,11 +1985,6 @@
       "uuid": "77b2f7ee-3f79-4946-a2d7-50c46d1756d2"
     },
     {
-      "shortname": "IAI Area, West Europe",
-      "name": "IAI producing Area 6A&B, West, East, and Central Europe",
-      "uuid": "dc8d48a0-e8ab-494f-a2a2-270ef43cef95"
-    },
-    {
       "shortname": "IAI Area, Gulf Cooperation Council",
       "name": "IAI producing Area 8, Gulf Region",
       "uuid": "058885d6-d0a9-48ff-8d95-4baacf75ce97"
@@ -2025,14 +2010,39 @@
       "shortname": "UCTE",
       "name": "Union for the Co-ordination of Transmission of Electricity",
       "uuid": "ce1503be-7060-4959-8387-bc3ea3f4c885"
-    }
-  ],
-  "UN subregions": [
+    },
+    {
+      "shortname": "CC",
+      "name": "Cocos (Keeling) Islands",
+      "uuid": "102a1b92-7d7e-11de-9ae2-0019e336be3a"
+    },
+    {
+      "shortname": "CX",
+      "name": "Christmas Island",
+      "uuid": "10c7c482-7d7e-11de-9ae2-0019e336be3a"
+    },
+    {
+      "name": "Brazil, South-eastern and Mid-western grid",
+      "shortname": "BR-South-eastern and Mid-western grid",
+      "uuid": "a455d5bd-0e4f-4247-a4db-7cf88759f35f"
+    },
+    {
+      "shortname": "IAI Area, West Europe",
+      "name": "IAI Area, West Europe",
+      "uuid": "dc8d48a0-e8ab-494f-a2a2-270ef43cef95"
+    },
     {
       "shortname": "EEU",
       "name": "Central and Eastern Europe",
       "uuid": "11636ae9-23c9-4477-9e10-f4bc2767ebff"
     },
+    {
+      "shortname": "US-SPP",
+      "name": "Southwest Power Pool",
+      "uuid": "79565b15-098f-471f-aa28-d7dd611657db"
+    }
+  ],
+  "UN subregions": [
     {
       "shortname": "RLA",
       "name": "Latin America and the Caribbean",
@@ -2409,11 +2419,6 @@
       "uuid": "3ece4ff8-55ae-40b2-baea-0d2bf2034fbf"
     },
     {
-      "name": "Brazil, South-eastern and Mid-western grid",
-      "shortname": "BR-South-eastern and Mid-western grid",
-      "uuid": "a455d5bd-0e4f-4247-a4db-7cf88759f35f"
-    },
-    {
       "name": "Brazil, South-eastern grid",
       "shortname": "BR-South-eastern grid",
       "uuid": "df7d08ae-6f20-4095-96e6-3d9cc6f49263"
@@ -2467,11 +2472,6 @@
       "shortname": "US-SERC",
       "name": "SERC Reliability Corporation",
       "uuid": "a7b38401-afb6-4130-86f6-cd5184c6c40e"
-    },
-    {
-      "shortname": "US-SPP",
-      "name": "Southwest Power Pool",
-      "uuid": "79565b15-098f-471f-aa28-d7dd611657db"
     },
     {
       "shortname": "US-TRE",
