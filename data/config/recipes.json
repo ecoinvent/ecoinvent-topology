@@ -1378,29 +1378,14 @@
     "Western Electricity Coordinating Council",
     "electricity",
     {
-      "cutouts": [
-        "wecc-texas",
-        "wecc-nm",
-        "wecc-east"
+      "nerc": [
+        "wecc",
       ],
       "ne_provinces": [
         "Canada",
         [
           "British Columbia",
           "Alberta"
-        ],
-        "United States of America",
-        [
-          "Arizona",
-          "California",
-          "Colorado",
-          "Idaho",
-          "Nevada",
-          "Oregon",
-          "Utah",
-          "Utah",
-          "Washington",
-          "Wyoming"
         ]
       ]
     }
@@ -1409,25 +1394,8 @@
     "Western Electricity Coordinating Council, US part only",
     "usa-electricity",
     {
-      "cutouts": [
-        "wecc-texas",
-        "wecc-nm",
-        "wecc-east"
-      ],
-      "ne_provinces": [
-        "United States of America",
-        [
-          "Arizona",
-          "California",
-          "Colorado",
-          "Idaho",
-          "Nevada",
-          "Oregon",
-          "Utah",
-          "Utah",
-          "Washington",
-          "Wyoming"
-        ]
+      "nerc": [
+        "wecc"
       ]
     }
   ],
@@ -1435,17 +1403,8 @@
     "Southwest Power Pool",
     "legacy",
     {
-      "cutouts": [
-        "spp-nm",
-        "spp-texas",
-        "spp-east"
-      ],
-      "ne_provinces": [
-        "United States of America",
-        [
-          "Oklahoma",
-          "Kansas"
-        ]
+      "nerc_legacy": [
+        "spp"
       ]
     }
   ],
@@ -1454,19 +1413,9 @@
     "electricity",
     {
       "cutouts": [
-        "mro",
-        "mro-ill"
+        "mro"
       ],
       "ne_provinces": [
-        "United States of America",
-        [
-          "Iowa",
-          "Minnesota",
-          "North Dakota",
-          "Saskatchewan",
-          "Manitoba",
-          "Wisconsin"
-        ],
         "Canada",
         [
           "Manitoba",
@@ -1479,20 +1428,8 @@
     "Midwest Reliability Organization, US part only",
     "usa-electricity",
     {
-      "cutouts": [
-        "mro",
-        "mro-ill"
-      ],
-      "ne_provinces": [
-        "United States of America",
-        [
-          "Iowa",
-          "Minnesota",
-          "North Dakota",
-          "Saskatchewan",
-          "Manitoba",
-          "Wisconsin"
-        ]
+      "nerc": [
+        "mro"
       ]
     }
   ],
@@ -1500,7 +1437,7 @@
     "Texas Regional Entity",
     "electricity",
     {
-      "cutouts": [
+      "nerc": [
         "tre"
       ]
     }
@@ -1509,7 +1446,7 @@
     "Florida Reliability Coordinating Council",
     "electricity",
     {
-      "cutouts": [
+      "nerc": [
         "frcc"
       ]
     }
@@ -1518,20 +1455,8 @@
     "SERC Reliability Corporation",
     "electricity",
     {
-      "cutouts": [
-        "serc",
-        "serc-west"
-      ],
-      "ne_provinces": [
-        "United States of America",
-        [
-          "Alabama",
-          "Mississippi",
-          "Georgia",
-          "South Carolina",
-          "North Carolina",
-          "Tennessee"
-        ]
+      "nerc": [
+        "serc"
       ]
     }
   ],
@@ -1539,8 +1464,11 @@
     "Alaska Systems Coordinating Council",
     "electricity",
     {
-      "cutouts": [
-        "ascc"
+      "ne_provinces": [
+        "United States of America",
+        [
+          "Alaska"
+        ]
       ]
     }
   ],
@@ -1548,24 +1476,8 @@
     "ReliabilityFirst Corporation",
     "electricity",
     {
-      "cutouts": [
-        "rfc",
-        "rfc-va",
-        "rfc-ill"
-      ],
-      "ne_provinces": [
-        "United States of America",
-        [
-          "Indiana",
-          "Ohio",
-          "Pennsylvania",
-          "Maryland",
-          "New Jersey",
-          "Delaware",
-          "West Virginia",
-          "Michigan",
-          "District of Columbia"
-        ]
+      "nerc": [
+        "rfc"
       ]
     }
   ],
