@@ -11,6 +11,9 @@ psql -U ecoinvent -d eigeo -f sql/create-tables.sql -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -f sql/create-functions.sql -q -n -o create_db.log
 
 echo "Retrieving latest NERC region data"
+if test -f data/intermediate/nerc_outdated.gpkg; then
+    rm data/intermediate/nerc_outdated.gpkg
+fi
 wget https://github.com/cmutel/nerc-regions/raw/master/data/output/nerc_regions.gpkg -P data/intermediate/
 
 echo "Importing raw GIS country/province/state data"
@@ -75,6 +78,11 @@ psql -U ecoinvent -d eigeo -f sql/fix_independent_islands.sql -q -n -o create_db
 echo "Adding NERC regions"
 ogr2ogr -f PGDump sql/nerc.sql data/intermediate/nerc_regions.gpkg -lco CREATE_TABLE=OFF -lco SRID=4326 -lco GEOMETRY_NAME=geom -lco DIM=2 -s_srs "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -t_srs "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -dim 2 -unsetFid
 sed -i '' 's/"public"."nerc_regions"/"public"."nerc"/g' sql/nerc.sql
+psql -U ecoinvent -d eigeo -f sql/nerc.sql -q -n -o create_db.log
+
+echo "Adding outdated NERC regions"
+ogr2ogr -f PGDump sql/nerc_outdated.sql data/intermediate/nerc_outdated.gpkg -lco CREATE_TABLE=OFF -lco SRID=4326 -lco GEOMETRY_NAME=geom -lco DIM=2 -s_srs "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -t_srs "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -dim 2 -unsetFid
+sed -i '' 's/"public"."electricity"/"public"."nerc_outdated"/g' sql/nerc.sql
 psql -U ecoinvent -d eigeo -f sql/nerc.sql -q -n -o create_db.log
 
 # echo "Getting and processing cutout geometries"
