@@ -55,13 +55,14 @@ psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_states', gid) FROM ne_states ORDER BY name;" -q -n -o create_db.log
 
 echo "Change or update country names"
+# Country is correct but not provinces
 psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'North Macedonia' WHERE name = 'Macedonia';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Serbia' WHERE name = 'Republic of Serbia';" -q -n -o create_db.log
+# Country is correct but not provinces
 psql -U ecoinvent -d eigeo -c "UPDATE geometries SET name = 'Czechia' WHERE name = 'Czech Republic';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Congo, Democratic Republic of the' where name = 'Democratic Republic of the Congo';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Congo' where name = 'Republic of Congo';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Micronesia, Federated States of' where name = 'Federated States of Micronesia';" -q -n -o create_db.log
-psql -U ecoinvent -d eigeo -c "update geometries set name = 'Serbia' where name = 'Republic of Serbia';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Tanzania' where name = 'United Republic of Tanzania';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Aland' where name = 'Åland Islands';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "update geometries set name = 'Australia, Indian Ocean Territories' where name = 'Indian Ocean Territories';" -q -n -o create_db.log
