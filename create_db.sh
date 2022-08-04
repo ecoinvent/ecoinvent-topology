@@ -36,7 +36,7 @@ psql -U ecoinvent -d eigeo -c "DELETE FROM ne_countries WHERE name = 'Baikonur';
 echo "Fixing code_hasc columns"
 psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = REPLACE(code_hasc, '.', '-');" -q -n -o create_db.log
 
-echo "Creating province topos; This will take some time"
+echo "Creating province topos"
 psql -U ecoinvent -d eigeo -c "update ne_provinces set geom = st_multi(st_buffer(geom, 0)) where name = 'Paphos';" -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -c "SET client_min_messages TO WARNING;
  SELECT AddTopoGeometry(name, 'ne_provinces', gid) FROM ne_provinces ORDER BY name;" -q -n -o create_db.log
@@ -124,7 +124,7 @@ psql -U ecoinvent -d eigeo -f sql/nerc_outdated.sql -q -n -o create_db.log
 # echo "Adding cutout topologies"
 # psql -U ecoinvent -d eigeo -f sql/cutouts/process-cutouts.sql -q -n -o create_db.log
 
-echo "Eliminating duplicate nodes"
+echo "Eliminating duplicate nodes; This will take some time"
 python python/eliminate_nodes.py
 
 echo "Testing database integrity"
