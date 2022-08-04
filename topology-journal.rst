@@ -550,3 +550,14 @@ Get all used geometries
             locations.add(ds['location'])
 
     locations
+
+Update Natural Earth Data
+=========================
+
+Download from https://www.naturalearthdata.com/downloads/10m-cultural-vectors/. Last downloaded on 04.08.2022.
+
+Run the following to convert unzipped shapefiles to SQL:
+
+    shp2pgsql -s 4326 ne_10m_admin_0_countries.shp ne_countries > ../../../sql/ne_countries.sql
+    shp2pgsql -s 4326 ne_10m_admin_0_sovereignty.shp ne_states > ../../../sql/ne_states.sql
+    shp2pgsql -s 4326 ne_10m_admin_1_states_provinces.shp ne_provinces > ../../../sql/ne_provinces.sql
