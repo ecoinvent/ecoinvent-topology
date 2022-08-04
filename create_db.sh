@@ -1,4 +1,8 @@
 #!/bin/bash
+if test -f create_db.log; then
+    rm create_db.log
+fi
+
 echo "Creating database and tables"
 echo "Ignore error about eigeo not existing if running for first time"
 psql -U ecoinvent -d template1 -c "DROP DATABASE eigeo;" -q -n -o create_db.log
