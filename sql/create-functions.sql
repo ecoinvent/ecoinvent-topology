@@ -27,6 +27,26 @@ END
 $$ LANGUAGE 'plpgsql' VOLATILE STRICT;
 
 
+CREATE OR REPLACE FUNCTION AddTopoGeometry2(name varchar, tname varchar, gid_column_name varchar, gid int)
+RETURNS varchar AS $$
+DECLARE
+  sql varchar;
+BEGIN
+    sql := 'INSERT INTO "geometries" ("gid", "name", "tname", "topogeom")
+      VALUES ($1, $2, $3, toTopoGeom((SELECT geom from ' || quote_ident(tname) || ' where ' || quote_ident(gid_column_name) || E' = $1), \'ei_topo\' , 1, 0.000001)
+          )';
+    BEGIN
+      EXECUTE sql USING gid, name, tname;
+      RETURN name;
+    EXCEPTION
+     WHEN OTHERS THEN
+      RAISE WARNING 'Problem with geometry of %: %', name, SQLERRM;
+      RETURN name;
+    END;
+END
+$$ LANGUAGE 'plpgsql' VOLATILE STRICT;
+
+
 CREATE OR REPLACE FUNCTION EliminateNonBranchingNodes()
 RETURNS int AS $$
     select ST_ModEdgeHeal('ei_topo', outr.lft, outr.rght) from (
