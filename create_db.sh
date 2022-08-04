@@ -15,8 +15,8 @@ psql -U ecoinvent -d eigeo -f sql/create-tables.sql -q -n -o create_db.log
 psql -U ecoinvent -d eigeo -f sql/create-functions.sql -q -n -o create_db.log
 
 echo "Retrieving latest NERC region data"
-if test -f data/intermediate/nerc_outdated.gpkg; then
-    rm data/intermediate/nerc_outdated.gpkg
+if test -f data/intermediate/nerc_regions.gpkg; then
+    rm data/intermediate/nerc_regions.gpkg
 fi
 wget https://github.com/cmutel/nerc-regions/raw/master/data/output/nerc_regions.gpkg -P data/intermediate/
 
