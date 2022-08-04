@@ -212,7 +212,7 @@
         "Indonesia",
         "Iran",
         "Kazakhstan",
-        "Turkey"
+        "Türkiye"
       ]
     }
   ],
@@ -587,7 +587,7 @@
         "Saudi Arabia",
         "Palestine",
         "Syria",
-        "Turkey",
+        "Türkiye",
         "United Arab Emirates",
         "Yemen"
       ]
@@ -1014,7 +1014,7 @@
         "Thailand",
         "East Timor",
         "Taiwan",
-        "Turkey",
+        "Türkiye",
         "Turkmenistan",
         "United Arab Emirates",
         "Uzbekistan",
@@ -1610,7 +1610,7 @@
         "Thailand",
         "East Timor",
         "Taiwan",
-        "Turkey",
+        "Türkiye",
         "Turkmenistan",
         "United Arab Emirates",
         "Uzbekistan",
@@ -2693,7 +2693,7 @@
     }
   ],
   [
-    "Europe, without Russia and Turkey",
+    "Europe, without Russia and Türkiye",
     "special",
     {
       "ne_countries": [
@@ -2900,7 +2900,7 @@
         "Thailand",
         "East Timor",
         "Taiwan",
-        "Turkey",
+        "Türkiye",
         "Turkmenistan",
         "United Arab Emirates",
         "Uzbekistan",

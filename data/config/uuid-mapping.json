@@ -1829,7 +1829,7 @@
     },
     {
       "shortname": "TR",
-      "name": "Turkey",
+      "name": "Türkiye",
       "uuid": "1347b0a0-7d7e-11de-9ae2-0019e336be3a"
     },
     {
@@ -2017,6 +2017,21 @@
       "uuid": "ce1503be-7060-4959-8387-bc3ea3f4c885"
     },
     {
+      "shortname": "UCTE without Germany and France",
+      "name": "UCTE without Germany and France",
+      "uuid": "088a91da-e0cc-11de-823b-0019e336be3a"
+    },
+    {
+      "shortname": "UCTE without France",
+      "name": "UCTE without France",
+      "uuid": "26c31b7c-e0d1-11de-823b-0019e336be3a"
+    },
+    {
+      "shortname": "UCTE without Germany",
+      "name": "UCTE without Germany",
+      "uuid": "dde7310e-e0d0-11de-823b-0019e336be3a"
+    },
+    {
       "shortname": "CC",
       "name": "Cocos (Keeling) Islands",
       "uuid": "102a1b92-7d7e-11de-9ae2-0019e336be3a"
@@ -2040,6 +2055,31 @@
       "shortname": "EEU",
       "name": "Central and Eastern Europe",
       "uuid": "11636ae9-23c9-4477-9e10-f4bc2767ebff"
+    },
+    {
+      "shortname": "NORDEL",
+      "name": "Nordic Countries Power Association",
+      "uuid": "fe0113e8-7e2d-11de-9820-0019e336be3a"
+    },
+    {
+      "shortname": "MRO (outdated)",
+      "name": "Midwest Reliability Organization (outdated)",
+      "uuid": "e4b91fc1-02bb-432e-8f4c-e528b2d10fa1"
+    },
+    {
+      "shortname": "US-SERC (outdated)",
+      "name": "SERC Reliability Corporation (outdated)",
+      "uuid": "11dedd87-d88a-47ed-acc3-efd18298874b"
+    },
+    {
+      "shortname": "US-TRE (outdated)",
+      "name": "Texas Regional Entity (outdated)",
+      "uuid": "d84ec428-9eb3-4419-9efc-45a6251c8bd8"
+    },
+    {
+      "shortname": "WECC (outdated)",
+      "name": "Western Electricity Coordinating Council (outdated)",
+      "uuid": "0fe8cf16-09c2-4199-8d22-152d55fe9ed7"
     },
     {
       "shortname": "US-SPP",
@@ -2282,8 +2322,8 @@
       "uuid": "a2d4e588-e0d1-11de-823b-0019e336be3a"
     },
     {
-      "shortname": "Europe, without Russia and Turkey",
-      "name": "Europe, without Russia and Turkey",
+      "shortname": "Europe, without Russia and Türkiye",
+      "name": "Europe, without Russia and Türkiye",
       "uuid": "c670b4a0-6051-4935-bafe-866736a010a9"
     },
     {
@@ -2345,21 +2385,6 @@
       "shortname": "RER w/o DE+NL+NO",
       "name": "Europe without Germany, the Netherlands, and Norway",
       "uuid": "ae85cec6-cc61-4a0d-a322-5fb10b6b4ece"
-    },
-    {
-      "shortname": "UCTE without France",
-      "name": "UCTE without France",
-      "uuid": "26c31b7c-e0d1-11de-823b-0019e336be3a"
-    },
-    {
-      "shortname": "UCTE without Germany",
-      "name": "UCTE without Germany",
-      "uuid": "dde7310e-e0d0-11de-823b-0019e336be3a"
-    },
-    {
-      "shortname": "UCTE without Germany and France",
-      "name": "UCTE without Germany and France",
-      "uuid": "088a91da-e0cc-11de-823b-0019e336be3a"
     },
     {
       "shortname": "US-WECC",
@@ -2457,11 +2482,6 @@
       "shortname": "MRO",
       "name": "Midwest Reliability Organization",
       "uuid": "39185d7c-a546-424b-8605-6bc8e94e109f"
-    },
-    {
-      "shortname": "NORDEL",
-      "name": "Nordic Countries Power Association",
-      "uuid": "fe0113e8-7e2d-11de-9820-0019e336be3a"
     },
     {
       "shortname": "NPCC",

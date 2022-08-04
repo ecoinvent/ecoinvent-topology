@@ -11,7 +11,7 @@ Changes
 * Merged IAI regions 6A & B at request of Pascal Lesage (location 957d3a44-9ec2-4829-b5fe-17ba975a45da is therefore deleted)
 * Made IAI region names and shortnames more consistent
 * "Sint Maarten, Dutch Part" was changed to "Sint Maarten". The French part is "Saint Martin".
-* Europe no longer includes parts of Turkey, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
+* Europe no longer includes parts of Türkiye, Azerbaijan, and Georgia. The "European" and "Asian" parts of Russia are now defined by Russian oblast (province).
 * The location "Central and Eastern Europe", which was marked as obsolete in 2009 and is not used by any datasets in 3.1, is now removed.
 
 Procedure
@@ -558,6 +558,6 @@ Download from https://www.naturalearthdata.com/downloads/10m-cultural-vectors/. 
 
 Run the following to convert unzipped shapefiles to SQL:
 
-    shp2pgsql -s 4326 ne_10m_admin_0_countries.shp ne_countries > ../../../sql/ne_countries.sql
-    shp2pgsql -s 4326 ne_10m_admin_0_sovereignty.shp ne_states > ../../../sql/ne_states.sql
-    shp2pgsql -s 4326 ne_10m_admin_1_states_provinces.shp ne_provinces > ../../../sql/ne_provinces.sql
+    shp2pgsql -s 4326 ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp ne_countries > ../../sql/ne_countries.sql
+    shp2pgsql -s 4326 ne_10m_admin_0_sovereignty/ne_10m_admin_0_sovereignty.shp ne_states > ../../sql/ne_states.sql
+    shp2pgsql -s 4326 ne_10m_admin_1_states_provinces/ne_10m_admin_1_states_provinces.shp ne_provinces > ../../sql/ne_provinces.sql

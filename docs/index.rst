@@ -241,7 +241,7 @@ Countries
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
 | Tokelau                           | Tonga                                    | Trinidad and Tobago                 | Tunisia                      |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
-| Turkey                            | Turkmenistan                             | Turks and Caicos Islands            | Tuvalu                       |
+| Türkiye                           | Turkmenistan                             | Turks and Caicos Islands            | Tuvalu                       |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
 | US Naval Base Guantanamo Bay      | Uganda                                   | Ukraine                             | United Arab Emirates         |
 +-----------------------------------+------------------------------------------+-------------------------------------+------------------------------+
@@ -389,7 +389,7 @@ Due to the way markets are linked, it is sometimes necessary to create regions w
 * Europe without Switzerland and Austria
 * Europe without Switzerland and France
 * Europe, without Russia
-* Europe, without Russia and Turkey
+* Europe, without Russia and Türkiye
 * UCTE without France
 * UCTE without Germany
 * UCTE without Germany and France
@@ -618,6 +618,7 @@ Version 2.5 (Ecoinvent 3.10)
 ++++++++++++++++++++++++++++
 
 * Indian states of ``Dadra and Nagar Haveli`` and ``Daman and Diu`` were `merged in 2020 <https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu>`__ to ``Dadra and Nagar Haveli and Daman and Diu``.
+* Changed ``Turkey`` to ``Türkiye``, and ``Europe, without Russia and Turkey`` to ``Europe, without Russia and Türkiye``.
 
 Version 2.4 (ecoinvent 3.7)
 +++++++++++++++++++++++++++
@@ -937,7 +938,7 @@ The following Russian federal subjects are in Asia:
 | Tyumen'       | Yamal-Nenets             | Yevrey      |                 |
 +---------------+--------------------------+-------------+-----------------+
 
-.. note:: The definition of ``Europe`` and ``Asia`` have changed in version 2.0, to match Russian federal subject borders. In version 1.0, ``Europe`` also included parts of Kazakhstan, Azerbaijan, Georgia, and Turkey - these countries are now completely inside ``Asia``.
+.. note:: The definition of ``Europe`` and ``Asia`` have changed in version 2.0, to match Russian federal subject borders. In version 1.0, ``Europe`` also included parts of Kazakhstan, Azerbaijan, Georgia, and Türkiye - these countries are now completely inside ``Asia``.
 
 .. note:: Both ``Europe`` and ``Europe, UN Region`` include all of Spain, including the Canary Islands and a few small exclaves in Africa.
 
