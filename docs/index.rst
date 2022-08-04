@@ -526,8 +526,7 @@ In addition to the country ``India``, the Indian states and union territories ar
 * Bihar
 * Chandigarh
 * Chhattisgarh
-* Dadra and Nagar Haveli
-* Daman and Diu
+* Dadra and Nagar Haveli and Daman and Diu
 * Delhi
 * Goa
 * Gujarat
@@ -615,8 +614,13 @@ In addition to the country ``United States of America``, the American states and
 Changelog
 ---------
 
-Version 2.4 (ecoinvent 3.7 development)
-+++++++++++++++++++++++++++++++++++++++
+Version 2.5 (Ecoinvent 3.10)
+++++++++++++++++++++++++++++
+
+* Indian states of ``Dadra and Nagar Haveli`` and ``Daman and Diu`` were `merged in 2020 <https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu>`__ to ``Dadra and Nagar Haveli and Daman and Diu``.
+
+Version 2.4 (ecoinvent 3.7)
++++++++++++++++++++++++++++
 
 Added ``Europe without Switzerland and Austria``, ``Europe without Austria``, ``China without Inner Mongol``.
 
