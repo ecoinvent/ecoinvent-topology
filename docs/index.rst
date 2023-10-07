@@ -19,7 +19,7 @@ Location data in ecoinvent is used to locate inventory processes in space, defin
 Statement on geographical controversies
 ---------------------------------------
 
-Neither the EcoSpold 2 data format, nor its authors, take any position on geographical areas of controversy. The geographical shapes presented in the EcoSpold 2 data files should not be taken as absolute definitions of country or region borders. Rather, they are approximations consistent with common understanding of these countries and regions, for use in a life cycle inventory database. If subjective judgments have to be made, we have made choices based on our understanding of what would be best for clear and understandable life cycle inventories. If you find a error or discrepancy in the base data file, please let us know by `filing a bug <https://bitbucket.org/cmutel/constructive-geometries/issues/new>`_.
+Neither the EcoSpold 2 data format, nor its authors, take any position on geographical areas of controversy. The geographical shapes presented in the EcoSpold 2 data files should not be taken as absolute definitions of country or region borders. Rather, they are approximations consistent with common understanding of these countries and regions, for use in a life cycle inventory database. If subjective judgments have to be made, we have made choices based on our understanding of what would be best for clear and understandable life cycle inventories. If you find a error or discrepancy in the base data file, please let us know by `filing a bug <https://github.com/ecoinvent/ecoinvent-topology/issues>`_.
 
 Data formats
 ------------
@@ -65,7 +65,7 @@ Methodology
 
 The primary data source for the ecoinvent geodata is the `Natural Earth data <http://www.naturalearthdata.com/>`_, and in particular the `1:10 million cultural vectors, including boundary lakes <http://www.naturalearthdata.com/downloads/10m-cultural-vectors/>`_, both *Admin 0 – Countries* and *Admin 1 – States, Provinces*. In addition to Natural Earth, custom geometries were drawn for NERC regions in the United States of America which split individual states.
 
-Processing begins by entering all state/province level regions into a `PostGIS topological database <http://postgis.net/docs/Topology.html>`__. A topology is different from a normal geometry because it tries to store only one copy of each face edge and node, and a state or province would be defined by which common edges it bordered. For example, the boundary between France and Germany would be stored only once, and the topology of both France and Germany would reference that border. Topology is a rather complex subject which is not explained in detail here; interested readers should go through `this presentation by Sandro Santilli <http://strk.keybit.net/projects/postgis/Paris2011_TopologyWithPostGIS_2_0.pdf>`__. The use of topologies give several nice advantages:
+Processing begins by entering all province regions into a `PostGIS topological database <http://postgis.net/docs/Topology.html>`__. A topology is different from a normal geometry because it tries to store only one copy of each face edge and node, and a state or province would be defined by which common edges it bordered. For example, the boundary between France and Germany would be stored only once, and the topology of both France and Germany would reference that border. Topology is a rather complex subject which is not explained in detail here; interested readers should go through `this presentation by Sandro Santilli <http://strk.keybit.net/projects/postgis/Paris2011_TopologyWithPostGIS_2_0.pdf>`__. The use of topologies give several nice advantages:
 
 * Consistency: Each border is only defined once. Modifications to border edges apply to all affected regions automatically.
 * Integrity: All regions are automatically valid.
@@ -75,8 +75,7 @@ You can `download the current set of topological faces used in Ecoinvent here <h
 
 After state/province-level data is imported, country data is imported. Country borders are automatically snapped to province borders by the database. A series of data cleaning steps is then applied. Specifically, the following is done:
 
-* Provinces with self-intersecting borders are fiexed using `ST_MakeValid <http://postgis.org/documentation/manual-svn/ST_MakeValid.html>`__
-* Minor islands which are included in province-level data but not included in country-level data are added to the country geometries
+* Provinces with self-intersecting borders are fixed using `ST_MakeValid <http://postgis.org/documentation/manual-svn/ST_MakeValid.html>`__
 * ``Republic of Serbia`` is changed to ``Serbia``
 * ``Svalbard and Jan Mayen`` and ``Bouvet Island`` geometries are removed from ``Norway``; they have separate ISO codes
 * ``Cyprus No Mans Area`` geometry is removed from ``Cyprus``; ``Cyprus No Mans Area`` is a separate location
@@ -90,8 +89,6 @@ After state/province-level data is imported, country data is imported. Country b
 * ``Republic of Congo`` is changed to ``Congo``
 * ``Federated States of Micronesia`` is changed to ``Micronesia, Federated States of``
 * ``United Republic of Tanzania`` is changed to ``Tanzania``
-* The Indian state named ``Uttaranchal`` is corrected from ``Uttarakhand``.
-
 
 In addition, the ``United States of America`` is split into the regional transmission grids, whose borders do not follow state borders.
 
@@ -543,15 +540,16 @@ In addition to the country ``India``, the Indian states and union territories ar
 * Meghalaya
 * Mizoram
 * Nagaland
-* Orissa
+* Odisha
 * Puducherry
 * Punjab
 * Rajasthan
 * Sikkim
 * Tamil Nadu
+* Telangana
 * Tripura
 * Uttar Pradesh
-* Uttarakhan
+* Uttarakhand
 * West Bengal
 
 United States of America states
@@ -617,8 +615,17 @@ Changelog
 Version 2.5 (Ecoinvent 3.10)
 ++++++++++++++++++++++++++++
 
+Updated to Natural Earth data version 5.1.1.
+
+Completely rewritten pipeline and scripts using only the province-level Natural Earth data. By not needing to reconcile province and country borders, processing time is reduced from hours to minutes.
+
 * Indian states of ``Dadra and Nagar Haveli`` and ``Daman and Diu`` were `merged in 2020 <https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu>`__ to ``Dadra and Nagar Haveli and Daman and Diu``.
+* Indian state of ``Orissa`` was renamed to ``Odisha`` in 2011 - we include that change in 2023.
 * Changed ``Turkey`` to ``Türkiye``, and ``Europe, without Russia and Turkey`` to ``Europe, without Russia and Türkiye``.
+* Adapted NERC regions as SPP and FRCC were both dissolved. See `the source repo <https://github.com/ecoinvent/nerc-regions>`__ for more information.
+* Add regional Chinese electricity grids.
+* Restored ``Brazil, South-eastern and Mid-western grid``.
+* Changed short names for Australian states.
 
 Version 2.4 (ecoinvent 3.7)
 +++++++++++++++++++++++++++

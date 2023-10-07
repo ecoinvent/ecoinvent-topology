@@ -5,9 +5,9 @@ import shapely
 import os
 
 
-def remove_namespace(doc, namespace=u"{http://www.EcoInvent.org/EcoSpold02}"):
+def remove_namespace(doc, namespace="{http://www.EcoInvent.org/EcoSpold02}"):
     """Remove namespace in the passed document in place."""
-    ns = u'{}'.format(namespace)
+    ns = "{}".format(namespace)
     nsl = len(ns)
     for elem in doc.getiterator():
         if elem.tag.startswith(ns):
@@ -24,12 +24,12 @@ def xml_to_geopackage(in_fp, out_fp):
     objectify.deannotate(root, cleanup_namespaces=True)
 
     meta = {
-        'crs': {'no_defs': True, 'ellps': 'WGS84', 'datum': 'WGS84', 'proj': 'longlat'},
-        'driver': 'GPKG',
-        'schema': {
-            'geometry': 'MultiPolygon',
-            'properties': {'name': 'str', 'uuid': 'str', 'code': 'float'}
-        }
+        "crs": {"no_defs": True, "ellps": "WGS84", "datum": "WGS84", "proj": "longlat"},
+        "driver": "GPKG",
+        "schema": {
+            "geometry": "MultiPolygon",
+            "properties": {"name": "str", "uuid": "str", "code": "float"},
+        },
     }
 
     with fiona.drivers():
@@ -37,34 +37,53 @@ def xml_to_geopackage(in_fp, out_fp):
             for el in root.geography:
                 try:
                     parsed = fastkml.kml.KML()
-                    parsed.from_string(etree.tostring(getattr(el, "{http://www.opengis.net/kml/2.2}kml"), encoding="utf8"))
+                    parsed.from_string(
+                        etree.tostring(
+                            getattr(el, "{http://www.opengis.net/kml/2.2}kml"),
+                            encoding="utf8",
+                        )
+                    )
                 except AttributeError:
                     print("Skipping %s" % el.name)
                     continue
 
                 geom = parsed.features().next().features().next().geometry
                 if not geom.is_valid:
-                    clean = shapely.geometry.multipolygon.MultiPolygon([geom.buffer(0.0)])
+                    clean = shapely.geometry.multipolygon.MultiPolygon(
+                        [geom.buffer(0.0)]
+                    )
                     assert clean.is_valid
                     geom = clean
 
-                dest.write({
-                    'geometry': shapely.geometry.mapping(geom),
-                    'properties': {
-                        'name': unicode(el.name),
-                        'uuid': unicode(el.get('id')),
-                        'code': unicode(el.shortname)
+                dest.write(
+                    {
+                        "geometry": shapely.geometry.mapping(geom),
+                        "properties": {
+                            "name": unicode(el.name),
+                            "uuid": unicode(el.get("id")),
+                            "code": unicode(el.shortname),
+                        },
                     }
-                })
+                )
 
 
 if __name__ == "__main__":
-    IN_FP = os.path.realpath(os.path.join(
-        os.path.abspath(os.path.dirname(__file__)),
-        "..", "data", "raw", "Geographies.xml"
-    ))
-    OUT_FP = os.path.realpath(os.path.join(
-        os.path.abspath(os.path.dirname(__file__)),
-        "..", "data", "intermediate", "ecoinvent_geographies.gpkg"
-    ))
+    IN_FP = os.path.realpath(
+        os.path.join(
+            os.path.abspath(os.path.dirname(__file__)),
+            "..",
+            "data",
+            "raw",
+            "Geographies.xml",
+        )
+    )
+    OUT_FP = os.path.realpath(
+        os.path.join(
+            os.path.abspath(os.path.dirname(__file__)),
+            "..",
+            "data",
+            "intermediate",
+            "ecoinvent_geographies.gpkg",
+        )
+    )
     xml_to_geopackage(IN_FP, OUT_FP)

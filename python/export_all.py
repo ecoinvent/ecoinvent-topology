@@ -19,7 +19,7 @@ collections = [
     "un-subregions",
     "usa-electricity",
     "all",
-    'all-ecoinvent',
+    "all-ecoinvent",
 ]
 
 command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
@@ -51,19 +51,23 @@ for format, extension in formats:
     for collection in collections:
         if collection == "all":
             cmnd = all_command
-        elif collection == 'all-ecoinvent':
+        elif collection == "all-ecoinvent":
             cmnd = all_ecoinvent_command
         else:
             cmnd = command
-        subprocess.check_call(cmnd.format(
+        subprocess.check_call(
+            cmnd.format(
                 format=format,
                 collection=collection,
                 extension=extension,
                 layername=collection.replace("-", "_").replace(" ", "_"),
-            ), shell=True
+            ),
+            shell=True,
         )
-        if extension == 'geojson':
-            subprocess.Popen(bz2_command.format(path="output/" + collection + ".geojson"), shell=True)
+        if extension == "geojson":
+            subprocess.Popen(
+                bz2_command.format(path="output/" + collection + ".geojson"), shell=True
+            )
 
 
 for collection in collections:
@@ -75,11 +79,16 @@ for collection in collections:
         cmnd = all_ecoinvent_shp_command
     else:
         cmnd = shp_command
-    subprocess.check_call(cmnd.format(
+    subprocess.check_call(
+        cmnd.format(
             format=format,
             collection=collection,
             layername=layername,
-        ), shell=True, stderr=open(os.devnull, 'wb')
+        ),
+        shell=True,
+        stderr=open(os.devnull, "wb"),
     )
-    subprocess.check_call("cd output && zip -q -r {d}.zip {d}".format(d=layername), shell=True)
+    subprocess.check_call(
+        "cd output && zip -q -r {d}.zip {d}".format(d=layername), shell=True
+    )
     shutil.rmtree("output/{d}".format(d=layername))

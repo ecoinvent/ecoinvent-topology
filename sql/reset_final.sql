@@ -12,16 +12,13 @@ CREATE TABLE public.final (
   UNCode int,
   longitude double precision,
   ISOThreeLetterCode text,
-  UNSubregionCode text,
+  UNSubregion text,
   latitude double precision,
-  UNRegionCode int,
+  UNRegion text,
   uuid text,
   shortname text,
   geom geometry(MultiPolygon,4326)
 );
-ALTER TABLE public.cutouts
-  OWNER TO ecoinvent;
-
 CREATE INDEX ON public.final (collection, name);
 CREATE UNIQUE INDEX unique_names_final_idx ON public.final (name);
 CREATE UNIQUE INDEX unique_shortnames_final_idx ON public.final (shortname);

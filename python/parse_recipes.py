@@ -36,25 +36,42 @@ def format_query(tablename, objects):
     if tablename == "ne_provinces":
         return handle_provinces(tablename, objects)
     else:
-        return [TEMPLATE.format(parent="", name_filter=list_or_not(objects), tablename=_(tablename))]
+        return [
+            TEMPLATE.format(
+                parent="", name_filter=list_or_not(objects), tablename=_(tablename)
+            )
+        ]
 
 
 def handle_provinces(tablename, objects):
-    return [TEMPLATE.format(
-        parent="AND g.parent = {p} ".format(p=_(country)),
-        name_filter=list_or_not(provinces),
-        tablename=_(tablename)
-        ) for country, provinces in zip(objects[::2], objects[1::2])
+    return [
+        TEMPLATE.format(
+            parent="AND g.parent = {p} ".format(p=_(country)),
+            name_filter=list_or_not(provinces),
+            tablename=_(tablename),
+        )
+        for country, provinces in zip(objects[::2], objects[1::2])
     ]
 
 
 def consolidate(components):
-    return together(itertools.chain(*[format_query(x, y) for x, y in components.items()]))
+    return together(
+        itertools.chain(*[format_query(x, y) for x, y in components.items()])
+    )
 
 
-sql = "\n".join([BEGINNING.format(name=_(x), collection=_(y)) + consolidate(z).strip() + ") as t1;" for x, y, z in data])
+sql = "\n".join(
+    [
+        BEGINNING.format(name=_(x), collection=_(y))
+        + consolidate(z).strip()
+        + ") as t1;"
+        for x, y, z in data
+    ]
+)
 
-with codecs.open(os.path.join(os.getcwd(), "sql", "recipes.sql"), "w", encoding='utf8') as f:
+with codecs.open(
+    os.path.join(os.getcwd(), "sql", "recipes.sql"), "w", encoding="utf8"
+) as f:
     f.write(HEADER)
     f.write(sql)
     f.write(FOOTER)

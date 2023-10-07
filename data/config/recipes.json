@@ -1204,6 +1204,7 @@
           "Himachal Pradesh",
           "Jammu and Kashmir",
           "Punjab",
+          "Ladakh",
           "Rajasthan",
           "Uttar Pradesh",
           "Uttarakhand"
@@ -1237,6 +1238,7 @@
         [
           "Andhra Pradesh",
           "Karnataka",
+          "Telangana",
           "Kerala",
           "Puducherry",
           "Tamil Nadu"
@@ -1253,7 +1255,7 @@
         [
           "Bihar",
           "Jharkhand",
-          "Orissa",
+          "Odisha",
           "Sikkim",
           "West Bengal"
         ]
@@ -1305,6 +1307,25 @@
           "Rondônia",
           "Roraima",
           "Tocantins"
+        ]
+      ]
+    }
+  ],
+  [
+    "Brazil, South-eastern and Mid-western grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "Brazil",
+        [
+          "Espírito Santo",
+          "Minas Gerais",
+          "Rio de Janeiro",
+          "São Paulo",
+          "Distrito Federal",
+          "Goiás",
+          "Mato Grosso do Sul",
+          "Mato Grosso"
         ]
       ]
     }
@@ -1378,7 +1399,7 @@
     "electricity",
     {
       "nerc": [
-        "wecc",
+        "wecc"
       ],
       "ne_provinces": [
         "Canada",
@@ -1399,19 +1420,10 @@
     }
   ],
   [
-    "Southwest Power Pool",
-    "legacy",
-    {
-      "nerc_legacy": [
-        "spp"
-      ]
-    }
-  ],
-  [
     "Midwest Reliability Organization",
     "electricity",
     {
-      "cutouts": [
+      "nerc": [
         "mro"
       ],
       "ne_provinces": [
@@ -1438,15 +1450,6 @@
     {
       "nerc": [
         "tre"
-      ]
-    }
-  ],
-  [
-    "Florida Reliability Coordinating Council",
-    "electricity",
-    {
-      "nerc": [
-        "frcc"
       ]
     }
   ],
@@ -3204,38 +3207,82 @@
     }
   ],
   [
-    "State Grid Corporation of China",
+    "Northeast China Grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
+          "Liaoning",
+          "Jilin",
+          "Heilongjiang"
+        ]
+      ]
+    }
+  ],
+  [
+    "North China Grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
+          "Inner Mongol",
+          "Hebei",
+          "Beijing",
+          "Shanxi",
+          "Tianjin",
+          "Shandong"
+        ]
+      ]
+    }
+  ],
+  [
+    "East China Grid",
     "electricity",
     {
       "ne_provinces": [
         "China",
         [
           "Anhui",
-          "Beijing",
+          "Jiangsu",
+          "Zhejiang",
+          "Shanghai",
+          "Jiangxi",
+          "Fujian"
+        ]
+      ]
+    }
+  ],
+  [
+    "Central China Grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
+          "Sichuan",
           "Chongqing",
-          "Fujian",
-          "Gansu",
-          "Hebei",
-          "Heilongjiang",
-          "Henan",
           "Hubei",
           "Hunan",
-          "Inner Mongol",
-          "Jiangsu",
-          "Jiangxi",
-          "Jilin",
-          "Liaoning",
-          "Ningxia",
-          "Qinghai",
-          "Shaanxi",
-          "Shandong",
-          "Shanghai",
-          "Shanxi",
-          "Sichuan",
-          "Tianjin",
+          "Henan"
+        ]
+      ]
+    }
+  ],
+  [
+    "Northwest China Grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
           "Xinjiang",
-          "Xizang",
-          "Zhejiang"
+          "Gansu",
+          "Ningxia",
+          "Shaanxi",
+          "Qinghai",
+          "Xizang"
         ]
       ]
     }
