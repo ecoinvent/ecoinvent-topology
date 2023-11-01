@@ -21,13 +21,10 @@ psql -U ecoinvent -d eigeo -f sql/ne_provinces.sql -q -n -o create_db.log
 # echo "Adding 'skip' column to provinces table"
 # psql -U ecoinvent -d eigeo -c "ALTER TABLE ne_provinces ADD COLUMN \"skip\" BOOLEAN DEFAULT false;" -q -n -o create_db.log
 
-echo "Fixing code_hasc columns"
-psql -U ecoinvent -d eigeo -c "UPDATE ne_provinces SET code_hasc = REPLACE(code_hasc, '.', '-');" -q -n -o create_db.log
-
 # In cases where provinces or dependencies have ISO codes, we generally separate
 # them out as separate entries in the ne_countries table.
 echo "Fixing province mismatches with countries"
-psql -U ecoinvent -d eigeo -f sql/province_country_mismatchs.sql -q -n -o create_db.log
+psql -U ecoinvent -d eigeo -v ON_ERROR_STOP=1 -f sql/province_country_mismatchs.sql -q -n -o create_db.log
 
 echo "Change or update country names"
 psql -U ecoinvent -d eigeo -f sql/update_names.sql -q -n -o create_db.log

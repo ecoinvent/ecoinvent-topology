@@ -36,7 +36,8 @@ INSERT INTO final (collection, name, shortname, geom)
         'South Australia',
         'Victoria',
         'Queensland',
-        'Tasmania'
+        'Tasmania',
+        'Jervis Bay Territory'
     )
 );
 INSERT INTO final (collection, name, shortname, geom)

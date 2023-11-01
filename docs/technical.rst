@@ -4,16 +4,13 @@ Technical guide to working with the ``Constructive Geometries`` package
 Operating systems
 -----------------
 
-OS X and Any-nix should be fine; bash shell scripts are used extensively, so considerable work would be needed to get everything running on Windows.
+*nix should be fine; bash shell scripts are used extensively, so considerable work would be needed to get everything running on Windows.
 
 Installation requirements
 -------------------------
 
 Python dependencies
 ```````````````````
-
-CG is currently only compatible with Python 2.7
-
 * babel
 * fastkml
 * fiona

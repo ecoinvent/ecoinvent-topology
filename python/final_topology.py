@@ -1,6 +1,5 @@
-import pyprind
+from tqdm import tqdm
 import subprocess
-import sys
 
 layer_id = int(
     subprocess.Popen(
@@ -33,5 +32,5 @@ command = (
 
 num_chunks = num_features // chunk_size + 1
 
-for x in pyprind.prog_bar(range(num_chunks)):
+for x in tqdm(range(num_chunks)):
     subprocess.check_call(command, shell=True)

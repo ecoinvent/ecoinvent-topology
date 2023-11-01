@@ -644,6 +644,11 @@
   ],
   "Variants on normal countries": [
     {
+      "shortname": "Australia, including overseas territories",
+      "name": "Australia, including overseas territories",
+      "uuid": "161ff7b5-7ecf-4021-8fff-5def0bf2b27e"
+    },
+    {
       "shortname": "France, including overseas territories",
       "name": "France, including overseas territories",
       "uuid": "28d52c97-56c5-4bcd-9504-ccc5b4797c67"
@@ -651,52 +656,52 @@
   ],
   "Australia": [
     {
-      "shortname": "AUS-ACT",
+      "shortname": "AU-ACT",
       "name": "Australia, Australian Capital Territory",
       "uuid": "96e0124a-b1b0-4303-b26c-44ee5857f3a1"
     },
     {
-      "shortname": "AUS-NSW",
+      "shortname": "AU-NSW",
       "name": "Australia, New South Wales",
       "uuid": "ee4baa34-3c79-4919-9393-c5d8a9015674"
     },
     {
-      "shortname": "AUS-NT",
+      "shortname": "AU-NT",
       "name": "Australia, Northern Territory",
       "uuid": "dbee0af4-00e0-4280-a377-414d0a39998e"
     },
     {
-      "shortname": "AUS-QLD",
+      "shortname": "AU-QLD",
       "name": "Australia, Queensland",
       "uuid": "3624a72f-ca5a-48d6-be41-27e705be5b61"
     },
     {
-      "shortname": "AUS-SA",
+      "shortname": "AU-SA",
       "name": "Australia, South Australia",
       "uuid": "c2bb7d7f-6242-4b3c-98cd-62b03f7a8be3"
     },
     {
-      "shortname": "AUS-TAS",
+      "shortname": "AU-TAS",
       "name": "Australia, Tasmania",
       "uuid": "fdb06d13-ea53-4a9a-878b-7489f2bae2f7"
     },
     {
-      "shortname": "AUS-VIC",
+      "shortname": "AU-VIC",
       "name": "Australia, Victoria",
       "uuid": "7441e29d-0a88-49fa-8ce4-eeb7f1949f2f"
     },
     {
-      "shortname": "AUS-AC",
+      "shortname": "AU-AC",
       "name": "Australia, Ashmore and Cartier Islands",
       "uuid": "4a271c88-5c3c-42de-9bee-1e950cc9d9f5"
     },
     {
-      "shortname": "AUS-IOT",
+      "shortname": "AU-IOT",
       "name": "Australia, Indian Ocean Territories",
       "uuid": "946938ce-9c81-4a3c-a6ce-ce60a931c602"
     },
     {
-      "shortname": "AUS-WA",
+      "shortname": "AU-WA",
       "name": "Australia, Western Australia",
       "uuid": "0ae22e97-4563-473f-9209-3221544a097f"
     }
@@ -2060,31 +2065,6 @@
       "shortname": "NORDEL",
       "name": "Nordic Countries Power Association",
       "uuid": "fe0113e8-7e2d-11de-9820-0019e336be3a"
-    },
-    {
-      "shortname": "MRO (outdated)",
-      "name": "Midwest Reliability Organization (outdated)",
-      "uuid": "e4b91fc1-02bb-432e-8f4c-e528b2d10fa1"
-    },
-    {
-      "shortname": "US-SERC (outdated)",
-      "name": "SERC Reliability Corporation (outdated)",
-      "uuid": "11dedd87-d88a-47ed-acc3-efd18298874b"
-    },
-    {
-      "shortname": "US-TRE (outdated)",
-      "name": "Texas Regional Entity (outdated)",
-      "uuid": "d84ec428-9eb3-4419-9efc-45a6251c8bd8"
-    },
-    {
-      "shortname": "WECC (outdated)",
-      "name": "Western Electricity Coordinating Council (outdated)",
-      "uuid": "0fe8cf16-09c2-4199-8d22-152d55fe9ed7"
-    },
-    {
-      "shortname": "US-SPP",
-      "name": "Southwest Power Pool",
-      "uuid": "79565b15-098f-471f-aa28-d7dd611657db"
     }
   ],
   "UN subregions": [
@@ -2399,37 +2379,42 @@
       "uuid": "f87aa98c-d820-11de-a736-0019e336be3a"
     },
     {
-      "name": "China Southern Power Grid",
+      "name": "China, China Southern Power Grid",
       "shortname": "CN-CSG",
       "uuid": "5b64ff1c-3c47-4adf-b89c-9e18078b9bf7"
     },
     {
-      "name": "Northeast China Grid",
+      "name": "China, Northeast Grid",
       "shortname": "CN-NECG",
-      "uuid": "4a493dea-8e87-4c8d-85e3-9ed56164398c"
+      "uuid": "f0894a96-367f-5327-bc91-e156fdb6a5c7"
     },
     {
-      "name": "North China Grid",
+      "name": "China, North Grid",
       "shortname": "CN-NCGC",
-      "uuid": "906efe15-ea52-4b13-92bc-d134aa733fe7"
+      "uuid": "ae30ab76-bfa2-59fb-bccc-1ad0246cd7b3"
     },
     {
-      "name": "East China Grid",
+      "name": "China, East Grid",
       "shortname": "CN-ECGC",
-      "uuid": "c4e78460-474a-45ba-8c6b-e936e9f086ae"
+      "uuid": "b6ec5424-a43b-5e34-a8ca-f35abb031049"
     },
     {
-      "name": "Central China Grid",
+      "name": "China, Central Grid",
       "shortname": "CN-CCG",
-      "uuid": "121ce1c3-233f-41ec-9ac9-3d23158942cb"
+      "uuid": "f6298475-5b7f-5c28-9885-2338946a6cd6"
     },
     {
-      "name": "Northwest China Grid",
+      "name": "China, Northwest Grid",
       "shortname": "CN-NWG",
-      "uuid": "cc5c2488-bff2-4784-af56-f9e7b4136761"
+      "uuid": "fa7f6c22-bd54-58c5-a8f0-0939ace8b856"
     },
     {
-      "name": "State Grid Corporation of China",
+      "name": "China, Southwest Grid",
+      "shortname": "CN-SWG",
+      "uuid": "094ba255-b84b-5fbd-8c8a-75547f362075"
+    },
+    {
+      "name": "China, State Grid Corporation of China",
       "shortname": "CN-SGCC",
       "uuid": "4c9baec2-f9fc-4f36-84f7-a3ed2eab82a1"
     },
@@ -2492,11 +2477,6 @@
       "shortname": "Europe without Switzerland",
       "name": "Europe without Switzerland",
       "uuid": "f9221622-cc45-11de-98ed-0019e336be3a"
-    },
-    {
-      "shortname": "US-FRCC",
-      "name": "Florida Reliability Coordinating Council",
-      "uuid": "dfd92cab-e7c7-4ca8-8abc-2fb6fd064dbc"
     },
     {
       "shortname": "US-HICC",

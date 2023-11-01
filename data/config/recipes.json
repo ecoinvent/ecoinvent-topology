@@ -1192,6 +1192,45 @@
     }
   ],
   [
+    "Australia, including overseas territories",
+    "countries",
+    {
+      "ne_provinces": [
+        "Australia",
+        [
+          "Ashmore and Cartier Islands",
+          "Australian Capital Territory",
+          "Christmas Island",
+          "Cocos (Keeling) Islands",
+          "Coral Sea Islands",
+          "Heard Island and McDonald Islands",
+          "Jervis Bay Territory",
+          "New South Wales",
+          "Norfolk Island",
+          "Northern Territory",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia"
+        ]
+      ]
+    }
+  ],
+  [
+    "Australia, Indian Ocean Territories",
+    "states",
+    {
+      "ne_provinces": [
+        "Australia",
+        [
+          "Christmas Island",
+          "Cocos (Keeling) Islands"
+        ]
+      ]
+    }
+  ],
+  [
     "India, Northern grid",
     "electricity",
     {
@@ -3191,7 +3230,7 @@
     }
   ],
   [
-    "China Southern Power Grid",
+    "China, China Southern Power Grid",
     "electricity",
     {
       "ne_provinces": [
@@ -3207,7 +3246,44 @@
     }
   ],
   [
-    "Northeast China Grid",
+    "China, State Grid Corporation of China",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
+          "Anhui",
+          "Beijing",
+          "Chongqing",
+          "Fujian",
+          "Gansu",
+          "Hebei",
+          "Heilongjiang",
+          "Henan",
+          "Hubei",
+          "Hunan",
+          "Inner Mongol",
+          "Jiangsu",
+          "Jiangxi",
+          "Jilin",
+          "Liaoning",
+          "Ningxia",
+          "Qinghai",
+          "Shaanxi",
+          "Shandong",
+          "Shanghai",
+          "Shanxi",
+          "Sichuan",
+          "Tianjin",
+          "Xinjiang",
+          "Xizang",
+          "Zhejiang"
+        ]
+      ]
+    }
+  ],
+  [
+    "China, Northeast Grid",
     "electricity",
     {
       "ne_provinces": [
@@ -3221,7 +3297,7 @@
     }
   ],
   [
-    "North China Grid",
+    "China, North Grid",
     "electricity",
     {
       "ne_provinces": [
@@ -3238,7 +3314,7 @@
     }
   ],
   [
-    "East China Grid",
+    "China, East Grid",
     "electricity",
     {
       "ne_provinces": [
@@ -3255,7 +3331,7 @@
     }
   ],
   [
-    "Central China Grid",
+    "China, Central Grid",
     "electricity",
     {
       "ne_provinces": [
@@ -3271,7 +3347,7 @@
     }
   ],
   [
-    "Northwest China Grid",
+    "China, Northwest Grid",
     "electricity",
     {
       "ne_provinces": [
@@ -3281,7 +3357,18 @@
           "Gansu",
           "Ningxia",
           "Shaanxi",
-          "Qinghai",
+          "Qinghai"
+        ]
+      ]
+    }
+  ],
+  [
+    "China, Southwest Grid",
+    "electricity",
+    {
+      "ne_provinces": [
+        "China",
+        [
           "Xizang"
         ]
       ]

@@ -2,6 +2,30 @@ SET CLIENT_ENCODING TO UTF8;
 SET STANDARD_CONFORMING_STRINGS TO ON;
 BEGIN;
 
+CREATE OR REPLACE FUNCTION MergeProvinces(a text, b text)
+RETURNS VOID AS
+$$
+BEGIN
+UPDATE ne_provinces SET geom = (SELECT ST_UNION(geom) from ne_provinces WHERE name IN ($1, $2)) WHERE name = $1;
+DELETE FROM ne_provinces WHERE name = $2;
+END;
+$$ LANGUAGE 'plpgsql' VOLATILE STRICT;
+
+CREATE OR REPLACE FUNCTION SingleProvince(a text)
+RETURNS VOID AS
+$$
+  BEGIN
+    ASSERT (SELECT count(*) FROM ne_provinces WHERE ne_provinces.name = $1) = 1, 'Not single province';
+  END;
+$$ LANGUAGE 'plpgsql' VOLATILE STRICT;
+
+CREATE OR REPLACE FUNCTION SingleCountry(a text)
+RETURNS VOID AS
+$$
+  BEGIN
+    ASSERT (SELECT count(*) FROM ne_countries WHERE ne_countries.name = $1) = 1, 'Not single country';
+  END;
+$$ LANGUAGE 'plpgsql' VOLATILE STRICT;
 
 CREATE OR REPLACE FUNCTION AddTopoGeometry(name varchar, tname varchar, gid int)
 RETURNS varchar AS $$

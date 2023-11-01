@@ -75,8 +75,8 @@ You can `download the current set of topological faces used in Ecoinvent here <h
 
 After state/province-level data is imported, country data is imported. Country borders are automatically snapped to province borders by the database. A series of data cleaning steps is then applied. Specifically, the following is done:
 
-* Provinces with self-intersecting borders are fixed using `ST_MakeValid <http://postgis.org/documentation/manual-svn/ST_MakeValid.html>`__
-* ``Republic of Serbia`` is changed to ``Serbia``
+* Provinces with self-intersecting borders are fixed using `ST_MakeValid <http://postgis.org/documentation/manual-svn/ST_MakeValid.html>`__. We don't think this is a problem in the 2023 release of Natural Earth, but is kept for safety.
+* Countries whose ISO names are longer than normal, or whose names who result in unexpected sort order, are changed (``update_names.sql``). ``Republic of Serbia`` is changed to ``Serbia``
 * ``Svalbard and Jan Mayen`` and ``Bouvet Island`` geometries are removed from ``Norway``; they have separate ISO codes
 * ``Cyprus No Mans Area`` geometry is removed from ``Cyprus``; ``Cyprus No Mans Area`` is a separate location
 * ``Tokelau`` geometry is removed from ``New Zealand``; ``Tokelau`` has a separate ISO code

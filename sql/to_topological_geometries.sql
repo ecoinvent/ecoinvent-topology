@@ -16,7 +16,8 @@ SELECT AddTopoGeometry(name, 'ne_countries', gid)
         'Akrotiri Sovereign Base Area',
         'Dhekelia Sovereign Base Area',
         'Cyprus No Mans Area',
-        'Northern Cyprus'
+        'Northern Cyprus',
+        'Spratly Islands'
     );
 
 INSERT INTO "geometries" ("gid", "name", "tname", "topogeom")

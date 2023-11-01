@@ -14,7 +14,7 @@ The Python code is compatible with Python >= 3.4. It requires the following libr
 * fastkml
 * fiona
 * shapely
-* pyprind
+* tqdm
 * babel
 
 ## Setting up the Postgresql database

@@ -116,11 +116,14 @@ class Ecospold2GeoExporter(object):
         #         )))
 
         # Add KML fragment to names
-        ELEMS.append(
-            G.kml(
-                G.Document(G.name(data["name"]), G.Placemark(fromstring(data["kml"])))
+        if getattr(data, "kml", None):
+            ELEMS.append(
+                G.kml(
+                    G.Document(G.name(data["name"]), G.Placemark(fromstring(data["kml"])))
+                )
             )
-        )
+        else:
+            print(f"No GIS coordinates for {data['name']}")
         return G.geography(*ELEMS, **GEO_ATTRS)
 
     # TODO: Add RoW and Global

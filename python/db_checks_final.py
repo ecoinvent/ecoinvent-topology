@@ -1,4 +1,3 @@
-import codecs
 import os
 import re
 import subprocess
@@ -19,7 +18,7 @@ def check_command(command, error, ok, expected="(0 rows)"):
         print(ok)
 
 
-numbers = re.compile("{(?P<face_id>\d+),3}")
+numbers = re.compile("{(?P<face_id>\\d+),3}")
 
 
 def check_country_faces():
