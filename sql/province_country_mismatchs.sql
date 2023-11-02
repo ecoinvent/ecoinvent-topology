@@ -17,8 +17,6 @@ UPDATE ne_provinces SET geom = (
 ) WHERE name = 'Qyzylorda';
 DELETE FROM ne_provinces WHERE name = 'Baykonur lease in Qyzylorda';
 
-UPDATE ne_provinces SET iso_a2 = 'AU' WHERE name in ('Christmas Island', 'Cocos (Keeling) Islands');
-
 DELETE
     FROM ne_provinces
     WHERE name IN (
