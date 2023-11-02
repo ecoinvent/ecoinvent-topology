@@ -238,7 +238,7 @@ INSERT INTO ne_countries (
     'Oceania'
 );
 
-UPDATE ne_provinces SET iso_a2 = 'CC' WHERE name = 'Christmas Island';
+UPDATE ne_provinces SET iso_a2 = 'CX' WHERE name = 'Christmas Island';
 INSERT INTO ne_countries (
     gid,
     admin,
