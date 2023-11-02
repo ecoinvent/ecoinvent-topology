@@ -116,7 +116,7 @@ class Ecospold2GeoExporter(object):
         #         )))
 
         # Add KML fragment to names
-        if getattr(data, "kml", None):
+        if data.get("kml", None):
             ELEMS.append(
                 G.kml(
                     G.Document(G.name(data["name"]), G.Placemark(fromstring(data["kml"])))
