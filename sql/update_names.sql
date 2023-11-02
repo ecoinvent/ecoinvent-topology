@@ -37,4 +37,7 @@ UPDATE ne_countries SET name = 'Dhekelia Sovereign Base Area' WHERE name = 'Dhek
 SELECT SingleCountry('Cyprus U.N. Buffer Zone');
 UPDATE ne_countries SET name = 'Cyprus No Mans Area' WHERE name = 'Cyprus U.N. Buffer Zone';
 
+SELECT SingleCountry('Heard I. and McDonald Islands');
+UPDATE ne_countries SET name = 'Heard Island and McDonald Islands' WHERE name = 'Heard I. and McDonald Islands';
+
 COMMIT;
