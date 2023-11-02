@@ -200,23 +200,23 @@ INSERT INTO ne_countries (
     'Americas'
 );
 
-INSERT INTO ne_countries (
-    gid,
-    admin,
-    name,
-    iso_a2,
-    iso_a3,
-    subregion,
-    region_un
-) VALUES (
-    100009,
-    'Macau',
-    'Macau',
-    'MO',
-    'MAC',
-    'Eastern Asia',
-    'Asia'
-);
+-- INSERT INTO ne_countries (
+--     gid,
+--     admin,
+--     name,
+--     iso_a2,
+--     iso_a3,
+--     subregion,
+--     region_un
+-- ) VALUES (
+--     100009,
+--     'Macau',
+--     'Macau',
+--     'MO',
+--     'MAC',
+--     'Eastern Asia',
+--     'Asia'
+-- );
 
 -- Australia
 UPDATE ne_provinces SET iso_a2 = 'CC' WHERE name = 'Cocos (Keeling) Islands';
