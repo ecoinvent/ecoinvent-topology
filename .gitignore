@@ -11,3 +11,4 @@ output
 docs/_build
 ~*
 sync.sh
+__pycache__
