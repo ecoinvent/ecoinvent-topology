@@ -34,6 +34,7 @@ psql -U ecoinvent -d eigeo -f sql/missing-codes.sql -q -n -o create_db.log
 
 echo "Adding US NERC regions"
 ogr2ogr -f PGDump sql/nerc.sql data/intermediate/nerc_regions.gpkg -nln nerc -lco SRID=4326 -lco GEOMETRY_NAME=geom -lco DIM=2 -s_srs "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -t_srs "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" -dim 2 -unsetFid
+# Prepend message level setter
 echo "SET client_min_messages TO WARNING;
 $(cat sql/nerc.sql)" > sql/nerc.sql
 psql -U ecoinvent -d eigeo -f sql/nerc.sql -q -n -o create_db.log
