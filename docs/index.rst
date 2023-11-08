@@ -998,26 +998,14 @@ Note that there is an overlap between ``IAI producing Area 2, North America`` an
 Electricity networks
 ++++++++++++++++++++
 
-The following networks are in Europe and North America are provided:
-
-* European Network of Transmission Systems Operators for Electricity
-* Florida Reliability Coordinating Council
-* HICC
-* Midwest Reliability Organization
-* Northeast Power Coordinating Council
-* ReliabilityFirst Corporation
-* SERC Reliability Corporation
-* Southwest Power Pool
-* Texas Regional Entity
-* Western Electricity Coordinating Council
-* Alaska Systems Coordinating Council
+Sub-national electricity grids are provided for China, Brazil, North America, and India.
 
 .. _elecna:
 
 North American networks
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-In Europe, ENTSO-E is made up of countries. In the United States and Canada, the boundaries between NERC regions is made up of state/province boundaries and hand-drawn boundaries traced from NERC maps.
+In the United States and Canada, the boundaries between NERC regions is made up of state/province boundaries and hand-drawn boundaries traced from NERC maps.
 
 .. image:: images/NA.png
     :align: center
@@ -1046,6 +1034,14 @@ Brazil
 Brazil has been split into four electricity grids.
 
 .. image:: images/Brazil.png
+    :align: center
+
+China
+^^^^^
+
+China has been split into six electricity grids.
+
+.. image:: images/China.png
     :align: center
 
 .. _eleceu:
