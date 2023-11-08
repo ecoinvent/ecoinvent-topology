@@ -409,11 +409,14 @@ Miscellaneous
 Australian states and territories
 +++++++++++++++++++++++++++++++++
 
-In addition to the country ``Australia``, the Australian states are also provided. As a consequence, the territories *Christmas Island* and *Cocos (Keeling) Islands*, which do possess `ISO 3166-1`_ codes, are included in the location ``Indian Ocean Territories``.
+.. image:: images/australia.png
+    :align: center
+
+In addition to the country ``Australia``, the Australian states and territories are also provided.
+
+States and internal territories:
 
 * Australian Capital Territory
-* `Coral Sea Islands <http://en.wikipedia.org/wiki/Coral_Sea_Islands>`__
-* `Indian Ocean Territories <http://en.wikipedia.org/wiki/Australian_Indian_Ocean_Territories>`__
 * New South Wales
 * Northern Territory
 * Queensland
@@ -421,6 +424,20 @@ In addition to the country ``Australia``, the Australian states are also provide
 * Tasmania
 * Victoria
 * Western Australia
+* Jervis Bay Territory
+
+External territories:
+
+* Ashmore and Cartier Islands
+* Christmas Island
+* Cocos (Keeling) Islands
+* Coral Sea Islands
+* Heard Island and McDonald Islands
+* Norfolk Island
+
+``Australia`` includes all states and internal territories. ``Australia, including overseas territories`` includes all external territories as well as states and internal territories.
+
+The geography ``Australia, Indian Ocean Territories``, consisting of *Christmas Island* and *Cocos (Keeling) Islands* is provided, but its use is not recommended.
 
 Brazilian states
 ++++++++++++++++
@@ -620,12 +637,12 @@ Updated to Natural Earth data version 5.1.1.
 Completely rewritten pipeline and scripts using only the province-level Natural Earth data. By not needing to reconcile province and country borders, processing time is reduced from hours to minutes.
 
 * Indian states of ``Dadra and Nagar Haveli`` and ``Daman and Diu`` were `merged in 2020 <https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu>`__ to ``Dadra and Nagar Haveli and Daman and Diu``.
-* Indian state of ``Orissa`` was renamed to ``Odisha`` in 2011 - we include that change in 2023.
+* Indian state of ``Orissa`` was renamed to ``Odisha`` in 2011 - we include this change already in 2023.
 * Changed ``Turkey`` to ``Türkiye``, and ``Europe, without Russia and Turkey`` to ``Europe, without Russia and Türkiye``.
-* Adapted NERC regions as SPP and FRCC were both dissolved. See `the source repo <https://github.com/ecoinvent/nerc-regions>`__ for more information.
+* Adapted NERC regions as US-SPP and US-FRCC were both dissolved. See `the source repo <https://github.com/ecoinvent/nerc-regions>`__ for more information. The regions ``Southwest Power Pool`` and ``Florida Reliability Coordinating Council`` were removed.
 * Add regional Chinese electricity grids.
 * Restored ``Brazil, South-eastern and Mid-western grid``.
-* Changed short names for Australian states.
+* The modelling and names for Australia were revamped. See :ref:`Australian states and territories`.
 
 Version 2.4 (ecoinvent 3.7)
 +++++++++++++++++++++++++++
