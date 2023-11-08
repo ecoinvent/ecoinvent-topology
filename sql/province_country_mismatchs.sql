@@ -258,68 +258,17 @@ INSERT INTO ne_countries (
     'Oceania'
 );
 
--- Coral sea islands not a country, so not in `ne_countries`
 SELECT SingleProvince('Coral Sea Islands');
 UPDATE ne_provinces SET iso_a2 = 'XC' WHERE name = 'Coral Sea Islands';
-INSERT INTO ne_countries (
-    gid,
-    admin,
-    name,
-    iso_a2,
-    iso_a3,
-    subregion,
-    region_un
-) VALUES (
-    100012,
-    'Coral Sea Islands',
-    'Coral Sea Islands',
-    'XC',
-    NULL,
-    'Australia and New Zealand',
-    'Oceania'
-);
+UPDATE ne_countries SET iso_a2 = 'XC' WHERE name = 'Coral Sea Islands';
 
--- Clipperton Island not a country, so not in `ne_countries`
 SELECT SingleProvince('Clipperton Island');
 UPDATE ne_provinces SET iso_a2 = 'XP' WHERE name = 'Clipperton Island';
-INSERT INTO ne_countries (
-    gid,
-    admin,
-    name,
-    iso_a2,
-    iso_a3,
-    subregion,
-    region_un
-) VALUES (
-    100013,
-    'Clipperton Island',
-    'Clipperton Island',
-    'XP',
-    NULL,
-    'Polynesia',
-    'Oceania'
-);
+UPDATE ne_countries SET iso_a2 = 'XP' WHERE name = 'Clipperton Island';
 
 SELECT SingleProvince('Guantanamo Bay USNB');
 UPDATE ne_provinces SET iso_a2 = 'XU', name = 'US Naval Base Guantanamo Bay' WHERE name = 'Guantanamo Bay USNB';
-INSERT INTO ne_countries (
-    gid,
-    admin,
-    name,
-    iso_a2,
-    iso_a3,
-    subregion,
-    region_un
-) VALUES (
-    100014,
-    'US Naval Base Guantanamo Bay',
-    'US Naval Base Guantanamo Bay',
-    'XU',
-    NULL,
-    'Caribbean',
-    'Americas'
-);
-
+UPDATE ne_countries SET iso_a2 = 'XU' WHERE name = 'US Naval Base Guantanamo Bay';
 
 UPDATE ne_provinces SET admin = 'Australia' WHERE name IN (
     'Jervis Bay Territory'
@@ -345,6 +294,8 @@ UPDATE ne_countries SET iso_a2 = 'XG' WHERE name = 'Siachen Glacier';
 UPDATE ne_provinces SET iso_a2 = 'XZ' WHERE name = 'Spratly Islands';
 UPDATE ne_countries SET iso_a2 = 'XZ' WHERE name = 'Spratly Islands';
 
+UPDATE ne_provinces SET iso_a2 = 'XA', name = 'Australia, Ashmore and Cartier Islands' WHERE name = 'Ashmore and Cartier Islands';
+UPDATE ne_countries SET iso_a2 = 'XA', name = 'Australia, Ashmore and Cartier Islands' WHERE name = 'Ashmore and Cartier Islands';
 
 -- Set to "CN-TW" in source data? Yeah humans...
 UPDATE ne_countries SET iso_a2 = 'TW' WHERE name = 'Taiwan';
