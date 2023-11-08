@@ -661,6 +661,11 @@
       "uuid": "96e0124a-b1b0-4303-b26c-44ee5857f3a1"
     },
     {
+      "shortname": "AU-JBT",
+      "name": "Australia, Jervis Bay Territory",
+      "uuid": "1799e32a-b029-4981-ab1b-1cd932c1e64b"
+    },
+    {
       "shortname": "AU-NSW",
       "name": "Australia, New South Wales",
       "uuid": "ee4baa34-3c79-4919-9393-c5d8a9015674"
