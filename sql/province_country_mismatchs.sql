@@ -238,6 +238,7 @@ INSERT INTO ne_countries (
     'Oceania'
 );
 
+SELECT SingleProvince('Christmas Island');
 UPDATE ne_provinces SET iso_a2 = 'CX' WHERE name = 'Christmas Island';
 INSERT INTO ne_countries (
     gid,
@@ -257,6 +258,69 @@ INSERT INTO ne_countries (
     'Oceania'
 );
 
+-- Coral sea islands not a country, so not in `ne_countries`
+SELECT SingleProvince('Coral Sea Islands');
+UPDATE ne_provinces SET iso_a2 = 'XC' WHERE name = 'Coral Sea Islands';
+INSERT INTO ne_countries (
+    gid,
+    admin,
+    name,
+    iso_a2,
+    iso_a3,
+    subregion,
+    region_un
+) VALUES (
+    100012,
+    'Coral Sea Islands',
+    'Coral Sea Islands',
+    'XC',
+    NULL,
+    'Australia and New Zealand',
+    'Oceania'
+);
+
+-- Clipperton Island not a country, so not in `ne_countries`
+SELECT SingleProvince('Clipperton Island');
+UPDATE ne_provinces SET iso_a2 = 'XP' WHERE name = 'Clipperton Island';
+INSERT INTO ne_countries (
+    gid,
+    admin,
+    name,
+    iso_a2,
+    iso_a3,
+    subregion,
+    region_un
+) VALUES (
+    100013,
+    'Clipperton Island',
+    'Clipperton Island',
+    'XP',
+    NULL,
+    'Polynesia',
+    'Oceania'
+);
+
+SELECT SingleProvince('Guantanamo Bay USNB');
+UPDATE ne_provinces SET iso_a2 = 'XU', name = 'US Naval Base Guantanamo Bay' WHERE name = 'Guantanamo Bay USNB';
+INSERT INTO ne_countries (
+    gid,
+    admin,
+    name,
+    iso_a2,
+    iso_a3,
+    subregion,
+    region_un
+) VALUES (
+    100014,
+    'US Naval Base Guantanamo Bay',
+    'US Naval Base Guantanamo Bay',
+    'XU',
+    NULL,
+    'Caribbean',
+    'Americas'
+);
+
+
 UPDATE ne_provinces SET admin = 'Australia' WHERE name IN (
     'Jervis Bay Territory'
     'Norfolk Island',
@@ -266,6 +330,24 @@ UPDATE ne_provinces SET admin = 'Australia' WHERE name IN (
     'Ashmore and Cartier Islands',
     'Heard Island and McDonald Islands'
 );
+
+-- No ISO A2 code for somaliland, but we use this to link countries and provinces
+-- We will delete it later
+UPDATE ne_provinces SET iso_a2 = 'XS' WHERE name = 'Somaliland';
+UPDATE ne_countries SET iso_a2 = 'XS' WHERE name = 'Somaliland';
+
+-- No ISO A2 code for somaliland, but we use this to link countries and provinces
+-- We will delete it later
+UPDATE ne_provinces SET iso_a2 = 'XG' WHERE name = 'Siachen Glacier';
+UPDATE ne_countries SET iso_a2 = 'XG' WHERE name = 'Siachen Glacier';
+
+-- Not a country, but we keep it separate
+UPDATE ne_provinces SET iso_a2 = 'XZ' WHERE name = 'Spratly Islands';
+UPDATE ne_countries SET iso_a2 = 'XZ' WHERE name = 'Spratly Islands';
+
+
+-- Set to "CN-TW" in source data? Yeah humans...
+UPDATE ne_countries SET iso_a2 = 'TW' WHERE name = 'Taiwan';
 
 -- https://en.wikipedia.org/wiki/Macquarie_Island is listed separately, add to Tasmania
 SELECT SingleProvince('Tasmania');

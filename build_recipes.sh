@@ -37,6 +37,10 @@ echo "Adding shortnames and UUIDS"
 python python/parse_uuids.py
 psql -U ecoinvent -d eigeo -f sql/uuids.sql -q -n -o create_db.log
 
+echo "Adding shortnames and UUIDS"
+psql -U ecoinvent -d eigeo -f sql/cleanup_final_table.sql -q -n -o create_db.log
+
+
 mkdir -p output
 
 echo "Testing final database integrity"
