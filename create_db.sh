@@ -53,6 +53,7 @@ echo "Testing database integrity"
 python python/db_checks.py
 rc=$?
 if [[ $rc != 0 ]] ; then
+    echo "Aborting recipe building"
     exit $rc
 fi
 
