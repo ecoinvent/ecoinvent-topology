@@ -287,7 +287,7 @@ UPDATE ne_countries SET iso_a2 = 'XS' WHERE name = 'Somaliland';
 
 -- No ISO A2 code for somaliland, but we use this to link countries and provinces
 -- We will delete it later
-UPDATE ne_provinces SET iso_a2 = 'XG' WHERE name = 'Siachen Glacier';
+UPDATE ne_provinces SET iso_a2 = 'XG', name = 'Siachen Glacier' WHERE admin = 'Siachen Glacier';
 UPDATE ne_countries SET iso_a2 = 'XG' WHERE name = 'Siachen Glacier';
 
 -- Not a country, but we keep it separate
@@ -297,7 +297,7 @@ UPDATE ne_countries SET iso_a2 = 'XZ' WHERE name = 'Spratly Islands';
 UPDATE ne_provinces SET iso_a2 = 'XA', name = 'Australia, Ashmore and Cartier Islands' WHERE name = 'Ashmore and Cartier Islands';
 UPDATE ne_countries SET iso_a2 = 'XA', name = 'Australia, Ashmore and Cartier Islands' WHERE name = 'Ashmore and Cartier Islands';
 
--- Set to "CN-TW" in source data? Yeah humans...
+-- Set to "CN-TW" in source data
 UPDATE ne_countries SET iso_a2 = 'TW' WHERE name = 'Taiwan';
 
 -- https://en.wikipedia.org/wiki/Macquarie_Island is listed separately, add to Tasmania

@@ -16,6 +16,12 @@ UPDATE ne_countries SET name = 'Congo, Democratic Republic of the' where name = 
 SELECT SingleCountry('Republic of the Congo');
 UPDATE ne_countries SET name = 'Congo' where name = 'Republic of the Congo';
 
+SELECT SingleCountry('United States');
+UPDATE ne_countries SET name = 'United States of America' where name = 'United States';
+
+SELECT SingleCountry('Czech Republic');
+UPDATE ne_countries SET name = 'Czechia' where name = 'Czech Republic';
+
 SELECT SingleCountry('Federated States of Micronesia');
 UPDATE ne_countries SET name = 'Micronesia, Federated States of' where name = 'Federated States of Micronesia';
 
