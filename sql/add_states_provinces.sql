@@ -3,27 +3,27 @@ SET STANDARD_CONFORMING_STRINGS TO ON;
 SET client_min_messages TO WARNING;
 
 BEGIN;
-INSERT INTO final (collection, name, shortname, geom)
+INSERT INTO final (collection, name, shortname, geom, faces)
 (
-    SELECT 'states', 'Canada, ' || g.name, n.iso_3166_2, geometry(g.topogeom)
+    SELECT 'states', 'Canada, ' || g.name, n.iso_3166_2, geometry(g.topogeom), vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
     FROM geometries g
     LEFT JOIN ne_provinces n ON g.gid = n.gid
     WHERE g.tname = 'ne_provinces'
     AND g.parent = 'Canada'
     AND g.name IS NOT NULL
 );
-INSERT INTO final (collection, name, shortname, geom)
+INSERT INTO final (collection, name, shortname, geom, faces)
 (
-    SELECT 'states', 'United States of America, ' || g.name, n.iso_3166_2, geometry(g.topogeom)
+    SELECT 'states', 'United States of America, ' || g.name, n.iso_3166_2, geometry(g.topogeom), vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
     FROM geometries g
     LEFT JOIN ne_provinces n ON g.gid = n.gid
     WHERE g.tname = 'ne_provinces'
     AND g.parent = 'United States of America'
     AND g.name IS NOT NULL
 );
-INSERT INTO final (collection, name, shortname, geom)
+INSERT INTO final (collection, name, shortname, geom, faces)
 (
-    SELECT 'states', 'Australia, ' || g.name, n.code_hasc, geometry(g.topogeom)
+    SELECT 'states', 'Australia, ' || g.name, n.code_hasc, geometry(g.topogeom), vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
     FROM geometries g
     LEFT JOIN ne_provinces n ON g.gid = n.gid
     WHERE g.tname = 'ne_provinces'
@@ -40,27 +40,27 @@ INSERT INTO final (collection, name, shortname, geom)
         'Jervis Bay Territory'
     )
 );
-INSERT INTO final (collection, name, shortname, geom)
+INSERT INTO final (collection, name, shortname, geom, faces)
 (
-    SELECT 'states', 'Brazil, ' || g.name, n.code_hasc, geometry(g.topogeom)
+    SELECT 'states', 'Brazil, ' || g.name, n.code_hasc, geometry(g.topogeom), vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
     FROM geometries g
     LEFT JOIN ne_provinces n ON g.gid = n.gid
     WHERE g.tname = 'ne_provinces'
     AND g.parent = 'Brazil'
     AND g.name IS NOT NULL
 );
-INSERT INTO final (collection, name, shortname, geom)
+INSERT INTO final (collection, name, shortname, geom, faces)
 (
-    SELECT 'states', 'India, ' || g.name, n.code_hasc, geometry(g.topogeom)
+    SELECT 'states', 'India, ' || g.name, n.code_hasc, geometry(g.topogeom), vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
     FROM geometries g
     LEFT JOIN ne_provinces n ON g.gid = n.gid
     WHERE g.tname = 'ne_provinces'
     AND g.parent = 'India'
     AND g.name IS NOT NULL
 );
-INSERT INTO final (collection, name, shortname, geom)
+INSERT INTO final (collection, name, shortname, geom, faces)
 (
-    SELECT 'states', 'China, ' || g.name || ' (' || CASE WHEN name_local LIKE '%|%' THEN split_part(name_local, '|', 2) ELSE name_local END || ')', 'CN-' || n.postal, geometry(g.topogeom)
+    SELECT 'states', 'China, ' || g.name || ' (' || CASE WHEN name_local LIKE '%|%' THEN split_part(name_local, '|', 2) ELSE name_local END || ')', 'CN-' || n.postal, geometry(g.topogeom), vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
     FROM geometries g
     LEFT JOIN ne_provinces n ON g.gid = n.gid
     WHERE g.tname = 'ne_provinces'

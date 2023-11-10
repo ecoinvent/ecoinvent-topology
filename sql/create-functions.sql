@@ -137,4 +137,17 @@ RETURNS geometry AS $$
 $$ language 'sql';
 
 
+create or replace function vector_dammit (integer[])
+returns integer[] language sql
+as $$
+    select array(select unnest($1[:][:1]));
+$$;
+
+
+CREATE or replace AGGREGATE intarrays_cat(integer[]) (
+  SFUNC=array_cat,
+  STYPE=integer[],
+  finalfunc=vector_dammit
+);
+
 COMMIT;

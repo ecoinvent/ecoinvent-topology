@@ -1,6 +1,5 @@
 import json
 import os
-import re
 import csv
 import hashlib
 
@@ -18,14 +17,12 @@ def sha256(filepath, blocksize=65536):
 
 base_path = os.path.abspath(os.path.dirname(__file__))
 
-numbers = re.compile("{(?P<face_id>\d+),3}")
-
 fp = os.path.abspath(os.path.join(base_path, "..", "output", "faces.csv"))
 outpath = os.path.abspath(os.path.join(base_path, "..", "output", "faces.json"))
 
 
 def get_face_ids(row):
-    return (row[0], [int(x) for x in numbers.findall(row[1])])
+    return (row[0], [int(x) for x in eval(row[1])])
 
 
 with open(fp, encoding="utf-8") as f:

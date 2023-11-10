@@ -12,8 +12,8 @@ SET client_min_messages TO WARNING;
 BEGIN;\n"""
 FOOTER = """\nCOMMIT;\n"""
 
-BEGINNING = """INSERT INTO final (name, collection, geom) SELECT {name}, {collection}, ST_Multi(ST_Union(geometry(t1.topogeom))) FROM ("""
-TEMPLATE = """SELECT topogeom FROM geometries g where g.tname = {tablename} {parent}and g.name {name_filter} """
+BEGINNING = """INSERT INTO final (name, collection, geom, faces) SELECT {name}, {collection}, ST_Multi(ST_Union(geometry(t1.topogeom))), intarrays_cat(GetTopoGeomElementArray(t1.topogeom)::int[]) FROM ("""
+TEMPLATE = """SELECT topogeom FROM geometries g where g.tname = {tablename} {parent} and g.name {name_filter} """
 
 
 data = json.load(open(os.path.join(os.getcwd(), "data", "config", "recipes.json")))

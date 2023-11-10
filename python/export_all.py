@@ -22,17 +22,17 @@ collections = [
     "all-ecoinvent",
 ]
 
-command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
+command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select id, gid, collection, name, ISOTwoLetterCode, UNCode, longitude, ISOThreeLetterCode, UNSubregion, latitude, UNRegion, uuid, shortname, geom from final where collection = '{collection}'" -nln {layername} """
 
-all_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final" -nln allgeos """
+all_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select id, gid, collection, name, ISOTwoLetterCode, UNCode, longitude, ISOThreeLetterCode, UNSubregion, latitude, UNRegion, uuid, shortname, geom from final" -nln allgeos """
 
-all_ecoinvent_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection != 'countries'" -nln allgeos """
+all_ecoinvent_command = """ogr2ogr -f {format} output/{collection}.{extension} "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select id, gid, collection, name, ISOTwoLetterCode, UNCode, longitude, ISOThreeLetterCode, UNSubregion, latitude, UNRegion, uuid, shortname, geom from final where collection != 'countries'" -nln allgeos """
 
-shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection = '{collection}'" -nln {layername} """
+shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select id, gid, collection, name, ISOTwoLetterCode, UNCode, longitude, ISOThreeLetterCode, UNSubregion, latitude, UNRegion, uuid, shortname, geom from final where collection = '{collection}'" -nln {layername} """
 
-all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final" -nln allgeos """
+all_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select id, gid, collection, name, ISOTwoLetterCode, UNCode, longitude, ISOThreeLetterCode, UNSubregion, latitude, UNRegion, uuid, shortname, geom from final" -nln allgeos """
 
-all_ecoinvent_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select * from final where collection != 'countries'" -nln allgeos """
+all_ecoinvent_shp_command = """ogr2ogr -f "ESRI Shapefile" output/{layername}/{collection}.shp "PG:host=localhost dbname=eigeo user=ecoinvent" -sql "select id, gid, collection, name, ISOTwoLetterCode, UNCode, longitude, ISOThreeLetterCode, UNSubregion, latitude, UNRegion, uuid, shortname, geom from final where collection != 'countries'" -nln allgeos """
 
 bz2_command = "bzip2 {path}"
 

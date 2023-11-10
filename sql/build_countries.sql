@@ -13,7 +13,8 @@ insert into final (
   UNRegion,
   uuid,
   shortname,
-  geom
+  geom,
+  faces
 )
 select
     nc.gid,
@@ -25,7 +26,8 @@ select
     nc.region_un,
     null,
     nc.iso_a2,
-    ST_Multi(geometry(g.topogeom))
+    ST_Multi(geometry(g.topogeom)),
+    vector_dammit(GetTopoGeomElementArray(g.topogeom)::int[])
 from geometries g
 left join ne_countries nc on g.gid = nc.gid
 where g.tname = 'ne_countries';

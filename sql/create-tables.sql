@@ -41,7 +41,8 @@ CREATE TABLE public.final (
   UNRegion text,
   uuid text,
   shortname text,
-  geom geometry(MultiPolygon,4326)
+  geom geometry(MultiPolygon,4326),
+  faces int[]
 );
 -- ALTER TABLE public.cutouts
 --   OWNER TO ecoinvent;
