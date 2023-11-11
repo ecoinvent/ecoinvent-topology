@@ -652,6 +652,11 @@
       "shortname": "France, including overseas territories",
       "name": "France, including overseas territories",
       "uuid": "28d52c97-56c5-4bcd-9504-ccc5b4797c67"
+    },
+    {
+      "shortname": "United States, including overseas territories",
+      "name": "United States, including overseas territories",
+      "uuid": "969d69ce-e0b1-452b-8f5a-389a62ed40ff"
     }
   ],
   "Australia": [

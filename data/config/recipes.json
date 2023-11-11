@@ -3230,6 +3230,20 @@
     }
   ],
   [
+    "United States, including overseas territories",
+    "special",
+    {
+      "ne_countries": [
+        "United States of America",
+        "Puerto Rico",
+        "Guam",
+        "Northern Mariana Islands",
+        "United States Virgin Islands",
+        "American Samoa"
+      ]
+    }
+  ],
+  [
     "China, China Southern Power Grid",
     "electricity",
     {
