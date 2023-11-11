@@ -4,12 +4,12 @@ SET client_min_messages TO WARNING;
 UPDATE final SET isotwolettercode = NULL WHERE name in (
     'Somaliland', 'Siachen Glacier', 'Spratly Islands', 'Coral Sea Islands',
     'Clipperton Island', 'US Naval Base Guantanamo Bay',
-    'Australia, Ashmore and Cartier Islands'
+    'Australia, Ashmore and Cartier Islands', 'Crimea'
 );
 UPDATE final SET isothreelettercode = NULL WHERE name in (
     'Somaliland', 'Siachen Glacier', 'Spratly Islands', 'Coral Sea Islands',
     'Clipperton Island', 'US Naval Base Guantanamo Bay',
-    'Australia, Ashmore and Cartier Islands'
+    'Australia, Ashmore and Cartier Islands', 'Crimea'
 );
 BEGIN;
 COMMIT;

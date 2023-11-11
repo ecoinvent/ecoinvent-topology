@@ -258,6 +258,27 @@ INSERT INTO ne_countries (
     'Oceania'
 );
 
+SELECT SingleProvince('Crimea');
+UPDATE ne_provinces SET iso_a2 = 'XB', admin = 'Crimea' WHERE name = 'Crimea';
+UPDATE ne_provinces SET iso_a2 = 'XB', admin = 'Crimea' WHERE name = 'Sevastopol';
+INSERT INTO ne_countries (
+    gid,
+    admin,
+    name,
+    iso_a2,
+    iso_a3,
+    subregion,
+    region_un
+) VALUES (
+    100012,
+    'Crimea',
+    'Crimea',
+    'XB',
+    'XBC',
+    'Eastern Europe',
+    'Europe'
+);
+
 SELECT SingleProvince('Coral Sea Islands');
 UPDATE ne_provinces SET iso_a2 = 'XC' WHERE name = 'Coral Sea Islands';
 UPDATE ne_countries SET iso_a2 = 'XC' WHERE name = 'Coral Sea Islands';
