@@ -2218,6 +2218,11 @@
       "uuid": "047116e2-d932-11de-9627-0019e336be3a"
     },
     {
+      "shortname": "CUSMA/T-MEC/USMCA",
+      "name": "United States–Mexico–Canada Agreement",
+      "uuid": "598a17a2-889f-4c84-a870-08fbf1f8917f"
+    },
+    {
       "shortname": "Québec, HQ distribution network",
       "name": "Québec, Hydro-Québec distribution network",
       "uuid": "c231d8f9-39e9-408c-9884-8508b8f9baf7"

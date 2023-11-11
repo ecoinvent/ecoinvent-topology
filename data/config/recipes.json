@@ -3473,7 +3473,20 @@
       "ne_countries": [
         "Canada",
         "Mexico",
-        "United States of America"
+        "United States of America",
+        "Puerto Rico"
+      ]
+    }
+  ],
+  [
+    "United States–Mexico–Canada Agreement",
+    "special",
+    {
+      "ne_countries": [
+        "Canada",
+        "Mexico",
+        "United States of America",
+        "Puerto Rico"
       ]
     }
   ],
