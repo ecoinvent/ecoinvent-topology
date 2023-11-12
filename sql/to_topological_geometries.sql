@@ -16,7 +16,11 @@ SELECT AddTopoGeometry(name, 'ne_countries', gid)
         'Akrotiri Sovereign Base Area',
         'Dhekelia Sovereign Base Area',
         'Cyprus No Mans Area',
-        'Northern Cyprus'
+        'Cyprus',
+        'Northern Cyprus',
+        'Bajo Nuevo Bank (Petrel Is.)',
+        'Scarborough Reef',
+        'Serranilla Bank'
     );
 
 INSERT INTO "geometries" ("gid", "name", "tname", "topogeom")
