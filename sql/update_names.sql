@@ -16,6 +16,9 @@ UPDATE ne_countries SET name = 'Congo, Democratic Republic of the' where name = 
 SELECT SingleCountry('Republic of the Congo');
 UPDATE ne_countries SET name = 'Congo' where name = 'Republic of the Congo';
 
+SELECT SingleCountry('Bajo Nuevo Bank (Petrel Islands)');
+UPDATE ne_countries SET name = 'Bajo Nuevo Bank (Petrel Is.)' where name = 'Bajo Nuevo Bank (Petrel Islands)';
+
 SELECT SingleCountry('United States');
 UPDATE ne_countries SET name = 'United States of America' where name = 'United States';
 
