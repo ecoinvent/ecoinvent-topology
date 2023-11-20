@@ -37,6 +37,9 @@ UPDATE ne_countries SET name = 'Aland' where name = 'Åland Islands';
 UPDATE ne_provinces SET name_local = '黑龙江省' WHERE name = 'Heilongjiang';
 UPDATE ne_provinces SET name_local = '青海' WHERE name = 'Qinghai';
 
+SELECT SingleCountry('Russian Federation');
+UPDATE ne_countries SET name = 'Russia' WHERE name = 'Russian Federation';
+
 SELECT SingleCountry('Akrotiri');
 UPDATE ne_countries SET name = 'Akrotiri Sovereign Base Area' WHERE name = 'Akrotiri';
 
