@@ -52,6 +52,27 @@ UPDATE ne_countries SET name = 'Gambia' where name = 'The Gambia';
 SELECT SingleCountry('Lao PDR');
 UPDATE ne_countries SET name = 'Laos' where name = 'Lao PDR';
 
+SELECT SingleCountry('South Georgia and the Islands');
+UPDATE ne_countries SET name = 'South Georgia and South Sandwich Islands' where name = 'South Georgia and the Islands';
+
+SELECT SingleCountry('Wallis and Futuna Islands');
+UPDATE ne_countries SET name = 'Wallis and Futuna' where name = 'Wallis and Futuna Islands';
+
+SELECT SingleCountry('Saint-Martin');
+UPDATE ne_countries SET name = 'Saint Martin' where name = 'Saint-Martin';
+
+SELECT SingleCountry('Saint-Barthélemy');
+UPDATE ne_countries SET name = 'Saint Barthelemy' where name = 'Saint-Barthélemy';
+
+SELECT SingleCountry('Vatican');
+UPDATE ne_countries SET name = 'Holy See (Vatican City State)' where name = 'Vatican';
+
+SELECT SingleCountry('São Tomé and Principe');
+UPDATE ne_countries SET name = 'Sao Tome and Principe' where name = 'São Tomé and Principe';
+
+SELECT SingleCountry('Guinea-Bissau');
+UPDATE ne_countries SET name = 'Guinea Bissau' where name = 'Guinea-Bissau';
+
 SELECT SingleCountry('Republic of Korea');
 UPDATE ne_countries SET name = 'South Korea' where name = 'Republic of Korea';
 
