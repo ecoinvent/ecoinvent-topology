@@ -64,9 +64,6 @@ UPDATE ne_countries SET name = 'Saint Martin' where name = 'Saint-Martin';
 SELECT SingleCountry('Saint-Barthélemy');
 UPDATE ne_countries SET name = 'Saint Barthelemy' where name = 'Saint-Barthélemy';
 
-SELECT SingleCountry('Vatican');
-UPDATE ne_countries SET name = 'Holy See (Vatican City State)' where name = 'Vatican';
-
 SELECT SingleCountry('São Tomé and Principe');
 UPDATE ne_countries SET name = 'Sao Tome and Principe' where name = 'São Tomé and Principe';
 
