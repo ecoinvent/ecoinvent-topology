@@ -25,9 +25,39 @@ UPDATE ne_countries SET name = 'United States of America' where name = 'United S
 SELECT SingleCountry('Czech Republic');
 UPDATE ne_countries SET name = 'Czechia' where name = 'Czech Republic';
 
+SELECT SingleCountry('Brunei Darussalam');
+UPDATE ne_countries SET name = 'Brunei' where name = 'Brunei Darussalam';
 
 SELECT SingleCountry('Bonaire, Saint Eustatius and Saba');
 UPDATE ne_countries SET name = 'Bonaire, Sint Eustatius and Saba' where name = 'Bonaire, Saint Eustatius and Saba';
+
+SELECT SingleCountry('Republic of Cabo Verde');
+UPDATE ne_countries SET name = 'Cape Verde' where name = 'Republic of Cabo Verde';
+
+SELECT SingleCountry('Kingdom of eSwatini');
+UPDATE ne_countries SET name = 'Eswatini' where name = 'Kingdom of eSwatini';
+
+SELECT SingleCountry('Falkland Islands / Malvinas');
+UPDATE ne_countries SET name = 'Falkland Islands' where name = 'Falkland Islands / Malvinas';
+
+SELECT SingleCountry('Faeroe Islands');
+UPDATE ne_countries SET name = 'Faroe Islands' where name = 'Faeroe Islands';
+
+SELECT SingleCountry('French Southern and Antarctic Lands');
+UPDATE ne_countries SET name = 'French Southern Territories' where name = 'French Southern and Antarctic Lands';
+
+SELECT SingleCountry('The Gambia');
+UPDATE ne_countries SET name = 'Gambia' where name = 'The Gambia';
+
+SELECT SingleCountry('Lao PDR');
+UPDATE ne_countries SET name = 'Laos' where name = 'Lao PDR';
+
+SELECT SingleCountry('Republic of Korea');
+UPDATE ne_countries SET name = 'South Korea' where name = 'Republic of Korea';
+
+SELECT SingleCountry('Dem. Rep. Korea');
+UPDATE ne_countries SET name = 'North Korea' where name = 'Dem. Rep. Korea';
+
 SELECT SingleCountry('Federated States of Micronesia');
 UPDATE ne_countries SET name = 'Micronesia, Federated States of' where name = 'Federated States of Micronesia';
 
@@ -37,7 +67,10 @@ UPDATE ne_countries SET name = 'Micronesia, Federated States of' where name = 'F
 SELECT SingleCountry('Åland Islands');
 UPDATE ne_countries SET name = 'Aland' where name = 'Åland Islands';
 
+SELECT SingleProvince('Heilongjiang');
 UPDATE ne_provinces SET name_local = '黑龙江省' WHERE name = 'Heilongjiang';
+
+SELECT SingleProvince('Qinghai');
 UPDATE ne_provinces SET name_local = '青海' WHERE name = 'Qinghai';
 
 SELECT SingleCountry('Russian Federation');
