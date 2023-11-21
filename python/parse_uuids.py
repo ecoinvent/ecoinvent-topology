@@ -17,7 +17,11 @@ TEMPLATE = (
 
 data = json.load(open(os.path.join(os.getcwd(), "data", "config", "uuid-mapping.json")))
 
-sql = "\n".join([TEMPLATE.format(**line) for row in data for line in data[row]])
+def escaper(dct):
+    _ = lambda s: s.replace("'", "''")
+    return {key: _(value) for key, value in dct.items()}
+
+sql = "\n".join([TEMPLATE.format(**escaper(line)) for row in data for line in data[row]])
 
 with codecs.open(
     os.path.join(os.getcwd(), "sql", "uuids.sql"), "w", encoding="utf8"
