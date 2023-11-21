@@ -25,6 +25,9 @@ UPDATE ne_countries SET name = 'United States of America' where name = 'United S
 SELECT SingleCountry('Czech Republic');
 UPDATE ne_countries SET name = 'Czechia' where name = 'Czech Republic';
 
+
+SELECT SingleCountry('Bonaire, Saint Eustatius and Saba');
+UPDATE ne_countries SET name = 'Bonaire, Sint Eustatius and Saba' where name = 'Bonaire, Saint Eustatius and Saba';
 SELECT SingleCountry('Federated States of Micronesia');
 UPDATE ne_countries SET name = 'Micronesia, Federated States of' where name = 'Federated States of Micronesia';
 
