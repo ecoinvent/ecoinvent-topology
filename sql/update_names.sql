@@ -40,8 +40,8 @@ UPDATE ne_countries SET name = 'Falkland Islands' where name = 'Falkland Islands
 SELECT SingleCountry('Faeroe Islands');
 UPDATE ne_countries SET name = 'Faroe Islands' where name = 'Faeroe Islands';
 
-SELECT SingleCountry('French Southern and Antarctic Lands');
-UPDATE ne_countries SET name = 'French Southern Territories' where name = 'French Southern and Antarctic Lands';
+-- SELECT SingleCountry('French Southern and Antarctic Lands');
+-- UPDATE ne_countries SET name = 'French Southern Territories' where name = 'French Southern and Antarctic Lands';
 
 SELECT SingleCountry('The Gambia');
 UPDATE ne_countries SET name = 'Gambia' where name = 'The Gambia';
