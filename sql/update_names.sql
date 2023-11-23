@@ -28,9 +28,6 @@ UPDATE ne_countries SET name = 'Czechia' where name = 'Czech Republic';
 SELECT SingleCountry('Brunei Darussalam');
 UPDATE ne_countries SET name = 'Brunei' where name = 'Brunei Darussalam';
 
-SELECT SingleCountry('Bonaire, Saint Eustatius and Saba');
-UPDATE ne_countries SET name = 'Bonaire, Sint Eustatius and Saba' where name = 'Bonaire, Saint Eustatius and Saba';
-
 SELECT SingleCountry('Republic of Cabo Verde');
 UPDATE ne_countries SET name = 'Cape Verde' where name = 'Republic of Cabo Verde';
 
@@ -69,6 +66,15 @@ UPDATE ne_countries SET name = 'Sao Tome and Principe' where name = 'São Tomé 
 
 SELECT SingleCountry('Guinea-Bissau');
 UPDATE ne_countries SET name = 'Guinea Bissau' where name = 'Guinea-Bissau';
+
+SELECT SingleCountry('Bahamas');
+UPDATE ne_countries SET name = 'The Bahamas' where name = 'Bahamas';
+
+SELECT SingleCountry('Hong Kong');
+UPDATE ne_countries SET name = 'Hong Kong S.A.R.' where name = 'Hong Kong';
+
+SELECT SingleCountry('Macao');
+UPDATE ne_countries SET name = 'Macao S.A.R.' where name = 'Macao';
 
 SELECT SingleCountry('Republic of Korea');
 UPDATE ne_countries SET name = 'South Korea' where name = 'Republic of Korea';
