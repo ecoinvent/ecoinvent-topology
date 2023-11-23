@@ -1970,43 +1970,43 @@
   ],
   "Aluminium regions": [
     {
-      "name": "Aluminium producing area, Europe outside EU27 and EFTA",
+      "name": "IAI Area, Russia & Europe outside EU27 & EFTA",
       "shortname": "IAI Area, Russia & RER w/o EU27 & EFTA",
       "uuid": "0fc981f0-eb14-436c-834f-c6ce005a4dc4"
     },
     {
-      "name": "Aluminium producing area, EU27 and EFTA countries",
+      "name": "IAI Area, EU27 & EFTA",
       "shortname": "IAI Area, EU27 & EFTA",
       "uuid": "b7fcfda9-0add-49aa-87d4-d60f3bda4283"
     },
     {
       "shortname": "IAI Area, North America",
-      "name": "IAI producing Area 2, North America",
+      "name": "IAI Area, North America",
       "uuid": "446707ca-ceb0-4e24-b794-73e95e6154c0"
     },
     {
       "shortname": "IAI Area, Africa",
-      "name": "IAI producing Area 1, Africa",
+      "name": "IAI Area, Africa",
       "uuid": "4484cb2d-50e8-43a0-a79f-80313021306a"
     },
     {
       "shortname": "IAI Area, North America, without Quebec",
-      "name": "IAI producing Area 2, North America, without Quebec",
+      "name": "IAI Area, North America, without Quebec",
       "uuid": "4a81aea7-bf37-4c83-ac1e-9a2050f88920"
     },
     {
       "shortname": "IAI Area, South America",
-      "name": "IAI producing Area 3, South America",
+      "name": "IAI Area, South America",
       "uuid": "f3b8b2cb-5fd9-4cfc-b947-783a102c739e"
     },
     {
       "shortname": "IAI Area, Asia, without China and GCC",
-      "name": "IAI producing Area 4 and 5, South and East Asia, without China",
+      "name": "IAI Area, Asia, without China and GCC",
       "uuid": "77b2f7ee-3f79-4946-a2d7-50c46d1756d2"
     },
     {
       "shortname": "IAI Area, Gulf Cooperation Council",
-      "name": "IAI producing Area 8, Gulf Region",
+      "name": "IAI Area, Gulf Cooperation Council",
       "uuid": "058885d6-d0a9-48ff-8d95-4baacf75ce97"
     }
   ],

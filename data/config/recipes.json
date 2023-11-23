@@ -105,7 +105,7 @@
     }
   ],
   [
-    "Aluminium producing area, EU27 and EFTA countries",
+    "IAI Area, EU27 & EFTA",
     "aluminium",
     {
       "ne_countries": [
@@ -126,7 +126,7 @@
     }
   ],
   [
-    "Aluminium producing area, Europe outside EU27 and EFTA",
+    "IAI Area, Russia & Europe outside EU27 & EFTA",
     "aluminium",
     {
       "ne_countries": [
@@ -137,7 +137,7 @@
     }
   ],
   [
-    "IAI producing Area 2, North America",
+    "IAI Area, North America",
     "aluminium",
     {
       "ne_countries": [
@@ -147,7 +147,7 @@
     }
   ],
   [
-    "IAI producing Area 1, Africa",
+    "IAI Area, Africa",
     "aluminium",
     {
       "ne_countries": [
@@ -161,7 +161,7 @@
     }
   ],
   [
-    "IAI producing Area 2, North America, without Quebec",
+    "IAI Area, North America, without Quebec",
     "aluminium",
     {
       "ne_countries": [
@@ -187,7 +187,7 @@
     }
   ],
   [
-    "IAI producing Area 3, South America",
+    "IAI Area, South America",
     "aluminium",
     {
       "ne_countries": [
@@ -198,7 +198,7 @@
     }
   ],
   [
-    "IAI producing Area 4 and 5, South and East Asia, without China",
+    "IAI Area, Asia, without China and GCC",
     "aluminium",
     {
       "ne_countries": [
@@ -217,7 +217,7 @@
     }
   ],
   [
-    "IAI producing Area 8, Gulf Region",
+    "IAI Area, Gulf Cooperation Council",
     "aluminium",
     {
       "ne_countries": [
