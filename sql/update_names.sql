@@ -46,6 +46,9 @@ UPDATE ne_countries SET name = 'Faroe Islands' where name = 'Faeroe Islands';
 SELECT SingleCountry('The Gambia');
 UPDATE ne_countries SET name = 'Gambia' where name = 'The Gambia';
 
+SELECT SingleCountry('Côte d''Ivoire');
+UPDATE ne_countries SET name = 'Ivory Coast' where name = 'Côte d''Ivoire';
+
 SELECT SingleCountry('Lao PDR');
 UPDATE ne_countries SET name = 'Laos' where name = 'Lao PDR';
 
@@ -57,6 +60,9 @@ UPDATE ne_countries SET name = 'Wallis and Futuna' where name = 'Wallis and Futu
 
 SELECT SingleCountry('Saint-Martin');
 UPDATE ne_countries SET name = 'Saint Martin' where name = 'Saint-Martin';
+
+SELECT SingleCountry('Timor-Leste');
+UPDATE ne_countries SET name = 'East Timor' where name = 'Timor-Leste';
 
 SELECT SingleCountry('Saint-Barthélemy');
 UPDATE ne_countries SET name = 'Saint Barthelemy' where name = 'Saint-Barthélemy';
