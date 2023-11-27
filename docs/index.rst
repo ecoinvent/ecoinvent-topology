@@ -644,6 +644,8 @@ Completely rewritten pipeline and scripts using only the province-level Natural 
 * Restored ``Brazil, South-eastern and Mid-western grid``.
 * The modelling and names for Australia were revamped. See :ref:`Australian states and territories`.
 
+In addition, the aluminium-producing region names ecoinvent is using diverged from the names in this repository, and these have now been brought back to [the ecoinvent standard]((https://github.com/ecoinvent/ecoinvent-topology/commit/a6f1ff9268449e6df5e744f3be23197e0f7e6559).
+
 Version 2.4 (ecoinvent 3.7)
 +++++++++++++++++++++++++++
 
